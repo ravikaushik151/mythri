@@ -7,13 +7,13 @@ const projects = [
   {
     title: "Mythri Sankalp",
     location: "Off Sarjapur Road, Bengaluru",
-    status: "Sold Out",
+    status: "Under Construction",
     projectType: "Residential Apartments",
     configuration: "2 & 3 BHK",
     numberOfUnits: "120+ Units", // Fill accurate count if known
-    possession: "Ready to Move-In",
+    possession: "December 2026",
     description:
-      "Mythri Sankalp offers spacious 2 & 3 BHK apartments designed for comfort and modern living. Located off Sarjapur Road, the project is RERA approved and ready to move in, providing an ideal blend of convenience and luxury.",
+      "Mythri Sankalp offers spacious 2 & 3 BHK apartments designed for comfort and modern living. Located off Sarjapur Road, the project is RERA approved",
     image: "images/mythrisapphire.webp",
     link: "#",
   },
