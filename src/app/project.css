@@ -1,0 +1,18 @@
+
+.aboutproject {
+  
+ background-image: url('/images/admist-bg.png') !important;
+ background-size: 130% 130% !important;
+ background-position: left bottom !important;
+ background-repeat: no-repeat;
+}
+@media only screen and (max-width:768px) {
+ .aboutproject {
+ 
+   background-image: none !important;
+   background-size: 100% 100% !important;
+   background-position: center  !important;
+  
+   background-repeat: no-repeat;
+ }
+}

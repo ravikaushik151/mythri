@@ -1,0 +1,44 @@
+.contact {
+  position: relative;
+  z-index: 1;
+}
+
+.contact {
+  position: relative;
+  background: url('/images/Flower_Cream.png') right 50% / 100% 80% no-repeat;
+  overflow: hidden;
+  background-size: 35% 22%;
+  background-position: right 106%;
+  /* pseudo-element bahar na nikle */
+}
+
+.contact::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* top, right, bottom, left = 0 */
+  background: url('/images/Flower_Cream.png') right 50% / 100% 80% no-repeat;
+  transform: scale(-1, -1);
+  /* ✅ sirf image invert hogi */
+  /* optional transparency */
+  pointer-events: none;
+  /* overlay click block na kare */
+  z-index: 0;
+  background-size: 15% 16%;
+  background-position: inherit;
+}
+
+.home-highlights_text {
+  text-align: left;
+}
+
+@media only screen and (max-width:768px) {
+  .contact {
+    background-size: 40% !important
+  }
+
+  .contact::before {
+    background-size: 40% !important
+  }
+
+}

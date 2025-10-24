@@ -1,0 +1,95 @@
+.main-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.main-navbar.sticky {
+  background: transparent;
+  
+}
+
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between; /* Logo left, hamburger right */
+  align-items: center;
+  padding: 25px 50px;
+  position: relative;
+}
+
+/* Logo */
+.logo-box img {
+  width: 120px;
+  height: auto;
+}
+
+/* Hamburger */
+.menu-toggle {
+  cursor: pointer;
+  font-size: 28px;
+  color: white;
+  z-index: 1001;
+}
+
+/* Overlay Menu */
+.nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  background: rgba(0,0,0,0.95);
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+  z-index: 999;
+}
+
+.nav-overlay.open {
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.overlay-menu {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin-top: 120px;
+}
+
+.overlay-menu li {
+  margin: 25px 0;
+}
+
+.overlay-menu li a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: color 0.3s;
+}
+
+.overlay-menu li a:hover {
+  color: #00a859;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .logo-box img {
+    width: 100px;
+  }
+
+  .overlay-menu li a {
+    font-size: 20px;
+  }
+  .navbar-wrapper {
+  padding: 15px 20px !important;
+}
+
+}
