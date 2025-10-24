@@ -122,7 +122,7 @@ export default function Home() {
                 <div className="d-flex flex-column my-md-0 my-5 py-md-0 py-4 align-items-center">
                   <div>
                     <h1 className="display-4 fw-bold mb-3 w-100 text-center bannertext">
-                      Mythri Builders <br /> <span className="fs-1"> Crafting Landmarks, Building Trust</span>
+                      Crafting Landmarks, Building Trust
                     </h1>
 
                     <p className="mb-4 lead text-center w-100 text-light d-none">

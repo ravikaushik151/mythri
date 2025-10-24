@@ -20037,7 +20037,7 @@ nav.navbar-expand-lg.navbar-dark.bg-dark.fixed-top.scrolled {
   position: absolute;
   left: 0;
   right: 0;
-  top: -350px;
+  top: 350px;
 }
 
 .project-info-grid {
