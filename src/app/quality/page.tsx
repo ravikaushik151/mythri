@@ -21,9 +21,9 @@ const QualityBlock = () => {
                 marginBottom: "20px",
               }}
             >
-             Designed for Today. Built for Tomorrow.
+              Designed for Today. Built for Tomorrow.
             </p>
-            <p style={{ color: "#707070", lineHeight: "1.5" }}>Discover our ongoing, completed, and upcoming projects across Bengaluru’s most promising neighbourhoods. <br/>Every Mythri community combines architectural excellence, connectivity, and contemporary living, ensuring your investment grows in comfort and value.
+            <p style={{ color: "#707070", lineHeight: "1.5" }}>Discover our ongoing, completed, and upcoming projects across Bengaluru’s most promising neighbourhoods. <br />Every Mythri community combines architectural excellence, connectivity, and contemporary living, ensuring <br />your investment grows in comfort and value.
 
 
             </p>
@@ -62,7 +62,7 @@ const QualityBlock = () => {
                         marginTop: "-8px",
                       }}
                     >
-                       PROJECTS
+                      PROJECTS
 
                     </p>
                   </div>
@@ -77,7 +77,7 @@ const QualityBlock = () => {
                       data-to="10"
                       data-speed="1500"
                     >
-                     4
+                      4
                     </h2>
                   </div>
                   <div className="count2">
@@ -153,12 +153,12 @@ const QualityBlock = () => {
                     <p>TEAM </p>
                     <p
                       style={{
-                       fontSize: "15px",
+                        fontSize: "15px",
                         letterSpacing: "2px",
                         marginTop: "-8px",
                       }}
                     >
-                       MEMBERS
+                      MEMBERS
                     </p>
                   </div>
                 </div>

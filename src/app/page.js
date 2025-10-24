@@ -102,7 +102,7 @@ export default function Home() {
             >
               {/* Background Image */}
               <Image
-                src="/images/home.webp"
+                src="/images/Banner_Mythri.webp"
                 alt="banner"
                 fill
                 priority
@@ -121,11 +121,11 @@ export default function Home() {
               <div className="container position-relative z-2">
                 <div className="d-flex flex-column my-md-0 my-5 py-md-0 py-4 align-items-center">
                   <div>
-                    <h1 className="display-4 fw-bold mb-3 w-100 text-center">
+                    <h1 className="display-4 fw-bold mb-3 w-100 text-center bannertext">
                       Mythri Builders <br /> Crafting Landmarks, Building Trust
                     </h1>
 
-                    <p className="mb-4 lead text-center w-100 text-light">
+                    <p className="mb-4 lead text-center w-100 text-light d-none">
                       Building Bengaluru’s future through thoughtful design and uncompromising quality.
                     </p>
                   </div>
@@ -146,10 +146,7 @@ export default function Home() {
                   <h2 className="mb-0 theme-color-dark">The Art of Living, Perfected Through Architecture.</h2>
                   <p className="mt-4 theme-color-dark">
                     At Mythri Builders, every home begins with a vision - a vision to create spaces where design meets purpose, and trust meets craftsmanship.<br />Since 2019, we’ve shaped Bengaluru’s skyline through developments that merge affordable luxury, sustainable design, and architectural precision.
-                    With 800+ apartments built over 10 acres, Mythri Builders stands among the Top Builders in Bangalore, celebrating transparency, punctuality, and people-first approach.<br /> <br />Because a home isn’t just built - it’s carefully crafted for life.
-
-
-                  </p>
+                    With 800+ apartments built over 10 acres, Mythri Builders stands among the Top Builders in Bangalore, celebrating transparency, punctuality, and people-first approach.<br /> <br />Because a home isn’t just built - it’s carefully crafted for life.</p>
                   <div className="text-center">
                     <Link
                       href="/"

@@ -72,8 +72,8 @@
   --bs-dark-border-subtle: #adb5bd;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
- --bs-font-sans-serif: "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
---bs-font-monospace: "JetBrains Mono", "Fira Code", Menlo, Monaco, Consolas, monospace;
+  --bs-font-sans-serif: "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --bs-font-monospace: "JetBrains Mono", "Fira Code", Menlo, Monaco, Consolas, monospace;
 
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -13938,7 +13938,7 @@ html {
 :root {
   --primary-color: #ffffff;
   --secondary-color: #0a1927;
-  --accent-color: #0a1927 ;
+  --accent-color: #0a1927;
   --green-bg: #0C5F17;
 }
 
@@ -15149,7 +15149,7 @@ h2 {
   border-radius: 20px;
   text-align: left;
   transition: 0.3s;
-  min-height: 250px;
+  min-height: 300px;
   display: flex;
   align-items: center;
 }
@@ -19334,7 +19334,7 @@ section h2 {
     padding: 50px 0px !important;
   }
 
-   .section-remove {
+  .section-remove {
     padding: 0px 0px !important;
   }
 
@@ -19405,26 +19405,30 @@ footer textarea::placeholder {
 }
 
 .core-values-section {
-  background: #f0f2f7; /* lighter neutral to match navy theme */
+  background: #f0f2f7;
+  /* lighter neutral to match navy theme */
 }
 
 .core-value-card {
   background: #ffffff;
   border-radius: 20px;
   padding: 30px 20px;
-  box-shadow: 0 10px 25px rgba(0, 0, 50, 0.08); /* subtle navy shadow */
+  box-shadow: 0 10px 25px rgba(0, 0, 50, 0.08);
+  /* subtle navy shadow */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .core-value-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 35px rgba(0, 0, 80, 0.2); /* stronger navy shadow on hover */
+  box-shadow: 0 15px 35px rgba(0, 0, 80, 0.2);
+  /* stronger navy shadow on hover */
 }
 
 .icon-circle {
   width: 100px;
   height: 100px;
-  background: linear-gradient(135deg, #001f4d, #003366); /* navy blue gradient */
+  background: linear-gradient(135deg, #001f4d, #003366);
+  /* navy blue gradient */
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -19432,24 +19436,29 @@ footer textarea::placeholder {
 }
 
 .icon-circle img {
-  width: 50%; /* adjust as needed */
+  width: 50%;
+  /* adjust as needed */
   height: auto;
-  filter: invert(1) brightness(2); /* make colored icons appear white */
+  filter: invert(1) brightness(2);
+  /* make colored icons appear white */
   display: block;
 }
 
 
 .text-shadow {
-  text-shadow: 0 2px 10px rgba(0, 0, 50, 0.7); /* navy shadow for text */
+  text-shadow: 0 2px 10px rgba(0, 0, 50, 0.7);
+  /* navy shadow for text */
 }
 
 .bg-gradient-to-b {
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 31, 77, 0.2),   /* light navy */
-    rgba(0, 51, 102, 0.5),  /* medium navy */
-    rgba(0, 31, 77, 0.8)    /* dark navy */
-  );
+  background: linear-gradient(to bottom,
+      rgba(0, 31, 77, 0.2),
+      /* light navy */
+      rgba(0, 51, 102, 0.5),
+      /* medium navy */
+      rgba(0, 31, 77, 0.8)
+      /* dark navy */
+    );
 }
 
 .footer-section {
@@ -19468,8 +19477,8 @@ footer textarea::placeholder {
   background-repeat: no-repeat;
 
   /* Zoom and position control */
-  background-size: 160% auto; 
-  background-position: center 20px; 
+  background-size: 160% auto;
+  background-position: center 20px;
 
   color: transparent;
   background-clip: text;
@@ -19511,18 +19520,20 @@ footer textarea::placeholder {
 }
 
 .footer-section-2 {
-  background-image: url('/images/Footer.png');
+  background-image: url('/images/Footer.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
   color: #fff;
-  min-height: 100vh; /* full height footer background */
+  min-height: 80vh;
+  /* full height footer background */
 }
 
 /* ====== Mobile Responsive ====== */
 @media (max-width: 768px) {
   .footer-section {
-    min-height: 1300px; /* Reduce height on mobile */
+    min-height: 1300px;
+    /* Reduce height on mobile */
     padding: 30px 15px;
   }
 
@@ -19545,6 +19556,7 @@ footer textarea::placeholder {
     font-size: 20px;
   }
 }
+
 /* ///header  starts here*/
 
 
@@ -20020,5 +20032,35 @@ nav.navbar-expand-lg.navbar-dark.bg-dark.fixed-top.scrolled {
   }
 
 }
+
+.bannertext {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -350px;
+}
+
+.project-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* 2 columns */
+  gap: 6px 25px;
+  margin-top: 12px;
+}
+
+.project-info-grid p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .project-info-grid {
+    grid-template-columns: 1fr;
+    /* single column on mobile */
+  }
+}
+
 
 /* ///header ends */

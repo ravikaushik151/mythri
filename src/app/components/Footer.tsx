@@ -7,14 +7,14 @@ export default function Footer() {
   return (
     <footer
       className="footer-section position-relative footer-section-2"
-     
+
     >
       {/* Title Section */}
       <div className="text-center position-relative bg-white pt-5">
         <h1
           className="kalyani-title"
           style={{
-            backgroundImage: "url('/images/Footer.png')",
+            backgroundImage: "url('/images/Footer.webp')",
           }}
         >
           Mythri Builders
@@ -23,9 +23,9 @@ export default function Footer() {
 
       {/* Footer Content (bottom aligned and centered) */}
       <div className="container position-absolute bottom-0 start-50 translate-middle-x">
-        <div className="row g-4 text-white text-center text-md-start">
+        <div className="row g-4 text-white text-center text-md-start justify-content-center">
           {/* Logo & Address */}
-          <div className="col-md-4">
+          <div className="col-md-3">
             <Link href="/">
               <Image
                 src="/images/logo-dark.webp"
