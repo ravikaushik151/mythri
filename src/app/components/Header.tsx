@@ -28,7 +28,7 @@ export default function Navbar() {
               alt="Mana Projects logo"
               width={100}
               height={40}
-              className="mb-3 white-png logo img-fluid"
+              className="white-png logo img-fluid"
               priority
             />
           </Link>

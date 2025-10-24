@@ -77,10 +77,6 @@ export default function Footer() {
           {/* Contact Form */}
           <div className="col-md-6">
             <h4 className="footer-title">Get in Touch</h4>
-            <p>
-              Have queries or ready to take the next step? Reach out and let’s
-              craft your dream home together.
-            </p>
             <ContactForm
               inputClass="footer-input rounded-0 mb-2"
               buttonClass="btn btn-light text-dark w-100"

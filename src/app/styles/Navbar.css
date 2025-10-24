@@ -10,15 +10,20 @@
 
 .main-navbar.sticky {
   background: transparent;
-  
+
 }
 
 .navbar-wrapper {
   display: flex;
-  justify-content: space-between; /* Logo left, hamburger right */
+  justify-content: space-between;
+  /* Logo left, hamburger right */
   align-items: center;
-  padding: 25px 50px;
+  padding: 0px 50px;
   position: relative;
+}
+
+.main-navbar.sticky .navbar-wrapper {
+  background-color: rgba(0, 0, 0, 0.59);
 }
 
 /* Logo */
@@ -42,7 +47,7 @@
   left: 0;
   height: 0%;
   width: 100%;
-  background: rgba(0,0,0,0.95);
+  background: rgba(0, 0, 0, 0.95);
   overflow: hidden;
   opacity: 0;
   visibility: hidden;
@@ -88,8 +93,9 @@
   .overlay-menu li a {
     font-size: 20px;
   }
+
   .navbar-wrapper {
-  padding: 15px 20px !important;
-}
+    padding: 15px 20px !important;
+  }
 
 }
