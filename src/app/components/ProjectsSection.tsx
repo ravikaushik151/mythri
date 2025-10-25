@@ -91,27 +91,33 @@ const ProjectsSection = () => {
               </div>
             </div>
             <figure>
-              <h4 className="">
-                {project.title}
-              </h4>
-              <figcaption>{project.description}</figcaption>
-              <div className="project-info-grid">
-                <p><strong>Location:</strong> {project.location}</p>
-                <p><strong>Project Type:</strong> {project.projectType}</p>
-                <p><strong>Configuration:</strong> {project.configuration}</p>
-                <p><strong>Units:</strong> {project.numberOfUnits}</p>
-                <p><strong>Status:</strong> {project.status}</p>
-                <p><strong>Possession:</strong> {project.possession}</p>
-              </div>
-
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white text-decoration-none"
+              >
+                <h4 className="">
+                  {project.title}
+                </h4>
+                <figcaption>{project.description}</figcaption>
+                <div className="project-info-grid text-white">
+                  <p><strong>Location:</strong> {project.location}</p>
+                  <p><strong>Project Type:</strong> {project.projectType}</p>
+                  <p><strong>Configuration:</strong> {project.configuration}</p>
+                  <p><strong>Units:</strong> {project.numberOfUnits}</p>
+                  <p><strong>Status:</strong> {project.status}</p>
+                  <p><strong>Possession:</strong> {project.possession}</p>
+                </div>
+              </a>
             </figure>
-            <a
+            {/*<a
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
             >
               Anchor link
-            </a>
+            </a>*/}
           </li>
         ))}
 
