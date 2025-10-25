@@ -64,7 +64,7 @@ const ProjectsSection = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   return (
-    <section className="stretcher-wrapper">
+    <section className="stretcher-wrapper d-md-block d-none">
       <div className="container">
         <div className="row">
           <div className="col-sm-12">

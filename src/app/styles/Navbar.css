@@ -87,7 +87,7 @@
 /* Responsive adjustments */
 @media (max-width: 992px) {
   .logo-box img {
-    width: 100px;
+    width: 70px;
   }
 
   .overlay-menu li a {
@@ -95,7 +95,7 @@
   }
 
   .navbar-wrapper {
-    padding: 15px 20px !important;
+    padding: 5px 20px !important;
   }
 
 }

@@ -1,11 +1,26 @@
-.quality-block {
-    background-size: cover;
-    height: 100vh;
-    background-position: center;
-    /* background-attachment: fixed; */
-    position: relative;
-    z-index: 1;
-    padding: 4.3rem;
+@media only screen and (max-width:768px) {
+    .quality-block {
+        background-size: cover;
+        height: 85vh;
+        background-position: center;
+        /* background-attachment: fixed; */
+        position: relative;
+        z-index: 1;
+        padding: 4.3rem;
+        background-image: none !important;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .quality-block {
+        background-size: cover;
+        height: 100vh;
+        background-position: center;
+        /* background-attachment: fixed; */
+        position: relative;
+        z-index: 1;
+        padding: 4.3rem;
+    }
 }
 
 .quality-block .parallax-content {
@@ -16,6 +31,7 @@
 .quality-block h1 {
     padding-bottom: 32px;
 }
+
 .countpara {
     display: flex;
     justify-content: flex-start;

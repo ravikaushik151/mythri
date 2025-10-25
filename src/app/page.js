@@ -94,31 +94,45 @@ export default function Home() {
     <>
       <main className="main-wrapper">
         <div className="overflow-clip">
-          {/* <HomeHeroSlider /> */}
           <div className="overflow-hidden position-relative">
             <div
               className="position-relative text-white d-flex align-items-md-center align-items-end"
-              style={{ height: '100vh' }}
+              style={{ height: "100vh" }}
             >
-              {/* Background Image */}
-              <Image
-                src="/images/Banner_Mythri.webp"
-                alt="banner"
-                fill
-                priority
-                fetchPriority="high"
-                sizes="100vw"
-                className="object-cover z-0"
-              />
+              {/* Desktop Banner */}
+              <div className="d-none d-md-block">
+                <Image
+                  src="/images/desk_banner.webp"
+                  alt="desktop banner"
+                  fill
+                  priority
+                  fetchPriority="high"
+                  sizes="100vw"
+                  className="object-cover z-0"
+                />
+              </div>
 
-              {/* Black overlay with 0.5 opacity */}
+              {/* Mobile Banner */}
+              <div className="d-block d-md-none">
+                <Image
+                  src="/images/mobile_banner.webp"
+                  alt="mobile banner"
+                  fill
+                  priority
+                  fetchPriority="high"
+                  sizes="100vw"
+                  className="object-cover z-0"
+                />
+              </div>
+
+              {/* Black overlay */}
               <div
                 className="position-absolute top-0 start-0 w-100 h-100"
-                style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)', zIndex: 1 }}
+              /* style={{ backgroundColor: "rgba(0, 0, 0, 0.5)", zIndex: 1 }}*/
               ></div>
 
               {/* Foreground content */}
-              <div className="container position-relative z-2">
+              <div className="container position-relative z-2 d-none">
                 <div className="d-flex flex-column my-md-0 my-5 py-md-0 py-4 align-items-center">
                   <div>
                     <h1 className="display-4 fw-bold mb-3 w-100 text-center bannertext">
@@ -129,15 +143,16 @@ export default function Home() {
                       Building Bengaluru’s future through thoughtful design and uncompromising quality.
                     </p>
                   </div>
+                  {/* Button example */}
                   {/* <Link href="#" className="btn btn-outline-light px-4 py-2 mt-3 text-center text-dark theme-bg-light border-dark">
-          Explore Our Projects
-        </Link> */}
+            Explore Our Projects
+          </Link> */}
                 </div>
               </div>
             </div>
           </div>
-
         </div>
+
         <div id="scroll-more">
           <section className="section-remove px-md-5 theme-bg-light homehome"  >
             <div className="container">

@@ -1,5 +1,10 @@
 "use client";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 const coreValues = [
   {
@@ -39,28 +44,61 @@ export default function CoreValuesGrid() {
     <section className="core-values-section py-5">
       <div className="container">
         <div className="text-center mb-5">
-          <h2 className="fw-bold theme-color-dark"> Mythri Builders Core Values</h2>
-          <p className="text-muted text-center fs-4">Our principles define who we are and how we work.</p>
+          <h2 className="fw-bold theme-color-dark">Mythri Builders Core Values</h2>
+          <p className="text-muted text-center fs-4">
+            Our principles define who we are and how we work.
+          </p>
         </div>
 
-        <div className="row g-4">
-          {coreValues.map((item, index) => (
-            <div key={index} className="col-12 col-md-6 col-lg-4">
-              <div className="core-value-card position-relative p-4 text-center h-100">
-                <div className="icon-circle mb-3 mx-auto">
-                  <Image
-                    src={item.img}
-                    alt={item.title}
-                    width={80}
-                    height={80}
-                    className="img-fluid"
-                  />
+        {/* Desktop Grid */}
+        <div className="d-none d-md-block">
+          <div className="row g-4">
+            {coreValues.map((item, index) => (
+              <div key={index} className="col-12 col-md-6 col-lg-4">
+                <div className="core-value-card position-relative p-4 text-center h-100">
+                  <div className="icon-circle mb-3 mx-auto">
+                    <Image
+                      src={item.img}
+                      alt={item.title}
+                      width={80}
+                      height={80}
+                      className="img-fluid"
+                    />
+                  </div>
+                  <h5 className="fw-bold mb-2">{item.title}</h5>
+                  <p className="text-muted text-center">{item.text}</p>
                 </div>
-                <h5 className="fw-bold mb-2">{item.title}</h5>
-                <p className="text-muted text-center">{item.text}</p>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+        </div>
+
+        {/* Mobile Slider */}
+        <div className="d-md-none">
+          <Swiper
+            modules={[Pagination, Navigation]}
+            spaceBetween={20}
+            slidesPerView={1}
+            pagination={{ clickable: true }}
+          >
+            {coreValues.map((item, index) => (
+              <SwiperSlide key={index}>
+                <div className="core-value-card position-relative p-4 text-center h-100">
+                  <div className="icon-circle mb-3 mx-auto">
+                    <Image
+                      src={item.img}
+                      alt={item.title}
+                      width={80}
+                      height={80}
+                      className="img-fluid"
+                    />
+                  </div>
+                  <h5 className="fw-bold mb-2">{item.title}</h5>
+                  <p className="text-muted text-center">{item.text}</p>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </section>

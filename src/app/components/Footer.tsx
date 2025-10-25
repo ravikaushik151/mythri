@@ -10,7 +10,7 @@ export default function Footer() {
 
     >
       {/* Title Section */}
-      <div className="text-center position-relative bg-white pt-5">
+      <div className="text-center position-relative bg-white pt-md-5">
         <h1
           className="kalyani-title"
           style={{

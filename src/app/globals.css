@@ -301,7 +301,6 @@ h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
-  text-align: justify;
 }
 
 abbr[title] {
@@ -19335,7 +19334,7 @@ section h2 {
   }
 
   .section-remove {
-    padding: 0px 0px !important;
+    padding: 60px 0px 0px 0px !important;
   }
 
 
@@ -19348,7 +19347,7 @@ section h2 {
     font-display: swap !important;
     margin-bottom: 40px !important;
     line-height: 1.25 !important;
-    margin-top: 50px !important;
+    margin-top: 5px !important;
   }
 
   .blog-main-page {
@@ -19532,7 +19531,7 @@ footer textarea::placeholder {
 /* ====== Mobile Responsive ====== */
 @media (max-width: 768px) {
   .footer-section {
-    min-height: 1300px;
+    min-height: 1200px;
     /* Reduce height on mobile */
     padding: 30px 15px;
   }
