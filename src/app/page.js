@@ -187,7 +187,7 @@ export default function Home() {
               src="/images/home-about.png"
               width={1000}
               height={750}
-              className="img-fluid w-100 d-md-none p-0 mb-0 mt-3"
+              className="img-fluid w-100 d-none p-0 mb-0 mt-3"
               priority
               fetchPriority="high"
             />
