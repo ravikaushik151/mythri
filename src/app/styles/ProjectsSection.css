@@ -33,18 +33,40 @@
     padding: 0
 }
 
-.stretcher-wrapper .stretcher .stretcher-item {
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    display: block;
-    width: 100%;
-    height: 40vh;
-    overflow: hidden;
-    -moz-transition: width .5s;
-    -o-transition: width .5s;
-    -webkit-transition: width .5s;
-    transition: width .5s
+@media (max-width:768px) {
+
+    .stretcher-wrapper .stretcher .stretcher-item {
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        display: block;
+        width: 100%;
+        height: 48vh;
+        overflow: hidden;
+        -moz-transition: width .5s;
+        -o-transition: width .5s;
+        -webkit-transition: width .5s;
+        transition: width .5s
+    }
+
+}
+
+@media (min-width:768px) {
+
+    .stretcher-wrapper .stretcher .stretcher-item {
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        display: block;
+        width: 100%;
+        height: 40vh;
+        overflow: hidden;
+        -moz-transition: width .5s;
+        -o-transition: width .5s;
+        -webkit-transition: width .5s;
+        transition: width .5s
+    }
+
 }
 
 .stretcher-wrapper .stretcher .stretcher-item>a {
@@ -92,7 +114,8 @@
     transform: translate(-50%, -50%)
 }
 
-.stretcher-wrapper .stretcher .stretcher-item.more .more-icon, .stretcher-wrapper .stretcher .stretcher-item.more .more-icon span {
+.stretcher-wrapper .stretcher .stretcher-item.more .more-icon,
+.stretcher-wrapper .stretcher .stretcher-item.more .more-icon span {
     -moz-transition: all .5s;
     -o-transition: all .5s;
     -webkit-transition: all .5s;
@@ -103,7 +126,8 @@
     display: inline-block
 }
 
-.stretcher-wrapper .stretcher .stretcher-item.more .more-icon span:before, .stretcher-wrapper .stretcher .stretcher-item.more .more-icon span:after {
+.stretcher-wrapper .stretcher .stretcher-item.more .more-icon span:before,
+.stretcher-wrapper .stretcher .stretcher-item.more .more-icon span:after {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -148,7 +172,8 @@
     display: none
 }
 
-.stretcher-wrapper .stretcher .stretcher-item:hover figure, .stretcher-wrapper .stretcher .stretcher-item.active figure {
+.stretcher-wrapper .stretcher .stretcher-item:hover figure,
+.stretcher-wrapper .stretcher .stretcher-item.active figure {
     display: block;
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
@@ -159,7 +184,9 @@
 }
 
 @media(min-width: 992px) {
-    .stretcher-wrapper .stretcher .stretcher-item.more, .stretcher-wrapper .stretcher .stretcher-item.more.inactive {
+
+    .stretcher-wrapper .stretcher .stretcher-item.more,
+    .stretcher-wrapper .stretcher .stretcher-item.more.inactive {
         width: 8%
     }
 
@@ -172,7 +199,8 @@
     }
 }
 
-.stretcher-wrapper .stretcher .stretcher-item.inactive, .stretcher-wrapper .stretcher .stretcher-item.active {
+.stretcher-wrapper .stretcher .stretcher-item.inactive,
+.stretcher-wrapper .stretcher .stretcher-item.active {
     width: 100%
 }
 
@@ -206,7 +234,8 @@
     color: #fff
 }
 
-.stretcher-wrapper .stretcher .stretcher-item .stretcher-logo img, .stretcher-wrapper .stretcher .stretcher-item .stretcher-logo .text {
+.stretcher-wrapper .stretcher .stretcher-item .stretcher-logo img,
+.stretcher-wrapper .stretcher .stretcher-item .stretcher-logo .text {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -342,19 +371,20 @@
 }
 
 @keyframes fadeInUpDelayed {
-  0% {
-    opacity: 0;
-    transform: translateY(100%);
-  }
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
 
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .stretcher-wrapper .stretcher .stretcher-item:hover figure,
 .stretcher-wrapper .stretcher .stretcher-item.active figure {
-  animation: fadeInUpDelayed 1s ease forwards;
-  animation-delay: 0.3s; /* 👈 delay before showing */
+    animation: fadeInUpDelayed 1s ease forwards;
+    animation-delay: 0.3s;
+    /* 👈 delay before showing */
 }
