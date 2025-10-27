@@ -11,7 +11,8 @@ export async function generateStaticParams() {
 }
 
 export default async function BlogPost({ params }) {
-  const post = posts.find((p) => p.slug === params.slug);
+  const { slug } = await params;
+  const post = posts.find((p) => p.slug === slug);
 
   if (!post) {
     notFound();
