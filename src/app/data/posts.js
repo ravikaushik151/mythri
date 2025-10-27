@@ -18,8 +18,8 @@ export const posts = [
 
   {
     slug: "5-signs-youve-found-a-trustworthy-real-estate-developer-and-how-mythri-builders-checks-all-of-them",
-    title: "5 Signs You’ve Found a Trustworthy Real-Estate Developer (and How Mythri Builders Checks All of Them)",
-    h1: "5 Signs You’ve Found a Trustworthy Real-Estate Developer (and How Mythri Builders Checks All of Them)",
+    title: "5 Signs You’ve Found a Trustworthy Real-Estate Developer and How Mythri Builders Checks All of Them",
+    h1: "5 Signs You’ve Found a Trustworthy Real-Estate Developer and How Mythri Builders Checks All of Them",
     meta_title: "Investment Opportunities in Bangalore | Mythri Builders",
     description: "Explore the top real estate investment opportunities in Bangalore with Mythri Builders.",
     image: "/images/blog 2.webp",
