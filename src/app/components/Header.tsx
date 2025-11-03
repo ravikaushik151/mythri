@@ -49,11 +49,12 @@ export default function Navbar() {
       <div className={`nav-overlay ${isOpen ? "open" : ""}`}>
         <ul className="overlay-menu">
           <li><Link href="/" onClick={toggleMenu}>HOME</Link></li>
-          <li><Link href="/about-us/" onClick={toggleMenu}>ABOUT US</Link></li>
-          <li><Link href="/projects/" onClick={toggleMenu}>PROJECTS</Link></li>
-          <li><Link href="/collaboration/" onClick={toggleMenu}>CHANNEL PARTNER</Link></li>
-          <li><Link href="/blogs/" onClick={toggleMenu}>BLOGS</Link></li>
-          <li><Link href="/contact-us/" onClick={toggleMenu}>CONTACT US</Link></li>
+          <li><Link href="#" onClick={toggleMenu}>ABOUT US</Link></li>
+          <li><Link href="#" onClick={toggleMenu}>PROJECTS</Link></li>
+          <li><Link href="#" onClick={toggleMenu}>CHANNEL PARTNER</Link></li>
+          <li><Link href="/career" onClick={toggleMenu}>CAREER</Link></li>
+          <li><Link href="/blog" onClick={toggleMenu}>BLOGS</Link></li>
+          <li><Link href="/contact" onClick={toggleMenu}>CONTACT US</Link></li>
         </ul>
       </div>
     </nav>
