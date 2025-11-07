@@ -3,6 +3,9 @@ import EnquiryForm from "../components/Microsite/EnquiryForm";
 import AmenitiesSection from "../components/Microsite/AmenitiesSection";
 import Specifications from "../components/Microsite/Specifications";
 import LocationSection from "../components/Microsite/LocationSection";
+import AboutSection from "../components/Microsite/AboutSection";
+import FAQSection from "../components/Microsite/FAQSection";
+import ReraCertificate from "../components/Microsite/ReraCertificate";
 
 export default function MythriSankalp() {
     return (
@@ -13,8 +16,12 @@ export default function MythriSankalp() {
                     <EnquiryForm />
                 </div>
             </section>
+            <AboutSection />
             <AmenitiesSection />
             <Specifications />
+            <LocationSection />
+            <FAQSection />
+            <ReraCertificate />
         </main>
     );
 }

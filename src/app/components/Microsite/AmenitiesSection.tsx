@@ -26,8 +26,8 @@ const AmenitiesSection = () => {
         <section className="py-5 bg-white">
             <div className="container">
                 {/* Section Heading */}
-                <h3 className="text-center mb-3 fw-semibold">Amenities</h3>
-                <p className="text-center text-muted mx-auto mb-5" style={{ maxWidth: "850px" }}>
+                <h2 className="mb-3 theme-color-dark fs-2 text-center">Amenities</h2>
+                <p className="text-muted mx-auto mb-5 text-justify" style={{ maxWidth: "850px" }}>
                     Discover spaces that awaken your senses and nurture your spirit. From tranquil
                     garden retreats to flowing water features, each amenity at Mythri Sankalp invites
                     calm and connection. Meander through nature-inspired pathways, breathe deeply in

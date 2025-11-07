@@ -4,6 +4,12 @@ import { Container, Row, Col } from "react-bootstrap";
 import { GraduationCap, Bus, Building2, Stethoscope, Laugh } from "lucide-react"; // icons
 
 export default function LocationSection() {
+    const iconStyle = {
+        border: "2px solid #7a7a4d",
+        borderRadius: "0%",
+        boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
+        backgroundColor: "#fff",
+    };
     return (
         <section className="py-5 bg-white text-dark">
             <Container>
@@ -11,13 +17,10 @@ export default function LocationSection() {
                     <Col md={6}>
                         {/* Heading */}
                         <div className="text-center mb-5">
-                            <small className="text-uppercase text-muted fw-semibold letter-spacing-1">
-                                Location
+                            <h2 className="mb-3 theme-color-dark fs-2 text-center"> Location</h2>
+                            <small className="text-uppercase text-muted fw-semibold letter-spacing-1" style={{ color: "#4a4a2f" }} > Let the senses breathe in balance
                             </small>
-                            <h2 className="display-6 fw-bold mt-2" style={{ color: "#4a4a2f" }}>
-                                Let the senses breathe in balance
-                            </h2>
-                            <p className="mt-3 text-secondary" style={{ maxWidth: "700px", margin: "0 auto" }}>
+                            <p className="mt-3 text-secondary text-justify" style={{ maxWidth: "700px", margin: "0 auto" }}>
                                 Nestled in the heart of Lohegaon, Nestterra by TRIAA, one of the new projects in
                                 Lohegaon, offers a serene escape without sacrificing connectivity. Surrounded by lush
                                 greenery and natural calm, it provides effortless access to key city hubs. Here,
@@ -31,7 +34,9 @@ export default function LocationSection() {
                     {/* Workplaces */}
                     <Col md={3}>
                         <div className="text-center">
-                            <Building2 size={40} color="#7a7a4d" className="mb-3" />
+                            <div className="d-inline-block mb-3 location-icon" style={iconStyle}>
+                                <Building2 size={40} color="#7a7a4d" />
+                            </div>
                             <h5 className="fw-bold mb-2" style={{ color: "#4a4a2f" }}>Workplaces</h5>
                             <ul className="list-unstyled text-secondary small text-start d-inline-block">
                                 <li>Tech Park One – 7.9 Km</li>
@@ -46,7 +51,9 @@ export default function LocationSection() {
                     {/* Hospitals */}
                     <Col md={3}>
                         <div className="text-center">
-                            <Stethoscope size={40} color="#7a7a4d" className="mb-3" />
+                            <div className="d-inline-block mb-3 location-icon" style={iconStyle}>
+                                <Stethoscope size={40} color="#7a7a4d" className="mb-3" />
+                            </div>
                             <h5 className="fw-bold mb-2" style={{ color: "#4a4a2f" }}>Hospitals</h5>
                             <ul className="list-unstyled text-secondary small text-start d-inline-block">
                                 <li>Orchid Specialty Hospital – 1.8 Km</li>
@@ -60,7 +67,9 @@ export default function LocationSection() {
                     {/* Schools */}
                     <Col md={3}>
                         <div className="text-center">
-                            <GraduationCap size={40} color="#7a7a4d" className="mb-3" />
+                            <div className="d-inline-block mb-3 location-icon" style={iconStyle}>
+                                <GraduationCap size={40} color="#7a7a4d" className="mb-3" />
+                            </div>
                             <h5 className="fw-bold mb-2" style={{ color: "#4a4a2f" }}>Schools</h5>
                             <ul className="list-unstyled text-secondary small text-start d-inline-block">
                                 <li>Dr. Mar Theophilus School – 2.1 Km</li>
@@ -75,7 +84,9 @@ export default function LocationSection() {
                     {/* Transportation */}
                     <Col md={3}>
                         <div className="text-center">
-                            <Bus size={40} color="#7a7a4d" className="mb-3" />
+                            <div className="d-inline-block mb-3 location-icon" style={iconStyle}>
+                                <Bus size={40} color="#7a7a4d" className="mb-3" />
+                            </div>
                             <h5 className="fw-bold mb-2" style={{ color: "#4a4a2f" }}>Transportation</h5>
                             <ul className="list-unstyled text-secondary small text-start d-inline-block">
                                 <li>Pune International Airport – 5 Km</li>
@@ -89,7 +100,9 @@ export default function LocationSection() {
                     {/* Entertainment */}
                     <Col md={3}>
                         <div className="text-center">
-                            <Laugh size={40} color="#7a7a4d" className="mb-3" />
+                            <div className="d-inline-block mb-3 location-icon" style={iconStyle}>
+                                <Laugh size={40} color="#7a7a4d" className="mb-3" />
+                            </div>
                             <h5 className="fw-bold mb-2" style={{ color: "#4a4a2f" }}>Entertainment</h5>
                             <ul className="list-unstyled text-secondary small text-start d-inline-block">
                                 <li>Dmart Ready – 900 M</li>
@@ -101,6 +114,6 @@ export default function LocationSection() {
                     </Col>
                 </Row>
             </Container>
-        </section>
+        </section >
     );
 }
