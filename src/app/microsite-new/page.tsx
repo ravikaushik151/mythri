@@ -33,7 +33,7 @@ export default function MicoristePage() {
                             alt="First slide"
                             style={{ height: "80vh", objectFit: "cover" }}
                         />
-                        <Carousel.Caption>
+                        <Carousel.Caption className="d-none">
                             <h3>Welcome to Our Project</h3>
                             <p>Discover luxury living like never before.</p>
                         </Carousel.Caption>
@@ -46,7 +46,7 @@ export default function MicoristePage() {
                             alt="Second slide"
                             style={{ height: "80vh", objectFit: "cover" }}
                         />
-                        <Carousel.Caption>
+                        <Carousel.Caption className="d-none">
                             <h3>Your Dream Home Awaits</h3>
                             <p>Schedule a visit today and experience excellence.</p>
                         </Carousel.Caption>
