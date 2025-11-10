@@ -19827,4 +19827,8 @@ nav.navbar-expand-lg.navbar-dark.bg-dark.fixed-top.scrolled {
   border-right-color: #0a1927 !important;
 }
 
+.location p {
+  color: #585858;
+}
+
 /* ///header ends */

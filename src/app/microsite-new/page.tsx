@@ -26,33 +26,31 @@ export default function MicoristePage() {
             {/* ===== Banner Section ===== */}
             <section className="p-0">
                 <Carousel fade interval={3000}>
+                    {/* === Slide 1 === */}
                     <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src="/images/banner1.jpg"
-                            alt="First slide"
-                            style={{ height: "80vh", objectFit: "cover" }}
-                        />
+                        <picture>
+                            {/* Mobile Image */}
+                            <source
+                                media="(max-width: 767px)"
+                                srcSet="/images/mobile banner_sankalp.webp"
+                            />
+                            {/* Desktop Image */}
+                            <img
+                                className="d-block w-100"
+                                src="/images/Website banner_sankalp.webp"
+                                alt="First slide"
+                                style={{ height: "80vh", objectFit: "cover" }}
+                            />
+                        </picture>
+
                         <Carousel.Caption className="d-none">
                             <h3>Welcome to Our Project</h3>
                             <p>Discover luxury living like never before.</p>
                         </Carousel.Caption>
                     </Carousel.Item>
-
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src="/images/banner1.jpg"
-                            alt="Second slide"
-                            style={{ height: "80vh", objectFit: "cover" }}
-                        />
-                        <Carousel.Caption className="d-none">
-                            <h3>Your Dream Home Awaits</h3>
-                            <p>Schedule a visit today and experience excellence.</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
                 </Carousel>
             </section>
+
 
             {/* ===== Schedule Visit Section ===== */}
             <section data-aos="fade-up"
@@ -144,11 +142,19 @@ export default function MicoristePage() {
                             fontFamily: "'Cormorant Garamond', serif",
                         }}
                     >
-                        Tucked away in the tranquil Nandi Hills, The Earth Homes offer a retreat
-                        from the ordinary. Designed for a slower, more fulfilling life, they
-                        provide the space to pause, reconnect, and truly live. Here, every
-                        moment feels intentional, whether spent in nature, with loved ones, or
-                        simply enjoying the quiet.
+                        Tucked away in the serene enclave of KR Puram, Mythri Sankalp is where Roman-inspired architecture meets modern city living. Designed for those who value elegance and practicality, it offers a calm retreat amidst Bengaluru’s bustling energy.
+                    </p>
+                    <p
+                        className="mx-auto mt-3"
+                        style={{
+                            maxWidth: "700px",
+                            fontSize: "19px",
+                            color: "#585858",
+                            lineHeight: "1.8",
+                            fontFamily: "'Cormorant Garamond', serif",
+                        }}
+                    >
+                        Every residence is crafted to balance aesthetics with functionality - where natural light, ventilation, and thoughtful design redefine everyday comfort. Here, life flows seamlessly between family, community, and tranquility.
                     </p>
 
                     {/* ===== Info Row ===== */}
@@ -161,20 +167,19 @@ export default function MicoristePage() {
                     >
                         <Col md={3} sm={6} xs={12} className="mb-3">
                             <h3 className="mb-md-0 mb-4 microsite-about">
-                                Duplex 2BHK <br />
-                                Holiday Homes
+                                2 & 3 BHK <br /> Premium Homes
                             </h3>
                         </Col>
 
                         <Col md={3} sm={6} xs={12} className="mb-3 border-start border-end">
                             <h3 className="mb-md-0 mb-4 microsite-about">
-                                30 Mins to Airport <br /> 18 Min to Foxconn
+                                KR Puram <br /> Bengaluru
                             </h3>
                         </Col>
 
                         <Col md={3} sm={6} xs={12} className="mb-3">
                             <h3 className="mb-0 microsite-about">
-                                Nordic Design with <br /> 1600 + SFT Built-up
+                                35Lifestyle <br /> Amenities
                             </h3>
                         </Col>
                     </Row>
@@ -202,7 +207,8 @@ export default function MicoristePage() {
                             lineHeight: "1.8",
                             fontFamily: "'Cormorant Garamond', serif",
                         }}
-                    >To truly complement this landscape, we turned to Nordic architecture—defined by its simplicity, warmth, and harmony with nature. Expansive windows frame the hills, open layouts invite natural light, and every element is designed to enhance the connection between indoor comfort and the beauty of the outdoors.</p>
+                    >Arched balconies, clean facades, and well-ventilated layouts bring classical beauty into a modern context. <br /> Every home is designed to maximize natural light and airflow, creating a seamless blend of architectural artistry and everyday comfort.
+                    </p>
                 </Container>
 
                 {/* ===== Google Font ===== */}
@@ -236,7 +242,7 @@ export default function MicoristePage() {
                             color: "#585858",
                             lineHeight: "1.8",
                         }}>
-                        Life at The Earth Homes
+                        The Art of Thoughtful Amenity
                     </h3>
 
                     {/* Row 1: Text left, Image right */}
@@ -252,11 +258,9 @@ export default function MicoristePage() {
                                     width: "90%",
                                 }}
                             >
-                                Mornings begin with fresh air and open views, whether it’s a walk through the gardens
-                                or coffee on the balcony. As the day unfolds, there’s something for every mood—swim in
-                                the pool, challenge friends to a game of tennis or badminton, or fire up the grill for
-                                a relaxed afternoon barbecue. Whether you seek movement, connection, or quiet moments,
-                                the amenities are designed to make every day effortless and fulfilling.
+                                Every space at Mythri Sankalp is crafted to enrich daily life - blending relaxation, recreation, and community together. <br />
+                                From quiet corners to active zones, discover amenities designed for both peace and play.
+
                             </p>
                         </div>
                         <div className="col-md-6 text-center p-0">
@@ -294,58 +298,21 @@ export default function MicoristePage() {
 
                                     <div className="col-md-6 col-6 px-md-5">
                                         <ul className="list-unstyled">
-                                            <li>
-                                                <span>State of the Art Club House</span>
-                                            </li>
-                                            <li>
-                                                <span>Basketball</span>
-                                            </li>
-                                            <li>
-                                                <span>Futsal Court</span>
-                                            </li>
-                                            <li>
-                                                <span>Tennis Court</span>
-                                            </li>
-                                            <li>
-                                                <span>Pickleball Court</span>
-                                            </li>
-                                            <li>
-                                                <span>Landscaped Parks</span>
-                                            </li>
-                                            <li>
-                                                <span>Kids Play Area</span>
-                                            </li>
-                                            <li>
-                                                <span>Creche</span>
-                                            </li>
+                                            <li>Grand Clubhouse</li>
+                                            <li>Indoor Games</li>
+                                            <li>Swimming Pool &amp; Kid&rsquo;s Pool</li>
+                                            <li>Gym &amp; Yoga Studio</li>
+                                            <li>Landscaped Gardens &amp; Walking Paths</li>
+                                            <li>Amphitheatre &amp; Open Party Lawn</li>
                                         </ul>
                                     </div>
                                     <div className="col-md-6 col-6 px-md-5">
                                         <ul className="list-unstyled">
-                                            <li>
-                                                <span>Swimming Pool</span>
-                                            </li>
-                                            <li>
-                                                <span>Indoor Baminton Courts</span>
-                                            </li>
-                                            <li>
-                                                <span>Gaming Room</span>
-                                            </li>
-                                            <li>
-                                                <span>Gym &amp; Yoga Room</span>
-                                            </li>
-                                            <li>
-                                                <span>Amphitheatre</span>
-                                            </li>
-                                            <li>
-                                                <span>Cafe</span>
-                                            </li>
-                                            <li>
-                                                <span>Banquet Hall</span>
-                                            </li>
-                                            <li>
-                                                <span>Banquet Hall</span>
-                                            </li>
+                                            <li>Children&rsquo;s Play Area</li>
+                                            <li>Multi-purpose Sports Court</li>
+                                            <li>Senior Citizens&rsquo; Seating Zone</li>
+                                            <li>24&times;7 Security &amp; CCTV Surveillance</li>
+                                            <li>Power Backup &amp; Rainwater Harvesting</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -361,7 +328,9 @@ export default function MicoristePage() {
                                     color: "#585858",
                                     lineHeight: "1.8",
                                 }}
-                            >As evening sets in, the spaces come alive in a different way. Unwind on the veranda with a book, take a stroll through the landscaped parks, or gather with friends for a quiet dinner under the stars. </p>
+                            >Every corner at Mythri Sankalp is designed with purpose and poise.
+                                Grand entrances welcome you with timeless elegance, landscaped courtyards breathe serenity into your routine, and airy balconies invite the outdoors into your home. <br />
+                                Whether it’s a quiet morning yoga session, an evening by the pool, or quality time with loved ones - these amenity spaces adapt beautifully to every mood, every moment, and every version of your day.</p>
                         </div>
                     </div>
                 </div>
@@ -503,7 +472,7 @@ export default function MicoristePage() {
                     </Modal>
                 </div>
             </section>
-            <section data-aos="fade-up"
+            <section className="location" data-aos="fade-up"
                 data-aos-delay="200"
                 style={{ backgroundColor: "#f7f2eb", padding: "80px 0", fontFamily: "'Cormorant Garamond', serif", }}
             >
@@ -544,65 +513,85 @@ export default function MicoristePage() {
                         </div>
 
                         {/* Right side location list */}
-                        <div className="col-md-9">
+                        <div className="col-md-9 px-4">
                             <div
                                 className="row"
                                 style={{
                                     fontSize: "19px",
-                                    color: "#585858",
+                                    color: "#e3e3e3",
                                     lineHeight: "2",
+                                    fontFamily: "'Playfair Display', serif",
                                 }}
                             >
-                                {/* Column 1 */}
-                                <div className="col-md-3 col-sm-6 col-6">
-                                    <p className="mb-1">Nandi Hills</p>
-                                    <p className="mb-1">Mulberry Shades</p>
-                                    <p className="mb-1">Harrow International School</p>
-                                    <p className="mb-1">Foxconn</p>
-                                    <p className="mb-1">JW Marriott</p>
-                                    <p className="mb-1">Manipal Hospital Doddaballapur</p>
-                                    <p className="mb-1">STRR</p>
-                                    <p className="mb-1">Doddaballapur</p>
+                                {/* === Column 1: TECH PARKS === */}
+                                <div className="col-md-4 col-sm-6 col-12 mb-4">
+                                    <h5 style={{ color: "#c79a3a", fontWeight: "600" }}>TECH PARKS</h5>
+                                    <p className="mb-1">RMZ Infinity – <span style={{ float: "right" }}>19 Min</span></p>
+                                    <p className="mb-1">Beary’s Global Research (BCRT) <span style={{ float: "right" }}>23 Min</span></p>
+                                    <p className="mb-1">Bhoruka Technology Park <span style={{ float: "right" }}>25 Min</span></p>
+                                    <p className="mb-1">Bagmane Tech Park <span style={{ float: "right" }}>26 Min</span></p>
+                                    <p className="mb-1">Nalapad Brigade Centre <span style={{ float: "right" }}>26 Min</span></p>
+                                    <p className="mb-1">Bagmane Business Park <span style={{ float: "right" }}>26 Min</span></p>
+                                    <p className="mb-1">Manyata Tech Park <span style={{ float: "right" }}>28 Min</span></p>
+                                    <p className="mb-1">HM Tech Park <span style={{ float: "right" }}>29 Min</span></p>
+                                    <p className="mb-1">Kalyani Magnum Tech Park <span style={{ float: "right" }}>30 Min</span></p>
+                                    <p className="mb-1">International Tech Park (ITPL) <span style={{ float: "right" }}>34 Min</span></p>
                                 </div>
 
-                                {/* Column 2 */}
-                                <div className="col-md-3 col-sm-6 col-6">
-                                    <p className="mb-1">10 Minutes</p>
-                                    <p className="mb-1">10 Minutes</p>
-                                    <p className="mb-1">15 Minutes</p>
-                                    <p className="mb-1">18 Minutes</p>
-                                    <p className="mb-1">20 Minutes</p>
-                                    <p className="mb-1">20 Minutes</p>
-                                    <p className="mb-1">20 Minutes</p>
-                                    <p className="mb-1">25 Minutes</p>
-                                    <p className="mb-1">25 Minutes</p>
+                                {/* === Column 2: EDUCATIONAL === */}
+                                <div className="col-md-4 col-sm-6 col-12 mb-4">
+                                    <h5 style={{ color: "#c79a3a", fontWeight: "600" }}>EDUCATIONAL</h5>
+                                    <p className="mb-1">Birla Open Mind Intl. School <span style={{ float: "right" }}>5 Min</span></p>
+                                    <p className="mb-1">Narayana School <span style={{ float: "right" }}>5 Min</span></p>
+                                    <p className="mb-1">New Indus Valley School <span style={{ float: "right" }}>6 Min</span></p>
+                                    <p className="mb-1">Don Bosco College <span style={{ float: "right" }}>7 Min</span></p>
+                                    <p className="mb-1">Kristu Jyothi College <span style={{ float: "right" }}>7 Min</span></p>
+                                    <p className="mb-1">Garden City University <span style={{ float: "right" }}>8 Min</span></p>
+                                    <p className="mb-1">Christ International School <span style={{ float: "right" }}>8 Min</span></p>
+                                    <p className="mb-1">New Baldwin Intl. School <span style={{ float: "right" }}>15 Min</span></p>
+                                    <p className="mb-1">East Point Group of Institutions <span style={{ float: "right" }}>19 Min</span></p>
+                                    <p className="mb-1">National Public School <span style={{ float: "right" }}>20 Min</span></p>
                                 </div>
 
-                                {/* Column 3 */}
-                                <div className="col-md-3 col-sm-12 col-6">
-                                    <p className="mb-1">Stonehill International School</p>
-                                    <p className="mb-1">Padukone-Dravid Centre</p>
-                                    <p className="mb-1">New Forum Mall</p>
-                                    <p className="mb-1">TechCloud</p>
-                                    <p className="mb-1">Bangalore Airport</p>
-                                    <p className="mb-1">Aerospace Park</p>
-                                    <p className="mb-1">New Amazon HQ</p>
-                                    <p className="mb-1">Bagaluru</p>
-                                    <p className="mb-1">Hebbal Junction</p>
+                                {/* === Column 3: HOSPITALS === */}
+                                <div className="col-md-4 col-sm-6 col-12 mb-4">
+                                    <h5 style={{ color: "#c79a3a", fontWeight: "600" }}>HOSPITALS</h5>
+                                    <p className="mb-1">East Point Hospital <span style={{ float: "right" }}>16 Min</span></p>
+                                    <p className="mb-1">Columbia Hospital <span style={{ float: "right" }}>18 Min</span></p>
+                                    <p className="mb-1">Miracle Hospital <span style={{ float: "right" }}>26 Min</span></p>
+                                    <p className="mb-1">Aaxis Hospital <span style={{ float: "right" }}>26 Min</span></p>
+                                    <p className="mb-1">Manipal Hospital <span style={{ float: "right" }}>29 Min</span></p>
+                                    <p className="mb-1">Sri Sathya Sai Super Hospital <span style={{ float: "right" }}>33 Min</span></p>
+                                    <p className="mb-1">Vydehi Hospital <span style={{ float: "right" }}>34 Min</span></p>
+                                    <p className="mb-1">Aster Whitefield Hospital <span style={{ float: "right" }}>34 Min</span></p>
+                                    <p className="mb-1">Svastha Hospital <span style={{ float: "right" }}>34 Min</span></p>
                                 </div>
-                                <div className="col-md-3 col-sm-12 col-6">
-                                    <p className="mb-1">35 Minutes</p>
-                                    <p className="mb-1">35 Minutes</p>
-                                    <p className="mb-1">35 Minutes</p>
-                                    <p className="mb-1">38 Minutes</p>
-                                    <p className="mb-1">40 Minutes</p>
-                                    <p className="mb-1">40 Minutes</p>
-                                    <p className="mb-1">45 Minutes</p>
-                                    <p className="mb-1">50 Minutes</p>
-                                    <p className="mb-1">60 Minutes</p>
+
+                                {/* === Column 4: SHOPPING MALLS === */}
+                                <div className="col-md-4 col-sm-6 col-12 mb-4">
+                                    <h5 style={{ color: "#c79a3a", fontWeight: "600" }}>SHOPPING MALLS</h5>
+                                    <p className="mb-1">Orion Uptown Mall <span style={{ float: "right" }}>20 Min</span></p>
+                                    <p className="mb-1">Decathlon <span style={{ float: "right" }}>20 Min</span></p>
+                                    <p className="mb-1">Phoenix Market City <span style={{ float: "right" }}>25 Min</span></p>
+                                    <p className="mb-1">VR Bengaluru Mall <span style={{ float: "right" }}>25 Min</span></p>
+                                    <p className="mb-1">Nexus Shantiniketan <span style={{ float: "right" }}>30 Min</span></p>
+                                    <p className="mb-1">Park Square Mall ITPL <span style={{ float: "right" }}>33 Min</span></p>
+                                    <p className="mb-1">Virginia Mall <span style={{ float: "right" }}>36 Min</span></p>
+                                    <p className="mb-1">Nexus Mall Whitefield <span style={{ float: "right" }}>37 Min</span></p>
+                                </div>
+
+                                {/* === Column 5: CONNECTIVITY === */}
+                                <div className="col-md-4 col-sm-6 col-12 mb-4">
+                                    <h5 style={{ color: "#c79a3a", fontWeight: "600" }}>CONNECTIVITY</h5>
+                                    <p className="mb-1">KR Puram Metro Station <span style={{ float: "right" }}>15 Min</span></p>
+                                    <p className="mb-1">KR Puram Railway Station <span style={{ float: "right" }}>15 Min</span></p>
+                                    <p className="mb-1">Hoodi Metro Station <span style={{ float: "right" }}>25 Min</span></p>
+                                    <p className="mb-1">Satellite Town Ring Road (STRR) <span style={{ float: "right" }}>28 Min</span></p>
+                                    <p className="mb-1">Kempegowda Int. Airport <span style={{ float: "right" }}>54 Min</span></p>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </section>
