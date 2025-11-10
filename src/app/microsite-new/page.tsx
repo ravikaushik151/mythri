@@ -21,6 +21,7 @@ export default function MicoristePage() {
     useEffect(() => {
         AOS.init({ duration: 1000, once: true });
     }, []);
+
     return (
         <>
             {/* ===== Banner Section ===== */}
