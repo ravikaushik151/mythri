@@ -110,27 +110,13 @@ export default function MicoristePage() {
             >
                 <Container className="text-center">
                     {/* ===== Title ===== */}
-                    <h6
-                        className="text-uppercase mb-2"
-                        style={{
-                            letterSpacing: "2px",
-                            color: "#c7936f",
-                            fontSize: "14px",
-                        }}
-                    >
-                        The
-                    </h6>
-
-                    <h2
-                        style={{
-                            color: "#b67e57",
-                            fontSize: "36px",
-                            fontWeight: 500,
-                            letterSpacing: "1px",
-                        }}
-                    >
-                        The Earth Homes
-                    </h2>
+                    <Image
+                        src="/images/sikharam/Sikharam Logo.webp"
+                        alt="The Earth Homes"
+                        width={200}
+                        height={300}
+                        className="img-fluid rounded"
+                    />
 
                     {/* ===== Description ===== */}
                     <p
