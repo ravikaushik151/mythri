@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import "./../about.css";
 import TestimonialSlider from "../components/Home/TestimonialSlider";
- 
+
 export default function About() {
   return (
     <>
@@ -12,7 +12,7 @@ export default function About() {
           <div className="col-md-12">
             <div className="image-container">
               <Image
-                src="/images/About_new.webp"
+                src="/images/About_mythri.webp"
                 height={2880}
                 width={1920}
                 className="img-fluid masterpiece"
@@ -68,7 +68,7 @@ export default function About() {
                 width={648}
                 height={338}
                 className="img-fluid w-100 d-md-none my-4"
-                src="/images/about-about.png"
+                src="/images/about page_mythri.webp"
                 style={{ objectFit: "cover", minHeight: "350px" }}
               />
             </section>
@@ -88,18 +88,20 @@ export default function About() {
             <div className="row my-3">
               <div className="col-md-5 d-block mx-auto px-md-5 py-md-5 py-4 bg-white mb-3 theme-bg-light">
                 <div className="text-center">
+                  <Image src="/images/mission_mythri.webp" height={2880} width={1920} className='img-fluid mb-4' alt="masterpiece" />
                   <h3 className="fw-bold theme-color-dark">Our Mission</h3>
                   <p className="theme-color-dark">
-                   To redefine modern living through spaces that blend innovation, craftsmanship, and purpose. At Mythri Builders, our mission is to design and deliver environments that inspire connection, enhance everyday experiences, and stand as timeless reflections of quality, transparency, and trust.
+                    To redefine modern living through spaces that blend innovation, craftsmanship, and purpose. At Mythri Builders, our mission is to design and deliver environments that inspire connection, enhance everyday experiences, and stand as timeless reflections of quality, transparency, and trust.
 
                   </p>
                 </div>
               </div>
               <div className="col-md-5 d-block mx-auto px-md-5 py-md-5 py-4 bg-white mb-3 theme-bg-light">
                 <div className="text-center">
+                  <Image src="/images/Vision_mythri.webp" height={2880} width={1920} className='img-fluid mb-4' alt="masterpiece" />
                   <h3 className="fw-bold theme-color-dark">Our Vision</h3>
                   <p className="theme-color-dark">
-                   To be a symbol of reliability and excellence in real estate - known for creating homes that transcend functionality and become legacies of design and value. We envision a future where every Mythri creation enriches lives, empowers communities, and endures with the same integrity with which it was built.
+                    To be a symbol of reliability and excellence in real estate - known for creating homes that transcend functionality and become legacies of design and value. We envision a future where every Mythri creation enriches lives, empowers communities, and endures with the same integrity with which it was built.
 
                   </p>
                 </div>
