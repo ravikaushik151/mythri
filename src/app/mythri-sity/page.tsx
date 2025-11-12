@@ -33,7 +33,7 @@ export default function MicoristePage() {
                             {/* Mobile Image */}
                             <source
                                 media="(max-width: 767px)"
-                                srcSet="/images/mobile banner_sankalp.webp"
+                                srcSet="/images/sity/Mobile banner_sity.webp"
                             />
                             {/* Desktop Image */}
                             <img

@@ -33,12 +33,12 @@ export default function MicoristePage() {
                             {/* Mobile Image */}
                             <source
                                 media="(max-width: 767px)"
-                                srcSet="/images/sankalp/mobile banner_sankalp.webp"
+                                srcSet="/images/street/Mob_ban_street.webp"
                             />
                             {/* Desktop Image */}
                             <img
                                 className="d-block w-100"
-                                src="/images/sankalp/Website banner copy.webp"
+                                src="/images/street/Website banner.webp"
                                 alt="First slide"
                                 style={{ height: "80vh", objectFit: "cover" }}
                             />
@@ -188,7 +188,7 @@ export default function MicoristePage() {
                     {/* ===== Image ===== */}
                     <div className="mt-4">
                         <Image
-                            src="/images/sankalp/Sity_microsite.webp"
+                            src="/images/street/Street_Earth home.webp"
                             alt="The Earth Homes"
                             width={900}
                             height={600}
@@ -226,7 +226,7 @@ export default function MicoristePage() {
                 }}>
                 <div className="container-fluid g-0">
                     <Image
-                        src="/images/sankalp/banner image.webp"
+                        src="/images/street/Banner image2_Street.webp"
                         alt="Tennis Player"
                         width={600}
                         height={400}
@@ -266,7 +266,7 @@ export default function MicoristePage() {
                         </div>
                         <div className="col-md-6 text-center p-0">
                             <Image
-                                src="/images/sankalp/Amenities.webp"
+                                src="/images/street/Amenities1.webp"
                                 alt="Tennis Player"
                                 width={600}
                                 height={400}
@@ -279,7 +279,7 @@ export default function MicoristePage() {
                     <div className="row align-items-center">
                         <div className="col-md-6 text-center mb-4 mb-md-0 p-0">
                             <Image
-                                src="/images/sankalp/Amenities2.webp"
+                                src="/images/street/Amenities2.webp"
                                 alt="Child on swing"
                                 width={600}
                                 height={400}
@@ -341,7 +341,7 @@ export default function MicoristePage() {
                 data-aos-delay="200" className="p-0">
                 <div className="container-fluid g-0">
                     <Image
-                        src="/images/sankalp/interior_sank.webp"
+                        src="/images/street/Interior1-Street.webp"
                         alt="Tennis Player"
                         width={600}
                         height={400}
@@ -418,7 +418,7 @@ export default function MicoristePage() {
                         <Carousel indicators={false} controls={true} interval={3000}>
                             <Carousel.Item>
                                 <Image
-                                    src="/images/sankalp/project img.webp"
+                                    src="/images/street/project img1_street.webp"
                                     alt="Project View 1"
                                     width={900}
                                     height={500}
@@ -427,7 +427,7 @@ export default function MicoristePage() {
                             </Carousel.Item>
                             <Carousel.Item>
                                 <Image
-                                    src="/images/sankalp/project img 2webp.webp"
+                                    src="/images/street/project img2_street.webp"
                                     alt="Project View 2"
                                     width={900}
                                     height={500}
@@ -436,7 +436,7 @@ export default function MicoristePage() {
                             </Carousel.Item>
                             <Carousel.Item>
                                 <Image
-                                    src="/images/sankalp/project img 3.webp"
+                                    src="/images/street/project img3_street.webp"
                                     alt="Project View 3"
                                     width={900}
                                     height={500}
@@ -482,16 +482,16 @@ export default function MicoristePage() {
                         <div className="col-12 text-center">
                             <div className="d-md-block d-none">
                                 <Image
-                                    src="/images/sankalp/sankalp_map.webp"
+                                    src="/images/street/Street_map.webp"
                                     alt="location"
-                                    width={800}
+                                    width={600}
                                     height={700}
                                     className="d-block w-100 mx-auto"
                                 />
                             </div>
                             <div className="d-md-none d-block">
                                 <Image
-                                    src="/images/sankalp/ankalp_map.webp"
+                                    src="/images/street/Street_map.webp"
                                     alt="location"
                                     width={400}
                                     height={500}
@@ -547,7 +547,7 @@ export default function MicoristePage() {
                                     <p className="mb-1">New Indus Valley School <span style={{ float: "right" }}>6 Min</span></p>
                                     <p className="mb-1">Don Bosco College <span style={{ float: "right" }}>7 Min</span></p>
                                     <p className="mb-1">Kristu Jyothi College <span style={{ float: "right" }}>7 Min</span></p>
-                                    <p className="mb-1">Garden City Universankalp <span style={{ float: "right" }}>8 Min</span></p>
+                                    <p className="mb-1">Garden City Universtreet <span style={{ float: "right" }}>8 Min</span></p>
                                     <p className="mb-1">Christ International School <span style={{ float: "right" }}>8 Min</span></p>
                                     <p className="mb-1">New Baldwin Intl. School <span style={{ float: "right" }}>15 Min</span></p>
                                     <p className="mb-1">East Point Group of Institutions <span style={{ float: "right" }}>19 Min</span></p>
@@ -600,7 +600,7 @@ export default function MicoristePage() {
                 data-aos-delay="200" className="p-0">
                 <div className="container-fluid g-0">
                     <Image
-                        src="/images/sankalp/Swimming pool_sity_microsite copy.webp"
+                        src="/images/street/Swimming pool_street.webp"
                         alt="Tennis Player"
                         width={600}
                         height={400}
@@ -640,7 +640,7 @@ export default function MicoristePage() {
 
                     <div className="col-lg-10 mx-auto">
                         <Image
-                            src="/images/sankalp/interior2.webp"
+                            src="/images/street/Interior2_street.webp"
                             alt="Tennis Player"
                             width={600}
                             height={400}

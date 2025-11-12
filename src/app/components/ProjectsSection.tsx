@@ -15,7 +15,7 @@ const projects = [
     description:
       "Mythri Sankalp offers spacious 2 & 3 BHK apartments designed for comfort and modern living. Located off Sarjapur Road, the project is RERA approved, providing an ideal blend of convenience and luxury.",
     image: "images/mythrisapphire.webp",
-    link: "#",
+    link: "/mythri-sankalp",
   },
   {
     title: "Mythri Sikharam",
@@ -28,7 +28,7 @@ const projects = [
     description:
       "Mythri Sikharam is a thoughtfully designed residential project offering a balance of modern living and timeless comfort. The homes are spacious, airy, and finished with premium materials to enhance aesthetics and functionality.",
     image: "images/sikharam.webp",
-    link: "#",
+    link: "/mythri-sikharam",
   },
   {
     title: "Mythri Sity",
@@ -41,7 +41,7 @@ const projects = [
     description:
       "Mythri Sity is that kind of place — where thoughtful design meets timeless comfort. Spread across 5 acres, it brings together the warmth of community living and the freedom of open spaces.",
     image: "images/sity.webp",
-    link: "#",
+    link: "/mythri-sity",
   },
   {
     title: "Mythri Street",
@@ -54,7 +54,7 @@ const projects = [
     description:
       "Mythri Street is a thoughtfully crafted residential landmark spread across 3 acres of prime land. With 80% open spaces, it blends urban sophistication with serene living.",
     image: "images/street.webp",
-    link: "#",
+    link: "/mythri-street",
   },
 ];
 
