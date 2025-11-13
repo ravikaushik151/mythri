@@ -112,7 +112,7 @@ export default function MicoristePage() {
                     {/* ===== Title ===== */}
                     <Image
                         src="/images/sity/sity.webp"
-                        alt="The Earth Homes"
+                        alt="Mythri Builders"
                         width={200}
                         height={300}
                         className="img-fluid rounded"
@@ -175,7 +175,7 @@ export default function MicoristePage() {
                     <div className="mt-4">
                         <Image
                             src="/images/sity/earth homes_sity.webp"
-                            alt="The Earth Homes"
+                            alt="Mythri Builders"
                             width={900}
                             height={600}
                             className="img-fluid rounded"
@@ -441,7 +441,7 @@ export default function MicoristePage() {
                                 lineHeight: "1.8",
                             }}
                         >
-                            The Earth Homes is part of The Earth at Nandi Hills, a vast, nature-rich community with a clubhouse, premium amenities, and lush surroundings.
+                            Mythri Builders is part of The Earth at Nandi Hills, a vast, nature-rich community with a clubhouse, premium amenities, and lush surroundings.
                         </p>
                     </div>
 
