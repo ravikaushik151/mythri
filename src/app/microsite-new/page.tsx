@@ -102,10 +102,10 @@ export default function MicoristePage() {
             <section data-aos="fade-up"
                 data-aos-delay="200" className="about-micro"
                 style={{
-                    backgroundColor: "#f9f3eb",
+                    backgroundColor: "#FBFBF4",
                     color: "#5c4a3b",
                     padding: "80px 0",
-                    fontFamily: "'Cormorant Garamond', serif",
+                    fontFamily: "'Source Sans 3', sans-serif",
                 }}
             >
                 <Container className="text-center">
@@ -140,7 +140,7 @@ export default function MicoristePage() {
                             fontSize: "19px",
                             color: "#585858",
                             lineHeight: "1.8",
-                            fontFamily: "'Cormorant Garamond', serif",
+                            fontFamily: "'Source Sans 3', sans-serif",
                         }}
                     >
                         Tucked away in the serene enclave of KR Puram, Mythri Sankalp is where Roman-inspired architecture meets modern city living. Designed for those who value elegance and practicality, it offers a calm retreat amidst Bengaluru’s bustling energy.
@@ -152,7 +152,7 @@ export default function MicoristePage() {
                             fontSize: "19px",
                             color: "#585858",
                             lineHeight: "1.8",
-                            fontFamily: "'Cormorant Garamond', serif",
+                            fontFamily: "'Source Sans 3', sans-serif",
                         }}
                     >
                         Every residence is crafted to balance aesthetics with functionality - where natural light, ventilation, and thoughtful design redefine everyday comfort. Here, life flows seamlessly between family, community, and tranquility.
@@ -206,7 +206,7 @@ export default function MicoristePage() {
                             fontSize: "19px",
                             color: "#585858",
                             lineHeight: "1.8",
-                            fontFamily: "'Cormorant Garamond', serif",
+                            fontFamily: "'Source Sans 3', sans-serif",
                         }}
                     >Arched balconies, clean facades, and well-ventilated layouts bring classical beauty into a modern context. <br /> Every home is designed to maximize natural light and airflow, creating a seamless blend of architectural artistry and everyday comfort.
                     </p>
@@ -214,15 +214,15 @@ export default function MicoristePage() {
 
                 {/* ===== Google Font ===== */}
                 <style jsx global>{`
-                    @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap");
+                    @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
                 `}</style>
             </section>
             <section data-aos="fade-up"
                 data-aos-delay="200" className="p-0" style={{
-                    backgroundColor: "#f9f3eb",
+                    backgroundColor: "#FBFBF4",
                     color: "#5c4a3b",
                     padding: "80px 0",
-                    fontFamily: "'Cormorant Garamond', serif",
+                    fontFamily: "'Source Sans 3', sans-serif",
                 }}>
                 <div className="container-fluid g-0">
                     <Image
@@ -235,7 +235,7 @@ export default function MicoristePage() {
                 </div>
             </section>
             <section data-aos="fade-up"
-                data-aos-delay="200" className="life-earth" style={{ backgroundColor: "#f7f2eb", padding: "80px 0", fontFamily: "'Cormorant Garamond', serif", }}>
+                data-aos-delay="200" className="life-earth" style={{ backgroundColor: "#f7f2eb", padding: "80px 0", fontFamily: "'Source Sans 3', sans-serif", }}>
                 <div className="container-fluid">
                     <h3 className="text-center mb-5"
                         style={{
@@ -352,7 +352,7 @@ export default function MicoristePage() {
             <section data-aos="fade-up"
                 data-aos-delay="200"
                 className="text-center"
-                style={{ backgroundColor: "#f7f2eb", padding: "80px 0", fontFamily: "'Cormorant Garamond', serif", }}
+                style={{ backgroundColor: "#f7f2eb", padding: "80px 0", fontFamily: "'Source Sans 3', sans-serif", }}
             >
                 <div className="container">
                     {/* Section Title */}
@@ -475,7 +475,7 @@ export default function MicoristePage() {
             </section>
             <section className="location" data-aos="fade-up"
                 data-aos-delay="200"
-                style={{ backgroundColor: "#f7f2eb", padding: "80px 0", fontFamily: "'Cormorant Garamond', serif", }}
+                style={{ backgroundColor: "#f7f2eb", padding: "80px 0", fontFamily: "'Source Sans 3', sans-serif", }}
             >
                 <div className="container-fluid">
                     <div className="row">
@@ -611,7 +611,7 @@ export default function MicoristePage() {
             <section data-aos="fade-up"
                 data-aos-delay="200"
                 className="text-center"
-                style={{ backgroundColor: "#f7f2eb", padding: "80px 0", fontFamily: "'Cormorant Garamond', serif", }}
+                style={{ backgroundColor: "#f7f2eb", padding: "80px 0", fontFamily: "'Source Sans 3', sans-serif", }}
             >
                 <div className="container">
                     {/* Section Title */}

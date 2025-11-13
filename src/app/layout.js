@@ -1,17 +1,8 @@
 // app/layout.js
-// 
-//import 'bootstrap/dist/css/bootstrap.min.css';
-//import './normalize.css';
-//import './components.css';
-//import './style.css';
-//defer css into clientwrapper for better performance
+
 import './globals.css';
 import 'swiper/swiper-bundle.css';
-// import 'swiper/css';
-// import 'swiper/css/pagination';
-//import '@fortawesome/fontawesome-free/css/all.min.css';removed added svg icons instead
-
-import Script from "next/script"; // ✅ Import Script component
+import Script from "next/script";
 import ClientWrapper from './components/ClientWrapper';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -21,8 +12,6 @@ export const metadata = {
   description: 'Mythri Builders',
 };
 
-
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en" data-wf-page="123456">
@@ -30,6 +19,12 @@ export default function RootLayout({ children }) {
         <link rel="icon" type="image/png" href="/fevicon.png" />
         <link rel="shortcut icon" type="image/png" href="/fevicon.png" />
         <link rel="apple-touch-icon" href="/fevicon.png" />
+
+        {/* ✅ Correct Google Font link */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+          rel="stylesheet"
+        />
       </head>
       <body>
         <ClientWrapper>
@@ -39,8 +34,6 @@ export default function RootLayout({ children }) {
             <Footer />
           </div>
         </ClientWrapper>
-
-
       </body>
     </html>
   );
