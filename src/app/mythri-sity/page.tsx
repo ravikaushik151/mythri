@@ -397,7 +397,7 @@ export default function MicoristePage() {
                             color: "#585858",
                             lineHeight: "1.8",
                         }}>
-                        The Project Setting at THE EARTH
+                        The Project Setting at Sity
                     </h3>
 
                     <div className="col-lg-10 mx-auto">
