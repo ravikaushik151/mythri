@@ -26,10 +26,17 @@
   background-color: rgba(0, 0, 0, 0.80);
 }
 
-/* Logo */
+/* Default logo style */
 .logo-box img {
   width: 120px;
   height: auto;
+  transition: all 0.4s ease;
+  /* Smooth transition */
+}
+
+/* When navbar becomes sticky */
+.main-navbar.sticky .navbar-wrapper .logo-box img {
+  width: 75px;
 }
 
 /* Hamburger */
