@@ -1,9 +1,46 @@
 "use client";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import ContactForm from "../../app/components/ContactForm";
 import Link from "next/link";
 
 export default function Footer() {
+  const pathname = usePathname();
+  const micrositeData = {
+    "mythri-sankalp": {
+      logo: "/images/sankalp/Mythri Sankalp DKM Logo copy.webp",
+      address: `Sy No 59/7 Hebron Avenue Road Hallehalli, Bengaluru East, Bengaluru, Karnataka 560036`,
+    },
+    "mythri-sikharam": {
+      logo: "/images/sikharam/Sikharam Logo.webp",
+      address: `Survey No. 48/4, off Sarjapur Main Road, Hadosiddapura, Chikkakannalli, Bengaluru, Karnataka 560035`,
+    },
+    "mythri-sity": {
+      logo: "/images/sity/sity.webp",
+      address: `Sy No. 67/2, Behind RGA Tech Park, Off Sarjapur Rd, Kodathi Village, Varthur, Chikkakannalli, Bengaluru, Karnataka 560035`,
+    },
+    "mythri-street": {
+      logo: "/images/street/Mythri street_final logo.png",
+      address: `Mythri Street
+      Kodathi, Off Sarjapur Road,
+      Bengaluru - 560035.`,
+    },
+  };
+
+  // Extract last part of URL
+  const currentSlug = pathname?.split("/")[1]; // e.g., "mythri-sankalp"
+  const currentMicrosite = micrositeData[currentSlug];
+
+  // Set defaults if not on a microsite
+  const logo = currentMicrosite?.logo || "/images/logo-dark.webp";
+  const address =
+    currentMicrosite?.address ||
+    `#2802, Broadway Building,
+    27th Main Road, Sector 1,
+    HSR Layout, Bengaluru - 560102.`;
+
+
+
   return (
     <footer
       className="footer-section position-relative footer-section-2"
@@ -28,7 +65,7 @@ export default function Footer() {
           <div className="col-md-3">
             <Link href="/">
               <Image
-                src="/images/logo-dark.webp"
+                src={logo}
                 alt="Mythri Builders Logo"
                 width={160}
                 height={100}
@@ -37,11 +74,7 @@ export default function Footer() {
             </Link>
 
             <h4 className="footer-title">Office Address</h4>
-            <p>
-              #2802, Broadway Building, <br />
-              27th Main Road, Sector 1, <br />
-              HSR Layout, Bengaluru - 560102.
-            </p>
+            <p style={{ whiteSpace: "pre-line" }}>{address}</p>
 
             <h5 className="fw-bold mt-3 mb-2">Follow Us</h5>
             <div className="footer-social d-flex gap-3 justify-content-md-start justify-content-center">
