@@ -21,9 +21,7 @@ export default function Footer() {
     },
     "mythri-street": {
       logo: "/images/street/Mythri street_final logo.png",
-      address: `Mythri Street
-      Kodathi, Off Sarjapur Road,
-      Bengaluru - 560035.`,
+      address: `SURVEY NO. 67/3 Behind RGA Tech Park, Off Sarjapur Rd, Kodathi Village, Varthur, Chikkakannalli, Bengaluru, Karnataka 560035`,
     },
   };
 
