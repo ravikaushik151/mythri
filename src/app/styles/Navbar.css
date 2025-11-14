@@ -43,8 +43,12 @@
 .menu-toggle {
   cursor: pointer;
   font-size: 28px;
-  color: white;
+  color: black;
   z-index: 1001;
+}
+
+.main-navbar.sticky .menu-toggle {
+  color: white;
 }
 
 /* Overlay Menu */

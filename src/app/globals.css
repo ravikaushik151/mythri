@@ -15650,8 +15650,13 @@ footer button:hover {
   opacity: 1;
 }
 
-.white-png {
+.main-navbar.sticky .navbar-wrapper .logo-box .white-png {
   filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7479%) hue-rotate(70deg) brightness(99%) contrast(107%);
+}
+
+
+.white-png {
+  filter: none;
 }
 
 .marquee {

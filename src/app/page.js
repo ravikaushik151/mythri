@@ -99,39 +99,41 @@ export default function Home() {
               className="position-relative text-white d-flex align-items-md-center align-items-end"
               style={{ height: "100vh" }}
             >
-              {/* Desktop Banner */}
-              <div className="d-none d-md-block">
-                <Image
-                  src="/images/desk_banner.webp"
-                  alt="desktop banner"
-                  fill
-                  priority
-                  fetchPriority="high"
-                  sizes="100vw"
-                  className="object-cover z-0"
-                />
+              {/* Desktop Video */}
+              <div className="d-none d-md-block position-absolute top-0 start-0 w-100 h-100">
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  preload="auto"
+                  className="w-100 h-100 object-cover"
+                >
+                  <source src="/images/Mythri Logo_Cideo.mp4" type="video/mp4" />
+                </video>
               </div>
 
-              {/* Mobile Banner */}
-              <div className="d-block d-md-none">
-                <Image
-                  src="/images/mobile_banner.webp"
-                  alt="mobile banner"
-                  fill
-                  priority
-                  fetchPriority="high"
-                  sizes="100vw"
-                  className="object-cover z-0"
-                />
+              {/* Mobile Video */}
+              <div className="d-block d-md-none position-absolute top-0 start-0 w-100 h-100">
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  preload="auto"
+                  className="w-100 h-100 object-cover"
+                >
+                  <source src="/images/Mythri Logo-Mobile Version.mp4" type="video/mp4" />
+                </video>
               </div>
 
-              {/* Black overlay */}
+              {/* Black overlay (optional) */}
               <div
                 className="position-absolute top-0 start-0 w-100 h-100"
-              /* style={{ backgroundColor: "rgba(0, 0, 0, 0.5)", zIndex: 1 }}*/
+              // style={{ backgroundColor: "rgba(0, 0, 0, 0.5)", zIndex: 1 }}
               ></div>
 
-              {/* Foreground content */}
+              {/* Foreground Content */}
               <div className="container position-relative z-2 d-none">
                 <div className="d-flex flex-column my-md-0 my-5 py-md-0 py-4 align-items-center">
                   <div>
@@ -143,15 +145,13 @@ export default function Home() {
                       Building Bengaluru’s future through thoughtful design and uncompromising quality.
                     </p>
                   </div>
-                  {/* Button example */}
-                  {/* <Link href="#" className="btn btn-outline-light px-4 py-2 mt-3 text-center text-dark theme-bg-light border-dark">
-            Explore Our Projects
-          </Link> */}
                 </div>
               </div>
+
             </div>
           </div>
         </div>
+
 
         <div id="scroll-more">
           <section className="section-remove px-md-5 theme-bg-light homehome"  >
