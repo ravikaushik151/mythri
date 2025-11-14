@@ -678,7 +678,7 @@ export default function MicoristePage() {
                                     data-bs-toggle="collapse"
                                     data-bs-target="#faq3"
                                 >
-                                    3. What unique amenities are designed to deliver the 'Tropical Calm' lifestyle at Mythri Sity?
+                                    3. What unique amenities are designed to deliver the ’Tropical Calm’ lifestyle at Mythri Sity?
                                 </button>
                             </h2>
                             <div
