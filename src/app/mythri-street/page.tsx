@@ -110,6 +110,27 @@ export default function MicoristePage() {
             >
                 <Container className="text-center">
                     {/* ===== Title ===== */}
+                    <h6
+                        className="text-uppercase mb-2"
+                        style={{
+                            letterSpacing: "2px",
+                            color: "#c7936f",
+                            fontSize: "14px",
+                        }}
+                    >
+                        Elevated Living, Crafted for
+                    </h6>
+
+                    <h2
+                        style={{
+                            color: "#b67e57",
+                            fontSize: "36px",
+                            fontWeight: 500,
+                            letterSpacing: "1px",
+                        }}
+                    >
+                        The Visionary Few
+                    </h2>
                     <Image
                         src="/images/street/Mythri street_final logo.png"
                         alt="Mythri Builders"
@@ -129,7 +150,7 @@ export default function MicoristePage() {
                             fontFamily: "'Source Sans 3', sans-serif",
                         }}
                     >
-                        Tucked away in the serene enclave of KR Puram, Mythri Sankalp is where Roman-inspired architecture meets modern city living. Designed for those who value elegance and practicality, it offers a calm retreat amidst Bengaluru’s bustling energy.
+                        Rising gracefully in the heart of Bengaluru’s eastern skyline, Mythri Street stands as an address of quiet power and urban sophistication.
                     </p>
                     <p
                         className="mx-auto mt-3"
@@ -141,7 +162,8 @@ export default function MicoristePage() {
                             fontFamily: "'Source Sans 3', sans-serif",
                         }}
                     >
-                        Every residence is crafted to balance aesthetics with functionality - where natural light, ventilation, and thoughtful design redefine everyday comfort. Here, life flows seamlessly between family, community, and tranquility.
+                        Where bold architecture meets timeless artistry, each residence captures the essence of vertical luxury — soaring views, serene interiors, and the rare sense of being both above the city and deeply connected to it.<br />Every home is an expression of refined living — designed for those who build tomorrow, yet value the beauty of today.<br />This is not just a home. It’s your statement — poised, confident, and enduring.
+
                     </p>
 
                     {/* ===== Info Row ===== */}
@@ -154,19 +176,19 @@ export default function MicoristePage() {
                     >
                         <Col md={3} sm={6} xs={12} className="mb-3">
                             <h3 className="mb-md-0 mb-4 microsite-about">
-                                2 & 3 BHK <br /> Premium Homes
+                                2.5 Acres <br /> 25 Floors
                             </h3>
                         </Col>
 
                         <Col md={3} sm={6} xs={12} className="mb-3 border-start border-end">
                             <h3 className="mb-md-0 mb-4 microsite-about">
-                                KR Puram <br /> Bengaluru
+                                250+ Residences <br />  3 & 4 BHK Sky Homes
                             </h3>
                         </Col>
 
                         <Col md={3} sm={6} xs={12} className="mb-3">
                             <h3 className="mb-0 microsite-about">
-                                35Lifestyle <br /> Amenities
+                                60+ Curated Experiences <br /> Amenities
                             </h3>
                         </Col>
                     </Row>
@@ -185,6 +207,14 @@ export default function MicoristePage() {
                             }}
                         />
                     </div>
+                    <h3 className="text-center mb-4 mt-4"
+                        style={{
+                            fontSize: "35px",
+                            color: "#585858",
+                            lineHeight: "1.8",
+                        }}>
+                        The Spirit of Urban Calm
+                    </h3>
                     <p
                         className="mx-auto mt-3"
                         style={{
@@ -194,7 +224,8 @@ export default function MicoristePage() {
                             lineHeight: "1.8",
                             fontFamily: "'Source Sans 3', sans-serif",
                         }}
-                    >Arched balconies, clean facades, and well-ventilated layouts bring classical beauty into a modern context. <br /> Every home is designed to maximize natural light and airflow, creating a seamless blend of architectural artistry and everyday comfort.
+                    >Where skyline energy meets understated grace. <br />Mythri Street is a celebration of elevation — not just in height, but in perspective. It’s for those who rise early, think deeply, dream greatly, and prefer their peace with a view. Every inch of space, from the double-height lobbies to the panoramic decks, embodies balance — dynamic, yet tranquil.
+
                     </p>
                 </Container>
 
@@ -223,17 +254,17 @@ export default function MicoristePage() {
             <section data-aos="fade-up"
                 data-aos-delay="200" className="life-earth" style={{ backgroundColor: "#f7f2eb", padding: "80px 0", fontFamily: "'Source Sans 3', sans-serif", }}>
                 <div className="container-fluid">
-                    <h3 className="text-center mb-5"
+                    <h3 className="text-center mb-4"
                         style={{
                             fontSize: "35px",
                             color: "#585858",
                             lineHeight: "1.8",
                         }}>
-                        The Art of Thoughtful Amenity
+                        Flow. Form. Freedom.
                     </h3>
 
                     {/* Row 1: Text left, Image right */}
-                    <div className="row align-items-center mb-5">
+                    <div className="row align-items-center mb-4">
                         <div className="col-md-6 px-5">
                             <p
                                 className="mx-auto mt-3"
@@ -245,9 +276,7 @@ export default function MicoristePage() {
                                     width: "90%",
                                 }}
                             >
-                                Every space at Mythri Sankalp is crafted to enrich daily life - blending relaxation, recreation, and community together. <br />
-                                From quiet corners to active zones, discover amenities designed for both peace and play.
-
+                                Your day begins with the first light touching the horizon — coffee in hand, skyline unfolding before you. <br />Downstairs, the city hums. But up here, life flows at your pace. Morning yoga on the sky terrace. A swim overlooking the clouds. An evening soiree at the rooftop lounge — where the city’s lights feel close enough to touch. At Mythri Street, movement, mindfulness, and magnificence converge in effortless rhythm.
                             </p>
                         </div>
                         <div className="col-md-6 text-center p-0">
@@ -281,43 +310,71 @@ export default function MicoristePage() {
                                     lineHeight: "1.8",
                                 }}
                             >
-                                <div className="row align-items-center mb-5">
+                                <div className="row align-items-center mb-4">
+
+                                    <h3 className="text-center"
+                                        style={{
+                                            fontSize: "35px",
+                                            color: "#585858",
+                                            lineHeight: "1.8",
+                                        }}>
+                                        Curated Lifestyle Experiences
+                                    </h3>
+                                    <p
+                                        className="mx-auto mt-3"
+                                        style={{
+                                            maxWidth: "700px",
+                                            fontSize: "19px",
+                                            color: "#585858",
+                                            lineHeight: "1.8",
+                                            width: "90%",
+                                        }}
+                                    >Every amenity is designed to heighten your sense of belonging — spaces that transform from function to feeling. <br />From serene rooftop zones to energized courts and lounges, Mythri Street offers the balance modern life craves.</p>
 
                                     <div className="col-md-6 col-6 px-md-5">
                                         <ul className="list-unstyled">
-                                            <li>Grand Clubhouse</li>
-                                            <li>Indoor Games</li>
-                                            <li>Swimming Pool &amp; Kid&rsquo;s Pool</li>
-                                            <li>Gym &amp; Yoga Studio</li>
-                                            <li>Landscaped Gardens &amp; Walking Paths</li>
-                                            <li>Amphitheatre &amp; Open Party Lawn</li>
+                                            <li>Rooftop Infinity Pool & Sky Lounge</li>
+                                            <li>Fitness Studio & Meditation Deck</li>
+                                            <li>Multipurpose Sports Arena</li>
                                         </ul>
                                     </div>
                                     <div className="col-md-6 col-6 px-md-5">
                                         <ul className="list-unstyled">
-                                            <li>Children&rsquo;s Play Area</li>
-                                            <li>Multi-purpose Sports Court</li>
-                                            <li>Senior Citizens&rsquo; Seating Zone</li>
-                                            <li>24&times;7 Security &amp; CCTV Surveillance</li>
-                                            <li>Power Backup &amp; Rainwater Harvesting</li>
+                                            <li>Children’s Play Courts & Green Lawns</li>
+                                            <li>Indoor Lounge, Mini Theatre & Work Pods</li>
                                         </ul>
                                     </div>
+                                    <p
+                                        className="mx-auto mt-3 text-center"
+                                        style={{
+                                            maxWidth: "700px",
+                                            fontSize: "19px",
+                                            color: "#585858",
+                                            lineHeight: "1.8",
+                                            width: "90%",
+                                        }}
+                                    >Over 60 exclusive amenities curated for a life that unfolds beautifully in every direction.</p>
                                 </div>
                             </div>
                         </div>
                         <div className="col-md-12">
-                            <p
-                                className="mx-auto mb-0"
+                            <h3 className="text-center mb-4 mt-4"
                                 style={{
-                                    marginTop: "70px",
+                                    fontSize: "35px",
+                                    color: "#585858",
+                                    lineHeight: "1.8",
+                                }}>
+                                A Home that Touches the Sky
+                            </h3>
+                            <p
+                                className="mx-auto mb-0 text-center"
+                                style={{
                                     maxWidth: "700px",
                                     fontSize: "19px",
                                     color: "#585858",
                                     lineHeight: "1.8",
                                 }}
-                            >Every corner at Mythri Sankalp is designed with purpose and poise.
-                                Grand entrances welcome you with timeless elegance, landscaped courtyards breathe serenity into your routine, and airy balconies invite the outdoors into your home. <br />
-                                Whether it’s a quiet morning yoga session, an evening by the pool, or quality time with loved ones - these amenity spaces adapt beautifully to every mood, every moment, and every version of your day.</p>
+                            >Crafted with precision, each residence embraces natural light, intelligent ventilation, and a seamless sense of openness. <br /> The materials, the textures, and the design — every element is chosen to reflect refinement that endures. <br />Here, modern architecture meets soulful detailing. <br /> Your home doesn’t just rise with the skyline — it elevates your every day.</p>
                         </div>
                     </div>
                 </div>
@@ -342,13 +399,13 @@ export default function MicoristePage() {
             >
                 <div className="container">
                     {/* Section Title */}
-                    <h3 className="text-center mb-5"
+                    <h3 className="text-center mb-4"
                         style={{
                             fontSize: "35px",
                             color: "#585858",
                             lineHeight: "1.8",
                         }}>
-                        Spaces That Make It Possible
+                        The Future Rising Around You
                     </h3>
 
                     {/* Paragraph */}
@@ -362,11 +419,7 @@ export default function MicoristePage() {
                             lineHeight: "1.8",
                         }}
                     >
-                        Every detail is designed to support this way of life. Double-height lobbies
-                        create an airy welcome, spacious balconies bring the outdoors closer, and
-                        verandas encourage slow evenings spent in good company. Whether you’re
-                        seeking solitude, movement, or togetherness, the spaces adapt to every
-                        version of your day.
+                        With Bengaluru expanding eastward, Mythri Street stands poised at the heart of exponential growth.<br />Surrounded by innovation corridors, commercial hubs, and next-gen infrastructure, this address is more than prime &mdash; it&rsquo;s prophetic.<br />An investment not just in space, but in future value and timeless design.
                     </p>
 
                     {/* Buttons */}
@@ -391,7 +444,7 @@ export default function MicoristePage() {
                     <div className="my-5"></div>
 
                     {/* Project Slider Section */}
-                    <h3 className="text-center mb-5"
+                    <h3 className="text-center mb-4"
                         style={{
                             fontSize: "35px",
                             color: "#585858",
@@ -431,17 +484,28 @@ export default function MicoristePage() {
                             </Carousel.Item>
                         </Carousel>
 
+                        {/* Section Title */}
+                        <h3 className="text-center mb-4 mt-4"
+                            style={{
+                                fontSize: "35px",
+                                color: "#585858",
+                                lineHeight: "1.8",
+                            }}>
+                            A Location with Vision
+                        </h3>
+
+                        {/* Paragraph */}
                         <p
                             className="mx-auto"
                             style={{
-                                marginTop: "60px",
+                                marginTop: "0px",
                                 maxWidth: "700px",
                                 fontSize: "19px",
                                 color: "#585858",
                                 lineHeight: "1.8",
                             }}
                         >
-                            Mythri Builders is part of The Earth at Nandi Hills, a vast, nature-rich community with a clubhouse, premium amenities, and lush surroundings.
+                            Positioned strategically off Bengaluru&rsquo;s IT growth corridor, <strong>Mythri Street</strong> offers instant access to Sarjapur, Whitefield, and Electronic City.<br />Whether it&rsquo;s the corporate hubs, elite schools, or fine-dining destinations &mdash; your world stays within reach.<br />Yet, when you return home, the city&rsquo;s noise fades into quiet luxury.<br /><strong>Seamless Connectivity:</strong><strong><br /></strong>Outer Ring Road &ndash; 5 min | Wipro &amp; RGA Tech Parks &ndash; 8 min | HSR &amp; Bellandur &ndash; 10&ndash;15 min | Whitefield &ndash; 20 min
                         </p>
                     </div>
 
@@ -489,13 +553,13 @@ export default function MicoristePage() {
                     <div className="row mt-5  justify-content-center">
                         {/* Left side heading */}
                         <div className="col-md-3 d-flex align-items-center justify-content-center">
-                            <h3 className="text-center mb-5"
+                            <h3 className="text-center mb-4"
                                 style={{
                                     fontSize: "35px",
                                     color: "#585858",
                                     lineHeight: "1.8",
                                 }}>
-                                Strategic Location
+                                Location Advantages
                             </h3>
                         </div>
 
@@ -594,57 +658,151 @@ export default function MicoristePage() {
                     />
                 </div>
             </section>
-            <section data-aos="fade-up"
+            <section
+                data-aos="fade-up"
                 data-aos-delay="200"
                 className="text-center"
-                style={{ backgroundColor: "#f7f2eb", padding: "80px 0", fontFamily: "'Source Sans 3', sans-serif", }}
+                style={{
+                    backgroundColor: "#f7f2eb",
+                    padding: "80px 0",
+                    fontFamily: "'Source Sans 3', sans-serif",
+                }}
             >
                 <div className="container">
-                    {/* Section Title */}
-                    <h3 className="text-center mb-5"
+                    <h3
+                        className="text-center mb-4"
                         style={{
-                            fontSize: "35px",
+                            fontSize: "32px",
                             color: "#585858",
-                            lineHeight: "1.8",
-                        }}>
-                        The Nandi Hills
-                    </h3>
-
-                    {/* Paragraph */}
-                    <p
-                        className="mx-auto"
-                        style={{
-                            marginTop: "0px",
-                            maxWidth: "700px",
-                            fontSize: "19px",
-                            color: "#585858",
-                            lineHeight: "1.8",
+                            fontWeight: "600",
                         }}
                     >
-                        Nandi Hills is a prime location, offering serene living with significant land appreciation—prices rising over 20% annually from the last 6 years. Upcoming infrastructure like Foxconn, Bengaluru Airport City, and luxury hotels will enhance connectivity and lifestyle. Investing here means enjoying both natural beauty and strong future returns.
-                    </p>
+                        Frequently Asked Questions
+                    </h3>
 
-                    <div className="col-lg-10 mx-auto">
-                        <Image
-                            src="/images/street/Interior2_street.webp"
-                            alt="Tennis Player"
-                            width={600}
-                            height={400}
-                            className="img-fluid w-100 mt-5"
-                        />
+                    <div className="accordion mx-auto" id="faqAccordion" style={{ maxWidth: "900px" }}>
 
-                        <p
-                            className="mx-auto"
-                            style={{
-                                marginTop: "60px",
-                                maxWidth: "900px",
-                                fontSize: "19px",
-                                color: "#585858",
-                                lineHeight: "1.8",
-                            }}
-                        >
-                            For over 40 years, SRK Infra has been building trust alongside structures. Founded on ‘dharma’, quality, and design excellence, we create value for communities while pursuing perfection. Hence, we’ve transformed into SRKP with a renewed vision to pioneer next generation developmental excellence.
-                        </p>
+                        {/* FAQ 1 */}
+                        <div className="accordion-item mb-3">
+                            <h2 className="accordion-header mb-0" id="faq1-heading">
+                                <button
+                                    className="accordion-button"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#faq1"
+                                >
+                                    1. What is the RERA status and unique proposition of Mythri Street?
+                                </button>
+                            </h2>
+                            <div
+                                id="faq1"
+                                className="accordion-collapse collapse show"
+                                aria-labelledby="faq1-heading"
+                                data-bs-parent="#faqAccordion"
+                            >
+                                <div className="accordion-body" style={{ color: "#585858", textAlign: "justify" }}>
+                                    Mythri Street is a registered ultra-luxury high-rise development, approved under RERA. Its uniqueness lies in its “Elevated Urban Living” concept — combining panoramic city views with refined design sensibilities across 25 floors of modern architecture.
+
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* FAQ 2 */}
+                        <div className="accordion-item mb-3">
+                            <h2 className="accordion-header mb-0" id="faq2-heading">
+                                <button
+                                    className="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#faq2"
+                                >
+                                    2. How does Mythri Street’s location enhance lifestyle and connectivity?
+                                </button>
+                            </h2>
+                            <div
+                                id="faq2"
+                                className="accordion-collapse collapse"
+                                aria-labelledby="faq2-heading"
+                                data-bs-parent="#faqAccordion"
+                            >
+                                <div className="accordion-body" style={{ color: "#585858", textAlign: "justify" }}>
+                                    Located strategically off Sarjapur Road, Mythri Street offers unmatched access to Bengaluru’s major IT hubs, educational institutions, and lifestyle zones. It places residents at the center of convenience — with proximity to work, wellness, and weekend escapes alike.
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* FAQ 3 */}
+                        <div className="accordion-item mb-3">
+                            <h2 className="accordion-header mb-0" id="faq3-heading">
+                                <button
+                                    className="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#faq3"
+                                >
+                                    3. What are the key amenities defining the Mythri Street experience?
+                                </button>
+                            </h2>
+                            <div
+                                id="faq3"
+                                className="accordion-collapse collapse"
+                                aria-labelledby="faq3-heading"
+                                data-bs-parent="#faqAccordion"
+                            >
+                                <div className="accordion-body" style={{ color: "#585858", textAlign: "justify" }}>
+                                    From the Sky Deck and Infinity Pool to the Rooftop Lounge, Fitness Studio, Mini Theatre, and Multi-sport Arenas — Mythri Street’s 60+ curated experiences redefine community living with a global touch of luxury.
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* FAQ 4 */}
+                        <div className="accordion-item mb-3">
+                            <h2 className="accordion-header mb-0" id="faq4-heading">
+                                <button
+                                    className="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#faq4"
+                                >
+                                    4. What are the available configurations and specifications at Mythri Street?
+                                </button>
+                            </h2>
+                            <div
+                                id="faq4"
+                                className="accordion-collapse collapse"
+                                aria-labelledby="faq4-heading"
+                                data-bs-parent="#faqAccordion"
+                            >
+                                <div className="accordion-body" style={{ color: "#585858", textAlign: "justify" }}>
+                                    Mythri Street offers premium 3 & 4 BHK residences with spacious layouts, high ceilings, and signature finishes. Each home features vitrified flooring, premium fittings, elegant balconies, and intelligent automation systems designed for modern comfort.
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* FAQ 5 */}
+                        <div className="accordion-item mb-3">
+                            <h2 className="accordion-header mb-0" id="faq5-heading">
+                                <button
+                                    className="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#faq5"
+                                >
+                                    5. What defines Mythri Builders’ approach to quality and delivery?
+                                </button>
+                            </h2>
+                            <div
+                                id="faq5"
+                                className="accordion-collapse collapse"
+                                aria-labelledby="faq5-heading"
+                                data-bs-parent="#faqAccordion"
+                            >
+                                <div className="accordion-body" style={{ color: "#585858", textAlign: "justify" }}>
+                                    Mythri Builders is built on trust, punctuality, and excellence. With in-house teams managing every stage of design and construction, Mythri ensures unmatched precision, transparency, and timely delivery — crafting spaces that live up to their promise, every time.
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>

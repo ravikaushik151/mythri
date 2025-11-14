@@ -285,21 +285,27 @@ export default function MicoristePage() {
 
                                     <div className="col-md-6 col-6 px-md-5">
                                         <ul className="list-unstyled">
-                                            <li>Grand Clubhouse</li>
-                                            <li>Indoor Games</li>
-                                            <li>Swimming Pool &amp; Kid&rsquo;s Pool</li>
-                                            <li>Gym &amp; Yoga Studio</li>
-                                            <li>Landscaped Gardens &amp; Walking Paths</li>
-                                            <li>Amphitheatre &amp; Open Party Lawn</li>
+                                            <li>Clubhouse Terrace with Outdoor Working Zone</li>
+                                            <li>Multipurpose Hall with Terrace</li>
+                                            <li>Swimming Pool</li>
+                                            <li>Kids Pool</li>
+                                            <li>Jacuzzi with Seating</li>
+                                            <li>Skating Rink</li>
+                                            <li>Pickleball Court</li>
                                         </ul>
                                     </div>
                                     <div className="col-md-6 col-6 px-md-5">
                                         <ul className="list-unstyled">
-                                            <li>Children&rsquo;s Play Area</li>
-                                            <li>Multi-purpose Sports Court</li>
-                                            <li>Senior Citizens&rsquo; Seating Zone</li>
-                                            <li>24&times;7 Security &amp; CCTV Surveillance</li>
-                                            <li>Power Backup &amp; Rainwater Harvesting</li>
+                                            <li>Half Basketball Court</li>
+                                            <li>Cricket Practice Pitch</li>
+                                            <li>Outdoor Gym</li>
+                                            <li>Rock Climbing Wall</li>
+                                            <li>Trampoline Area</li>
+                                            <li>Jungle Gym for Kids</li>
+                                            <li>Zumba Deck</li>
+                                            <li>Performance Deck</li>
+                                            <li>Amphitheatre Terrace</li>
+                                            <li>Bonfire Court</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -495,7 +501,7 @@ export default function MicoristePage() {
                                     color: "#585858",
                                     lineHeight: "1.8",
                                 }}>
-                                Strategic Location
+                                Location Advantages
                             </h3>
                         </div>
 
@@ -510,72 +516,56 @@ export default function MicoristePage() {
                                     fontFamily: "'Playfair Display', serif",
                                 }}
                             >
-                                {/* === Column 1: TECH PARKS === */}
-                                <div className="col-md-4 col-sm-6 col-12 mb-4">
-                                    <h5 style={{ color: "#c79a3a", fontWeight: "600" }}>TECH PARKS</h5>
-                                    <p className="mb-1">RMZ Infinity – <span style={{ float: "right" }}>19 Min</span></p>
-                                    <p className="mb-1">Beary’s Global Research (BCRT) <span style={{ float: "right" }}>23 Min</span></p>
-                                    <p className="mb-1">Bhoruka Technology Park <span style={{ float: "right" }}>25 Min</span></p>
-                                    <p className="mb-1">Bagmane Tech Park <span style={{ float: "right" }}>26 Min</span></p>
-                                    <p className="mb-1">Nalapad Brigade Centre <span style={{ float: "right" }}>26 Min</span></p>
-                                    <p className="mb-1">Bagmane Business Park <span style={{ float: "right" }}>26 Min</span></p>
-                                    <p className="mb-1">Manyata Tech Park <span style={{ float: "right" }}>28 Min</span></p>
-                                    <p className="mb-1">HM Tech Park <span style={{ float: "right" }}>29 Min</span></p>
-                                    <p className="mb-1">Kalyani Magnum Tech Park <span style={{ float: "right" }}>30 Min</span></p>
-                                    <p className="mb-1">International Tech Park (ITPL) <span style={{ float: "right" }}>34 Min</span></p>
+                                {/* === Column 1: IT PARKS === */}
+                                <div className="col-md-6 col-sm-6 col-12 mb-4">
+                                    <h5 style={{ color: "#c79a3a", fontWeight: "600" }}>IT PARKS</h5>
+                                    <p className="mb-1">RGA Tech Park <span style={{ float: "right" }}>2 Min</span></p>
+                                    <p className="mb-1">Wipro HQ <span style={{ float: "right" }}>2 Min</span></p>
+                                    <p className="mb-1">RMZ Ecoworld <span style={{ float: "right" }}>12 Min</span></p>
+                                    <p className="mb-1">Intel <span style={{ float: "right" }}>18 Min</span></p>
+                                    <p className="mb-1">RMZ Ecospace <span style={{ float: "right" }}>18 Min</span></p>
+                                    <p className="mb-1">Cessna Business Tech Park <span style={{ float: "right" }}>19 Min</span></p>
+                                    <p className="mb-1">HSR Layout <span style={{ float: "right" }}>22 Min</span></p>
+                                    <p className="mb-1">Electronic City <span style={{ float: "right" }}>30 Min</span></p>
                                 </div>
 
-                                {/* === Column 2: EDUCATIONAL === */}
-                                <div className="col-md-4 col-sm-6 col-12 mb-4">
-                                    <h5 style={{ color: "#c79a3a", fontWeight: "600" }}>EDUCATIONAL</h5>
-                                    <p className="mb-1">Birla Open Mind Intl. School <span style={{ float: "right" }}>5 Min</span></p>
-                                    <p className="mb-1">Narayana School <span style={{ float: "right" }}>5 Min</span></p>
-                                    <p className="mb-1">New Indus Valley School <span style={{ float: "right" }}>6 Min</span></p>
-                                    <p className="mb-1">Don Bosco College <span style={{ float: "right" }}>7 Min</span></p>
-                                    <p className="mb-1">Kristu Jyothi College <span style={{ float: "right" }}>7 Min</span></p>
-                                    <p className="mb-1">Garden City Universikharam <span style={{ float: "right" }}>8 Min</span></p>
-                                    <p className="mb-1">Christ International School <span style={{ float: "right" }}>8 Min</span></p>
-                                    <p className="mb-1">New Baldwin Intl. School <span style={{ float: "right" }}>15 Min</span></p>
-                                    <p className="mb-1">East Point Group of Institutions <span style={{ float: "right" }}>19 Min</span></p>
-                                    <p className="mb-1">National Public School <span style={{ float: "right" }}>20 Min</span></p>
+                                {/* === Column 2: SCHOOLS === */}
+                                <div className="col-md-6 col-sm-6 col-12 mb-4">
+                                    <h5 style={{ color: "#c79a3a", fontWeight: "600" }}>SCHOOLS</h5>
+                                    <p className="mb-1">TSIB Bangalore <span style={{ float: "right" }}>7 Min</span></p>
+                                    <p className="mb-1">DPS East <span style={{ float: "right" }}>8 Min</span></p>
+                                    <p className="mb-1">Harvest International School <span style={{ float: "right" }}>9 Min</span></p>
+                                    <p className="mb-1">Prakriya Green Wisdom School <span style={{ float: "right" }}>10 Min</span></p>
+                                    <p className="mb-1">Greenwood High International <span style={{ float: "right" }}>11 Min</span></p>
+                                    <p className="mb-1">Primus International School <span style={{ float: "right" }}>12 Min</span></p>
+                                    <p className="mb-1">Oakridge International School <span style={{ float: "right" }}>13 Min</span></p>
                                 </div>
 
                                 {/* === Column 3: HOSPITALS === */}
-                                <div className="col-md-4 col-sm-6 col-12 mb-4">
+                                <div className="col-md-6 col-sm-6 col-12 mb-4">
                                     <h5 style={{ color: "#c79a3a", fontWeight: "600" }}>HOSPITALS</h5>
-                                    <p className="mb-1">East Point Hospital <span style={{ float: "right" }}>16 Min</span></p>
-                                    <p className="mb-1">Columbia Hospital <span style={{ float: "right" }}>18 Min</span></p>
-                                    <p className="mb-1">Miracle Hospital <span style={{ float: "right" }}>26 Min</span></p>
-                                    <p className="mb-1">Aaxis Hospital <span style={{ float: "right" }}>26 Min</span></p>
-                                    <p className="mb-1">Manipal Hospital <span style={{ float: "right" }}>29 Min</span></p>
-                                    <p className="mb-1">Sri Sathya Sai Super Hospital <span style={{ float: "right" }}>33 Min</span></p>
-                                    <p className="mb-1">Vydehi Hospital <span style={{ float: "right" }}>34 Min</span></p>
-                                    <p className="mb-1">Aster Whitefield Hospital <span style={{ float: "right" }}>34 Min</span></p>
-                                    <p className="mb-1">Svastha Hospital <span style={{ float: "right" }}>34 Min</span></p>
+                                    <p className="mb-1">Punarjani Ayurvedic Hospital <span style={{ float: "right" }}>5 Min</span></p>
+                                    <p className="mb-1">Belenus Champion Hospital <span style={{ float: "right" }}>10 Min</span></p>
+                                    <p className="mb-1">Cloudnine Hospital <span style={{ float: "right" }}>10 Min</span></p>
+                                    <p className="mb-1">Motherhood Hospital (Sarjapur) <span style={{ float: "right" }}>12 Min</span></p>
+                                    <p className="mb-1">Manipal Hospital (Bellandur) <span style={{ float: "right" }}>15 Min</span></p>
+                                    <p className="mb-1">Sakra World Hospital <span style={{ float: "right" }}>18 Min</span></p>
+                                    <p className="mb-1">Columbia Asia Hospital <span style={{ float: "right" }}>22 Min</span></p>
                                 </div>
 
-                                {/* === Column 4: SHOPPING MALLS === */}
-                                <div className="col-md-4 col-sm-6 col-12 mb-4">
-                                    <h5 style={{ color: "#c79a3a", fontWeight: "600" }}>SHOPPING MALLS</h5>
-                                    <p className="mb-1">Orion Uptown Mall <span style={{ float: "right" }}>20 Min</span></p>
-                                    <p className="mb-1">Decathlon <span style={{ float: "right" }}>20 Min</span></p>
-                                    <p className="mb-1">Phoenix Market City <span style={{ float: "right" }}>25 Min</span></p>
-                                    <p className="mb-1">VR Bengaluru Mall <span style={{ float: "right" }}>25 Min</span></p>
-                                    <p className="mb-1">Nexus Shantiniketan <span style={{ float: "right" }}>30 Min</span></p>
-                                    <p className="mb-1">Park Square Mall ITPL <span style={{ float: "right" }}>33 Min</span></p>
-                                    <p className="mb-1">Virginia Mall <span style={{ float: "right" }}>36 Min</span></p>
-                                    <p className="mb-1">Nexus Mall Whitefield <span style={{ float: "right" }}>37 Min</span></p>
+                                {/* === Column 4: NEARBY AREA === */}
+                                <div className="col-md-6 col-sm-6 col-12 mb-4">
+                                    <h5 style={{ color: "#c79a3a", fontWeight: "600" }}>NEARBY AREA</h5>
+                                    <p className="mb-1">D-Mart <span style={{ float: "right" }}>2 Min</span></p>
+                                    <p className="mb-1">Decathlon <span style={{ float: "right" }}>5 Min</span></p>
+                                    <p className="mb-1">Big Pitcher <span style={{ float: "right" }}>10 Min</span></p>
+                                    <p className="mb-1">The Bier Library <span style={{ float: "right" }}>10 Min</span></p>
+                                    <p className="mb-1">Upcoming INOX <span style={{ float: "right" }}>17 Min </span></p>
+                                    <p className="mb-1">Central Mall, Bellandur <span style={{ float: "right" }}>18 Min</span></p>
+                                    <p className="mb-1">HSR Layout <span style={{ float: "right" }}>22 Min</span></p>
+                                    <p className="mb-1">Forum Mall, Koramangala <span style={{ float: "right" }}>28 Min</span></p>
                                 </div>
 
-                                {/* === Column 5: CONNECTIVITY === */}
-                                <div className="col-md-4 col-sm-6 col-12 mb-4">
-                                    <h5 style={{ color: "#c79a3a", fontWeight: "600" }}>CONNECTIVITY</h5>
-                                    <p className="mb-1">KR Puram Metro Station <span style={{ float: "right" }}>15 Min</span></p>
-                                    <p className="mb-1">KR Puram Railway Station <span style={{ float: "right" }}>15 Min</span></p>
-                                    <p className="mb-1">Hoodi Metro Station <span style={{ float: "right" }}>25 Min</span></p>
-                                    <p className="mb-1">Satellite Town Ring Road (STRR) <span style={{ float: "right" }}>28 Min</span></p>
-                                    <p className="mb-1">Kempegowda Int. Airport <span style={{ float: "right" }}>54 Min</span></p>
-                                </div>
                             </div>
                         </div>
 
