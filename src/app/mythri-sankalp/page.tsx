@@ -437,8 +437,6 @@ export default function MicoristePage() {
                                 />
                             </Carousel.Item>
                         </Carousel>
-
-
                         <p
                             className="mx-auto"
                             style={{
