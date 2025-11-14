@@ -225,8 +225,6 @@ export default function MicoristePage() {
                             fontFamily: "'Source Sans 3', sans-serif",
                         }}
                     >A life defined not by deadlines, but by the quiet rhythm of the tropics. Every element, from the sun-warmed palette to the lush landscaping, is intentional. Mythri Sity is an invitation to slow down, lift your spirit, and experience the rare sensation of having arrived.
-
-
                     </p>
                 </Container>
 
@@ -320,19 +318,19 @@ export default function MicoristePage() {
                                             <li>Children's Play Area</li>
                                             <li>Indoor Games</li>
                                             <li>Multi-purpose Sports Court</li>
-                                            <li>Swimming pool &amp; Kid'S pool</li>
+                                            <li>Swimming pool & Kid'S pool</li>
                                             <li>Senior Citizens' Seating</li>
-                                            <li>Gym &amp; Yoga Studio </li>
-                                            <li>24*7 Security &amp; CCTV</li>
+                                            <li>Gym & Yoga Studio </li>
+                                            <li>24*7 Security & CCTV</li>
                                         </ul>
                                     </div>
                                     <div className="col-md-6 col-6 px-md-5">
                                         <ul className="list-unstyled">
-                                            <li>Landscaped Gardens &amp; Walking</li>
+                                            <li>Landscaped Gardens & Walking</li>
                                             <li>Surveillance</li>
                                             <li>paths</li>
-                                            <li>Power Backup &amp; Rainwater</li>
-                                            <li>Amphitheatre &amp; Open Party</li>
+                                            <li>Power Backup & Rainwater</li>
+                                            <li>Amphitheatre & Open Party</li>
                                             <li>Harvesting</li>
                                             <li>Lawn</li>
                                         </ul>
