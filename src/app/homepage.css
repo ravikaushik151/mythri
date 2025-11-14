@@ -360,7 +360,13 @@
   cursor: pointer;
   font-size: 28px;
   color: black;
+  /* default */
   z-index: 1001;
+}
+
+/* When aria-expanded = false → make it white */
+.menu-toggle[aria-expanded="true"] {
+  color: white;
 }
 
 .main-navbar.sticky .menu-toggle {
