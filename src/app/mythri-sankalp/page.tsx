@@ -438,7 +438,7 @@ export default function MicoristePage() {
                             </Carousel.Item>
                         </Carousel>
                         <p
-                            className="mx-auto"
+                            className="mx-auto d-none"
                             style={{
                                 marginTop: "60px",
                                 maxWidth: "700px",
@@ -600,7 +600,7 @@ export default function MicoristePage() {
 
                     {/* Paragraph */}
                     <p
-                        className="mx-auto"
+                        className="mx-auto d-none"
                         style={{
                             marginTop: "0px",
                             maxWidth: "700px",

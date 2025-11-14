@@ -438,7 +438,7 @@ export default function MicoristePage() {
                         </Carousel>
 
                         <p
-                            className="mx-auto"
+                            className="mx-auto d-none"
                             style={{
                                 marginTop: "60px",
                                 maxWidth: "700px",
