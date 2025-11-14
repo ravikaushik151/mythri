@@ -105,7 +105,7 @@ export default function MicoristePage() {
                     backgroundColor: "#FBFBF4",
                     color: "#5c4a3b",
                     padding: "80px 0",
-                    fontFamily: "'Source Sans 3', sans-serif",
+                    fontFamily: "’source Sans 3', sans-serif",
                 }}
             >
                 <Container className="text-center">
@@ -148,7 +148,7 @@ export default function MicoristePage() {
                             fontSize: "19px",
                             color: "#585858",
                             lineHeight: "1.8",
-                            fontFamily: "'Source Sans 3', sans-serif",
+                            fontFamily: "’source Sans 3', sans-serif",
                         }}
                     >
                         Positioned perfectly near the dynamic energy of Sarjapur Road, Mythri Sity achieves a rare and elegant balance. It is where the deep peace of a Tropical Calm environment beautifully merges with the practicality of Mindful Design.
@@ -160,7 +160,7 @@ export default function MicoristePage() {
                             fontSize: "19px",
                             color: "#585858",
                             lineHeight: "1.8",
-                            fontFamily: "'Source Sans 3', sans-serif",
+                            fontFamily: "’source Sans 3', sans-serif",
                         }}
                     >
                         This is more than a luxury residence; it is a space intentionally shaped for your well-being. Every home is a sanctuary, optimized for natural light, effortless ventilation, and the tranquil vision of the sky-toned lagoon.Mythri Sity offers you the clarity to truly live, a seamless experience of elegance and ease, without compromising your connection to the city’s heart.
@@ -222,7 +222,7 @@ export default function MicoristePage() {
                             fontSize: "19px",
                             color: "#585858",
                             lineHeight: "1.8",
-                            fontFamily: "'Source Sans 3', sans-serif",
+                            fontFamily: "’source Sans 3', sans-serif",
                         }}
                     >A life defined not by deadlines, but by the quiet rhythm of the tropics. Every element, from the sun-warmed palette to the lush landscaping, is intentional. Mythri Sity is an invitation to slow down, lift your spirit, and experience the rare sensation of having arrived.
                     </p>
@@ -238,7 +238,7 @@ export default function MicoristePage() {
                     backgroundColor: "#FBFBF4",
                     color: "#5c4a3b",
                     padding: "80px 0",
-                    fontFamily: "'Source Sans 3', sans-serif",
+                    fontFamily: "’source Sans 3', sans-serif",
                 }}>
                 <div className="container-fluid g-0">
                     <Image
@@ -251,7 +251,7 @@ export default function MicoristePage() {
                 </div>
             </section>
             <section data-aos="fade-up"
-                data-aos-delay="200" className="life-earth" style={{ backgroundColor: "#f7f2eb", padding: "80px 0", fontFamily: "'Source Sans 3', sans-serif", }}>
+                data-aos-delay="200" className="life-earth" style={{ backgroundColor: "#f7f2eb", padding: "80px 0", fontFamily: "’source Sans 3', sans-serif", }}>
                 <div className="container-fluid">
                     <h3 className="text-center mb-4"
                         style={{
@@ -315,11 +315,11 @@ export default function MicoristePage() {
                                     <div className="col-md-6 col-6 px-md-5">
                                         <ul className="list-unstyled">
                                             <li>Grand Clubhouse</li>
-                                            <li>Children's Play Area</li>
+                                            <li>Children’s Play Area</li>
                                             <li>Indoor Games</li>
                                             <li>Multi-purpose Sports Court</li>
-                                            <li>Swimming pool & Kid'S pool</li>
-                                            <li>Senior Citizens' Seating</li>
+                                            <li>Swimming pool & Kid’s pool</li>
+                                            <li>Senior Citizens Seating</li>
                                             <li>Gym & Yoga Studio </li>
                                             <li>24*7 Security & CCTV</li>
                                         </ul>
@@ -369,7 +369,7 @@ export default function MicoristePage() {
             <section data-aos="fade-up"
                 data-aos-delay="200"
                 className="text-center"
-                style={{ backgroundColor: "#f7f2eb", padding: "80px 0", fontFamily: "'Source Sans 3', sans-serif", }}
+                style={{ backgroundColor: "#f7f2eb", padding: "80px 0", fontFamily: "’source Sans 3', sans-serif", }}
             >
                 <div className="container">
                     {/* Section Title */}
@@ -468,7 +468,7 @@ export default function MicoristePage() {
                                 lineHeight: "1.8",
                             }}
                         >
-                            Mythri Sity places you in Bengaluru's fastest-growing ecosystem, off Sarjapur Road. Enjoy seamless connectivity to key IT corridors. The unparalleled advantage: being minutes from the proposed SWIFT City, establishing this address as the epicenter of tomorrow's progress.
+                            Mythri Sity places you in Bengaluru’s fastest-growing ecosystem, off Sarjapur Road. Enjoy seamless connectivity to key IT corridors. The unparalleled advantage: being minutes from the proposed SWIFT City, establishing this address as the epicenter of tomorrow’s progress.
                         </p>
                     </div>
 
@@ -488,7 +488,7 @@ export default function MicoristePage() {
             </section>
             <section className="location" data-aos="fade-up"
                 data-aos-delay="200"
-                style={{ backgroundColor: "#f7f2eb", padding: "80px 0", fontFamily: "'Source Sans 3', sans-serif", }}
+                style={{ backgroundColor: "#f7f2eb", padding: "80px 0", fontFamily: "’source Sans 3', sans-serif", }}
             >
                 <div className="container-fluid">
                     <div className="row">
@@ -604,7 +604,7 @@ export default function MicoristePage() {
                 style={{
                     backgroundColor: "#f7f2eb",
                     padding: "80px 0",
-                    fontFamily: "'Source Sans 3', sans-serif",
+                    fontFamily: "’source Sans 3', sans-serif",
                 }}
             >
                 <div className="container">
@@ -654,7 +654,7 @@ export default function MicoristePage() {
                                     data-bs-toggle="collapse"
                                     data-bs-target="#faq2"
                                 >
-                                    2. How does the location of Mythri Sity offer superior connectivity to Bengaluru's major IT hubs and future growth corridors?
+                                    2. How does the location of Mythri Sity offer superior connectivity to Bengaluru’s major IT hubs and future growth corridors?
                                 </button>
                             </h2>
                             <div
@@ -744,8 +744,6 @@ export default function MicoristePage() {
                     </div>
                 </div>
             </section>
-
-
         </>
     );
 }
