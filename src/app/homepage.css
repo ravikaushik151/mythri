@@ -287,22 +287,24 @@
 }
 
 .homehome {
-  
+
   background-image: url('/images/home-about.png') !important;
   background-size: 100% 100% !important;
-  background-position: center  !important;
- 
+  background-position: center !important;
+
   background-repeat: no-repeat;
 }
+
 @media only screen and (max-width:768px) {
   .homehome {
-  
+
     background-image: none !important;
     background-size: 50% 100% !important;
-    background-position: center  !important;
-   
+    background-position: center !important;
+
     background-repeat: no-repeat;
   }
+
   .mobileoverview {
     margin-top: -30px !important;
   }
@@ -344,4 +346,23 @@
     background-size: 25% 15% !important;
     background-position: 0% 100%
   }
+}
+
+.main-navbar.sticky .navbar-wrapper .logo-box .white-png {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7479%) hue-rotate(70deg) brightness(99%) contrast(107%);
+}
+
+.main-navbar .navbar-wrapper .logo-box .white-png {
+  filter: none;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  font-size: 28px;
+  color: black;
+  z-index: 1001;
+}
+
+.main-navbar.sticky .menu-toggle {
+  color: white;
 }

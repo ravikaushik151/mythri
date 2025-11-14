@@ -94,7 +94,7 @@ export default function Footer() {
             <ul className="footer-links list-unstyled">
               <li><Link href="/">Home</Link></li>
               <li><Link href="/about">About</Link></li>
-              <li><Link href="/Project">Project</Link></li>
+              <li><Link href="/project">Project</Link></li>
               <li><Link href="/blog">Blog</Link></li>
               <li><Link href="/career">Career</Link></li>
               <li><Link href="/contact">Contact</Link></li>
