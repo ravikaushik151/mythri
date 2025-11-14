@@ -412,29 +412,32 @@ export default function MicoristePage() {
                                     src="/images/sankalp/project img.webp"
                                     alt="Project View 1"
                                     width={900}
-                                    height={500}
-                                    className="d-block w-100 rounded"
+                                    height={400}
+                                    className="d-block w-100 rounded carousel-img"
                                 />
                             </Carousel.Item>
+
                             <Carousel.Item>
                                 <Image
                                     src="/images/sankalp/project img 2webp.webp"
                                     alt="Project View 2"
                                     width={900}
-                                    height={500}
-                                    className="d-block w-100 rounded"
+                                    height={400}
+                                    className="d-block w-100 rounded carousel-img"
                                 />
                             </Carousel.Item>
+
                             <Carousel.Item>
                                 <Image
                                     src="/images/sankalp/project img 3.webp"
                                     alt="Project View 3"
                                     width={900}
-                                    height={500}
-                                    className="d-block w-100 rounded"
+                                    height={400}
+                                    className="d-block w-100 rounded carousel-img"
                                 />
                             </Carousel.Item>
                         </Carousel>
+
 
                         <p
                             className="mx-auto"
@@ -583,7 +586,7 @@ export default function MicoristePage() {
             </section>
             <section data-aos="fade-up"
                 data-aos-delay="200"
-                className="text-center"
+                className="text-center d-none"
                 style={{ backgroundColor: "#f7f2eb", padding: "80px 0", fontFamily: "'Source Sans 3', sans-serif", }}
             >
                 <div className="container">

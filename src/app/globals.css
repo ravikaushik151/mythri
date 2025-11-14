@@ -19832,4 +19832,20 @@ nav.navbar-expand-lg.navbar-dark.bg-dark.fixed-top.scrolled {
   color: #585858;
 }
 
+.carousel-img {
+  height: 500px;
+  /* Desktop Height */
+  object-fit: cover;
+}
+
+/* Mobile Screen */
+@media (max-width: 767px) {
+  .carousel-img {
+    height: 300px;
+    /* Mobile Height */
+    object-fit: cover;
+  }
+}
+
+
 /* ///header ends */

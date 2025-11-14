@@ -435,7 +435,7 @@ export default function MicoristePage() {
                                     alt="Project View 1"
                                     width={900}
                                     height={500}
-                                    className="d-block w-100 rounded"
+                                    className="d-block w-100 rounded carousel-img"
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
@@ -444,7 +444,7 @@ export default function MicoristePage() {
                                     alt="Project View 2"
                                     width={900}
                                     height={500}
-                                    className="d-block w-100 rounded"
+                                    className="d-block w-100 rounded carousel-img"
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
@@ -453,7 +453,7 @@ export default function MicoristePage() {
                                     alt="Project View 3"
                                     width={900}
                                     height={500}
-                                    className="d-block w-100 rounded"
+                                    className="d-block w-100 rounded carousel-img"
                                 />
                             </Carousel.Item>
                         </Carousel>
