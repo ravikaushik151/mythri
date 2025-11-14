@@ -15654,8 +15654,7 @@ footer button:hover {
   filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7479%) hue-rotate(70deg) brightness(99%) contrast(107%);
 }
 
-
-.white-png {
+.main-navbar .navbar-wrapper .logo-box .white-png {
   filter: none;
 }
 
