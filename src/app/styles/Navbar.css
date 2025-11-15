@@ -75,6 +75,56 @@
   margin-top: 120px;
 }
 
+@media (min-width: 992px) {
+
+  .main-navbar.sticky .nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 0%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.4s ease;
+    z-index: 999;
+    overflow: inherit;
+  }
+
+
+  .main-navbar.sticky .overlay-menu {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .main-navbar.sticky .overlay-menu li a {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: color 0.3s;
+  }
+
+  .main-navbar.sticky .overlay-menu li {
+    margin: 25px 15px;
+  }
+
+  .main-navbar.sticky .overlay-menu li a:hover {
+    color: gold;
+  }
+
+
+  .main-navbar.sticky .menu-toggle {
+    display: none;
+  }
+
+}
+
 .overlay-menu li {
   margin: 25px 0;
 }
@@ -88,7 +138,7 @@
 }
 
 .overlay-menu li a:hover {
-  color: #00a859;
+  color: gold;
 }
 
 /* Responsive adjustments */

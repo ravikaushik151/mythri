@@ -152,7 +152,7 @@ export default function ContactForm({
         />
       )}
 
-      <div className="text-start">
+      <div className="text-center">
         <button type="submit" disabled={loading} className={buttonClass}>
           {loading ? "Sending..." : "Submit"}
         </button>

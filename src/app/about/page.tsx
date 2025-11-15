@@ -67,7 +67,7 @@ export default function About() {
                 alt="Luxury interior"
                 width={648}
                 height={338}
-                className="img-fluid w-100 d-md-none my-4"
+                className="img-fluid w-100 d-none my-4"
                 src="/images/about page_mythri.webp"
                 style={{ objectFit: "cover", minHeight: "350px" }}
               />

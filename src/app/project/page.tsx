@@ -1,9 +1,11 @@
+// components/ProjectShowcase.js
 "use client";
 import React, { useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { MapPin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import styles from "../ProjectShowcase.module.css";
 
 const projects = [
   {
@@ -71,7 +73,6 @@ const projects = [
   },
 ];
 
-
 export default function ProjectShowcase() {
   const [hoveredProject, setHoveredProject] = useState(null);
 
@@ -109,31 +110,11 @@ export default function ProjectShowcase() {
           <Row className="justify-content-center">
             {projects.map((project) => (
               <Col md={10} className="mb-5" key={project.id}>
-                <div
-                  className="position-relative shadow-lg rounded overflow-hidden"
-                  style={{
-                    backgroundColor: "#fdf9f3",
-                    padding: "30px",
-                  }}
-                >
-                  {/* Background Layer */}
-                  <div
-                    className="position-absolute top-0 start-0 w-100 h-100"
-                    style={{
-                      backgroundColor: "#f4efe4",
-                      zIndex: 0,
-                      transform: "translate(15px, 15px)",
-                      borderRadius: "10px",
-                    }}
-                  ></div>
+                <div className={styles.projectWrapper}>
+                  <div className={styles.bgLayer}></div>
 
-                  {/* Image + Card */}
                   <div
-                    className="position-relative overflow-hidden"
-                    style={{
-                      borderRadius: "10px",
-                      boxShadow: "0 6px 15px rgba(0,0,0,0.1)",
-                    }}
+                    className={styles.imageCard}
                     onMouseEnter={() => setHoveredProject(project.id)}
                     onMouseLeave={() => setHoveredProject(null)}
                   >
@@ -141,21 +122,9 @@ export default function ProjectShowcase() {
                       src={project.image}
                       alt={project.name}
                       className="img-fluid w-100"
-                      style={{ borderRadius: "10px" }}
                     />
 
-                    {/* Overlay Card */}
-                    <div
-                      className="position-absolute bg-white p-4 shadow"
-                      style={{
-                        bottom: "20px",
-                        right: "20px",
-                        width: "60%",
-                        maxWidth: "550px",
-                        borderRadius: "6px",
-                        transition: "all 0.4s ease",
-                      }}
-                    >
+                    <div className={styles.overlayCard}>
                       <h4 className="fw-bold mb-1">{project.name}</h4>
                       <p className="text-secondary small mb-2 d-flex align-items-center">
                         <MapPin size={16} className="me-1" />
@@ -167,14 +136,14 @@ export default function ProjectShowcase() {
                           <p className="text-secondary small mb-3">
                             {project.description}
                           </p>
-                          <div className="d-flex justify-content-between text-secondary small fw-semibold border-top pt-2">
+                          <div className={styles.detailsRow}>
                             <span>{project.details.type}</span>
                             <span>{project.details.size}</span>
                             <span>{project.details.price}</span>
                           </div>
                         </>
                       ) : (
-                        <div className="d-flex justify-content-between text-secondary small fw-semibold mt-3">
+                        <div className={styles.detailsRowStatic}>
                           <span>{project.details.type}</span>
                           <span>{project.details.size}</span>
                           <span>{project.details.price}</span>
@@ -184,29 +153,10 @@ export default function ProjectShowcase() {
                   </div>
                 </div>
 
-                {/* Buttons */}
                 <div className="text-end mt-4">
-                  <Button
-                    variant="danger"
-                    className="me-2 px-4 rounded-0"
-                    style={{ backgroundColor: "#e94f35", border: "none" }}
-                  >
-                    Enquire
-                  </Button>
-                  <Button
-                    variant="danger"
-                    className="me-2 px-4 rounded-0"
-                    style={{ backgroundColor: "#e94f35", border: "none" }}
-                  >
-                    Call Now
-                  </Button>
-                  <Button
-                    variant="success"
-                    className="px-4 rounded-0"
-                    style={{ backgroundColor: "#25D366", border: "none" }}
-                  >
-                    Whatsapp
-                  </Button>
+                  <Button className={styles.enquireBtn}>Enquire</Button>
+                  <Button className={styles.callBtn}>Call Now</Button>
+                  <Button className={styles.whatsappBtn}>Whatsapp</Button>
                 </div>
               </Col>
             ))}

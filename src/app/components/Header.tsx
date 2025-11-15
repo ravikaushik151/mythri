@@ -51,7 +51,6 @@ export default function Navbar() {
           <li><Link href="/" onClick={toggleMenu}>HOME</Link></li>
           <li><Link href="/about" onClick={toggleMenu}>ABOUT US</Link></li>
           <li><Link href="/project" onClick={toggleMenu}>PROJECTS</Link></li>
-          <li><Link href="/channel-partner" onClick={toggleMenu}>CHANNEL PARTNER</Link></li>
           <li><Link href="/career" onClick={toggleMenu}>CAREER</Link></li>
           <li><Link href="/blog" onClick={toggleMenu}>BLOGS</Link></li>
           <li><Link href="/contact" onClick={toggleMenu}>CONTACT US</Link></li>
