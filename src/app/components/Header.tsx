@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { usePathname } from "next/navigation";
 import "../styles/Navbar.css";
 
 export default function Navbar() {
@@ -10,6 +11,13 @@ export default function Navbar() {
   const [isSticky, setIsSticky] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
+
+  const pathname = usePathname();
+
+  // ❗ Auto-close menu on route change
+  useEffect(() => {
+    setIsOpen(false);
+  }, [pathname]);
 
   useEffect(() => {
     const handleScroll = () => setIsSticky(window.scrollY > 100);
@@ -20,7 +28,6 @@ export default function Navbar() {
   return (
     <nav className={`main-navbar ${isSticky ? "sticky" : ""}`}>
       <div className="navbar-wrapper">
-        {/* Logo Left */}
         <div className="logo-box">
           <Link href="/">
             <Image
@@ -34,7 +41,6 @@ export default function Navbar() {
           </Link>
         </div>
 
-        {/* Hamburger Right */}
         <div
           className="menu-toggle"
           onClick={toggleMenu}
@@ -45,15 +51,14 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Fullscreen Overlay Menu */}
       <div className={`nav-overlay ${isOpen ? "open" : ""}`}>
         <ul className="overlay-menu">
-          <li><Link href="/" onClick={toggleMenu}>HOME</Link></li>
-          <li><Link href="/about" onClick={toggleMenu}>ABOUT US</Link></li>
-          <li><Link href="/project" onClick={toggleMenu}>PROJECTS</Link></li>
-          <li><Link href="/career" onClick={toggleMenu}>CAREER</Link></li>
-          <li><Link href="/blog" onClick={toggleMenu}>BLOGS</Link></li>
-          <li><Link href="/contact" onClick={toggleMenu}>CONTACT US</Link></li>
+          <li><Link href="/">HOME</Link></li>
+          <li><Link href="/about">ABOUT US</Link></li>
+          <li><Link href="/project">PROJECTS</Link></li>
+          <li><Link href="/career">CAREER</Link></li>
+          <li><Link href="/blog">BLOGS</Link></li>
+          <li><Link href="/contact">CONTACT US</Link></li>
         </ul>
       </div>
     </nav>
