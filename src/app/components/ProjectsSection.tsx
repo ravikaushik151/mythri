@@ -6,7 +6,7 @@ import "../styles/ProjectsSection.css";
 const projects = [
   {
     title: "Mythri Sankalp",
-    location: "Off Sarjapur Road, Bengaluru",
+    location: "TC Palya, KR Puram, Bengaluru",
     status: "Under Construction",
     projectType: "Residential Apartments",
     configuration: "2 & 3 BHK",
@@ -19,12 +19,12 @@ const projects = [
   },
   {
     title: "Mythri Sikharam",
-    location: "Sarjapur Road, Bengaluru",
+    location: "off sarjapur Road, Hadosiddapura",
     status: "Under Construction",
     projectType: "Residential Apartments",
     configuration: "2 & 3 BHK",
-    numberOfUnits: "100+ Units", // replace actual
-    possession: "2026 (Expected)", // replace actual
+    numberOfUnits: "182 Units", // replace actual
+    possession: "oct 2027", // replace actual
     description:
       "Mythri Sikharam is a thoughtfully designed residential project offering a balance of modern living and timeless comfort. The homes are spacious, airy, and finished with premium materials to enhance aesthetics and functionality.",
     image: "images/sikharam.webp",
@@ -34,10 +34,10 @@ const projects = [
     title: "Mythri Sity",
     location: "Off Sarjapur Road, Bengaluru",
     status: "Under Construction",
-    projectType: "Residential Community / Township",
-    configuration: "Plots + Villas (if applicable)", // replace actual
+    projectType: "Residential Apartments",
+    configuration: "2, 2.5, 3, 3.5 and 4 BHK", // replace actual
     numberOfUnits: "5 Acre Development", // replace actual
-    possession: "2026 (Expected)", // replace actual
+    possession: "2028", // replace actual
     description:
       "Mythri Sity is that kind of place — where thoughtful design meets timeless comfort. Spread across 5 acres, it brings together the warmth of community living and the freedom of open spaces.",
     image: "images/sity.webp",
@@ -45,12 +45,12 @@ const projects = [
   },
   {
     title: "Mythri Street",
-    location: "Off Sarjapur Road, Kodathi, Bengaluru",
+    location: "Off Sarjapur Road, Kodathi",
     status: "Under Construction",
     projectType: "Residential Apartments",
     configuration: "2 & 3 BHK",
-    numberOfUnits: "200+ Units", // replace actual
-    possession: "2027 (Expected)", // replace actual
+    numberOfUnits: "219 Units", // replace actual
+    possession: "2028", // replace actual
     description:
       "Mythri Street is a thoughtfully crafted residential landmark spread across 3 acres of prime land. With 80% open spaces, it blends urban sophistication with serene living.",
     image: "images/street.webp",

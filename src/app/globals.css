@@ -19258,15 +19258,31 @@ footer textarea::placeholder {
   color: #ffd700;
 }
 
-.footer-section-2 {
-  background-image: url('/images/Footer.webp');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom center;
-  color: #fff;
-  min-height: 80vh;
-  /* full height footer background */
+/* 768px से 1199px तक → 80vh */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .footer-section-2 {
+    background-image: url('/images/Footer.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    color: #fff;
+    min-height: 80vh;
+  }
 }
+
+/* 1200px और उससे ऊपर → 100vh */
+@media (min-width: 1200px) {
+  .footer-section-2 {
+    background-image: url('/images/Footer.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    color: #fff;
+    min-height: 100vh;
+  }
+}
+
+
 
 /* ====== Mobile Responsive ====== */
 @media (max-width: 768px) {

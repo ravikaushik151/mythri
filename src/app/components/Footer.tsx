@@ -76,13 +76,13 @@ export default function Footer() {
 
             <h5 className="fw-bold mt-3 mb-2">Follow Us</h5>
             <div className="footer-social d-flex gap-3 justify-content-md-start justify-content-center">
-              <Link href="#" className="text-white">
+              <Link href="https://www.facebook.com/Mythribuilders" className="text-white">
                 <Image src="/images/facebook.svg" alt="Facebook" width={24} height={24} />
               </Link>
-              <Link href="#" className="text-white">
+              <Link href="https://www.instagram.com/mythribuilders/" className="text-white">
                 <Image src="/images/instagram.svg" alt="Instagram" width={24} height={24} />
               </Link>
-              <Link href="#" className="text-white">
+              <Link href="https://x.com/mythri_builders" className="text-white">
                 <Image src="/images/twitter.svg" alt="Twitter" width={24} height={24} />
               </Link>
             </div>
