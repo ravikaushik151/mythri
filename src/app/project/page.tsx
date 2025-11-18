@@ -52,7 +52,7 @@ const projects = [
       size: "1150 sqft - 1600 sqft (Approx.)",
       price: "80 Lacs Onwards*",
       status: "Under Construction",
-      possession: "Oct 2027",
+      possession: "October 2027",
       units: "182 Units",
     },
   },
@@ -61,7 +61,7 @@ const projects = [
     name: "Mythri Sankalp",
     location: "KR Puram, Bengaluru",
     description:
-      "Mythri Sankalp offers spacious 2 & 3 BHK apartments designed for comfort and modern living. Located KR Puram,, the project is RERA approved, providing an ideal blend of convenience and luxury.",
+      "Mythri Sankalp offers spacious 2 & 3 BHK apartments designed for comfort and modern living. Located KR Puram, the project is RERA approved, providing an ideal blend of convenience and luxury.",
     image: "/images/mythrisapphire.webp",
     details: {
       type: "2 & 3 BHK Residential Apartments",

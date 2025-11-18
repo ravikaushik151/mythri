@@ -37,7 +37,7 @@ const projects = [
     projectType: "Residential Apartments",
     configuration: "2 & 3 BHK",
     numberOfUnits: "182 Units", // replace actual
-    possession: "oct 2027", // replace actual
+    possession: "October 2027", // replace actual
     description:
       "Mythri Sikharam is a thoughtfully designed residential project offering a balance of modern living and timeless comfort. The homes are spacious, airy, and finished with premium materials to enhance aesthetics and functionality.",
     image: "images/sikharam.webp",

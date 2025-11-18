@@ -36,7 +36,7 @@ export default function Contact() {
           <div className="row">
             <div className="col-md-12 mx-auto">
               <div className="heading">
-                <h2 className="text-center theme-color-light mt-md-0 mt-4 mb-0 mb-md-5">Contact Us</h2>
+                <h2 className="text-center theme-color-light mt-md-0 mt-4 mb-0 mb-md-5">GET IN TOUCH WITH OUR TEAM</h2>
               </div>
             </div>
           </div>

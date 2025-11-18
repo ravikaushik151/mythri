@@ -19264,7 +19264,7 @@ footer textarea::placeholder {
   background-size: cover;
   background-position: bottom center;
   color: #fff;
-  min-height: 700px;
+  min-height: 800px;
   /*min-height: 80vh;*/
   /* full height footer background */
 }

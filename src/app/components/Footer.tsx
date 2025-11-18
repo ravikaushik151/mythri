@@ -74,6 +74,9 @@ export default function Footer() {
             <h4 className="footer-title">Office Address</h4>
             <p style={{ whiteSpace: "pre-line" }}>{address}</p>
 
+            <p>9164789898</p>
+            <p>enquiry@mythribuilders.co.in </p>
+
             <h5 className="fw-bold mt-3 mb-2">Follow Us</h5>
             <div className="footer-social d-flex gap-3 justify-content-md-start justify-content-center">
               <Link href="https://www.facebook.com/Mythribuilders" className="text-white">

@@ -55,9 +55,10 @@ export default function Blog() {
                 <div className="container">
                     <div className="row justify-content-end mb-4">
                         <div className='col-md-12'>
-                            <h2 className="text-center">
-                                Blogs
+                            <h2 className="text-center mb-2">
+                                INSIGHTS BY MYTHRI BUILDERS
                             </h2>
+                            <p className='text-center'>Where we share knowledge, updates, and inspiration.</p>
                         </div>
                         <div className="col-md-2 d-none">
                             <input
