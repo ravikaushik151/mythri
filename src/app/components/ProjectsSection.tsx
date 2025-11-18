@@ -5,30 +5,17 @@ import "../styles/ProjectsSection.css";
 
 const projects = [
   {
-    title: "Mythri Sankalp",
-    location: "TC Palya, KR Puram, Bengaluru",
+    title: "Mythri Street",
+    location: "Off Sarjapur Road, Kodathi",
     status: "Under Construction",
     projectType: "Residential Apartments",
     configuration: "2 & 3 BHK",
-    numberOfUnits: "120+ Units", // Fill accurate count if known
-    possession: "December 2026",
+    numberOfUnits: "219 Units", // replace actual
+    possession: "2028", // replace actual
     description:
-      "Mythri Sankalp offers spacious 2 & 3 BHK apartments designed for comfort and modern living. Located off Sarjapur Road, the project is RERA approved, providing an ideal blend of convenience and luxury.",
-    image: "images/mythrisapphire.webp",
-    link: "/mythri-sankalp",
-  },
-  {
-    title: "Mythri Sikharam",
-    location: "off sarjapur Road, Hadosiddapura",
-    status: "Under Construction",
-    projectType: "Residential Apartments",
-    configuration: "2 & 3 BHK",
-    numberOfUnits: "182 Units", // replace actual
-    possession: "oct 2027", // replace actual
-    description:
-      "Mythri Sikharam is a thoughtfully designed residential project offering a balance of modern living and timeless comfort. The homes are spacious, airy, and finished with premium materials to enhance aesthetics and functionality.",
-    image: "images/sikharam.webp",
-    link: "/mythri-sikharam",
+      "Mythri Street is a thoughtfully crafted residential landmark spread across 3 acres of prime land. With 80% open spaces, it blends urban sophistication with serene living.",
+    image: "images/street.webp",
+    link: "/mythri-street",
   },
   {
     title: "Mythri Sity",
@@ -44,18 +31,31 @@ const projects = [
     link: "/mythri-sity",
   },
   {
-    title: "Mythri Street",
-    location: "Off Sarjapur Road, Kodathi",
+    title: "Mythri Sikharam",
+    location: "off sarjapur Road, Hadosiddapura",
     status: "Under Construction",
     projectType: "Residential Apartments",
     configuration: "2 & 3 BHK",
-    numberOfUnits: "219 Units", // replace actual
-    possession: "2028", // replace actual
+    numberOfUnits: "182 Units", // replace actual
+    possession: "oct 2027", // replace actual
     description:
-      "Mythri Street is a thoughtfully crafted residential landmark spread across 3 acres of prime land. With 80% open spaces, it blends urban sophistication with serene living.",
-    image: "images/street.webp",
-    link: "/mythri-street",
+      "Mythri Sikharam is a thoughtfully designed residential project offering a balance of modern living and timeless comfort. The homes are spacious, airy, and finished with premium materials to enhance aesthetics and functionality.",
+    image: "images/sikharam.webp",
+    link: "/mythri-sikharam",
   },
+  {
+    title: "Mythri Sankalp",
+    location: "KR Puram, Bengaluru",
+    status: "Under Construction",
+    projectType: "Residential Apartments",
+    configuration: "2 & 3 BHK",
+    numberOfUnits: "120+ Units", // Fill accurate count if known
+    possession: "December 2026",
+    description:
+      "Mythri Sankalp offers spacious 2 & 3 BHK apartments designed for comfort and modern living. Located off Sarjapur Road, the project is RERA approved, providing an ideal blend of convenience and luxury.",
+    image: "images/mythrisapphire.webp",
+    link: "/mythri-sankalp",
+  }
 ];
 
 

@@ -10,8 +10,56 @@ import styles from "../ProjectShowcase.module.css";
 const projects = [
   {
     id: 1,
-    name: "Mythri Sankalp",
+    name: "Mythri Street",
+    location: "Off Sarjapur Road, Kodathi",
+    description:
+      "Mythri Street is a thoughtfully crafted residential landmark spread across 3 acres of prime land. With 80% open spaces, it blends urban sophistication with serene living.",
+    image: "/images/street.webp",
+    details: {
+      type: "2 & 3 BHK Residential Apartments",
+      size: "1100 sqft - 1550 sqft (Approx.)",
+      price: "90 Lacs Onwards*",
+      status: "Under Construction",
+      possession: "2028",
+      units: "219 Units",
+    },
+  },
+  {
+    id: 2,
+    name: "Mythri Sity",
     location: "Off Sarjapur Road, Bengaluru",
+    description:
+      "Mythri Sity is that kind of place — where thoughtful design meets timeless comfort. Spread across 5 acres, it brings together the warmth of community living and the freedom of open spaces.",
+    image: "/images/sity.webp",
+    details: {
+      type: "Residential Apartments",
+      size: "5 Acre Development",
+      price: "On Request",
+      status: "Under Construction",
+      possession: "2028",
+      units: "5 Acre Development",
+    },
+  },
+  {
+    id: 3,
+    name: "Mythri Sikharam",
+    location: "Off Sarjapur Road, Hadosiddapura",
+    description:
+      "Mythri Sikharam is a thoughtfully designed residential project offering a balance of modern living and timeless comfort. The homes are spacious, airy, and finished with premium materials to enhance aesthetics and functionality.",
+    image: "/images/sikharam.webp",
+    details: {
+      type: "2 & 3 BHK Residential Apartments",
+      size: "1150 sqft - 1600 sqft (Approx.)",
+      price: "80 Lacs Onwards*",
+      status: "Under Construction",
+      possession: "Oct 2027",
+      units: "182 Units",
+    },
+  },
+  {
+    id: 4,
+    name: "Mythri Sankalp",
+    location: "KR Puram, Bengaluru",
     description:
       "Mythri Sankalp offers spacious 2 & 3 BHK apartments designed for comfort and modern living. Located off Sarjapur Road, the project is RERA approved, providing an ideal blend of convenience and luxury.",
     image: "/images/mythrisapphire.webp",
@@ -22,53 +70,6 @@ const projects = [
       status: "Under Construction",
       possession: "December 2026",
       units: "120+ Units",
-    },
-  },
-  {
-    id: 2,
-    name: "Mythri Sikharam",
-    location: "Sarjapur Road, Bengaluru",
-    description:
-      "Mythri Sikharam is a thoughtfully designed residential project offering a balance of modern living and timeless comfort. The homes are spacious, airy, and finished with premium materials to enhance aesthetics and functionality.",
-    image: "/images/sikharam.webp",
-    details: {
-      type: "2 & 3 BHK Residential Apartments",
-      size: "1150 sqft - 1600 sqft (Approx.)",
-      price: "80 Lacs Onwards*",
-      status: "Under Construction",
-      possession: "2026 (Expected)",
-      units: "100+ Units",
-    },
-  },
-  {
-    id: 3,
-    name: "Mythri Sity",
-    location: "Off Sarjapur Road, Bengaluru",
-    description:
-      "Mythri Sity is where thoughtful design meets timeless comfort. Spread across 5 acres, it brings together the warmth of community living and the freedom of open spaces.",
-    image: "/images/sity.webp",
-    details: {
-      type: "Residential Community / Township (Plots + Villas)",
-      size: "5 Acres Development",
-      price: "On Request",
-      status: "Under Construction",
-      possession: "2026 (Expected)",
-    },
-  },
-  {
-    id: 4,
-    name: "Mythri Street",
-    location: "Off Sarjapur Road, Kodathi, Bengaluru",
-    description:
-      "Mythri Street is a thoughtfully crafted residential landmark spread across 3 acres of prime land. With 80% open spaces, it blends urban sophistication with serene living.",
-    image: "/images/street.webp",
-    details: {
-      type: "2 & 3 BHK Residential Apartments",
-      size: "1100 sqft - 1550 sqft (Approx.)",
-      price: "90 Lacs Onwards*",
-      status: "Under Construction",
-      possession: "2027 (Expected)",
-      units: "200+ Units",
     },
   },
 ];

@@ -103,11 +103,17 @@ export default function Home() {
               <div className="d-none d-md-block position-absolute top-0 start-0 w-100 h-100">
                 <video
                   autoPlay
-                  loop
+                  loop={false}
                   muted
                   playsInline
                   preload="auto"
                   className="w-100 h-100 object-cover"
+                  onEnded={() => {
+                    const nextSection = document.getElementById("next-section");
+                    if (nextSection) {
+                      nextSection.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
                 >
                   <source src="/images/Mythri Logo_Cideo.mp4" type="video/mp4" />
                 </video>
@@ -117,21 +123,24 @@ export default function Home() {
               <div className="d-block d-md-none position-absolute top-0 start-0 w-100 h-100">
                 <video
                   autoPlay
-                  loop
+                  loop={false}
                   muted
                   playsInline
                   preload="auto"
                   className="w-100 h-100 object-cover"
+                  onEnded={() => {
+                    const nextSection = document.getElementById("scroll-more");
+                    if (nextSection) {
+                      nextSection.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
                 >
                   <source src="/images/Mythri Logo-Mobile Version.mp4" type="video/mp4" />
                 </video>
               </div>
 
-              {/* Black overlay (optional) */}
-              <div
-                className="position-absolute top-0 start-0 w-100 h-100"
-              // style={{ backgroundColor: "rgba(0, 0, 0, 0.5)", zIndex: 1 }}
-              ></div>
+              {/* OPTIONAL Black Overlay */}
+              <div className="position-absolute top-0 start-0 w-100 h-100"></div>
 
               {/* Foreground Content */}
               <div className="container position-relative z-2 d-none">
@@ -140,10 +149,6 @@ export default function Home() {
                     <h1 className="display-4 fw-bold mb-3 w-100 text-center bannertext">
                       Crafting Landmarks, Building Trust
                     </h1>
-
-                    <p className="mb-4 lead text-center w-100 text-light d-none">
-                      Building Bengaluru’s future through thoughtful design and uncompromising quality.
-                    </p>
                   </div>
                 </div>
               </div>
@@ -151,7 +156,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
 
         <div id="scroll-more">
           <section className="section-remove px-md-5 theme-bg-light homehome"  >
