@@ -88,6 +88,9 @@ export default function Footer() {
               <Link href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F74886467%2Fadmin%2F" className="text-white">
                 <Image src="/images/linkedin.svg" alt="Twitter" width={24} height={24} />
               </Link>
+              <Link href="http://www.youtube.com/@mythribuilder1" className="text-white">
+                <Image src="/images/youtube.svg" alt="Twitter" width={24} height={24} />
+              </Link>
             </div>
           </div>
 
