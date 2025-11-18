@@ -143,7 +143,7 @@ const QualityBlock = () => {
                       data-to="30"
                       data-speed="1500"
                     >
-                      50
+                      800
                     </h2>
                   </div>
                   <div className="count2">
@@ -158,7 +158,7 @@ const QualityBlock = () => {
                         marginTop: "-8px",
                       }}
                     >
-                      MEMBERS
+                      Happy Families
                     </p>
                   </div>
                 </div>
