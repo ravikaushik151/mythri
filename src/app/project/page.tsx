@@ -61,7 +61,7 @@ const projects = [
     name: "Mythri Sankalp",
     location: "KR Puram, Bengaluru",
     description:
-      "Mythri Sankalp offers spacious 2 & 3 BHK apartments designed for comfort and modern living. Located off Sarjapur Road, the project is RERA approved, providing an ideal blend of convenience and luxury.",
+      "Mythri Sankalp offers spacious 2 & 3 BHK apartments designed for comfort and modern living. Located KR Puram,, the project is RERA approved, providing an ideal blend of convenience and luxury.",
     image: "/images/mythrisapphire.webp",
     details: {
       type: "2 & 3 BHK Residential Apartments",
