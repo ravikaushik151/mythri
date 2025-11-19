@@ -32,7 +32,7 @@ const projects = [
   },
   {
     title: "Mythri Sikharam",
-    location: "off sarjapur Road, Hadosiddapura",
+    location: "Off Sarjapur Road, Hadosiddapura",
     status: "Under Construction",
     projectType: "Residential Apartments",
     configuration: "2 & 3 BHK",
