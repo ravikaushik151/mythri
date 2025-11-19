@@ -69,7 +69,7 @@ const projects = [
       price: "85 Lacs Onwards*",
       status: "Under Construction",
       possession: "December 2026",
-      units: "120+ Units",
+      units: "101 Units",
     },
   },
 ];

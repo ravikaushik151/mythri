@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import "./../about.css";
 import TestimonialSlider from "../components/Home/TestimonialSlider";
+import TeamSection from "../components/TeamSection";
 
 export default function About() {
   return (
@@ -110,6 +111,8 @@ export default function About() {
           </div>
         </div>
       </section>
+
+      <TeamSection />
 
       {/* Testimonials */}
       <TestimonialSlider />
