@@ -47,7 +47,7 @@ const QualityBlock = () => {
                       data-to="25"
                       data-speed="1500"
                     >
-                      6
+                      5
                     </h2>
                   </div>
                   <div className="count2">
