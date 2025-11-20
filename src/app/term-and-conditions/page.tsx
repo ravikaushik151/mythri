@@ -22,12 +22,8 @@ export default function Contact() {
                 </div>
             </div>
 
-
-
             <section className="section-padding bg-white theme-bg-dark contact">
                 <div className="container">
-
-
                     <div className="row">
                         <div className="col-md-12 mx-auto">
                             <div className="row">
@@ -44,9 +40,6 @@ export default function Contact() {
                                         </div>
                                     </div>
                                 </div>
-
-
-
                             </div>
                         </div>
                     </div>
