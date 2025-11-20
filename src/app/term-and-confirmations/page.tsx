@@ -1,7 +1,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import ContactForm from "../../app/components/ContactForm";
+import ContactForm from "../components/ContactForm";
 import "./../privacy.css";
 export default function Contact() {
     return (
