@@ -27,6 +27,7 @@ export default function Navbar() {
 
   return (
     <>
+
       <nav className={`main-navbar d-none ${isSticky ? "sticky" : ""}`}>
         <div className="navbar-wrapper">
           <div className="logo-box">
