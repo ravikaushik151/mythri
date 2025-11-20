@@ -4752,7 +4752,6 @@ fieldset:disabled .btn {
   }
 }
 
-/*
 @media (min-width:992px) {
   .navbar-expand-lg {
     flex-wrap: nowrap;
@@ -4761,7 +4760,11 @@ fieldset:disabled .btn {
   }
 
   .navbar-expand-lg .navbar-nav {
-    flex-direction: row
+    flex-direction: column;
+  }
+
+  .main-navbar.sticky.navbar-expand-lg .navbar-nav {
+    flex-direction: row;
   }
 
   .navbar-expand-lg .navbar-nav .dropdown-menu {
@@ -4810,7 +4813,7 @@ fieldset:disabled .btn {
     overflow-y: visible
   }
 }
-*/
+
 @media (min-width:1200px) {
   .navbar-expand-xl {
     flex-wrap: nowrap;
