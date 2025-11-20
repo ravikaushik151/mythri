@@ -95,7 +95,7 @@ export default function Navbar() {
                 <ul className="dropdown-menu bg-black">
                   <li><Link href="/completed-projects">Completed Projects</Link></li>
                   <li><Link href="/ongoing-projects">Ongoing Projects</Link></li>
-                  <li><Link href="/upcoming-projects">Upcoming Projects</Link></li>
+                  <li className="d-none"><Link href="/upcoming-projects">Upcoming Projects</Link></li>
                 </ul>
               </li>
               <li className="nav-item"><Link href="/career">CAREER</Link></li>
