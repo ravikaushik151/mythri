@@ -131,7 +131,7 @@ const ProjectsSection = () => {
           <div className="more-icon">
             <span data-title-show="VIEW MORE" data-title-hide="+"></span>
           </div>
-          <Link href="/projects">Anchor link</Link>
+          <Link href="/ongoing-projects">Anchor link</Link>
         </li>
       </ul>
     </section>
