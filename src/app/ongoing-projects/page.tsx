@@ -24,7 +24,7 @@ const projects = [
         details: {
             type: "2 & 3 BHK Residential Apartments",
             size: "1100 sqft - 1550 sqft (Approx.)",
-            price: "90 Lacs Onwards*",
+            price: "1.18 Cr Onwards*",
             status: "Under Construction",
             possession: "2028",
             units: "219 Units",
@@ -40,7 +40,7 @@ const projects = [
         details: {
             type: "Residential Apartments",
             size: "5 Acre Development",
-            price: "On Request",
+            price: "1.20 Cr Onwards*",
             status: "Under Construction",
             possession: "2028",
             units: "5 Acre Development",
@@ -56,7 +56,7 @@ const projects = [
         details: {
             type: "2 & 3 BHK Residential Apartments",
             size: "1150 sqft - 1600 sqft (Approx.)",
-            price: "80 Lacs Onwards*",
+            price: "1.06 Cr Onwards*",
             status: "Under Construction",
             possession: "October 2027",
             units: "182 Units",
@@ -72,7 +72,7 @@ const projects = [
         details: {
             type: "2 & 3 BHK Residential Apartments",
             size: "1200 sqft - 1600 sqft (Approx.)",
-            price: "85 Lacs Onwards*",
+            price: "87 Lacs Onwards*",
             status: "Under Construction",
             possession: "December 2026",
             units: "101 Units",
