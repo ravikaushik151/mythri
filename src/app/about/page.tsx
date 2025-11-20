@@ -113,9 +113,6 @@ export default function About() {
       </section>
 
       <TeamSection />
-
-      {/* Testimonials */}
-      <TestimonialSlider />
     </>
   );
 }

@@ -1,6 +1,6 @@
 .main-navbar {
   position: fixed;
-  top: 0;
+  top: 0px;
   left: 0;
   width: 100%;
   z-index: 9999;
@@ -10,7 +10,7 @@
 
 .main-navbar.sticky {
   background: transparent;
-
+  top: 30px;
 }
 
 .navbar-wrapper {
@@ -20,6 +20,7 @@
   align-items: center;
   padding: 0px 50px;
   position: relative;
+  width: 100%;
 }
 
 .main-navbar.sticky .navbar-wrapper {
@@ -72,7 +73,7 @@
   list-style: none;
   text-align: center;
   padding: 0;
-  margin-top: 120px;
+  /*margin-top: 120px;*/
 }
 
 @media (min-width: 992px) {
@@ -99,7 +100,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 0;
+    margin-top: 70px;
   }
 
   .main-navbar.sticky .overlay-menu li a {
@@ -108,6 +109,12 @@
     text-decoration: none;
     letter-spacing: 2px;
     transition: color 0.3s;
+    background: none !important;
+  }
+
+  .dropdown-item:hover,
+  .nav-link:focus {
+    background: none !important;
   }
 
   .main-navbar.sticky .overlay-menu li {
@@ -123,6 +130,16 @@
     display: none;
   }
 
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: column;
+  }
+
+  .main-navbar.sticky.navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+  }
 }
 
 

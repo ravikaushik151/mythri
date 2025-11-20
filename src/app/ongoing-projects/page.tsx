@@ -14,74 +14,74 @@ const WHATSAPP_NUMBER = "919164789898"; // Use number without "+"
 const WHATSAPP_MESSAGE = "I am interested in one of your completed projects. Please contact me.";
 
 const projects = [
-    // ... your existing projects array remains the same
     {
         id: 1,
-        name: "Mythri Sunshine",
-        location: "Rampura, Bidarahalli Hobli, Bengaluru",
+        name: "Mythri Street",
+        location: "Off Sarjapur Road, Kodathi",
         description:
-            "Mythri Sunshine offers thoughtfully crafted homes designed to deliver comfort, connectivity, and a peaceful lifestyle. Located in Rampura, the project provides modern amenities with easy access to city conveniences.",
+            "Mythri Street is a thoughtfully crafted residential landmark spread across 3 acres of prime land. With 80% open spaces, it blends urban sophistication with serene living.",
         image: "/images/street.webp",
         details: {
-            type: "Residential Apartments",
-            size: "On Request",
-            price: "On Request",
-            status: "Completed",
-            possession: "Completed",
-            units: "—",
+            type: "2 & 3 BHK Residential Apartments",
+            size: "1100 sqft - 1550 sqft (Approx.)",
+            price: "90 Lacs Onwards*",
+            status: "Under Construction",
+            possession: "2028",
+            units: "219 Units",
         },
     },
     {
         id: 2,
-        name: "Mythri Square",
-        location: "Immadihalli, Whitefield, Bengaluru",
+        name: "Mythri Sity",
+        location: "Off Sarjapur Road, Bengaluru",
         description:
-            "Mythri Square is located in the heart of Whitefield, offering residents exceptional connectivity and a comfortable living environment. The project features well-planned homes with thoughtful use of space.",
+            "Mythri Sity is that kind of place — where thoughtful design meets timeless comfort. Spread across 5 acres, it brings together the warmth of community living and the freedom of open spaces.",
         image: "/images/sity.webp",
         details: {
             type: "Residential Apartments",
-            size: "On Request",
+            size: "5 Acre Development",
             price: "On Request",
-            status: "Completed",
-            possession: "Completed",
-            units: "—",
+            status: "Under Construction",
+            possession: "2028",
+            units: "5 Acre Development",
         },
     },
     {
         id: 3,
-        name: "Mythri Sapphire",
-        location: "Off Sarjapur Road, Bengaluru",
+        name: "Mythri Sikharam",
+        location: "Off Sarjapur Road, Hadosiddapura",
         description:
-            "Mythri Sapphire is a premium residential development located off Sarjapur Road. It offers spacious homes with modern amenities, making it an ideal choice for families seeking comfort and convenience.",
+            "Mythri Sikharam is a thoughtfully designed residential project offering a balance of modern living and timeless comfort. The homes are spacious, airy, and finished with premium materials to enhance aesthetics and functionality.",
         image: "/images/sikharam.webp",
         details: {
-            type: "2 & 3 BHK Apartments",
-            size: "On Request",
-            price: "On Request",
-            status: "Completed",
-            possession: "Completed",
-            units: "—",
+            type: "2 & 3 BHK Residential Apartments",
+            size: "1150 sqft - 1600 sqft (Approx.)",
+            price: "80 Lacs Onwards*",
+            status: "Under Construction",
+            possession: "October 2027",
+            units: "182 Units",
         },
     },
     {
         id: 4,
-        name: "Mythri Signature",
-        location: "Off Sarjapur Road, Bengaluru",
+        name: "Mythri Sankalp",
+        location: "KR Puram, Bengaluru",
         description:
-            "Mythri Signature is crafted for modern urban families who value premium living. With spacious layouts and quality construction, it provides an elevated lifestyle in one of Bengaluru’s fastest-growing regions.",
+            "Mythri Sankalp offers spacious 2 & 3 BHK apartments designed for comfort and modern living. Located KR Puram, the project is RERA approved, providing an ideal blend of convenience and luxury.",
         image: "/images/mythrisapphire.webp",
         details: {
-            type: "Residential Apartments",
-            size: "On Request",
-            price: "On Request",
-            status: "Completed",
-            possession: "Completed",
-            units: "—",
+            type: "2 & 3 BHK Residential Apartments",
+            size: "1200 sqft - 1600 sqft (Approx.)",
+            price: "85 Lacs Onwards*",
+            status: "Under Construction",
+            possession: "December 2026",
+            units: "101 Units",
         },
     },
 ];
 
-export default function CompletedProjectShowcase() {
+export default function ProjectShowcase() {
+
     const [hoveredProject, setHoveredProject] = useState(null);
     // 🆕 State for managing the modal (popup form)
     const [showEnquiryModal, setShowEnquiryModal] = useState(false);
@@ -119,7 +119,6 @@ export default function CompletedProjectShowcase() {
 
     return (
         <>
-            {/* ... (Your existing header section JSX) ... */}
             <div id="carouselExampleDark" className="header-section">
                 <div className="row">
                     <div className="col-md-12">
@@ -133,12 +132,12 @@ export default function CompletedProjectShowcase() {
                             />
                             <div className="overlay2 position-absolute top-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center">
                                 <div className="text-white d-block text-center">
-                                    <p className="fs-1 mb-3 text-uppercase">Completed Projects</p>
+                                    <p className="fs-1 mb-3 text-uppercase">Ongoing Projets</p>
                                     <p className="fs-6 text-center">
                                         <Link className="text-white text-decoration-none " href="/">
                                             Home
                                         </Link>{" "}
-                                        / Completed Projects
+                                        / Ongoing Projets
                                     </p>
                                 </div>
                             </div>
@@ -146,7 +145,7 @@ export default function CompletedProjectShowcase() {
                     </div>
                 </div>
             </div>
-            {/* --- */}
+
             <section className="py-5 bg-white text-dark">
                 <Container>
                     <Row className="justify-content-center">

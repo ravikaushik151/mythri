@@ -65,7 +65,7 @@ export default function ContactFormPopup() {
                     <div className="contact-hero_details w-form">
                         <form
                             id="wf-form-Melodies-of-Life-Contact-Form"
-                            action="https://www.assetzproperty.com/melodiesoflife/crm.php"
+                            action=""
                             method="POST"
                             className="form"
                             onSubmit={handleSubmit}

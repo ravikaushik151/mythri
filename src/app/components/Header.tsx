@@ -26,41 +26,86 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className={`main-navbar ${isSticky ? "sticky" : ""}`}>
-      <div className="navbar-wrapper">
-        <div className="logo-box">
-          <Link href="/">
-            <Image
-              src="/images/logo-dark.webp"
-              alt="Mana Projects logo"
-              width={100}
-              height={40}
-              className="white-png logo img-fluid"
-              priority
-            />
-          </Link>
+    <>
+      <nav className={`main-navbar d-none ${isSticky ? "sticky" : ""}`}>
+        <div className="navbar-wrapper">
+          <div className="logo-box">
+            <Link href="/">
+              <Image
+                src="/images/logo-dark.webp"
+                alt="Mana Projects logo"
+                width={100}
+                height={40}
+                className="white-png logo img-fluid"
+                priority
+              />
+            </Link>
+          </div>
+
+          <div
+            className="menu-toggle"
+            onClick={toggleMenu}
+            aria-label="Toggle navigation menu"
+            aria-expanded={isOpen}
+          >
+            {isOpen ? <FaTimes className="menu-icon" /> : <FaBars className="menu-icon" />}
+          </div>
         </div>
 
-        <div
-          className="menu-toggle"
-          onClick={toggleMenu}
-          aria-label="Toggle navigation menu"
-          aria-expanded={isOpen}
-        >
-          {isOpen ? <FaTimes className="menu-icon" /> : <FaBars className="menu-icon" />}
+        <div className={`nav-overlay ${isOpen ? "open" : ""}`}>
+          <ul className="overlay-menu">
+            <li><Link href="/">HOME</Link></li>
+            <li><Link href="/about">ABOUT US</Link></li>
+            <li><Link href="/project">PROJECTS</Link></li>
+            <li><Link href="/career">CAREER</Link></li>
+            <li><Link href="/blog">BLOGS</Link></li>
+            <li><Link href="/contact">CONTACT US</Link></li>
+          </ul>
         </div>
-      </div>
+      </nav>
 
-      <div className={`nav-overlay ${isOpen ? "open" : ""}`}>
-        <ul className="overlay-menu">
-          <li><Link href="/">HOME</Link></li>
-          <li><Link href="/about">ABOUT US</Link></li>
-          <li><Link href="/project">PROJECTS</Link></li>
-          <li><Link href="/career">CAREER</Link></li>
-          <li><Link href="/blog">BLOGS</Link></li>
-          <li><Link href="/contact">CONTACT US</Link></li>
-        </ul>
-      </div>
-    </nav>
+      <nav className={`main-navbar navbar navbar-expand-lg ${isSticky ? "sticky" : ""}`} >
+        <div className="navbar-wrapper">
+          <div className="logo-box">
+            <Link href="/">
+              <Image
+                src="/images/logo-dark.webp"
+                alt="Mana Projects logo"
+                width={100}
+                height={40}
+                className="white-png logo img-fluid"
+                priority
+              />
+            </Link>
+          </div>
+          <div
+            className="menu-toggle"
+            onClick={toggleMenu}
+            aria-label="Toggle navigation menu"
+            aria-expanded={isOpen}
+          >
+            {isOpen ? <FaTimes className="menu-icon" /> : <FaBars className="menu-icon" />}
+          </div>
+          <div className={`nav-overlay collapse navbar-collapse ${isOpen ? "open" : ""}`} id="navbarSupportedContent">
+            <ul className="navbar-nav mx-auto mb-2 mb-lg-0 overlay-menu">
+              <li className="nav-item"><Link href="/">HOME</Link></li>
+              <li className="nav-item"><Link href="/about">ABOUT US</Link></li>
+              <li className="nav-item dropdown">
+                <Link className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">PROJECTS</Link>
+                <ul className="dropdown-menu bg-black">
+                  <li><Link href="/completed-projects">Completed Projects</Link></li>
+                  <li><Link href="/ongoing-projects">Ongoing Projects</Link></li>
+                  <li><Link href="/upcoming-projects">Upcoming Projects</Link></li>
+                </ul>
+              </li>
+              <li className="nav-item"><Link href="/career">CAREER</Link></li>
+              <li className="nav-item"><Link href="/blog">BLOGS</Link></li>
+              <li className="nav-item"><Link href="/contact">CONTACT US</Link></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </>
   );
 }

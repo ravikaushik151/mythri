@@ -23,7 +23,7 @@ const projects = [
     status: "Under Construction",
     projectType: "Residential Apartments",
     configuration: "2, 2.5, 3, 3.5 and 4 BHK", // replace actual
-    numberOfUnits: "5 Acre Development", // replace actual
+    numberOfUnits: "423 Units", // replace actual
     possession: "2028", // replace actual
     description:
       "Mythri Sity is that kind of place — where thoughtful design meets timeless comfort. Spread across 5 acres, it brings together the warmth of community living and the freedom of open spaces.",
