@@ -5,7 +5,6 @@
 
 .contact {
   position: relative;
-  background: url('/images/Flower_Cream.png') right 50% / 100% 80% no-repeat;
   overflow: hidden;
   background-size: 35% 22%;
   background-position: right 106%;
@@ -16,13 +15,8 @@
   content: "";
   position: absolute;
   inset: 0;
-  /* top, right, bottom, left = 0 */
-  background: url('/images/Flower_Cream.png') right 50% / 100% 80% no-repeat;
   transform: scale(-1, -1);
-  /* ✅ sirf image invert hogi */
-  /* optional transparency */
   pointer-events: none;
-  /* overlay click block na kare */
   z-index: 0;
   background-size: 15% 16%;
   background-position: inherit;
