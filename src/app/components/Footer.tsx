@@ -126,14 +126,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="footer-bottom text-center mt-5 pt-4 pb-3 border-top border-light">
           <p className="mb-0">
-            © {new Date().getFullYear()} Mythri Builders. All rights reserved. Digital Partner:{" "}
-            <Link
-              href="https://www.imsolutions.co/"
-              target="_blank"
-              className="text-white text-decoration-underline"
-            >
-              IM Solutions
-            </Link>
+            © {new Date().getFullYear()} Mythri Builders. All rights reserved.
           </p>
         </div>
       </div>
