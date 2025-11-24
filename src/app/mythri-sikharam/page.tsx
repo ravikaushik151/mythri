@@ -128,7 +128,7 @@ export default function MicoristePage() {
                             fontFamily: "'Source Sans 3', sans-serif",
                         }}
                     >
-                        Tucked away in the serene enclave of KR Puram, Mythri Sankalp is where Roman-inspired architecture meets modern city living. Designed for those who value elegance and practicality, it offers a calm retreat amidst Bengaluru’s bustling energy.
+                        Tucked away in the serene enclave of KR Puram, Mythri Sikharam is where Roman-inspired architecture meets modern city living. Designed for those who value elegance and practicality, it offers a calm retreat amidst Bengaluru’s bustling energy.
                     </p>
                     <p
                         className="mx-auto mt-3"
@@ -244,7 +244,7 @@ export default function MicoristePage() {
                                     width: "90%",
                                 }}
                             >
-                                Every space at Mythri Sankalp is crafted to enrich daily life - blending relaxation, recreation, and community together. <br />
+                                Every space at Mythri Sikharam is crafted to enrich daily life - blending relaxation, recreation, and community together. <br />
                                 From quiet corners to active zones, discover amenities designed for both peace and play.
 
                             </p>
@@ -320,7 +320,7 @@ export default function MicoristePage() {
                                     color: "#585858",
                                     lineHeight: "1.8",
                                 }}
-                            >Every corner at Mythri Sankalp is designed with purpose and poise.
+                            >Every corner at Mythri Sikharam is designed with purpose and poise.
                                 Grand entrances welcome you with timeless elegance, landscaped courtyards breathe serenity into your routine, and airy balconies invite the outdoors into your home. <br />
                                 Whether it’s a quiet morning yoga session, an evening by the pool, or quality time with loved ones - these amenity spaces adapt beautifully to every mood, every moment, and every version of your day.</p>
                         </div>
