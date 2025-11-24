@@ -21,7 +21,7 @@ const projects = [
         location: "Rampura, Bidarahalli Hobli, Bengaluru",
         description:
             "Mythri Sunshine offers thoughtfully crafted homes designed to deliver comfort, connectivity, and a peaceful lifestyle. Located in Rampura, the project provides modern amenities with easy access to city conveniences.",
-        image: "/images/street.webp",
+        image: "/images/Mythri Sunshine.webp",
         details: {
             type: "Residential Apartments",
             size: "On Request",
@@ -37,7 +37,7 @@ const projects = [
         location: "Immadihalli, Whitefield, Bengaluru",
         description:
             "Mythri Square is located in the heart of Whitefield, offering residents exceptional connectivity and a comfortable living environment. The project features well-planned homes with thoughtful use of space.",
-        image: "/images/sity.webp",
+        image: "/images/Mythri Square.webp",
         details: {
             type: "Residential Apartments",
             size: "On Request",
@@ -53,7 +53,7 @@ const projects = [
         location: "Off Sarjapur Road, Bengaluru",
         description:
             "Mythri Sapphire is a premium residential development located off Sarjapur Road. It offers spacious homes with modern amenities, making it an ideal choice for families seeking comfort and convenience.",
-        image: "/images/sikharam.webp",
+        image: "/images/Mythri Sapphire.webp",
         details: {
             type: "2 & 3 BHK Apartments",
             size: "On Request",
@@ -69,7 +69,7 @@ const projects = [
         location: "Off Sarjapur Road, Bengaluru",
         description:
             "Mythri Signature is crafted for modern urban families who value premium living. With spacious layouts and quality construction, it provides an elevated lifestyle in one of Bengaluru’s fastest-growing regions.",
-        image: "/images/mythrisapphire.webp",
+        image: "/images/Mythri Signature.webp",
         details: {
             type: "Residential Apartments",
             size: "On Request",

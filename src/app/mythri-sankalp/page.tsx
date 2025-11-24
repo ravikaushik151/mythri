@@ -5,7 +5,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Carousel, Container, Row, Col, Form, Button, Modal } from "react-bootstrap";
 import Image from "next/image";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function MicoristePage() {
     const [show, setShow] = useState(false);
@@ -166,7 +165,7 @@ export default function MicoristePage() {
 
                         <Col md={3} sm={6} xs={12} className="mb-3">
                             <h3 className="mb-0 microsite-about">
-                                35Lifestyle <br /> Amenities
+                                35 Lifestyle <br /> Amenities
                             </h3>
                         </Col>
                     </Row>

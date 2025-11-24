@@ -5,7 +5,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Carousel, Container, Row, Col, Form, Button, Modal } from "react-bootstrap";
 import Image from "next/image";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function MicoristePage() {
     const [show, setShow] = useState(false);

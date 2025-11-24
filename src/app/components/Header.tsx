@@ -65,7 +65,7 @@ export default function Navbar() {
         </div>
       </nav>
 
-      <nav className={`main-navbar navbar navbar-expand-lg ${isSticky ? "sticky" : ""}`} >
+      <nav className={`main-navbar navbar navbar-expand-lg fixed ${isSticky ? "sticky" : ""}`} >
         <div className="navbar-wrapper">
           <div className="logo-box">
             <Link href="/">
