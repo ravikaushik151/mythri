@@ -36,10 +36,10 @@ const QualityBlock = () => {
 
       <div className="container sec mb-4">
         <div className="row">
-          <div className="col-lg-7 col-md-12 col-sm-12">
+          <div className="col-lg-7 col-md-12 col-sm-12 col-12">
             {/* First Row */}
             <div className="row text-dark">
-              <div className="col-lg-6">
+              <div className="col-lg-6 col-6">
                 <div className="countpara">
                   <div className="counter">
                     <h2
@@ -69,7 +69,7 @@ const QualityBlock = () => {
                 </div>
               </div>
 
-              <div className="col-lg-6">
+              <div className="col-lg-6 col-6">
                 <div className="countpara">
                   <div className="counter">
                     <h2
@@ -106,7 +106,7 @@ const QualityBlock = () => {
 
             {/* Second Row */}
             <div className="row text-dark">
-              <div className="col-lg-6">
+              <div className="col-lg-6 col-6">
                 <div className="countpara">
                   <div className="counter">
                     <h2
@@ -135,7 +135,7 @@ const QualityBlock = () => {
                 </div>
               </div>
 
-              <div className="col-lg-6">
+              <div className="col-lg-6 col-6">
                 <div className="countpara">
                   <div className="counter">
                     <h2

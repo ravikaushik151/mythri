@@ -1,30 +1,28 @@
 // components/ProjectShowcase.js
 "use client";
 import React, { useState } from "react";
-import { Container, Row, Col, Button, Modal, Form } from "react-bootstrap"; // 🆕 Added Modal and Form
+import { Container, Row, Col, Button, Modal } from "react-bootstrap";
 import { MapPin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../ProjectShowcase.module.css";
 import ContactForm from "../components/ContactForm";
 
-// 📞 Define the contact details (use your actual phone number and WhatsApp number)
-const CONTACT_NUMBER = "tel:+919164789898";
-const WHATSAPP_NUMBER = "919164789898"; // Use number without "+"
-const WHATSAPP_MESSAGE = "I am interested in one of your completed projects. Please contact me.";
-
+// 🔥 UPDATED PROJECT LIST — added slug
 const projects = [
     {
         id: 1,
         name: "Mythri Street",
+        slug: "mythri-street",
         location: "Off Sarjapur Road, Kodathi",
         description:
             "Mythri Street is a thoughtfully crafted residential landmark spread across 3 acres of prime land. With 80% open spaces, it blends urban sophistication with serene living.",
         image: "/images/street.webp",
+        whatsapp: "9513140111",
+        call: "tel:+919513140111",
         details: {
             type: "2 & 3 BHK Residential Apartments",
             size: "1100 sqft - 1550 sqft (Approx.)",
-            price: "1.18 Cr Onwards*",
             status: "Under Construction",
             possession: "2028",
             units: "219 Units",
@@ -33,14 +31,16 @@ const projects = [
     {
         id: 2,
         name: "Mythri Sity",
+        slug: "mythri-sity",
         location: "Off Sarjapur Road, Bengaluru",
         description:
-            "Mythri Sity is that kind of place — where thoughtful design meets timeless comfort. Spread across 5 acres, it brings together the warmth of community living and the freedom of open spaces.",
+            "Mythri Sity is where thoughtful design meets timeless comfort. Spread across 5 acres, it brings together community living and large open spaces.",
         image: "/images/sity.webp",
+        whatsapp: "9513140111",
+        call: "tel:+919513140111",
         details: {
             type: "Residential Apartments",
             size: "5 Acre Development",
-            price: "1.20 Cr Onwards*",
             status: "Under Construction",
             possession: "2028",
             units: "5 Acre Development",
@@ -49,14 +49,16 @@ const projects = [
     {
         id: 3,
         name: "Mythri Sikharam",
+        slug: "mythri-sikharam",
         location: "Off Sarjapur Road, Hadosiddapura",
         description:
-            "Mythri Sikharam is a thoughtfully designed residential project offering a balance of modern living and timeless comfort. The homes are spacious, airy, and finished with premium materials to enhance aesthetics and functionality.",
+            "Mythri Sikharam offers a balance of modern living and comfort. Spacious, airy homes with premium materials enhance aesthetics and usability.",
         image: "/images/sikharam.webp",
+        whatsapp: "9035623740",
+        call: "tel:+919035623740",
         details: {
             type: "2 & 3 BHK Residential Apartments",
             size: "1150 sqft - 1600 sqft (Approx.)",
-            price: "1.06 Cr Onwards*",
             status: "Under Construction",
             possession: "October 2027",
             units: "182 Units",
@@ -65,14 +67,16 @@ const projects = [
     {
         id: 4,
         name: "Mythri Sankalp",
+        slug: "mythri-sankalp",
         location: "KR Puram, Bengaluru",
         description:
-            "Mythri Sankalp offers spacious 2 & 3 BHK apartments designed for comfort and modern living. Located KR Puram, the project is RERA approved, providing an ideal blend of convenience and luxury.",
+            "Mythri Sankalp offers spacious 2 & 3 BHK apartments designed for comfort and modern living. RERA approved, it blends convenience and luxury.",
         image: "/images/mythrisapphire.webp",
+        whatsapp: "9741218002",
+        call: "tel:+919741218002",
         details: {
             type: "2 & 3 BHK Residential Apartments",
             size: "1200 sqft - 1600 sqft (Approx.)",
-            price: "87 Lacs Onwards*",
             status: "Under Construction",
             possession: "December 2026",
             units: "101 Units",
@@ -81,40 +85,29 @@ const projects = [
 ];
 
 export default function ProjectShowcase() {
-
     const [hoveredProject, setHoveredProject] = useState(null);
-    // 🆕 State for managing the modal (popup form)
     const [showEnquiryModal, setShowEnquiryModal] = useState(false);
-    // 🆕 State to track which project triggered the enquiry (optional, for context)
     const [enquiringProject, setEnquiringProject] = useState(null);
 
-    // 🆕 Handlers for the modal
     const handleClose = () => {
         setShowEnquiryModal(false);
-        setEnquiringProject(null); // Clear project context on close
+        setEnquiringProject(null);
     };
+
     const handleShow = (project) => {
         setEnquiringProject(project);
         setShowEnquiryModal(true);
     };
 
-    // 🆕 Handler for "Call Now" button
-    const handleCallNow = () => {
-        window.location.href = CONTACT_NUMBER;
+    const handleCallNow = (number) => {
+        window.location.href = number;
     };
 
-    // 🆕 Handler for "Whatsapp" button
-    const handleWhatsapp = () => {
-        const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+    const handleWhatsapp = (number) => {
+        const message =
+            "I am interested in one of your ongoing projects. Please contact me.";
+        const url = `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
         window.open(url, "_blank");
-    };
-
-    // 🆕 Handler for form submission (Placeholder)
-    const handleFormSubmit = (e) => {
-        e.preventDefault();
-        alert("Enquiry Submitted! We will contact you soon.");
-        handleClose();
-        // ❗ Actual form submission logic (e.g., Axios post request to an API endpoint) would go here
     };
 
     return (
@@ -127,17 +120,22 @@ export default function ProjectShowcase() {
                                 src="/images/mythri project page.webp"
                                 height={2880}
                                 width={1920}
-                                className="img-fluid masterpiece "
+                                className="img-fluid masterpiece"
                                 alt="masterpiece"
                             />
                             <div className="overlay2 position-absolute top-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center">
                                 <div className="text-white d-block text-center">
-                                    <p className="fs-1 mb-3 text-uppercase">Ongoing Projets</p>
+                                    <p className="fs-1 mb-3 text-uppercase">
+                                        Ongoing Projects
+                                    </p>
                                     <p className="fs-6 text-center">
-                                        <Link className="text-white text-decoration-none " href="/">
+                                        <Link
+                                            className="text-white text-decoration-none"
+                                            href="/"
+                                        >
                                             Home
                                         </Link>{" "}
-                                        / Ongoing Projets
+                                        / Ongoing Projects
                                     </p>
                                 </div>
                             </div>
@@ -153,9 +151,12 @@ export default function ProjectShowcase() {
                             <Col md={10} className="mb-5" key={project.id}>
                                 <div className={styles.projectWrapper}>
                                     <div className={styles.bgLayer}></div>
+
                                     <div
                                         className={styles.imageCard}
-                                        onMouseEnter={() => setHoveredProject(project.id)}
+                                        onMouseEnter={() =>
+                                            setHoveredProject(project.id)
+                                        }
                                         onMouseLeave={() => setHoveredProject(null)}
                                     >
                                         <img
@@ -165,7 +166,20 @@ export default function ProjectShowcase() {
                                         />
 
                                         <div className={styles.overlayCard}>
-                                            <h4 className="fw-bold mb-1">{project.name}</h4>
+
+                                            {/* 🔥 CLICKABLE HEADING (microsite page) */}
+                                            <Link
+                                                href={`/${project.slug}`}
+                                                className="text-decoration-none text-dark"
+                                            >
+                                                <h4
+                                                    className="fw-bold mb-1"
+                                                    style={{ cursor: "pointer" }}
+                                                >
+                                                    {project.name}
+                                                </h4>
+                                            </Link>
+
                                             <p className="text-secondary small mb-2 d-flex align-items-center">
                                                 <MapPin size={16} className="me-1" />
                                                 {project.location}
@@ -179,14 +193,12 @@ export default function ProjectShowcase() {
                                                     <div className={styles.detailsRow}>
                                                         <span>{project.details.type}</span>
                                                         <span>{project.details.size}</span>
-                                                        <span>{project.details.price}</span>
                                                     </div>
                                                 </>
                                             ) : (
                                                 <div className={styles.detailsRowStatic}>
                                                     <span>{project.details.type}</span>
                                                     <span>{project.details.size}</span>
-                                                    <span>{project.details.price}</span>
                                                 </div>
                                             )}
                                         </div>
@@ -194,7 +206,6 @@ export default function ProjectShowcase() {
                                 </div>
 
                                 <div className="text-end mt-4">
-                                    {/* 1. Enquire Button: Opens Modal */}
                                     <Button
                                         className={styles.enquireBtn}
                                         onClick={() => handleShow(project)}
@@ -202,18 +213,16 @@ export default function ProjectShowcase() {
                                         Enquire
                                     </Button>
 
-                                    {/* 2. Call Now Button: Direct Phone Call */}
                                     <Button
                                         className={styles.callBtn}
-                                        onClick={handleCallNow}
+                                        onClick={() => handleCallNow(project.call)}
                                     >
                                         Call Now
                                     </Button>
 
-                                    {/* 3. Whatsapp Button: Redirects to WhatsApp */}
                                     <Button
                                         className={styles.whatsappBtn}
-                                        onClick={handleWhatsapp}
+                                        onClick={() => handleWhatsapp(project.whatsapp)}
                                     >
                                         Whatsapp
                                     </Button>
@@ -224,11 +233,13 @@ export default function ProjectShowcase() {
                 </Container>
             </section>
 
-            {/* 🚀 Enquiry Modal Component */}
             <Modal show={showEnquiryModal} onHide={handleClose} centered>
                 <Modal.Header closeButton>
-                    <Modal.Title>Enquire About {enquiringProject?.name}</Modal.Title>
+                    <Modal.Title>
+                        Enquire About {enquiringProject?.name}
+                    </Modal.Title>
                 </Modal.Header>
+
                 <Modal.Body>
                     <ContactForm
                         inputClass="form-control mb-2"

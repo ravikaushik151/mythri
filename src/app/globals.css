@@ -3843,7 +3843,7 @@ fieldset:disabled .btn {
 }
 
 .collapse:not(.show) {
-  display: none
+  /*display: none*/
 }
 
 .collapsing {
@@ -4768,7 +4768,8 @@ fieldset:disabled .btn {
   }
 
   .navbar-expand-lg .navbar-nav .dropdown-menu {
-    position: absolute
+    position: absolute;
+    width: 203px;
   }
 
   .navbar-expand-lg .navbar-nav .nav-link {
@@ -19859,5 +19860,15 @@ nav.navbar-expand-lg.navbar-dark.bg-dark.fixed-top.scrolled {
 }
 
 
+.carousel-indicators {
+  position: absolute;
+}
+
+
+.right-side-button {
+  background-color: #8b6a40;
+  transform: translateY(-50%) rotate(-90deg) !important;
+  right: -43px;
+}
 
 /* ///header ends */

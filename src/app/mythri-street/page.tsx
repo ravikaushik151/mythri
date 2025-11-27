@@ -175,19 +175,19 @@ export default function MicoristePage() {
                     >
                         <Col md={3} sm={6} xs={12} className="mb-3">
                             <h3 className="mb-md-0 mb-4 microsite-about">
-                                2.5 Acres <br /> 25 Floors
+                                3 Acres <br /> 80% Open Space
                             </h3>
                         </Col>
 
                         <Col md={3} sm={6} xs={12} className="mb-3 border-start border-end">
                             <h3 className="mb-md-0 mb-4 microsite-about">
-                                250+ Residences <br />  3 & 4 BHK Sky Homes
+                                219 Residences <br />  2 & 3 BHK
                             </h3>
                         </Col>
 
                         <Col md={3} sm={6} xs={12} className="mb-3">
                             <h3 className="mb-0 microsite-about">
-                                60+ Curated Experiences <br /> Amenities
+                                B1 + B2 + G + 19 Floors <br /> 50+ World-Class Amenities
                             </h3>
                         </Col>
                     </Row>
@@ -422,7 +422,7 @@ export default function MicoristePage() {
                     </p>
 
                     {/* Buttons */}
-                    <div className="d-flex justify-content-center gap-3 mt-4">
+                    <div className="d-flex justify-content-center gap-3 mt-4 d-none">
                         <button
                             className="btn btn-dark px-4 py-2"
                             style={{ borderRadius: 0, fontSize: "14px", letterSpacing: "1px" }}
@@ -529,24 +529,15 @@ export default function MicoristePage() {
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-12 text-center">
-                            <div className="d-md-block d-none">
-                                <Image
-                                    src="/images/street/Street_map.webp"
-                                    alt="location"
-                                    width={600}
-                                    height={700}
-                                    className="d-block w-100 mx-auto"
-                                />
-                            </div>
-                            <div className="d-md-none d-block">
-                                <Image
-                                    src="/images/street/Street_map.webp"
-                                    alt="location"
-                                    width={400}
-                                    height={500}
-                                    className="d-block w-100 mx-auto"
-                                />
-                            </div>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3889.3796702430527!2d77.69955623278805!3d12.883290686803605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDUzJzAxLjgiTiA3N8KwNDInMDYuMSJF!5e0!3m2!1sen!2sin!4v1764240037825!5m2!1sen!2sin"
+                                width="100%"
+                                height="600"
+                                style={{ border: 0 }}
+                                allowFullScreen
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                            ></iframe>
                         </div>
                     </div>
                     <div className="row mt-5  justify-content-center">

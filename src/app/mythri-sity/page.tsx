@@ -175,19 +175,19 @@ export default function MicoristePage() {
                     >
                         <Col md={3} sm={6} xs={12} className="mb-3">
                             <h3 className="mb-md-0 mb-4 microsite-about">
-                                5 Acre <br /> 423 Residences
+                                5 Acres <br /> 423 Apartments
                             </h3>
                         </Col>
 
                         <Col md={3} sm={6} xs={12} className="mb-3 border-start border-end">
                             <h3 className="mb-md-0 mb-4 microsite-about">
-                                B+G+18 Storeys <br /> 75%+Open Space
+                                B + G + 18 Floors <br /> 75% Open Space
                             </h3>
                         </Col>
 
                         <Col md={3} sm={6} xs={12} className="mb-3">
                             <h3 className="mb-0 microsite-about">
-                                2, 3, & 4 BHK <br /> 50+ Curated Amenities
+                                2, 3 & 4 BHK <br /> 50+ World-class Amenities
                             </h3>
                         </Col>
                     </Row>
@@ -398,7 +398,7 @@ export default function MicoristePage() {
                     {/* Buttons */}
                     <div className="d-flex justify-content-center gap-3 mt-4">
                         <button
-                            className="btn btn-dark px-4 py-2"
+                            className="btn btn-dark px-4 py-2 d-none"
                             style={{ borderRadius: 0, fontSize: "14px", letterSpacing: "1px" }}
                             onClick={() => handleShow("/images/Eara_masterplan.webp")}
                         >
@@ -407,7 +407,7 @@ export default function MicoristePage() {
                         <button
                             className="btn btn-dark px-4 py-2"
                             style={{ borderRadius: 0, fontSize: "14px", letterSpacing: "1px" }}
-                            onClick={() => handleShow("/images/Master.jpg")}
+                            onClick={() => handleShow("/images/sity/sity master plan images.webp")}
                         >
                             MASTER PLAN
                         </button>

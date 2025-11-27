@@ -27,7 +27,7 @@ export default function ContactForm({
   defaultMessage = "",
   redirectUrl,
   autoDownloadPdf,
-  phpEndpoint = "mail.php",
+  phpEndpoint = "https://mythribuilders.com/mail.php",
 }: ContactFormProps) {
   const [form, setForm] = useState<FormData>({
     name: "",

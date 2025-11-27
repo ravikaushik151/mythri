@@ -40,7 +40,7 @@ export default function Career() {
         });
 
         try {
-            const response = await fetch('/api/careers', {
+            const response = await fetch('https://mythribuilders.com/send-application/', {
                 method: 'POST',
                 body: form,
             });

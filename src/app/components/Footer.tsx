@@ -85,13 +85,13 @@ export default function Footer() {
               <Link href="https://www.instagram.com/mythribuilders/" className="text-white">
                 <Image src="/images/instagram.svg" alt="Instagram" width={24} height={24} />
               </Link>
-              <Link href="https://x.com/mythri_builders" className="text-white">
+              <Link href="https://x.com/mythribuilder98" className="text-white">
                 <Image src="/images/twitter.svg" alt="Twitter" width={24} height={24} />
               </Link>
-              <Link href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F74886467%2Fadmin%2F" className="text-white">
+              <Link href="https://in.linkedin.com/company/mythri-builders" className="text-white">
                 <Image src="/images/linkedin.svg" alt="Twitter" width={24} height={24} />
               </Link>
-              <Link href="http://www.youtube.com/@mythribuilder1" className="text-white">
+              <Link href="https://www.youtube.com/@mythribuilders" className="text-white">
                 <Image src="/images/youtube.svg" alt="Twitter" width={24} height={24} />
               </Link>
             </div>
@@ -127,7 +127,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="footer-bottom text-center mt-5 pt-4 pb-3 border-top border-light">
           <p className="mb-0">
-            © {new Date().getFullYear()} Mythri Builders. All rights reserved.
+            © {new Date().getFullYear()} Mythri Builders. All rights reserved. <a className="f-link text-white d-none" target="_blank" href="https://www.imsolutions.co/">Digital Partner : IM Solutions</a>
           </p>
         </div>
       </div>

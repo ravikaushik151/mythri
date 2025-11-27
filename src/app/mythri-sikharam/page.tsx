@@ -121,26 +121,26 @@ export default function MicoristePage() {
                     <p
                         className="mx-auto mt-3"
                         style={{
-                            maxWidth: "700px",
+                            maxWidth: "750px",
                             fontSize: "19px",
                             color: "#585858",
                             lineHeight: "1.8",
                             fontFamily: "'Source Sans 3', sans-serif",
                         }}
                     >
-                        Tucked away in the serene enclave of KR Puram, Mythri Sikharam is where Roman-inspired architecture meets modern city living. Designed for those who value elegance and practicality, it offers a calm retreat amidst Bengaluru’s bustling energy.
+                        Discover the Art of Elevated Living <br /> Mythri Sikharam is a luxury high-rise residential community by Mythri Builders, thoughtfully designed to deliver a refined lifestyle in one of Bengaluru’s fastest-growing corridors.
                     </p>
                     <p
                         className="mx-auto mt-3"
                         style={{
-                            maxWidth: "700px",
+                            maxWidth: "750px",
                             fontSize: "19px",
                             color: "#585858",
                             lineHeight: "1.8",
                             fontFamily: "'Source Sans 3', sans-serif",
                         }}
                     >
-                        Every residence is crafted to balance aesthetics with functionality - where natural light, ventilation, and thoughtful design redefine everyday comfort. Here, life flows seamlessly between family, community, and tranquility.
+                        Located off Sarjapur Road, Hadosiddapura, this premium development blends contemporary architecture, open planning, and serene landscaping. Each home is crafted to offer abundant natural light, cross ventilation, and seamless functionality. <br /> Here, life moves at your pace — calm, connected, and elevated.
                     </p>
 
                     {/* ===== Info Row ===== */}
@@ -153,19 +153,19 @@ export default function MicoristePage() {
                     >
                         <Col md={3} sm={6} xs={12} className="mb-3">
                             <h3 className="mb-md-0 mb-4 microsite-about">
-                                2 & 3 BHK <br /> Premium Homes
+                                2.04 Acres <br /> 2 & 3 BHK
                             </h3>
                         </Col>
 
                         <Col md={3} sm={6} xs={12} className="mb-3 border-start border-end">
                             <h3 className="mb-md-0 mb-4 microsite-about">
-                                KR Puram <br /> Bengaluru
+                                182 Apartments <br /> 60% Open Space
                             </h3>
                         </Col>
 
                         <Col md={3} sm={6} xs={12} className="mb-3">
                             <h3 className="mb-0 microsite-about">
-                                35Lifestyle <br /> Amenities
+                                B + G + 14 Floors <br /> 60+ World-class amenities
                             </h3>
                         </Col>
                     </Row>
@@ -173,7 +173,7 @@ export default function MicoristePage() {
                     {/* ===== Image ===== */}
                     <div className="mt-4">
                         <Image
-                            src="/images/sikharam/earth homes_sikharam.webp"
+                            src="/images/sikharam/earth_homes_sikharam.webp"
                             alt="Mythri Builders"
                             width={900}
                             height={600}
@@ -193,7 +193,7 @@ export default function MicoristePage() {
                             lineHeight: "1.8",
                             fontFamily: "'Source Sans 3', sans-serif",
                         }}
-                    >Arched balconies, clean facades, and well-ventilated layouts bring classical beauty into a modern context. <br /> Every home is designed to maximize natural light and airflow, creating a seamless blend of architectural artistry and everyday comfort.
+                    >Elegantly designed facades, spacious balconies, and well-ventilated layouts come together to create an elevated lifestyle experience.<br /> Designed for natural light and effortless airflow, each home offers everyday luxury with smart planning and lasting comfort.
                     </p>
                 </Container>
 
@@ -379,14 +379,14 @@ export default function MicoristePage() {
                         <button
                             className="btn btn-dark px-4 py-2"
                             style={{ borderRadius: 0, fontSize: "14px", letterSpacing: "1px" }}
-                            onClick={() => handleShow("/images/Eara_masterplan.webp")}
+                            onClick={() => handleShow("/images/sikharam/Floorplan_sikharam.webp")}
                         >
                             FLOOR PLANS
                         </button>
                         <button
                             className="btn btn-dark px-4 py-2"
                             style={{ borderRadius: 0, fontSize: "14px", letterSpacing: "1px" }}
-                            onClick={() => handleShow("/images/Master.jpg")}
+                            onClick={() => handleShow("/images/sikharam/Masterplan_sikharam.webp")}
                         >
                             MASTER PLAN
                         </button>

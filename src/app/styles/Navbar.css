@@ -3,14 +3,9 @@
   top: 0px;
   left: 0;
   width: 100%;
-  z-index: 9999;
+  z-index: 2;
   background: transparent;
   transition: all 0.3s ease;
-}
-
-.main-navbar.sticky {
-  background: transparent;
-  top: 30px;
 }
 
 .navbar-wrapper {
@@ -93,6 +88,10 @@
     overflow: inherit;
   }
 
+  .main-navbar.sticky {
+    background: transparent;
+    top: 30px;
+  }
 
   .main-navbar.sticky .overlay-menu {
     list-style: none;
@@ -119,7 +118,7 @@
   }
 
   .main-navbar.sticky .overlay-menu li {
-    margin: 25px 15px;
+    margin: 15px 15px;
   }
 
   .main-navbar.sticky .overlay-menu li a:hover {
@@ -174,4 +173,12 @@
     padding: 5px 20px !important;
   }
 
+  .main-navbar.sticky {
+    background: transparent;
+    top: -8px;
+  }
+
+  .dropdown-menu {
+    margin-left: 123px;
+  }
 }

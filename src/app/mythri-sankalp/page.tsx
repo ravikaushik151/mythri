@@ -378,14 +378,14 @@ export default function MicoristePage() {
                         <button
                             className="btn btn-dark px-4 py-2"
                             style={{ borderRadius: 0, fontSize: "14px", letterSpacing: "1px" }}
-                            onClick={() => handleShow("/images/Eara_masterplan.webp")}
+                            onClick={() => handleShow("/images/sankalp/floor plan_Sankalp.webp")}
                         >
                             FLOOR PLANS
                         </button>
                         <button
                             className="btn btn-dark px-4 py-2"
                             style={{ borderRadius: 0, fontSize: "14px", letterSpacing: "1px" }}
-                            onClick={() => handleShow("/images/Master.jpg")}
+                            onClick={() => handleShow("/images/sankalp/master_plan_Sankalp.webp")}
                         >
                             MASTER PLAN
                         </button>

@@ -51,13 +51,13 @@ export default function About() {
                 <div className="row">
                   <div className="col-md-6 offset-md-6">
                     <h2 className="mb-3 theme-color-dark fs-2 text-center">About Us</h2>
-                    <p className="mb-2 theme-color-dark">
+                    <p className="mb-2 theme-color-dark text-justify">
                       Mythri Builders is a trusted real estate developer in Bangalore, committed to building communities that thrive. We combine modern design, sustainability, and transparency to create premium residential projects that feel like home from day one.
                     </p>
-                    <p className="mb-2 theme-color-dark">
+                    <p className="mb-2 theme-color-dark text-justify">
                       With years of experience, our approach emphasizes quality, attention to detail, and timely delivery. Every project is designed to foster connection with the environment and with the community, ensuring a harmonious living experience.
                     </p>
-                    <p className="mb-2 theme-color-dark">
+                    <p className="mb-2 theme-color-dark text-justify">
                       Our goal is not just to build houses, but to craft lasting relationships with our clients through integrity, trust, and exceptional service.
                     </p>
                   </div>
@@ -91,7 +91,7 @@ export default function About() {
                 <div className="text-center">
                   <Image src="/images/mission_mythri.webp" height={2880} width={1920} className='img-fluid mb-4' alt="masterpiece" />
                   <h3 className="fw-bold theme-color-dark">Our Mission</h3>
-                  <p className="theme-color-dark">
+                  <p className="theme-color-dark text-justify">
                     To redefine modern living through spaces that blend innovation, craftsmanship, and purpose. At Mythri Builders, our mission is to design and deliver environments that inspire connection, enhance everyday experiences, and stand as timeless reflections of quality, transparency, and trust.
 
                   </p>
@@ -101,7 +101,7 @@ export default function About() {
                 <div className="text-center">
                   <Image src="/images/Vision_mythri.webp" height={2880} width={1920} className='img-fluid mb-4' alt="masterpiece" />
                   <h3 className="fw-bold theme-color-dark">Our Vision</h3>
-                  <p className="theme-color-dark">
+                  <p className="theme-color-dark text-justify">
                     To be a symbol of reliability and excellence in real estate - known for creating homes that transcend functionality and become legacies of design and value. We envision a future where every Mythri creation enriches lives, empowers communities, and endures with the same integrity with which it was built.
 
                   </p>
