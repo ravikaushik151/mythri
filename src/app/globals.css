@@ -19318,7 +19318,7 @@ footer textarea::placeholder {
 
   left: 0;
 
-  z-index: 9999;
+  z-index: 2;
 
   width: 100%;
 
