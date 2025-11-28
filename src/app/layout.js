@@ -8,6 +8,10 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import EnquiryDrawer from './components/EnquiryDrawer';
 
+import '@uiw/react-md-editor/markdown-editor.css';
+import '@uiw/react-markdown-preview/markdown.css';
+
+
 export const metadata = {
   title: 'Mythri Builders',
   description: 'Mythri Builders',

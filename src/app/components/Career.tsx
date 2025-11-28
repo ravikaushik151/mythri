@@ -4,6 +4,8 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaCheckCircle } from 'react-icons/fa';
+import './../career.css';
+
 export default function Career() {
     const [formData, setFormData] = useState({
         name: '',
@@ -16,6 +18,9 @@ export default function Career() {
         fileatt: null,
     });
 
+    const [statusMessage, setStatusMessage] = useState(''); // ✅ To show response message
+    const [statusType, setStatusType] = useState<'success' | 'error' | ''>(''); // ✅ Success/Error state
+
     const reasons = [
         'Culture of Integrity',
         'Innovation-First Mindset',
@@ -23,20 +28,20 @@ export default function Career() {
         'Trusted Legacy',
     ];
 
-    const handleChange = (e) => {
-        const { name, value, files } = e.target;
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+        const { name, value, files } = e.target as HTMLInputElement;
         setFormData((prev) => ({
             ...prev,
             [name]: files ? files[0] : value,
         }));
     };
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
 
         const form = new FormData();
         Object.entries(formData).forEach(([key, value]) => {
-            form.append(key, value);
+            if (value !== null) form.append(key, value);
         });
 
         try {
@@ -45,10 +50,38 @@ export default function Career() {
                 body: form,
             });
 
+            if (!response.ok) {
+                const errorResult = await response.json().catch(() => ({ message: 'Server error occurred.' }));
+                throw new Error(`Submission failed: ${response.status} - ${errorResult.message}`);
+            }
+
             const result = await response.json();
-            alert(result.message || 'Form submitted successfully!');
+
+            // ✅ Show success message
+            setStatusMessage(result.message || 'Form submitted successfully!');
+            setStatusType('success');
+
+            // ✅ Reset form fields
+            setFormData({
+                name: '',
+                email: '',
+                city: '',
+                phone: '',
+                post1: 'Sales Manager',
+                experience: 'Fresher',
+                msg: '',
+                fileatt: null,
+            });
+
+            // Optional: Hide message after few seconds
+            setTimeout(() => {
+                setStatusMessage('');
+                setStatusType('');
+            }, 5000);
         } catch (err) {
-            alert('Error submitting form. Please try again.');
+            console.error('Submission Error:', err);
+            setStatusMessage('Error submitting form. Please try again later.');
+            setStatusType('error');
         }
     };
 
@@ -110,6 +143,15 @@ export default function Career() {
                                 <h5 className="text-uppercase mb-4 theme-color-dark " style={{ color: '#282563' }}>
                                     APPLY FOR YOUR JOB
                                 </h5>
+                                {/* ✅ Status Message */}
+                                {statusMessage && (
+                                    <div
+                                        className={`alert ${statusType === 'success' ? 'alert-success' : 'alert-danger'
+                                            } py-2`}
+                                    >
+                                        {statusMessage}
+                                    </div>
+                                )}
                                 <form onSubmit={handleSubmit} encType="multipart/form-data">
                                     <div className="row">
                                         {[
