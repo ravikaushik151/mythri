@@ -10,18 +10,23 @@ export default function Footer() {
     "mythri-sankalp": {
       logo: "/images/sankalp/Mythri Sankalp DKM Logo copy.webp",
       address: `Sy No 59/7 Hebron Avenue Road Hallehalli, Bengaluru East, Bengaluru, Karnataka 560036`,
+      mob: `9741218002`,
     },
     "mythri-sikharam": {
       logo: "/images/sikharam/Sikharam Logo.webp",
       address: `Survey No. 48/4, off Sarjapur Main Road, Hadosiddapura, Chikkakannalli, Bengaluru, Karnataka 560035`,
+      mob: `9035623740`,
     },
     "mythri-sity": {
       logo: "/images/sity/sity.webp",
       address: `Sy No. 67/2, Behind RGA Tech Park, Off Sarjapur Rd, Kodathi Village, Varthur, Chikkakannalli, Bengaluru, Karnataka 560035`,
+      mob: `9513140111
+`,
     },
     "mythri-street": {
       logo: "/images/street/Mythri street_final logo.png",
       address: `SURVEY NO. 67/3 Behind RGA Tech Park, Off Sarjapur Rd, Kodathi Village, Varthur, Chikkakannalli, Bengaluru, Karnataka 560035`,
+      mob: `9513140111`,
     },
   };
 
@@ -31,6 +36,7 @@ export default function Footer() {
 
   // Set defaults if not on a microsite
   const logo = currentMicrosite?.logo || "/images/logo-dark.webp";
+  const mob = currentMicrosite?.mob || "9164789898";
   const address =
     currentMicrosite?.address ||
     `#2802, Broadway Building,
@@ -74,7 +80,7 @@ export default function Footer() {
             <h4 className="footer-title">Office Address</h4>
             <p style={{ whiteSpace: "pre-line" }}>{address}</p>
 
-            <p>9164789898</p>
+            <p>{mob}</p>
             <p>enquiry@mythribuilders.co.in </p>
 
             <h5 className="fw-bold mt-3 mb-2">Follow Us</h5>
