@@ -15,7 +15,7 @@ export default function Footer() {
     "mythri-sikharam": {
       logo: "/images/sikharam/Sikharam Logo.webp",
       address: `Survey No. 48/4, off Sarjapur Main Road, Hadosiddapura, Chikkakannalli, Bengaluru, Karnataka 560035`,
-      mob: `9035623740`,
+      mob: `8951370333`,
     },
     "mythri-sity": {
       logo: "/images/sity/sity.webp",
@@ -137,6 +137,20 @@ export default function Footer() {
           </p>
         </div>
       </div>
+      {/* Floating WhatsApp Button */}
+      <Link
+        href="https://wa.me/9164789898"
+        target="_blank"
+        className="whatsapp-float"
+      >
+        <Image
+          src="/images/black-white-whatsapp-icon.png"
+          alt="WhatsApp"
+          width={50}
+          height={50}
+        />
+      </Link>
+
     </footer>
   );
 }

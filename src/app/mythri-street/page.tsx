@@ -5,6 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Carousel, Container, Row, Col, Form, Button, Modal } from "react-bootstrap";
 import Image from "next/image";
+import ScheduleVisitForm from "../components/ScheduleVisitForm";
 
 export default function MicoristePage() {
     const [show, setShow] = useState(false);
@@ -53,51 +54,7 @@ export default function MicoristePage() {
 
 
             {/* ===== Schedule Visit Section ===== */}
-            <section data-aos="fade-up"
-                data-aos-delay="200" className="py-5" style={{ backgroundColor: "#0a1927", color: "#fff" }}>
-                <Container>
-                    <h3 className="text-center mb-4" style={{ fontWeight: 400 }}>
-                        Schedule your visit
-                    </h3>
-                    <Form>
-                        <Row className="justify-content-center">
-                            <Col md={3} sm={12} className="mb-3">
-                                <Form.Control
-                                    type="text"
-                                    placeholder="Name*"
-                                    required
-                                    className="rounded-0"
-                                />
-                            </Col>
-                            <Col md={3} sm={12} className="mb-3">
-                                <Form.Control
-                                    type="email"
-                                    placeholder="Email*"
-                                    required
-                                    className="rounded-0"
-                                />
-                            </Col>
-                            <Col md={3} sm={12} className="mb-3">
-                                <Form.Control
-                                    type="tel"
-                                    placeholder="Phone*"
-                                    required
-                                    className="rounded-0"
-                                />
-                            </Col>
-                            <Col md="auto" sm={12} className="mb-3">
-                                <Button
-                                    variant="outline-light"
-                                    type="submit"
-                                    className="rounded-0 px-4"
-                                >
-                                    Submit
-                                </Button>
-                            </Col>
-                        </Row>
-                    </Form>
-                </Container>
-            </section>
+            <ScheduleVisitForm />
             <section data-aos="fade-up"
                 data-aos-delay="200" className="about-micro"
                 style={{

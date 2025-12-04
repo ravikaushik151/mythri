@@ -14,7 +14,7 @@ const projects = [
         id: 1,
         name: "Mythri Street",
         slug: "mythri-street",
-        location: "Off Sarjapur Road, Kodathi",
+        location: "Off Sarjapur Road, Near RGA tech park",
         description:
             "Mythri Street is a thoughtfully crafted residential landmark spread across 3 acres of prime land. With 80% open spaces, it blends urban sophistication with serene living.",
         image: "/images/street.webp",
@@ -22,7 +22,7 @@ const projects = [
         call: "tel:+919513140111",
         details: {
             type: "2 & 3 BHK Residential Apartments",
-            size: "1100 sqft - 1550 sqft (Approx.)",
+            //size: "1100 sqft - 1550 sqft (Approx.)",
             status: "Under Construction",
             possession: "2028",
             units: "219 Units",
@@ -32,7 +32,7 @@ const projects = [
         id: 2,
         name: "Mythri Sity",
         slug: "mythri-sity",
-        location: "Off Sarjapur Road, Bengaluru",
+        location: "Off Sarjapur Road, Near RGA tech park",
         description:
             "Mythri Sity is where thoughtful design meets timeless comfort. Spread across 5 acres, it brings together community living and large open spaces.",
         image: "/images/sity.webp",
@@ -40,7 +40,7 @@ const projects = [
         call: "tel:+919513140111",
         details: {
             type: "Residential Apartments",
-            size: "5 Acre Development",
+            //size: "5 Acre Development",
             status: "Under Construction",
             possession: "2028",
             units: "5 Acre Development",
@@ -54,11 +54,11 @@ const projects = [
         description:
             "Mythri Sikharam offers a balance of modern living and comfort. Spacious, airy homes with premium materials enhance aesthetics and usability.",
         image: "/images/sikharam.webp",
-        whatsapp: "9035623740",
-        call: "tel:+919035623740",
+        whatsapp: "8951370333",
+        call: "tel:+918951370333",
         details: {
             type: "2 & 3 BHK Residential Apartments",
-            size: "1150 sqft - 1600 sqft (Approx.)",
+            // size: "1150 sqft - 1600 sqft (Approx.)",
             status: "Under Construction",
             possession: "October 2027",
             units: "182 Units",
@@ -76,7 +76,7 @@ const projects = [
         call: "tel:+919741218002",
         details: {
             type: "2 & 3 BHK Residential Apartments",
-            size: "1200 sqft - 1600 sqft (Approx.)",
+            //size: "1200 sqft - 1600 sqft (Approx.)",
             status: "Under Construction",
             possession: "December 2026",
             units: "101 Units",
@@ -192,13 +192,13 @@ export default function ProjectShowcase() {
                                                     </p>
                                                     <div className={styles.detailsRow}>
                                                         <span>{project.details.type}</span>
-                                                        <span>{project.details.size}</span>
+                                                        {/* <span>{project.details.size}</span> */}
                                                     </div>
                                                 </>
                                             ) : (
                                                 <div className={styles.detailsRowStatic}>
                                                     <span>{project.details.type}</span>
-                                                    <span>{project.details.size}</span>
+                                                    {/* <span>{project.details.size}</span>*/}
                                                 </div>
                                             )}
                                         </div>

@@ -5,6 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Carousel, Container, Row, Col, Form, Button, Modal } from "react-bootstrap";
 import Image from "next/image";
+import ScheduleVisitForm from "../components/ScheduleVisitForm";
 
 export default function MicoristePage() {
     const [show, setShow] = useState(false);
@@ -53,51 +54,7 @@ export default function MicoristePage() {
 
 
             {/* ===== Schedule Visit Section ===== */}
-            <section data-aos="fade-up"
-                data-aos-delay="200" className="py-5" style={{ backgroundColor: "#0a1927", color: "#fff" }}>
-                <Container>
-                    <h3 className="text-center mb-4" style={{ fontWeight: 400 }}>
-                        Schedule your visit
-                    </h3>
-                    <Form>
-                        <Row className="justify-content-center">
-                            <Col md={3} sm={12} className="mb-3">
-                                <Form.Control
-                                    type="text"
-                                    placeholder="Name*"
-                                    required
-                                    className="rounded-0"
-                                />
-                            </Col>
-                            <Col md={3} sm={12} className="mb-3">
-                                <Form.Control
-                                    type="email"
-                                    placeholder="Email*"
-                                    required
-                                    className="rounded-0"
-                                />
-                            </Col>
-                            <Col md={3} sm={12} className="mb-3">
-                                <Form.Control
-                                    type="tel"
-                                    placeholder="Phone*"
-                                    required
-                                    className="rounded-0"
-                                />
-                            </Col>
-                            <Col md="auto" sm={12} className="mb-3">
-                                <Button
-                                    variant="outline-light"
-                                    type="submit"
-                                    className="rounded-0 px-4"
-                                >
-                                    Submit
-                                </Button>
-                            </Col>
-                        </Row>
-                    </Form>
-                </Container>
-            </section>
+            <ScheduleVisitForm />
             <section data-aos="fade-up"
                 data-aos-delay="200" className="about-micro"
                 style={{
@@ -471,24 +428,16 @@ export default function MicoristePage() {
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-12 text-center">
-                            <div className="d-md-block d-none">
-                                <Image
-                                    src="/images/sankalp/sankalp_map.webp"
-                                    alt="location"
-                                    width={800}
-                                    height={700}
-                                    className="d-block w-100 mx-auto"
-                                />
-                            </div>
-                            <div className="d-md-none d-block">
-                                <Image
-                                    src="/images/sankalp/ankalp_map.webp"
-                                    alt="location"
-                                    width={400}
-                                    height={500}
-                                    className="d-block w-100 mx-auto"
-                                />
-                            </div>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.037774570284!2d77.6996934!3d13.0332665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11a726798437%3A0xcb8d846f93060b10!2sMythri%20Sankalp%20DKM!5e0!3m2!1sen!2sin!4v1764853141521!5m2!1sen!2sin"
+                                width="100%"
+                                height="600"
+                                style={{ border: 0 }}
+                                allowFullScreen
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                            >
+                            </iframe>
                         </div>
                     </div>
                     <div className="row mt-5  justify-content-center">

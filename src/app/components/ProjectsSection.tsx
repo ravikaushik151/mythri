@@ -10,11 +10,11 @@ const projects = [
     status: "Under Construction",
     projectType: "Residential Apartments",
     configuration: "2 & 3 BHK",
-    numberOfUnits: "219 Units", // replace actual
-    possession: "2028", // replace actual
+    numberOfUnits: "219 Units",
+    possession: "2028",
     description:
       "Mythri Street is a thoughtfully crafted residential landmark spread across 3 acres of prime land. With 80% open spaces, it blends urban sophistication with serene living.",
-    image: "images/street.webp",
+    image: "/images/street.webp",
     link: "/mythri-street",
   },
   {
@@ -22,12 +22,12 @@ const projects = [
     location: "Off Sarjapur Road, Bengaluru",
     status: "Under Construction",
     projectType: "Residential Apartments",
-    configuration: "2, 2.5, 3, 3.5 and 4 BHK", // replace actual
-    numberOfUnits: "423 Units", // replace actual
-    possession: "2028", // replace actual
+    configuration: "2, 2.5, 3, 3.5 and 4 BHK",
+    numberOfUnits: "423 Units",
+    possession: "2028",
     description:
       "Mythri Sity is that kind of place — where thoughtful design meets timeless comfort. Spread across 5 acres, it brings together the warmth of community living and the freedom of open spaces.",
-    image: "images/sity.webp",
+    image: "/images/sity.webp",
     link: "/mythri-sity",
   },
   {
@@ -36,11 +36,11 @@ const projects = [
     status: "Under Construction",
     projectType: "Residential Apartments",
     configuration: "2 & 3 BHK",
-    numberOfUnits: "182 Units", // replace actual
-    possession: "October 2027", // replace actual
+    numberOfUnits: "182 Units",
+    possession: "October 2027",
     description:
       "Mythri Sikharam is a thoughtfully designed residential project offering a balance of modern living and timeless comfort. The homes are spacious, airy, and finished with premium materials to enhance aesthetics and functionality.",
-    image: "images/sikharam.webp",
+    image: "/images/sikharam.webp",
     link: "/mythri-sikharam",
   },
   {
@@ -49,14 +49,15 @@ const projects = [
     status: "Under Construction",
     projectType: "Residential Apartments",
     configuration: "2 & 3 BHK",
-    numberOfUnits: "101 Units", // Fill accurate count if known
+    numberOfUnits: "101 Units",
     possession: "December 2026",
     description:
       "Mythri Sankalp offers spacious 2 & 3 BHK apartments designed for comfort and modern living. Located KR Puram, the project is RERA approved, providing an ideal blend of convenience and luxury.",
-    image: "images/mythrisapphire.webp",
+    image: "/images/mythrisapphire.webp",
     link: "/mythri-sankalp",
   }
 ];
+
 
 
 
