@@ -103,8 +103,8 @@ export default function EnquiryDrawer() {
                         type="submit"
                         className="btn w-100 border border-2 mt-3"
                         style={{
-                            borderColor: "#8b6a40",
-                            color: "#8b6a40",
+                            borderColor: "#0a1927",
+                            color: "#0a1927",
                         }}
                     >
                         Submit
