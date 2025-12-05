@@ -1,11 +1,11 @@
 import Career from "../../app/components/Career";
 
 export const metadata = {
-  title: "Explore Careers at Mythri Builders – Build the Future with Us",
+  title: "Career at Mythri Builders | Current Job Openings - 2026",
   description:
-    "Join Mythri Builders to be part of a mission where values guide, ideas thrive, and growth is shared. Apply now to build a future with integrity and innovation.",
+    "Explore career opportunities at Mythri Builders. View current job openings & apply to join a trusted real estate team shaping residential communities.",
   keywords:
-    "Villa Plot near Kanakapura Main Road, Residential plots for sale in Kanakapura Main Road, Residential Plots for Sale in Kaggalipura Bangalore, Plot For Sale In Kaggalipura",
+    "Mythri Builders Bangalore,Apartment For Sale In Sarjapur Road,Flat in Sarjapur Road, New apartments in Sarjapur Road,",
   alternates: {
     canonical: "/career/",
   },

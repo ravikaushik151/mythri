@@ -12,7 +12,7 @@ export default function Contact() {
                         <div className="col-md-12 text-center">
                             <p className="fs-1 mb-3 text-uppercase">TERMS AND CONDITIONS</p>
                             <p className="fs-6">
-                                <Link className="text-white text-decoration-none" href="/">
+                                <Link className="text-white text-decoration-none" href="https://mythribuilders.com/">
                                     Home
                                 </Link>{" "}
                                 / TERMS AND CONDITIONS

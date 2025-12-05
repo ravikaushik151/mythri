@@ -1,26 +1,53 @@
 'use client';
-import Head from 'next/head';
+import Head from 'next/head'; // 👈 Import the Head component
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import "./../blog.css";
+
+// ROBUST MANUAL DATE PARSING FUNCTION (Ensures correct sorting)
+const parsePostDate = (dateString) => {
+    // Expected format: "YYYY-MM-DD HH:MM:SS"
+    if (!dateString) return new Date(0);
+    const [datePart, timePart] = dateString.split(' ');
+    const [year, month, day] = datePart.split('-').map(Number);
+    const [hour, minute, second] = timePart ? timePart.split(':').map(Number) : [0, 0, 0];
+
+    // Use UTC for reliability (Month is 0-indexed, so subtract 1)
+    const date = new Date(Date.UTC(year, month - 1, day, hour, minute, second));
+
+    return isNaN(date.getTime()) ? new Date(0) : date;
+};
+
 
 export default function Blog() {
     const [posts, setPosts] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
     const [sortBy, setSortBy] = useState('newest');
     const [currentPage, setCurrentPage] = useState(1);
+    const [isLoading, setIsLoading] = useState(true);
+    const [error, setError] = useState(null);
 
     const postsPerPage = 6;
 
     // Fetch blog data from PHP API
     useEffect(() => {
         fetch("https://mythribuilders.com/blog-dashboard/get-blog")
-            .then(res => res.json())
+            .then(res => {
+                if (!res.ok) {
+                    throw new Error('Failed to fetch blog posts');
+                }
+                return res.json();
+            })
             .then(data => {
                 setPosts(data);
+                setIsLoading(false);
             })
-            .catch(err => console.error("API Fetch Error:", err));
+            .catch(err => {
+                console.error("API Fetch Error:", err);
+                setError("Unable to load blog posts at this time.");
+                setIsLoading(false);
+            });
     }, []);
 
     // Filter by title
@@ -28,10 +55,10 @@ export default function Blog() {
         post.title.toLowerCase().includes(searchTerm.toLowerCase())
     );
 
-    // Sort by date
+    // Sort by date (Uses the robust date parser)
     const sortedPosts = [...filteredPosts].sort((a, b) => {
-        const dateA = new Date(a.date);
-        const dateB = new Date(b.date);
+        const dateA = parsePostDate(a.date);
+        const dateB = parsePostDate(b.date);
         return sortBy === 'newest' ? dateB - dateA : dateA - dateB;
     });
 
@@ -40,8 +67,63 @@ export default function Blog() {
     const startIndex = (currentPage - 1) * postsPerPage;
     const paginatedPosts = sortedPosts.slice(startIndex, startIndex + postsPerPage);
 
+    // Handler for page changes
+    const handlePageChange = (pageNumber) => {
+        if (pageNumber >= 1 && pageNumber <= totalPages) {
+            setCurrentPage(pageNumber);
+            window.scrollTo(0, 0);
+        }
+    };
+
+    let content;
+    if (isLoading) {
+        content = <div className="col-12 text-center py-5"><p>Loading blog posts...</p></div>;
+    } else if (error) {
+        content = <div className="col-12 text-center py-5"><p className='text-danger fw-bold'>{error}</p></div>;
+    } else if (paginatedPosts.length === 0) {
+        content = <div className="col-12 text-center py-5"><p>No blog posts found matching your search.</p></div>;
+    } else {
+        content = paginatedPosts.map((post) => (
+            <div className="col-md-4 py-3" key={post.slug}>
+                <div className="services-item shine-animate-item bg-white shadow-sm py-3 px-3 theme-bg-dark">
+                    <div className="services-thumb">
+                        <Link href={`/blog/${post.slug}`}>
+                            <Image
+                                src={`https://mythribuilders.com/blog-dashboard/public/${post.image}`}
+                                className="img-fluid"
+                                alt={post.title}
+                                width={500}
+                                height={500}
+                                style={{ minHeight: "250px", objectFit: "cover" }}
+                            />
+                        </Link>
+                    </div>
+                    <div className="services-content">
+                        <h6 className="title my-3 text-center fw-bold">
+                            <Link className='text-dark fw-bold text-decoration-none theme-color-light fs-4' href={`/blog/${post.slug}`}>
+                                {post.title}
+                            </Link>
+                        </h6>
+                        <p className='mb-0 theme-color-light'>{post.excerpt}</p>
+                        <div className="text-center py-3 my-3 small">
+                            <Link href={`/blog/${post.slug}`} className="btn theme-bg-light">Read More</Link>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        ));
+    }
+
     return (
         <>
+            {/* 💡 SEO METADATA USING NEXT/HEAD 💡 */}
+            <Head>
+                <title>Real Estate Trends & Insights by Mythri Builders Bangalore</title>
+                <meta name="description" content="Real estate trends & insights by Mythri Builders with updates, reviews customer experiences & guidance for homebuyers exploring projects in Bangalore." />
+                <meta name="keywords" content="Mythri Builders Reviews, Mythri Builders Bangalore, Customer feedback," />
+                <link rel="canonical" href="https://mythribuilders.com/blog/" /> {/* **UPDATE THIS DOMAIN** */}
+            </Head>
+
             {/* Banner Section */}
             <div id="carouselExampleDark" className="header-section">
                 <div className='row'>
@@ -52,7 +134,7 @@ export default function Blog() {
                                 <div className="text-white d-block">
                                     <p className="text-center d-block fs-1 mb-3 text-uppercase"> Blog</p>
                                     <p className="text-center d-block fs-6 ">
-                                        <Link className="text-white text-decoration-none" href={'./'}> Home</Link> / Blog
+                                        <Link className="text-white text-decoration-none" href="https://mythribuilders.com/"> Home</Link> / Blog
                                     </p>
                                 </div>
                             </div>
@@ -75,56 +157,25 @@ export default function Blog() {
 
                     {/* Blog Cards */}
                     <div className="row">
-                        {paginatedPosts.length > 0 ? paginatedPosts.map((post) => (
-                            <div className="col-md-4 py-3" key={post.slug}>
-                                <div className="services-item shine-animate-item bg-white shadow-sm py-3 px-3 theme-bg-dark">
-                                    <div className="services-thumb">
-                                        <Link href={`/blog/${post.slug}`}>
-                                            <Image
-                                                src={`https://mythribuilders.com/blog-dashboard/public/${post.image}`}
-                                                className="img-fluid"
-                                                alt={post.title}
-                                                width={500}
-                                                height={500}
-                                                style={{ minHeight: "250px", objectFit: "cover" }}
-                                            />
-
-                                        </Link>
-                                    </div>
-                                    <div className="services-content">
-                                        <h6 className="title my-3 text-center fw-bold">
-                                            <Link className='text-dark fw-bold text-decoration-none theme-color-light fs-4' href={`/blog/${post.slug}`}>
-                                                {post.title}
-                                            </Link>
-                                        </h6>
-                                        <p className='mb-0 theme-color-light'>{post.excerpt}</p>
-                                        <div className="text-center py-3 my-3 small">
-                                            <Link href={`/blog/${post.slug}`} className="btn theme-bg-light">Read More</Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        )) : (
-                            <div className="col-12 text-center">
-                                <p>Loading blog posts...</p>
-                            </div>
-                        )}
+                        {content}
                     </div>
 
                     {/* Pagination */}
-                    <div className="row mt-4">
-                        <div className="col text-center">
-                            <nav>
-                                <ul className="pagination justify-content-center">
-                                    {Array.from({ length: totalPages }, (_, i) => (
-                                        <li key={i} className={`page-item mx-1 ${currentPage === i + 1 ? 'active' : ''}`} onClick={() => setCurrentPage(i + 1)}>
-                                            <button className="page-link btn text-light rounded-0 theme-bg-dark">{i + 1}</button>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </nav>
+                    {!isLoading && !error && paginatedPosts.length > 0 && (
+                        <div className="row mt-4">
+                            <div className="col text-center">
+                                <nav>
+                                    <ul className="pagination justify-content-center">
+                                        {Array.from({ length: totalPages }, (_, i) => (
+                                            <li key={i} className={`page-item mx-1 ${currentPage === i + 1 ? 'active' : ''}`} onClick={() => handlePageChange(i + 1)}>
+                                                <button className="page-link btn text-light rounded-0 theme-bg-dark">{i + 1}</button>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </nav>
+                            </div>
                         </div>
-                    </div>
+                    )}
 
                 </div>
             </section>

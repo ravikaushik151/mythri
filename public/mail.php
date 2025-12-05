@@ -1,11 +1,23 @@
 <?php
-header('Content-Type: text/plain');
+// Set the content type to JSON for the response
+header("Access-Control-Allow-Origin: *"); // or specify your domain instead of *
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
+header("Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With");
+// Handle preflight OPTIONS request
+if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
+    http_response_code(200);
+    exit();
+}
+
+header('Content-Type: application/json');
+
+//header('Content-Type: text/plain');
 
 // Main recipient
 $adminEmail = "info@imsolutions.mobi";
 
 // Additional recipients (each will get their own mail)
-$additionalRecipients = ['mythribuilders1@gmail.com', 'info@imsolutions.mobi'];
+$additionalRecipients = ['mythribuilders1@gmail.com', 'enquiry@mythribuilders.co.in'];
 //$additionalRecipients = ['ravi.k@imsolutions.mobi','lokesh@imsolutions.mobi']; 
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {

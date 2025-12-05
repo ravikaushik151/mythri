@@ -21,7 +21,7 @@ const API_BASE_URL = 'https://mythribuilders.com/blog-dashboard/public';
  * @returns {Promise<Array | Object | null>} The API response data.
  */
 async function getPost(slug = null) {
-  const url = slug 
+  const url = slug
     ? `https://mythribuilders.com/blog-dashboard/get-blog?slug=${slug}`
     : `https://mythribuilders.com/blog-dashboard/get-blog`;
 
@@ -44,18 +44,18 @@ async function getPost(slug = null) {
  * This is REQUIRED for `output: 'export'` with dynamic routes to resolve the build error.
  */
 export async function generateStaticParams() {
-    // Fetch ALL posts at build time
-    const apiResponse = await getPost(null); 
+  // Fetch ALL posts at build time
+  const apiResponse = await getPost(null);
 
-    if (!apiResponse || !Array.isArray(apiResponse)) {
-        console.warn("generateStaticParams: API did not return an array. Returning empty array.");
-        return [];
-    }
-    
-    // Return an array of objects, each containing the 'slug' property
-    return apiResponse.map((post) => ({
-        slug: post.slug,
-    }));
+  if (!apiResponse || !Array.isArray(apiResponse)) {
+    console.warn("generateStaticParams: API did not return an array. Returning empty array.");
+    return [];
+  }
+
+  // Return an array of objects, each containing the 'slug' property
+  return apiResponse.map((post) => ({
+    slug: post.slug,
+  }));
 }
 
 
@@ -125,12 +125,12 @@ export default async function BlogPost({ params }) {
   if (!post) {
     console.warn(`Post not found or API returned null/empty for slug: ${slug}.`);
     // Correctly triggers the not-found page
-    notFound(); 
+    notFound();
   }
 
   // Final check and construction of the post image URL
-  const postImageUrl = post.image 
-    ? `${API_BASE_URL}${post.image.startsWith('/') ? post.image : '/' + post.image}` 
+  const postImageUrl = post.image
+    ? `${API_BASE_URL}${post.image.startsWith('/') ? post.image : '/' + post.image}`
     : null;
 
   return (
@@ -152,7 +152,7 @@ export default async function BlogPost({ params }) {
                 <div className="text-white d-block">
                   <p className="text-center d-block fs-1 mb-0 text-uppercase">Blog</p>
                   <p className="text-center d-block fs-6">
-                    <Link className="text-white text-decoration-none" href="/">Home</Link> / Blog
+                    <Link className="text-white text-decoration-none" href="https://mythribuilders.com/">Home</Link> / Blog
                   </p>
                 </div>
               </div>

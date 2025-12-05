@@ -13,11 +13,9 @@ import '@uiw/react-markdown-preview/markdown.css';
 
 
 export const metadata = {
-  title: 'Mythri Builders',
-  description: 'Mythri Builders',
-  verification: {
-    google: "cd_dN1W3Kp4AkTJ7Sciy4i4j3xy9eMU51ZILwAMwx-Y",
-  },
+  title: 'Mythri Builders | Top Builders in Bangalore',
+  description: 'Mythri Builders is trusted top builders in Bangalore, offering well-planned 2 & 3BHK apartments with strong connectivity, amenities & long-term value.',
+  keywords: 'Mythri Builders,Mythri Builders Bangalore, Top Builders In Bangalore, Best Builders In Bangalore',
 };
 
 export default function RootLayout({ children }) {

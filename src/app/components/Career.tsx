@@ -98,7 +98,7 @@ export default function Career() {
                                 <div className="text-white d-block">
                                     <p className="text-center d-block fs-1 mb-3 text-uppercase"> Career</p>
                                     <p className="text-center d-block fs-6 ">
-                                        <Link className="text-white text-decoration-none" href={'./'}> Home</Link> / Career
+                                        <Link className="text-white text-decoration-none" href="https://mythribuilders.com/"> Home</Link> / Career
                                     </p>
                                 </div>
                             </div>

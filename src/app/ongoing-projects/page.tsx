@@ -131,7 +131,7 @@ export default function ProjectShowcase() {
                                     <p className="fs-6 text-center">
                                         <Link
                                             className="text-white text-decoration-none"
-                                            href="/"
+                                            href="https://mythribuilders.com/"
                                         >
                                             Home
                                         </Link>{" "}

@@ -4,6 +4,37 @@ import "./../about.css";
 import TestimonialSlider from "../components/Home/TestimonialSlider";
 import TeamSection from "../components/TeamSection";
 
+// --- START: SEO METADATA ADDITIONS ---
+/**
+ * Next.js Metadata for the About Page.
+ * This object is automatically picked up by Next.js to inject into the <head> of the document.
+ */
+export const metadata = {
+  // Page Title
+  title: "About Mythri Builders Bangalore | Top Builders in Bangalore",
+
+  // Page Description
+  description: "Mythri Builders is trusted top builders in Bangalore, offering well-planned 2 & 3BHK apartments with strong connectivity, amenities & long-term value.",
+
+  // Keywords (comma-separated for SEO)
+  keywords: "Mythri Builders Bangalore,Trusted builders in Bangalore, Top Builders In Bangalore, Best Builders In Bangalore",
+
+  alternates: {
+    canonical: 'https://mythribuilders.com/about', // **UPDATE THIS DOMAIN**
+  },
+
+  // Open Graph / Social Media Metadata (Optional, but good practice)
+  openGraph: {
+    title: "About Mythri Builders - Trusted Real Estate Developer in Bangalore",
+    description: "Discover Mythri Builders, a leading real estate developer in Bangalore committed to quality, modern design, and building lasting communities.",
+    url: 'https://mythribuilders.com/about', // **UPDATE THIS DOMAIN**
+    siteName: 'Mythri Builders',
+    type: 'website',
+  },
+};
+// --- END: SEO METADATA ADDITIONS ---
+
+
 export default function About() {
   return (
     <>
@@ -23,7 +54,7 @@ export default function About() {
                 <div className="text-white d-block text-center">
                   <p className="fs-1 mb-3 text-uppercase">About Us</p>
                   <p className="fs-6">
-                    <Link href="./" className="text-white text-decoration-none">Home</Link> / About Us
+                    <Link href="https://mythribuilders.com" className="text-white text-decoration-none">Home</Link> / About Us
                   </p>
                 </div>
               </div>
