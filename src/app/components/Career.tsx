@@ -45,7 +45,7 @@ export default function Career() {
         });
 
         try {
-            const response = await fetch('https://mythribuilders.com/send-application/', {
+            const response = await fetch('https://mythribuilders.com/cmail.php', {
                 method: 'POST',
                 body: form,
             });
