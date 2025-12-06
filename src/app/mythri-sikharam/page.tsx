@@ -85,7 +85,7 @@ export default function MicoristePage() {
                             fontFamily: "'Source Sans 3', sans-serif",
                         }}
                     >
-                        Discover the Art of Elevated Living <br /> Mythri Sikharam is a luxury high-rise residential community by Mythri Builders, thoughtfully designed to deliver a refined lifestyle in one of Bengaluru’s fastest-growing corridors.
+                        Discover the Art of Elevated Living <br /> Mythri Sikharam is a luxury high-rise residential community by Mythri Builders, thoughtfully designed to deliver a refined lifestyle in one of Bengaluru’s fastest-growing corridors and an ideal address for those seeking flats near RGA Tech Park Bangalore.
                     </p>
                     <p
                         className="mx-auto mt-3"
@@ -97,7 +97,7 @@ export default function MicoristePage() {
                             fontFamily: "'Source Sans 3', sans-serif",
                         }}
                     >
-                        Located off Sarjapur Road, Hadosiddapura, this premium development blends contemporary architecture, open planning, and serene landscaping. Each home is crafted to offer abundant natural light, cross ventilation, and seamless functionality. <br /> Here, life moves at your pace — calm, connected, and elevated.
+                        Located off Sarjapur Road, Hadosiddapura, this premium development of thoughtfully planned Flats For Sale In Sarjapur Road blends contemporary architecture, open planning, and serene landscaping. Each home, including the efficiently designed 2 BHK flats in Sarjapur Road, is crafted to offer abundant natural light, cross ventilation, and seamless functionality. <br /> Here, life moves at your pace - calm, connected, and elevated.
                     </p>
 
                     {/* ===== Info Row ===== */}
@@ -150,7 +150,7 @@ export default function MicoristePage() {
                             lineHeight: "1.8",
                             fontFamily: "'Source Sans 3', sans-serif",
                         }}
-                    >Elegantly designed facades, spacious balconies, and well-ventilated layouts come together to create an elevated lifestyle experience.<br /> Designed for natural light and effortless airflow, each home offers everyday luxury with smart planning and lasting comfort.
+                    >Elegantly designed facades, spacious balconies, and well-ventilated layouts come together to create an elevated lifestyle experience for residents choosing flats near RGA Tech Park Bangalore.<br /> Designed for natural light and effortless airflow, each home offers everyday luxury with smart planning and lasting comfort.
                     </p>
                 </Container>
 
@@ -324,11 +324,7 @@ export default function MicoristePage() {
                             lineHeight: "1.8",
                         }}
                     >
-                        Every detail is designed to support this way of life. Double-height lobbies
-                        create an airy welcome, spacious balconies bring the outdoors closer, and
-                        verandas encourage slow evenings spent in good company. Whether you’re
-                        seeking solitude, movement, or togetherness, the spaces adapt to every
-                        version of your day.
+                        Every detail is designed to support this way of life. Double-height lobbies create an airy welcome, spacious balconies bring the outdoors closer, and verandas encourage slow evenings spent in good company. Whether you’re seeking solitude, movement, or togetherness, these 2 BHK flats in Sarjapur Road and expansive 3 BHK residences adapt to every version of your day.
                     </p>
 
                     {/* Buttons */}

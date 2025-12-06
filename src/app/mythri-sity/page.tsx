@@ -107,7 +107,7 @@ export default function MicoristePage() {
                             fontFamily: "’source Sans 3', sans-serif",
                         }}
                     >
-                        Positioned perfectly near the dynamic energy of Sarjapur Road, Mythri Sity achieves a rare and elegant balance. It is where the deep peace of a Tropical Calm environment beautifully merges with the practicality of Mindful Design.
+                        Positioned perfectly near the dynamic energy of Sarjapur Road, Mythri Sity achieves a rare and elegant balance. For discerning homebuyers exploring 2 BHK flats in Sarjapur Road along with spacious 3 and 4 BHK residences, it is where the deep peace of a Tropical Calm environment beautifully merges with the practicality of Mindful Design.
                     </p>
                     <p
                         className="mx-auto mt-3"
@@ -119,7 +119,7 @@ export default function MicoristePage() {
                             fontFamily: "’source Sans 3', sans-serif",
                         }}
                     >
-                        This is more than a luxury residence; it is a space intentionally shaped for your well-being. Every home is a sanctuary, optimized for natural light, effortless ventilation, and the tranquil vision of the sky-toned lagoon.Mythri Sity offers you the clarity to truly live, a seamless experience of elegance and ease, without compromising your connection to the city’s heart.
+                        This is more than a luxury residence; it is a space intentionally shaped for your well-being. Every home is a sanctuary, optimized for natural light, effortless ventilation, and the tranquil vision of the sky-toned lagoon. Mythri Sity offers you the clarity to truly live, a seamless experience of elegance and ease, without compromising your connection to the city’s heart, in a coveted apartment in Sarjapur Road that feels like a private retreat.
                     </p>
 
                     {/* ===== Info Row ===== */}
@@ -231,7 +231,7 @@ export default function MicoristePage() {
                                     width: "90%",
                                 }}
                             >
-                                Your day awakens with the quiet scent of the surrounding greenery, perfect for a mindful walk along the winding trails, or simply holding a warm cup on your sun-drenched private deck. As the hours unfold, the Sity offers a refined outlet for every inclination: find your intensity in the state-of-the-art fitness lounge, enjoy a spirited rally on the exclusive courts, or gather loved ones by the elegant outdoor pavilion for a relaxed evening under the stars. <br />Every corner of the community is a curated opportunity. Whether you seek vibrant movement, effortless connection, or beautiful solitude, the amenities are meticulously woven into the landscape, making every day feel purposefully well-spent.
+                                Your day awakens with the quiet scent of the surrounding greenery, perfect for a mindful walk along the winding trails, or simply holding a warm cup on your sun-drenched private deck. As the hours unfold, the Sity offers a refined outlet for every inclination: find your intensity in the state-of-the-art fitness lounge, enjoy a spirited rally on the exclusive courts, or gather loved ones by the elegant outdoor pavilion for a relaxed evening under the stars. Whether you choose a 2 BHK, 3 BHK or 4 BHK Flat In Sarjapur Road here, every corner of the community is a curated opportunity. Whether you seek vibrant movement, effortless connection, or beautiful solitude, the amenities are meticulously woven into the landscape, making every day feel purposefully well-spent.
 
                             </p>
                         </div>
@@ -349,7 +349,7 @@ export default function MicoristePage() {
                             lineHeight: "1.8",
                         }}
                     >
-                        A rare view of what truly luxurious living looks like. Every residence is meticulously crafted to maximize light and ventilation, ensuring your home is in harmony with the natural environment. Expect uncompromised quality, premium specifications, and tropical delight in every finish.
+                        A rare view of what truly luxurious living in an apartment in Sarjapur Road looks like. Every residence is meticulously crafted to maximize light and ventilation, ensuring your home is in harmony with the natural environment. Expect uncompromised quality, premium specifications, and tropical delight in every finish.
                     </p>
 
                     {/* Buttons */}
@@ -424,7 +424,7 @@ export default function MicoristePage() {
                                 lineHeight: "1.8",
                             }}
                         >
-                            Mythri Sity places you in Bengaluru’s fastest-growing ecosystem, off Sarjapur Road. Enjoy seamless connectivity to key IT corridors. The unparalleled advantage: being minutes from the proposed SWIFT City, establishing this address as the epicenter of tomorrow’s progress.
+                            Mythri Sity places you in Bengaluru’s fastest-growing ecosystem, off Sarjapur Road, making it one of the most desirable addresses for 2 BHK flats in Sarjapur Road and premium lifestyle upgrades. Enjoy seamless connectivity to key IT corridors. The unparalleled advantage: being minutes from the proposed SWIFT City, establishing this address as the epicenter of tomorrow’s progress.
                         </p>
                     </div>
 
@@ -659,7 +659,7 @@ export default function MicoristePage() {
                                 data-bs-parent="#faqAccordion"
                             >
                                 <div className="accordion-body" style={{ color: "#585858", textAlign: "justify" }}>
-                                    Mythri Sity features 423 ultra-luxury homes available in 2, 3, and 4 BHK configurations across B+G+18 floors. Residences feature high-end specifications including 80x80cm Vitrified Tiles for living areas , Kohler sanitaryware , and Schindler branded automatic elevators. Every home is a masterpiece of light and ventilation, built on a foundation of uncompromised quality.
+                                    Mythri Sity features 423 ultra-luxury homes available in 2, 3, and 4 BHK configurations across B+G+18 floors, ideal for families looking for 2 BHK flats in Sarjapur Road as well as larger 3 and 4 BHK options. Residences feature high-end specifications including 80x80cm vitrified tiles for living areas, Kohler sanitaryware, and Schindler branded automatic elevators. Every home is a masterpiece of light and ventilation, built on a foundation of uncompromised quality.
                                 </div>
                             </div>
                         </div>

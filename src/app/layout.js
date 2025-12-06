@@ -16,6 +16,10 @@ export const metadata = {
   title: 'Mythri Builders | Top Builders in Bangalore',
   description: 'Mythri Builders is trusted top builders in Bangalore, offering well-planned 2 & 3BHK apartments with strong connectivity, amenities & long-term value.',
   keywords: 'Mythri Builders,Mythri Builders Bangalore, Top Builders In Bangalore, Best Builders In Bangalore',
+
+  alternates: {
+    canonical: 'https://mythribuilders.com/', // **UPDATE THIS DOMAIN**
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -25,7 +29,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" type="image/png" href="/fevicon.png" />
         <link rel="shortcut icon" type="image/png" href="/fevicon.png" />
         <link rel="apple-touch-icon" href="/fevicon.png" />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
         {/* ✅ Correct Google Font link */}
         <link

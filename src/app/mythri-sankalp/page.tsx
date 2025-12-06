@@ -85,7 +85,7 @@ export default function MicoristePage() {
                             fontFamily: "'Source Sans 3', sans-serif",
                         }}
                     >
-                        Tucked away in the serene enclave of KR Puram, Mythri Sankalp is where Roman-inspired architecture meets modern city living. Designed for those who value elegance and practicality, it offers a calm retreat amidst Bengaluru’s bustling energy.
+                        Tucked away in the serene enclave of KR Puram, Mythri Sankalp is where Roman-inspired architecture meets modern city living. Designed for those who value elegance and practicality, it offers a calm retreat amidst Bengaluru’s bustling energy and is a compelling choice for buyers comparing it with any Flat In Sarjapur Road or other prime East Bengaluru locations.
                     </p>
                     <p
                         className="mx-auto mt-3"
@@ -97,7 +97,7 @@ export default function MicoristePage() {
                             fontFamily: "'Source Sans 3', sans-serif",
                         }}
                     >
-                        Every residence is crafted to balance aesthetics with functionality - where natural light, ventilation, and thoughtful design redefine everyday comfort. Here, life flows seamlessly between family, community, and tranquility.
+                        Every residence is crafted to balance aesthetics with functionality - where natural light, ventilation, and thoughtful design redefine everyday comfort, offering the kind of space, light, and privacy many homebuyers seek while shortlisting a Flat In Sarjapur Road. Here, life flows seamlessly between family, community, and tranquility.
                     </p>
 
                     {/* ===== Info Row ===== */}
@@ -150,7 +150,8 @@ export default function MicoristePage() {
                             lineHeight: "1.8",
                             fontFamily: "'Source Sans 3', sans-serif",
                         }}
-                    >Arched balconies, clean facades, and well-ventilated layouts bring classical beauty into a modern context. <br /> Every home is designed to maximize natural light and airflow, creating a seamless blend of architectural artistry and everyday comfort.
+                    >Arched balconies, clean facades, and well-ventilated layouts bring classical beauty into a modern context. <br />Every home is designed to maximize natural light and airflow, creating a seamless blend of architectural artistry and everyday comfort that truly stands apart from a typical Apartment in Sarjapur Road.
+
                     </p>
                 </Container>
 
@@ -276,9 +277,7 @@ export default function MicoristePage() {
                                     color: "#585858",
                                     lineHeight: "1.8",
                                 }}
-                            >Every corner at Mythri Sankalp is designed with purpose and poise.
-                                Grand entrances welcome you with timeless elegance, landscaped courtyards breathe serenity into your routine, and airy balconies invite the outdoors into your home. <br />
-                                Whether it’s a quiet morning yoga session, an evening by the pool, or quality time with loved ones - these amenity spaces adapt beautifully to every mood, every moment, and every version of your day.</p>
+                            > Every corner at Mythri Sankalp is designed with purpose and poise. Grand entrances welcome you with timeless elegance, landscaped courtyards breathe serenity into your routine, and airy balconies invite the outdoors into your home. For many homebuyers who might initially start their search with an Apartment For Sale In Sarjapur Road, these spaces offer an equally well-connected yet more tranquil way of living. <br /> Whether it’s a quiet morning yoga session, an evening by the pool, or quality time with loved ones – these amenity spaces adapt beautifully to every mood, every moment, and every version of your day.</p>
                         </div>
                     </div>
                 </div>
