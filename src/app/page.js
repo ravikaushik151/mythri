@@ -164,8 +164,7 @@ export default function Home() {
                 <div className="col-md-5 offset-md-7 py-lg-5">
                   <h2 className="mb-0 theme-color-dark">The Art of Living, Perfected Through Architecture.</h2>
                   <p className="mt-4 theme-color-dark text-justify">
-                    At Mythri Builders, every home begins with a vision - a vision to create spaces where design meets purpose, and trust meets craftsmanship.<br />Since 2019, we’ve shaped Bengaluru’s skyline through developments that merge affordable luxury, sustainable design, and architectural precision.
-                    With 800+ apartments built over 10 acres, Mythri Builders stands among the Top Builders in Bangalore, celebrating transparency, punctuality, and people-first approach.<br /> <br />Because a home isn’t just built - it’s carefully crafted for life.</p>
+                    At Mythri Builders, every home begins with a clear vision - to create spaces where design meets purpose and trust meets craftsmanship. Since 2019, Mythri Builders Bangalore has been shaping the city’s skyline with developments that bring together affordable luxury, sustainable design, and architectural precision.<br /> <br />With 800+ apartments delivered across 10+ acres, we are recognised among the Top Builders in Bangalore, celebrated for transparency, punctuality, and a people-first approach. For us, a home isn’t just built - it’s carefully crafted for life.</p>
                   <div className="text-center">
                     <Link
                       href="/about"

@@ -1,158 +1,149 @@
 // WARNING: Re-applying the global SSL certificate bypass fix.
-// This is necessary because the native fetch API in Server Components
-// does not reliably honor the 'agent' option for self-signed or invalid certs.
-// This setting globally disables SSL verification for the process and poses a
-// security risk in production. The ideal fix is on the API server side.
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+// Ideally, fix the SSL certificate on the API server.
+if (process.env.NODE_ENV === 'development' || process.env.NEXT_PUBLIC_IGNORE_SSL) {
+  process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+}
 
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
-// Base URL for API images, as images are relative paths
-// Ensure this path is correct for your images.
+// --- Constants ---
 const API_BASE_URL = 'https://mythribuilders.com/blog-dashboard/public';
+const API_ENDPOINT = 'https://mythribuilders.com/blog-dashboard/get-blog';
 
 // --- Helper Functions ---
 
 /**
- * Fetches all blog posts (no slug parameter) or a specific post (with slug parameter).
- * @param {string} [slug] - Optional slug for a single post.
- * @returns {Promise<Array | Object | null>} The API response data.
+ * Helper to construct the full image URL.
  */
-async function getPost(slug = null) {
-  const url = slug
-    ? `https://mythribuilders.com/blog-dashboard/get-blog?slug=${slug}`
-    : `https://mythribuilders.com/blog-dashboard/get-blog`;
+const getFullImageUrl = (imagePath) => {
+  if (!imagePath) return null;
+  const cleanPath = imagePath.startsWith('/') ? imagePath : `/${imagePath}`;
+  return `${API_BASE_URL}${cleanPath}`;
+};
 
-  const res = await fetch(url, {
-    // FIX: Removed dynamic fetching options like 'cache: "no-store"' or 'revalidate: 0'.
-    // This allows static export (output: 'export') to proceed by using default build-time caching.
-  });
+/**
+ * Fetches blog data. Next.js automatically dedupes fetch requests with the same URL/options.
+ */
+async function fetchBlogData(slug = null) {
+  const url = slug ? `${API_ENDPOINT}?slug=${slug}` : API_ENDPOINT;
 
-  if (!res.ok) {
-    console.error(`API Fetch Error for URL: ${url}. Status: ${res.status}, StatusText: ${res.statusText}`);
+  try {
+    const res = await fetch(url, {
+      // 'force-cache' is default for 'output: export', but explicit here for clarity
+      cache: 'force-cache',
+    });
+
+    if (!res.ok) {
+      console.error(`[API Error] ${res.status}: ${res.statusText} at ${url}`);
+      return null;
+    }
+
+    return await res.json();
+  } catch (error) {
+    console.error(`[Network Error] Failed to fetch ${url}:`, error);
     return null;
   }
-  return res.json();
+}
+
+/**
+ * Normalizes the API response to find a single post object.
+ * Handles cases where API returns an array or a single object.
+ */
+function findPostFromResponse(response, slug) {
+  if (!response) return null;
+  if (Array.isArray(response)) {
+    return response.find((p) => p.slug === slug) || null;
+  }
+  return response.slug === slug ? response : null;
 }
 
 // --- Next.js Required Functions ---
 
-/**
- * FIX: Generates the list of static paths for all possible blog posts.
- * This is REQUIRED for `output: 'export'` with dynamic routes to resolve the build error.
- */
 export async function generateStaticParams() {
-  // Fetch ALL posts at build time
-  const apiResponse = await getPost(null);
+  const posts = await fetchBlogData(null);
 
-  if (!apiResponse || !Array.isArray(apiResponse)) {
-    console.warn("generateStaticParams: API did not return an array. Returning empty array.");
+  if (!Array.isArray(posts)) {
+    console.warn("generateStaticParams: API response is not an array.");
     return [];
   }
 
-  // Return an array of objects, each containing the 'slug' property
-  return apiResponse.map((post) => ({
+  return posts.map((post) => ({
     slug: post.slug,
   }));
 }
 
-
-/**
- * Generates dynamic metadata (Title, Description, OG Image) for the blog post page.
- */
 export async function generateMetadata({ params }) {
-  const { slug } = params;
-  const apiResponse = await getPost(slug);
-
-  let post = null;
-  if (Array.isArray(apiResponse)) {
-    post = apiResponse.find(p => p.slug === slug);
-  } else if (apiResponse) {
-    post = apiResponse;
-  }
+  const { slug } = await params;
+  const apiResponse = await fetchBlogData(slug);
+  const post = findPostFromResponse(apiResponse, slug);
 
   if (!post) {
     return {
-      title: 'Blog Post Not Found | Mythri Builders',
-      description: 'The requested blog post could not be found.',
+      title: 'Post Not Found | Mythri Builders',
     };
   }
 
-  // Construct the full image URL
-  const imageUrl = post.image ? `${API_BASE_URL}${post.image.startsWith('/') ? post.image : '/' + post.image}` : null;
+  const imageUrl = getFullImageUrl(post.image);
 
   return {
-    title: post.meta_title || post.title || 'Mythri Builders Blog',
-    description: post.description || post.excerpt || 'Read the latest updates from Mythri Builders.',
-    keywords: post.keywords ? post.keywords.split(',').map(k => k.trim()) : [],
+    title: post.meta_title || post.title,
+    description: post.description || post.excerpt,
+    keywords: post.keywords?.split(',').map((k) => k.trim()),
     alternates: { canonical: `/blog/${post.slug}` },
     openGraph: {
-      title: post.meta_title || post.title,
-      description: post.description || post.excerpt,
-      url: `/blog/${post.slug}`,
+      title: post.title,
+      description: post.description,
+      images: imageUrl ? [{ url: imageUrl }] : [],
       type: 'article',
-      publishedTime: post.date,
-      authors: ['Mythri Builders'],
-      images: imageUrl ? [{ url: imageUrl, alt: post.title }] : [],
-    },
-    twitter: {
-      card: imageUrl ? 'summary_large_image' : 'summary',
-      title: post.meta_title || post.title,
-      description: post.description || post.excerpt,
-      images: imageUrl ? [imageUrl] : [],
     },
   };
 }
 
-// --- Main Server Component ---
+// --- Main Component ---
 
 export default async function BlogPost({ params }) {
-  const { slug } = params;
+  const { slug } = await params;
 
-  const apiResponse = await getPost(slug);
+  // 1. Fetch Data
+  const apiResponse = await fetchBlogData(slug);
 
-  let post = null;
-  if (Array.isArray(apiResponse)) {
-    // Find the specific post object in the array that matches the slug
-    post = apiResponse.find(p => p.slug === slug);
-  } else if (apiResponse) {
-    // Fallback: If it's not an array, assume it's the post object itself
-    post = apiResponse;
-  }
+  // 2. Extract specific post
+  const post = findPostFromResponse(apiResponse, slug);
 
+  // 3. Handle 404
   if (!post) {
-    console.warn(`Post not found or API returned null/empty for slug: ${slug}.`);
-    // Correctly triggers the not-found page
     notFound();
   }
 
-  // Final check and construction of the post image URL
-  const postImageUrl = post.image
-    ? `${API_BASE_URL}${post.image.startsWith('/') ? post.image : '/' + post.image}`
-    : null;
+  const postImageUrl = getFullImageUrl(post.image);
 
   return (
     <>
+      {/* Header Section */}
       <div id="carouselExampleDark" className="header-section">
         <div className="row">
           <div className="col-md-12">
-            <div className="image-container">
+            <div className="image-container position-relative">
               <Image
                 src="/images/blog-page-header.jpg"
-                height={1920}
-                width={2880}
-                className="img-fluid masterpiece"
                 alt="Blog Page Header"
+                width={2880}
+                height={1920}
+                className="img-fluid masterpiece"
                 style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
                 priority
+                sizes="100vw"
               />
-              <div className="overlay2">
-                <div className="text-white d-block">
-                  <p className="text-center d-block fs-1 mb-0 text-uppercase">Blog</p>
-                  <p className="text-center d-block fs-6">
-                    <Link className="text-white text-decoration-none" href="https://mythribuilders.com/">Home</Link> / Blog
+              <div className="overlay2 position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                <div className="text-white text-center">
+                  <p className="fs-1 mb-0 text-uppercase fw-bold">Blog</p>
+                  <p className="fs-6">
+                    <Link className="text-white text-decoration-none hover-underline" href="https://mythribuilders.com/">
+                      Home
+                    </Link>
+                    {' / Blog'}
                   </p>
                 </div>
               </div>
@@ -161,32 +152,38 @@ export default async function BlogPost({ params }) {
         </div>
       </div>
 
-      <section className="section-padding theme-bg-light" style={{ marginTop: '0px' }}>
+      {/* Content Section */}
+      <section className="section-padding theme-bg-light mt-0 blog-details">
         <div className="container">
           <div className="row">
             <div className="col-md-12 mb-3">
 
-              {/* Blog Post Image: Conditional rendering prevents error if 'image' is null/empty */}
+              {/* Featured Image */}
               {postImageUrl && (
-                <Image
-                  src={postImageUrl}
-                  className="w-100"
-                  alt={post.title}
-                  width={1296}
-                  height={607}
-                  style={{ objectFit: 'cover' }}
-                />
+                <div className="mb-4">
+                  <Image
+                    src={postImageUrl}
+                    alt={post.title}
+                    width={1296}
+                    height={607}
+                    className="w-100 rounded"
+                    style={{ objectFit: 'cover', height: 'auto', maxHeight: '600px' }}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1296px"
+                    priority
+                  />
+                </div>
               )}
 
+              {/* Title */}
               <h1 className="text-main fs-2 fw-bold my-4 theme-color-dark">
                 {post.title}
               </h1>
 
-              {/* Display Post Content using dangerouslySetInnerHTML */}
-              <div
+              {/* HTML Content */}
+              <article
                 className="theme-color-dark py-3 blog-content"
                 dangerouslySetInnerHTML={{
-                  __html: post?.content ? post.content : "<p>No content available for this post.</p>"
+                  __html: post.content || "<p>No content available.</p>"
                 }}
               />
 

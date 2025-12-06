@@ -25,6 +25,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" type="image/png" href="/fevicon.png" />
         <link rel="shortcut icon" type="image/png" href="/fevicon.png" />
         <link rel="apple-touch-icon" href="/fevicon.png" />
+        <meta name="robots" content="index, follow" />
 
         {/* ✅ Correct Google Font link */}
         <link

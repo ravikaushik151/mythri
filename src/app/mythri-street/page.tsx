@@ -74,7 +74,7 @@ export default function MicoristePage() {
                             fontSize: "14px",
                         }}
                     >
-                        Elevated Living, Crafted for
+                        ELEVATED LIVING, CRAFTED FOR
                     </h6>
 
                     <h2
@@ -85,7 +85,7 @@ export default function MicoristePage() {
                             letterSpacing: "1px",
                         }}
                     >
-                        The Visionary Few
+                        THE VISIONARY FEW
                     </h2>
                     <Image
                         src="/images/street/Mythri street_final logo.png"
@@ -105,9 +105,7 @@ export default function MicoristePage() {
                             lineHeight: "1.8",
                             fontFamily: "'Source Sans 3', sans-serif",
                         }}
-                    >
-                        Rising gracefully in the heart of Bengaluru’s eastern skyline, Mythri Street stands as an address of quiet power and urban sophistication.
-                    </p>
+                    >Rising gracefully in the heart of Bengaluru’s eastern skyline, Mythri Street stands as an address of quiet power and urban sophistication - a rare Apartment For Sale In Sarjapur Road for those who value both height and heritage.</p>
                     <p
                         className="mx-auto mt-3"
                         style={{
@@ -117,10 +115,7 @@ export default function MicoristePage() {
                             lineHeight: "1.8",
                             fontFamily: "'Source Sans 3', sans-serif",
                         }}
-                    >
-                        Where bold architecture meets timeless artistry, each residence captures the essence of vertical luxury — soaring views, serene interiors, and the rare sense of being both above the city and deeply connected to it.<br />Every home is an expression of refined living — designed for those who build tomorrow, yet value the beauty of today.<br />This is not just a home. It’s your statement — poised, confident, and enduring.
-
-                    </p>
+                    >Where bold architecture meets timeless artistry, each residence captures the essence of vertical luxury - soaring views, serene interiors, and the rare sense of being both above the city and deeply connected to it. <br />Every home is an expression of refined living - designed for those who build tomorrow, yet value the beauty of today.<br /></p>
 
                     {/* ===== Info Row ===== */}
                     <Row
@@ -132,13 +127,13 @@ export default function MicoristePage() {
                     >
                         <Col md={3} sm={6} xs={12} className="mb-3">
                             <h3 className="mb-md-0 mb-4 microsite-about">
-                                3 Acres <br /> 80% Open Space
+                                3 Acres <br /> 219 Residences
                             </h3>
                         </Col>
 
                         <Col md={3} sm={6} xs={12} className="mb-3 border-start border-end">
                             <h3 className="mb-md-0 mb-4 microsite-about">
-                                219 Residences <br />  2 & 3 BHK
+                                2 BHK flats in Sarjapur Road <br />  80% Open Space
                             </h3>
                         </Col>
 
@@ -180,9 +175,7 @@ export default function MicoristePage() {
                             lineHeight: "1.8",
                             fontFamily: "'Source Sans 3', sans-serif",
                         }}
-                    >Where skyline energy meets understated grace. <br />Mythri Street is a celebration of elevation — not just in height, but in perspective. It’s for those who rise early, think deeply, dream greatly, and prefer their peace with a view. Every inch of space, from the double-height lobbies to the panoramic decks, embodies balance — dynamic, yet tranquil.
-
-                    </p>
+                    >Where skyline energy meets understated grace. <br />Mythri Street is a celebration of elevation - not just in height, but in perspective. It’s for those who rise early, think deeply, dream greatly, and prefer their peace with a view, while shortlisting premium Flats For Sale In Sarjapur Road that actually match their aspirations. <br />Every inch of space, from the double-height lobbies to the panoramic decks, embodies balance - dynamic, yet tranquil.</p>
                 </Container>
 
                 {/* ===== Google Font ===== */}
@@ -330,7 +323,7 @@ export default function MicoristePage() {
                                     color: "#585858",
                                     lineHeight: "1.8",
                                 }}
-                            >Crafted with precision, each residence embraces natural light, intelligent ventilation, and a seamless sense of openness. <br /> The materials, the textures, and the design — every element is chosen to reflect refinement that endures. <br />Here, modern architecture meets soulful detailing. <br /> Your home doesn’t just rise with the skyline — it elevates your every day.</p>
+                            >Crafted with precision, each residence embraces natural light, intelligent ventilation, and a seamless sense of openness. <br /> The materials, the textures, and the design - every element is chosen to reflect refinement that endures, whether you choose expansive 3 BHK residences or thoughtfully designed 2 BHK flats in Sarjapur Road. <br /> Here, modern architecture meets soulful detailing.<br />Your home doesn’t just rise with the skyline - it elevates your every day.</p>
                         </div>
                     </div>
                 </div>
@@ -375,8 +368,7 @@ export default function MicoristePage() {
                             lineHeight: "1.8",
                         }}
                     >
-                        With Bengaluru expanding eastward, Mythri Street stands poised at the heart of exponential growth.<br />Surrounded by innovation corridors, commercial hubs, and next-gen infrastructure, this address is more than prime &mdash; it&rsquo;s prophetic.<br />An investment not just in space, but in future value and timeless design.
-                    </p>
+                        With Bengaluru expanding eastward, Mythri Street stands poised at the heart of exponential growth - a landmark address for anyone considering an Apartment For Sale In Sarjapur Road with long-term potential.<br />Surrounded by innovation corridors, commercial hubs, and next-gen infrastructure, this address is more than prime - it’s prophetic.<br />An investment not just in space, but in future value and timeless design.</p>
 
                     {/* Buttons */}
                     <div className="d-flex justify-content-center gap-3 mt-4 d-none">
@@ -461,8 +453,7 @@ export default function MicoristePage() {
                                 lineHeight: "1.8",
                             }}
                         >
-                            Positioned strategically off Bengaluru&rsquo;s IT growth corridor, <strong>Mythri Street</strong> offers instant access to Sarjapur, Whitefield, and Electronic City.<br />Whether it&rsquo;s the corporate hubs, elite schools, or fine-dining destinations &mdash; your world stays within reach.<br />Yet, when you return home, the city&rsquo;s noise fades into quiet luxury.<br /><strong>Seamless Connectivity:</strong><strong><br /></strong>Outer Ring Road &ndash; 5 min | Wipro &amp; RGA Tech Parks &ndash; 8 min | HSR &amp; Bellandur &ndash; 10&ndash;15 min | Whitefield &ndash; 20 min
-                        </p>
+                            Positioned strategically off Bengaluru’s IT growth corridor, Mythri Street offers instant access to Sarjapur, Whitefield, and Electronic City, standing out amidst other Flats For Sale In Sarjapur Road with its blend of elevation and connectivity.<br />Whether it’s the corporate hubs, elite schools, or fine-dining destinations - your world stays within reach.<br />Yet, when you return home, the city’s noise fades into quiet luxury.<br /><strong>Seamless Connectivity:</strong><br />Outer Ring Road – 5 min | Wipro & RGA Tech Parks – 8 min | HSR & Bellandur – 10–15 min | Whitefield – 20 min</p>
                     </div>
 
                     {/* Image Popup Modal */}
@@ -648,7 +639,7 @@ export default function MicoristePage() {
                                 data-bs-parent="#faqAccordion"
                             >
                                 <div className="accordion-body" style={{ color: "#585858", textAlign: "justify" }}>
-                                    Mythri Street is a registered ultra-luxury high-rise development, approved under RERA. Its uniqueness lies in its “Elevated Urban Living” concept — combining panoramic city views with refined design sensibilities across 25 floors of modern architecture.
+                                    Mythri Street is a registered ultra-luxury high-rise development, approved under RERA. Its uniqueness lies in its “Elevated Urban Living” concept - combining panoramic city views with refined design sensibilities across 25 floors of modern architecture, making it a standout Apartment For Sale In Sarjapur Road for discerning buyers.
 
                                 </div>
                             </div>
@@ -673,7 +664,7 @@ export default function MicoristePage() {
                                 data-bs-parent="#faqAccordion"
                             >
                                 <div className="accordion-body" style={{ color: "#585858", textAlign: "justify" }}>
-                                    Located strategically off Sarjapur Road, Mythri Street offers unmatched access to Bengaluru’s major IT hubs, educational institutions, and lifestyle zones. It places residents at the center of convenience — with proximity to work, wellness, and weekend escapes alike.
+                                    Located strategically off Sarjapur Road, Mythri Street offers unmatched access to Bengaluru’s major IT hubs, educational institutions, and lifestyle zones. It places residents at the center of convenience - with proximity to work, wellness, and weekend escapes alike, which is a key advantage for anyone exploring an Apartment For Sale In Sarjapur Road with both lifestyle and location in mind.
                                 </div>
                             </div>
                         </div>
@@ -697,7 +688,7 @@ export default function MicoristePage() {
                                 data-bs-parent="#faqAccordion"
                             >
                                 <div className="accordion-body" style={{ color: "#585858", textAlign: "justify" }}>
-                                    From the Sky Deck and Infinity Pool to the Rooftop Lounge, Fitness Studio, Mini Theatre, and Multi-sport Arenas — Mythri Street’s 60+ curated experiences redefine community living with a global touch of luxury.
+                                    From the Sky Deck and Infinity Pool to the Rooftop Lounge, Fitness Studio, Mini Theatre, and Multi-sport Arenas - Mythri Street’s 60+ curated experiences redefine community living with a global touch of luxury that goes far beyond typical Flats For Sale In Sarjapur Road.
                                 </div>
                             </div>
                         </div>

@@ -7,7 +7,7 @@ export const metadata = {
   keywords:
     "Mythri Builders Bangalore,Apartment For Sale In Sarjapur Road,Flat in Sarjapur Road, New apartments in Sarjapur Road,",
   alternates: {
-    canonical: "/career/",
+    canonical: "https://mythribuilders.com/career/",
   },
 
 };

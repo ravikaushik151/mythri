@@ -52,14 +52,14 @@ export default function Footer() {
     >
       {/* Title Section */}
       <div className="text-center position-relative bg-white pt-md-5">
-        <h1
+        <h2
           className="kalyani-title"
           style={{
             backgroundImage: "url('/images/Footer.webp')",
           }}
         >
           Mythri Builders
-        </h1>
+        </h2>
       </div>
 
       {/* Footer Content (bottom aligned and centered) */}

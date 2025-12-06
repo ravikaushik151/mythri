@@ -16,7 +16,7 @@ const projects = [
         slug: "mythri-street",
         location: "Off Sarjapur Road, Near RGA tech park",
         description:
-            "Mythri Street is a thoughtfully crafted residential landmark spread across 3 acres of prime land. With 80% open spaces, it blends urban sophistication with serene living.",
+            "Mythri Street is a thoughtfully crafted residential landmark spread across 3 acres of prime land. With 80% open spaces, it blends urban sophistication with serene living, making it an ideal choice for anyone looking for an Apartment For Sale In Sarjapur Road.",
         image: "/images/street.webp",
         whatsapp: "9513140111",
         call: "tel:+919513140111",
@@ -52,7 +52,7 @@ const projects = [
         slug: "mythri-sikharam",
         location: "Off Sarjapur Road, Hadosiddapura",
         description:
-            "Mythri Sikharam offers a balance of modern living and comfort. Spacious, airy homes with premium materials enhance aesthetics and usability.",
+            "Mythri Sikharam offers a balance of modern living and comfort. Spacious, airy homes, including well-planned 2 BHK flats in Sarjapur Road, with premium materials enhance aesthetics and usability.",
         image: "/images/sikharam.webp",
         whatsapp: "8951370333",
         call: "tel:+918951370333",
@@ -137,6 +137,7 @@ export default function ProjectShowcase() {
                                         </Link>{" "}
                                         / Ongoing Projects
                                     </p>
+                                    <p className="d-none">Explore our ongoing communities featuring Flats For Sale In Sarjapur Road, built around comfort, connectivity, and thoughtful design.</p>
                                 </div>
                             </div>
                         </div>
@@ -172,12 +173,12 @@ export default function ProjectShowcase() {
                                                 href={`/${project.slug}`}
                                                 className="text-decoration-none text-dark"
                                             >
-                                                <h4
-                                                    className="fw-bold mb-1"
+                                                <h2
+                                                    className="fw-bold mb-1 fs-4"
                                                     style={{ cursor: "pointer" }}
                                                 >
                                                     {project.name}
-                                                </h4>
+                                                </h2>
                                             </Link>
 
                                             <p className="text-secondary small mb-2 d-flex align-items-center">

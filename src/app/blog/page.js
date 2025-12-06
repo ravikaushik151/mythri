@@ -151,7 +151,7 @@ export default function Blog() {
                     <div className="row justify-content-end mb-4">
                         <div className='col-md-12'>
                             <h2 className="text-center mb-2">INSIGHTS BY MYTHRI BUILDERS</h2>
-                            <p className='text-center'>Where we share knowledge, updates, and inspiration.</p>
+                            <p className='text-center'>Stay informed with stories, guides, and project insights from Mythri Builders Bangalore, helping you make confident home-buying decisions.</p>
                         </div>
                     </div>
 

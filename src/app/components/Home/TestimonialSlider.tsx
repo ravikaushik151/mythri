@@ -8,15 +8,15 @@ import { Pagination, Autoplay } from 'swiper/modules';
 
 const testimonials = [
     {
-        text: "My experience with Mythri Builders has been nothing short of exceptional. From the initial consultation to the final handover, their professionalism, transparency, and commitment to quality stood out. The project was completed exactly as promised, with top-notch craftsmanship and meticulous detailing. I’m proud to call a Mythri home my own.",
+        text: "My experience with Mythri Builders has been nothing short of exceptional. From the initial consultation to the final handover, their professionalism, transparency, and commitment to quality stood out. The project was completed exactly as promised, with top-notch craftsmanship and meticulous detailing. It’s clear why they are recognised among the Best Builders in Bangalore. I’m proud to call a Mythri home my own.",
         name: "Mr. Arjun Menon",
     },
     {
-        text: "Choosing Mythri Builders was one of the best decisions we made. The team maintained clear communication throughout the process and delivered our apartment on time with impeccable finishes. Their customer-first approach and dedication to excellence truly reflect their reputation as one of Bengaluru’s most trusted developers.",
+        text: "Choosing Mythri Builders was one of the best decisions we made. The team maintained clear communication throughout the process and delivered our apartment on time with impeccable finishes. Their customer-first approach and dedication to excellence truly reflect their reputation as one of the Top Builders in Bangalore.",
         name: "Mrs. Divya Rao",
     },
     {
-        text: "Purchasing a property with Mythri Builders has been a rewarding experience. Their management team ensured every step was smooth and well-coordinated, keeping me informed throughout the process. The commitment to quality, adherence to timelines, and ethical approach they maintain make them a benchmark for reliability in the real estate industry. Investing with Mythri gave me not just a home, but complete peace of mind.",
+        text: "Purchasing a property with Mythri Builders Bangalore has been a rewarding experience. Their management team ensured every step was smooth and well-coordinated, keeping me informed throughout the process. The commitment to quality, adherence to timelines, and ethical approach they maintain make them a benchmark for reliability in the real estate industry. Investing with Mythri Builders gave me not just a home, but complete peace of mind.",
         name: "Mrs. Sneha Narayanan",
     },
 ];

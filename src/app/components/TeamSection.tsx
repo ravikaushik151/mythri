@@ -19,7 +19,7 @@ const teamMembers = [
         name: "Mr. Kiran Kumar",
         role: "MANAGING PARTNER",
         description:
-            "His wealth of experience in management, scheduling, and construction processes of over 15 years is an asset to the functioning of Mythri Builders.",
+            "His wealth of experience in management, scheduling, and construction processes of over 15 years is an asset to the functioning of Mythri Builders Bangalore.",
     },
 ];
 
@@ -31,7 +31,7 @@ export default function TeamSection() {
                     <Col md={12} sm={12}>
                         <div className="text-center mb-4">
                             <h2 className="mb-3 text-dark">The Leadership Team</h2>
-                            <p className=" text-dark mb-0">We have structural designers, civil engineers, skilled working teams, financing teams, 24 hour CRM support teams and marketing teams that total to over 50 professional, passionate, dedicated and hardworking individuals! We are also backed by over 500 people, most of whom are involved in more than one project due to the overall experience they have had with us!.</p>
+                            <p className=" text-dark mb-0">We have structural designers, civil engineers, skilled working teams, financing teams, 24-hour CRM support teams and marketing teams that total to over 50 professional, passionate, dedicated and hardworking individuals who together form the core team behind Mythri Builders Bangalore. We are also backed by over 500 people, most of whom are involved in more than one project due to the overall experience they have had with us!</p>
                         </div>
                     </Col>
                     {teamMembers.map((member, index) => (

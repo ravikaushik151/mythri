@@ -20,7 +20,7 @@ const projects = [
         name: "Mythri Sunshine",
         location: "Rampura, Bidarahalli Hobli, Bengaluru",
         description:
-            "Mythri Sunshine offers thoughtfully crafted homes designed to deliver comfort, connectivity, and a peaceful lifestyle. Located in Rampura, the project provides modern amenities with easy access to city conveniences.",
+            "Mythri Sunshine by Mythri Builders Bangalore offers thoughtfully crafted homes designed to deliver comfort, connectivity, and a peaceful lifestyle. Delivered by one of the Best Builders In Bangalore, the project in Rampura provides modern amenities with easy access to city conveniences.",
         image: "/images/Mythri Sunshine.webp",
         details: {
             type: "Residential Apartments",
@@ -36,7 +36,7 @@ const projects = [
         name: "Mythri Square",
         location: "Immadihalli, Whitefield, Bengaluru",
         description:
-            "Mythri Square is located in the heart of Whitefield, offering residents exceptional connectivity and a comfortable living environment. The project features well-planned homes with thoughtful use of space.",
+            "Mythri Square is a completed community by Mythri Builders, located in the heart of Whitefield and offering residents exceptional connectivity and a comfortable living environment. As a showcase from the Best Builders In Bangalore, the project features well-planned homes with thoughtful use of space.",
         image: "/images/Mythri Square.webp",
         details: {
             type: "Residential Apartments",
@@ -52,7 +52,7 @@ const projects = [
         name: "Mythri Sapphire",
         location: "Off Sarjapur Road, Bengaluru",
         description:
-            "Mythri Sapphire is a premium residential development located off Sarjapur Road. It offers spacious homes with modern amenities, making it an ideal choice for families seeking comfort and convenience.",
+            "Mythri Sapphire, developed by Mythri Builders Bangalore, is a premium residential development located off Sarjapur Road. Created by one of the Best Builders In Bangalore, it offers spacious homes with modern amenities, making it an ideal choice for families seeking comfort and convenience.",
         image: "/images/Mythri Sapphire.webp",
         details: {
             type: "2 & 3 BHK Apartments",
@@ -68,7 +68,7 @@ const projects = [
         name: "Mythri Signature",
         location: "Off Sarjapur Road, Bengaluru",
         description:
-            "Mythri Signature is crafted for modern urban families who value premium living. With spacious layouts and quality construction, it provides an elevated lifestyle in one of Bengaluru’s fastest-growing regions.",
+            "Mythri Signature is crafted by Mythri Builders for modern urban families who value premium living. Backed by the expertise of the Best Builders In Bangalore, its spacious layouts and quality construction provide an elevated lifestyle in one of Bengaluru’s fastest-growing regions.",
         image: "/images/Mythri Signature.webp",
         details: {
             type: "Residential Apartments",
@@ -166,7 +166,7 @@ export default function CompletedProjectShowcase() {
                                         />
 
                                         <div className={styles.overlayCard}>
-                                            <h4 className="fw-bold mb-1">{project.name}</h4>
+                                            <h2 className="fw-bold mb-1  fs-4">{project.name}</h2>
                                             <p className="text-secondary small mb-2 d-flex align-items-center">
                                                 <MapPin size={16} className="me-1" />
                                                 {project.location}

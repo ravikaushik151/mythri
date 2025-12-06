@@ -38,6 +38,7 @@ export default function Navbar() {
                 width={100}
                 height={40}
                 className="white-png logo img-fluid"
+                style={{ height: 'auto' }} // ✅ Crucial for 'img-fluid' to work without distortion
                 priority
               />
             </Link>

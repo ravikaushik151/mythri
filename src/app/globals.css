@@ -19896,4 +19896,11 @@ nav.navbar-expand-lg.navbar-dark.bg-dark.fixed-top.scrolled {
   filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(324deg) brightness(104%) contrast(105%);
 }
 
-/* ///header ends */
+.blog-details h2 {
+  font-size: 1.7rem !important;
+  margin-bottom: 15px !important;
+}
+
+.blog-details h3 {
+  font-size: 1.4rem !important;
+}

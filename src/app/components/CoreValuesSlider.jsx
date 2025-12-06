@@ -45,7 +45,7 @@ export default function CoreValuesGrid() {
       <div className="container">
         <div className="text-center mb-5">
           <h2 className="fw-bold theme-color-dark">Mythri Builders Core Values</h2>
-          <p className="text-muted text-center fs-4">
+          <p className="text-muted text-center fs-4 d-none">
             Our principles define who we are and how we work.
           </p>
         </div>
@@ -100,6 +100,7 @@ export default function CoreValuesGrid() {
             ))}
           </Swiper>
         </div>
+        <p className="text-muted text-center fs-6 mt-4">At Mythri Builders, these values shape every decision and every home, reinforcing why many homebuyers consider us among the Best Builders in Bangalore.</p>
       </div>
     </section>
   );

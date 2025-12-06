@@ -13,7 +13,7 @@ const projects = [
     name: "Mythri Street",
     location: "Off Sarjapur Road, Kodathi",
     description:
-      "Mythri Street is a thoughtfully crafted residential landmark spread across 3 acres of prime land. With 80% open spaces, it blends urban sophistication with serene living.",
+      "Mythri Street is a thoughtfully crafted residential landmark spread across 3 acres of prime land off Sarjapur Road. With 80% open spaces, it blends urban sophistication with serene living, making it a natural choice for anyone looking for an Apartment in Sarjapur Road from reputed Real Estate Developers in Sarjapur.",
     image: "/images/street.webp",
     details: {
       type: "2 & 3 BHK Residential Apartments",
@@ -29,7 +29,7 @@ const projects = [
     name: "Mythri Sity",
     location: "Off Sarjapur Road, Bengaluru",
     description:
-      "Mythri Sity is that kind of place — where thoughtful design meets timeless comfort. Spread across 5 acres, it brings together the warmth of community living and the freedom of open spaces.",
+      "Mythri Sity is that kind of place - where thoughtful design meets timeless comfort, developed by experienced Real Estate Developers in Sarjapur. Spread across 5 acres, it brings together the warmth of community living and the freedom of open spaces for those seeking a Flat in Sarjapur Road with ample greenery.",
     image: "/images/sity.webp",
     details: {
       type: "Residential Apartments",
