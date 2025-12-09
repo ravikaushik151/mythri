@@ -19897,10 +19897,25 @@ nav.navbar-expand-lg.navbar-dark.bg-dark.fixed-top.scrolled {
 }
 
 .blog-details h2 {
-  font-size: 1.7rem !important;
+  font-size: 1.5rem !important;
   margin-bottom: 15px !important;
 }
 
 .blog-details h3 {
-  font-size: 1.4rem !important;
+  font-size: 1.3rem !important;
+}
+
+.ProjectShowcase-module__Uu1w8a__overlayCard .fw-bold span {
+  padding: 0.1rem 0.6rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background-color: #dc3545;
+  color: #fff;
+  border-radius: 999px;
+}
+
+.soldText {
+  margin-right: 0.75rem;
+  font-weight: 600;
+  color: #dc3545;
 }

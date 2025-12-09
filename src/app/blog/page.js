@@ -98,7 +98,7 @@ export default function Blog() {
                             />
                         </Link>
                     </div>
-                    <div className="services-content">
+                    <div className="services-content blogs">
                         <h6 className="title my-3 text-center fw-bold">
                             <Link className='text-dark fw-bold text-decoration-none theme-color-light fs-4' href={`/blog/${post.slug}`}>
                                 {post.title}
@@ -132,7 +132,7 @@ export default function Blog() {
                             <Image src="/images/blog_new.webp" height={2880} width={1920} className='img-fluid masterpiece ' alt="masterpiece" style={{ objectPosition: '15% 100%' }} />
                             <div className="overlay2 ">
                                 <div className="text-white d-block">
-                                    <p className="text-center d-block fs-1 mb-3 text-uppercase"> Blog</p>
+                                    <h1 className="text-center d-block fs-1 mb-3 text-uppercase"> Blog</h1>
                                     <p className="text-center d-block fs-6 ">
                                         <Link className="text-white text-decoration-none" href="https://mythribuilders.com/"> Home</Link> / Blog
                                     </p>

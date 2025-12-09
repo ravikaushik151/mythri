@@ -11,8 +11,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
 
 header('Content-Type: application/json');
 
-//header('Content-Type: text/plain');
-
 // Main recipient
 $adminEmail = "info@imsolutions.mobi";
 
@@ -23,10 +21,11 @@ $additionalRecipients = ['mythribuilders1@gmail.com', 'enquiry@mythribuilders.co
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     // Collect and sanitize POST data
-    $name = isset($_POST['name']) ? strip_tags(trim($_POST['name'])) : '';
-    $email = isset($_POST['email']) ? filter_var(trim($_POST['email']), FILTER_VALIDATE_EMAIL) : '';
-    $phone = isset($_POST['phone']) ? strip_tags(trim($_POST['phone'])) : '';
+    $name    = isset($_POST['name'])    ? strip_tags(trim($_POST['name']))    : '';
+    $email   = isset($_POST['email'])   ? filter_var(trim($_POST['email']), FILTER_VALIDATE_EMAIL) : '';
+    $phone   = isset($_POST['phone'])   ? strip_tags(trim($_POST['phone']))   : '';
     $message = isset($_POST['message']) ? strip_tags(trim($_POST['message'])) : '';
+    $project = isset($_POST['project']) ? strip_tags(trim($_POST['project'])) : ''; // ✅ optional project
 
     // Basic validation
     if (empty($name) || empty($email) || empty($phone)) {
@@ -39,23 +38,32 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         exit;
     }
 
-    // Email subject and body
+    // Email subject
     $subject = "Enquiry from Mythri Builders Website";
+
+    // Base body
     $body = "
         <h2>New Contact Request</h2>
         <p><strong>Name:</strong> $name</p>
         <p><strong>Email:</strong> $email</p>
         <p><strong>Phone:</strong> $phone</p>
-        <p><strong>Message:</strong> $message</p>
     ";
 
+    // ✅ Add project to body only if it is provided
+    if (!empty($project)) {
+        $body .= "<p><strong>Project:</strong> $project</p>";
+    }
+
+    // Add message last
+    $body .= "<p><strong>Message:</strong> $message</p>";
+
     // Common headers
-    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers  = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
     $headers .= "From: noreply <noreply@mythribuilders.com>" . "\r\n";
 
     // Prepare all recipients in one array
-    $recipients = array_merge([$adminEmail], $additionalRecipients);
+    $recipients   = array_merge([$adminEmail], $additionalRecipients);
     $successCount = 0;
 
     // Send separate email to each recipient

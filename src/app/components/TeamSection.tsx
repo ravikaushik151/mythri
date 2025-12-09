@@ -4,22 +4,22 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 
 const teamMembers = [
     {
-        name: "Mr. Anil Kumar Reddy",
+        name: "Mr. S. Anil Kumar Reddy",
         role: "MANAGING PARTNER",
         description:
             "With over 20 years of hands on involvement in the Bangalore real estate industry, he understands and brings the nuances of the trade into perspective.",
     },
     {
-        name: "Mr. Kishore Babu",
+        name: "Mr. T. Kishore Babu",
         role: "MANAGING PARTNER",
         description:
             "From a software professional who saw a gap in the buyers and homeowners to having a decade of experience in the infrastructure industry, Mr. Kishore is a man of passion and a deep understanding of the consumer requirements!",
     },
     {
-        name: "Mr. Kiran Kumar",
+        name: "Mr. A. Kiran Kumar",
         role: "MANAGING PARTNER",
         description:
-            "His wealth of experience in management, scheduling, and construction processes of over 15 years is an asset to the functioning of Mythri Builders Bangalore.",
+            "His wealth of experience in management, scheduling, and construction processes of over 20 years is an asset to the functioning of Mythri Builders Bangalore.",
     },
 ];
 

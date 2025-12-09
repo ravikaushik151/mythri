@@ -6,17 +6,18 @@ interface FormData {
   email: string;
   mobile: string;
   message: string;
+  project: string; // ✅ New field
 }
 
 interface ContactFormProps {
   showMessage?: boolean;
   inputClass?: string;
   buttonClass?: string;
-  hideMessageField?: boolean; // hide textarea
-  defaultMessage?: string; // default message
-  redirectUrl?: string; // optional redirect
-  autoDownloadPdf?: string; // optional PDF download URL
-  phpEndpoint?: string; // default "mail.php"
+  hideMessageField?: boolean;
+  defaultMessage?: string;
+  redirectUrl?: string;
+  autoDownloadPdf?: string;
+  phpEndpoint?: string;
 }
 
 export default function ContactForm({
@@ -34,13 +35,16 @@ export default function ContactForm({
     email: "",
     mobile: "",
     message: defaultMessage,
+    project: "", // ✅ initial value
   });
 
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [note, setNote] = useState("");
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement> // ✅ added HTMLSelectElement
+  ) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
@@ -50,8 +54,8 @@ export default function ContactForm({
     setSuccess(false);
     setNote("");
 
-    // Basic validation
-    if (!form.name || !form.email || !form.mobile) {
+    // ✅ Basic validation (now includes project)
+    if (!form.name || !form.email || !form.mobile || !form.project) {
       setNote("All fields are required!");
       setLoading(false);
       return;
@@ -65,12 +69,12 @@ export default function ContactForm({
     }
 
     try {
-      // Prepare form data for PHP endpoint
       const formData = new FormData();
       formData.append("name", form.name);
       formData.append("email", form.email);
       formData.append("phone", form.mobile);
       formData.append("message", form.message);
+      formData.append("project", form.project); // ✅ send project to PHP
 
       const response = await fetch(phpEndpoint, {
         method: "POST",
@@ -81,10 +85,15 @@ export default function ContactForm({
 
       if (response.ok && resultText.includes("success")) {
         setSuccess(true);
-        setForm({ name: "", email: "", mobile: "", message: defaultMessage });
+        setForm({
+          name: "",
+          email: "",
+          mobile: "",
+          message: defaultMessage,
+          project: "", // ✅ reset
+        });
         setNote("");
 
-        // Auto-download PDF if provided
         if (autoDownloadPdf) {
           const link = document.createElement("a");
           link.href = autoDownloadPdf;
@@ -94,7 +103,6 @@ export default function ContactForm({
           document.body.removeChild(link);
         }
 
-        // Optional redirect
         if (redirectUrl) {
           setTimeout(() => {
             window.location.href = redirectUrl;
@@ -140,6 +148,21 @@ export default function ContactForm({
         onChange={handleChange}
         className={inputClass}
       />
+
+      {/* ✅ Select Project field */}
+      <select
+        name="project"
+        required
+        value={form.project}
+        onChange={handleChange}
+        className={inputClass}
+      >
+        <option value="">Select Project</option>
+        <option value="Mythri Street">Mythri Street</option>
+        <option value="Mythri Sity">Mythri Sity</option>
+        <option value="Mythri Sikharam">Mythri Sikharam</option>
+        <option value="Mythri Sankalp">Mythri Sankalp</option>
+      </select>
 
       {!hideMessageField && (
         <textarea

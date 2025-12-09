@@ -123,27 +123,15 @@ export default async function BlogPost({ params }) {
     <>
       {/* Header Section */}
       <div id="carouselExampleDark" className="header-section">
-        <div className="row">
-          <div className="col-md-12">
-            <div className="image-container position-relative">
-              <Image
-                src="/images/blog-page-header.jpg"
-                alt="Blog Page Header"
-                width={2880}
-                height={1920}
-                className="img-fluid masterpiece"
-                style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
-                priority
-                sizes="100vw"
-              />
-              <div className="overlay2 position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
-                <div className="text-white text-center">
-                  <p className="fs-1 mb-0 text-uppercase fw-bold">Blog</p>
-                  <p className="fs-6">
-                    <Link className="text-white text-decoration-none hover-underline" href="https://mythribuilders.com/">
-                      Home
-                    </Link>
-                    {' / Blog'}
+        <div className='row'>
+          <div className='col-md-12'>
+            <div className="image-container">
+              <Image src="/images/blog-page-header.jpg" height={2880} width={1920} className='img-fluid masterpiece ' alt="masterpiece" style={{ objectPosition: '15% 100%' }} />
+              <div className="overlay2 ">
+                <div className="text-white d-block">
+                  <h1 className="text-center d-block fs-1 mb-3 text-uppercase"> Blog</h1>
+                  <p className="text-center d-block fs-6 ">
+                    <Link className="text-white text-decoration-none" href="https://mythribuilders.com/"> Home</Link> {' / Blog'}
                   </p>
                 </div>
               </div>

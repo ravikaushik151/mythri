@@ -14,11 +14,19 @@
 }
 
 .services-item {
-  min-height: 575px;
+  min-height: 630px;
 }
 
 .home-highlights_text {
   text-align: left;
+}
+
+.blogs .title.my-3.text-center.fw-bold {
+  height: 100px;
+}
+
+.services-content.blogs p {
+  height: 110px;
 }
 
 @media only screen and (max-width:768px) {

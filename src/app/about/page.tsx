@@ -14,7 +14,7 @@ export const metadata = {
   title: "About Mythri Builders Bangalore | Top Builders in Bangalore",
 
   // Page Description
-  description: "Mythri Builders is trusted top builders in Bangalore, offering well-planned 2 & 3BHK apartments with strong connectivity, amenities & long-term value.",
+  description: "Mythri Builders Bangalore focuses on quality, planning and timely delivery, earning trust among homebuyers across well-connected residential locations.",
 
   // Keywords (comma-separated for SEO)
   keywords: "Mythri Builders Bangalore,Trusted builders in Bangalore, Top Builders In Bangalore, Best Builders In Bangalore",
@@ -52,7 +52,7 @@ export default function About() {
               />
               <div className="overlay2">
                 <div className="text-white d-block text-center">
-                  <p className="fs-1 mb-3 text-uppercase">About Us</p>
+                  <h1 className="fs-1 mb-3 text-uppercase">About Us</h1>
                   <p className="fs-6">
                     <Link href="https://mythribuilders.com/" className="text-white text-decoration-none">Home</Link> / About Us
                   </p>

@@ -147,7 +147,7 @@ export default function Home() {
                     playsInline
                     preload="none"
                     className="w-100 h-100 object-cover"
-                    poster="/images/Mythri-Logo-Mobile-Poster.webp" // हल्की static image
+                    poster="/images/Mythri-Logo-Mobile-Poster.webp"
                     onEnded={() => {
                       const nextSection =
                         document.getElementById("next-section") ||
@@ -157,7 +157,7 @@ export default function Home() {
                       }
                     }}
                   >
-                    {/* NOTE: इस MP4 को compress करो (720p / low bitrate) */}
+
                     <source
                       src="/images/Mythri Logo_Cideo.mp4"
                       type="video/mp4"
@@ -193,7 +193,7 @@ export default function Home() {
                       }
                     }}
                   >
-                    {/* NOTE: इस MP4 को भी compress करो (480p / low bitrate) */}
+
                     <source
                       src="/images/Mythri Logo-Mobile Version.mp4"
                       type="video/mp4"
@@ -211,10 +211,10 @@ export default function Home() {
                 )}
               </div>
 
-              {/* OPTIONAL overlay (अगर dark करना हो तो rgba लगा सकते हो) */}
+
               <div className="position-absolute top-0 start-0 w-100 h-100" />
 
-              {/* Foreground Content (अभी hidden रखा है) */}
+
               <div className="container position-relative z-2 d-none">
                 <div className="d-flex flex-column my-md-0 my-5 py-md-0 py-4 align-items-center">
                   <h1 className="display-4 fw-bold mb-3 w-100 text-center bannertext">
@@ -266,15 +266,13 @@ export default function Home() {
               </div>
             </div>
 
-            {/* यह image hero के बाद है, इसलिए priority हटाई गई है */}
             <Image
               alt="Project"
-              src="/images/home-about.png" // इसे compress / .webp में convert करना ज़रूरी है
+              src="/images/home-about.png"
               width={1000}
               height={750}
               className="img-fluid w-100 d-none p-0 mb-0 mt-3"
               sizes="(min-width: 992px) 50vw, 100vw"
-            // no priority => Next.js इसे lazy-load करेगा
             />
           </section>
 
