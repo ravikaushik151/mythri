@@ -12,20 +12,20 @@ const projects = [
     },
     {
         title: "Mythri Sity",
-        imageDesktop: "/images/sity.webp",
-        imageMobile: "/images/sity.webp",
+        imageDesktop: "/images/sity_desktop.webp",
+        imageMobile: "/images/sity_mobile.webp",
         link: "/mythri-sity",
     },
     {
         title: "Mythri Sikharam",
-        imageDesktop: "/images/sikharam.webp",
-        imageMobile: "/images/sikharam.webp",
+        imageDesktop: "/images/sikhram_desk.webp",
+        imageMobile: "/images/sikhram_mob.webp",
         link: "/mythri-sikharam",
     },
     {
         title: "Mythri Sankalp",
-        imageDesktop: "/images/mythrisapphire.webp",
-        imageMobile: "/images/mythrisapphire.webp",
+        imageDesktop: "/images/sankalp_desk.webp",
+        imageMobile: "/images/sankalp_mobile.webp",
         link: "/mythri-sankalp",
     }
 ];
