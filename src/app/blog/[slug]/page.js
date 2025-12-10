@@ -126,7 +126,7 @@ export default async function BlogPost({ params }) {
         <div className='row'>
           <div className='col-md-12'>
             <div className="image-container">
-              <Image src="/images/blog-page-header.jpg" height={2880} width={1920} className='img-fluid masterpiece ' alt="masterpiece" style={{ objectPosition: '15% 100%' }} />
+              <Image src="/images/blog-page-header.webp" height={2880} width={1920} className='img-fluid masterpiece ' alt="masterpiece" style={{ objectPosition: '15% 100%' }} />
               <div className="overlay2 ">
                 <div className="text-white d-block">
                   <h1 className="text-center d-block fs-1 mb-3 text-uppercase"> Blog</h1>
