@@ -6,6 +6,9 @@ import "aos/dist/aos.css";
 import { Carousel, Container, Row, Col, Form, Button, Modal } from "react-bootstrap";
 import Image from "next/image";
 import ScheduleVisitForm from "../components/ScheduleVisitForm";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 export default function MicoristePage() {
     const [show, setShow] = useState(false);
@@ -97,9 +100,9 @@ export default function MicoristePage() {
 
                     {/* ===== Description ===== */}
                     <p
-                        className="mx-auto mt-3"
+                        className="mx-auto mt-5"
                         style={{
-                            maxWidth: "700px",
+                            maxWidth: "900px",
                             fontSize: "19px",
                             color: "#585858",
                             lineHeight: "1.8",
@@ -109,7 +112,7 @@ export default function MicoristePage() {
                     <p
                         className="mx-auto mt-3"
                         style={{
-                            maxWidth: "700px",
+                            maxWidth: "900px",
                             fontSize: "19px",
                             color: "#585858",
                             lineHeight: "1.8",
@@ -149,7 +152,7 @@ export default function MicoristePage() {
                         <Image
                             src="/images/street/Street_Earth home.webp"
                             alt="Mythri Builders"
-                            width={900}
+                            width={1920}
                             height={600}
                             className="img-fluid rounded"
                             style={{
@@ -169,7 +172,7 @@ export default function MicoristePage() {
                     <p
                         className="mx-auto mt-3"
                         style={{
-                            maxWidth: "700px",
+                            maxWidth: "900px",
                             fontSize: "19px",
                             color: "#585858",
                             lineHeight: "1.8",
@@ -190,7 +193,7 @@ export default function MicoristePage() {
                     padding: "80px 0",
                     fontFamily: "'Source Sans 3', sans-serif",
                 }}>
-                <div className="container-fluid g-0">
+                <div className="container g-0">
                     <Image
                         src="/images/street/Banner image2_Street.webp"
                         alt="Tennis Player"
@@ -202,7 +205,7 @@ export default function MicoristePage() {
             </section>
             <section data-aos="fade-up"
                 data-aos-delay="200" className="life-earth" style={{ backgroundColor: "#f7f2eb", padding: "80px 0", fontFamily: "'Source Sans 3', sans-serif", }}>
-                <div className="container-fluid">
+                <div className="container">
                     <h3 className="text-center mb-4"
                         style={{
                             fontSize: "35px",
@@ -218,7 +221,7 @@ export default function MicoristePage() {
                             <p
                                 className="mx-auto mt-3"
                                 style={{
-                                    maxWidth: "700px",
+                                    maxWidth: "900px",
                                     fontSize: "19px",
                                     color: "#585858",
                                     lineHeight: "1.8",
@@ -253,7 +256,6 @@ export default function MicoristePage() {
                         <div className="col-md-6 px-5">
                             <div
                                 style={{
-                                    maxWidth: "700px",
                                     fontSize: "19px",
                                     color: "#585858",
                                     lineHeight: "1.8",
@@ -272,7 +274,6 @@ export default function MicoristePage() {
                                     <p
                                         className="mx-auto mt-3"
                                         style={{
-                                            maxWidth: "700px",
                                             fontSize: "19px",
                                             color: "#585858",
                                             lineHeight: "1.8",
@@ -282,21 +283,25 @@ export default function MicoristePage() {
 
                                     <div className="col-md-6 col-6 px-md-5">
                                         <ul className="list-unstyled">
-                                            <li>Rooftop Infinity Pool & Sky Lounge</li>
-                                            <li>Fitness Studio & Meditation Deck</li>
-                                            <li>Multipurpose Sports Arena</li>
+                                            <li>Rooftop Infinity Pool</li>
+                                            <li>Sky Lounge</li>
+                                            <li>Fitness Studio</li>
+                                            <li>Meditation Deck</li>
+                                            <li>Multipurpose Sports</li>
                                         </ul>
                                     </div>
                                     <div className="col-md-6 col-6 px-md-5">
                                         <ul className="list-unstyled">
-                                            <li>Children’s Play Courts & Green Lawns</li>
-                                            <li>Indoor Lounge, Mini Theatre & Work Pods</li>
+                                            <li>Children’s Play Courts</li>
+                                            <li>Green Lawns</li>
+                                            <li>Work Pods</li>
+                                            <li>Mini Theatre</li>
+                                            <li>Indoor Lounge</li>
                                         </ul>
                                     </div>
                                     <p
                                         className="mx-auto mt-3 text-center"
                                         style={{
-                                            maxWidth: "700px",
                                             fontSize: "19px",
                                             color: "#585858",
                                             lineHeight: "1.8",
@@ -318,7 +323,7 @@ export default function MicoristePage() {
                             <p
                                 className="mx-auto mb-0 text-center"
                                 style={{
-                                    maxWidth: "700px",
+                                    maxWidth: "950px",
                                     fontSize: "19px",
                                     color: "#585858",
                                     lineHeight: "1.8",
@@ -331,7 +336,7 @@ export default function MicoristePage() {
 
             <section data-aos="fade-up"
                 data-aos-delay="200" className="p-0">
-                <div className="container-fluid g-0">
+                <div className="container g-0">
                     <Image
                         src="/images/street/Interior1-Street.webp"
                         alt="Tennis Player"
@@ -362,7 +367,7 @@ export default function MicoristePage() {
                         className="mx-auto"
                         style={{
                             marginTop: "0px",
-                            maxWidth: "700px",
+                            maxWidth: "900px",
                             fontSize: "19px",
                             color: "#585858",
                             lineHeight: "1.8",
@@ -447,13 +452,13 @@ export default function MicoristePage() {
                             className="mx-auto"
                             style={{
                                 marginTop: "0px",
-                                maxWidth: "700px",
+                                maxWidth: "900px",
                                 fontSize: "19px",
                                 color: "#585858",
                                 lineHeight: "1.8",
                             }}
                         >
-                            Positioned strategically off Bengaluru’s IT growth corridor, Mythri Street offers instant access to Sarjapur, Whitefield, and Electronic City, standing out amidst other Flats For Sale In Sarjapur Road with its blend of elevation and connectivity.<br />Whether it’s the corporate hubs, elite schools, or fine-dining destinations - your world stays within reach.<br />Yet, when you return home, the city’s noise fades into quiet luxury.<br /><strong>Seamless Connectivity:</strong><br />Outer Ring Road – 5 min | Wipro & RGA Tech Parks – 8 min | HSR & Bellandur – 10–15 min | Whitefield – 20 min</p>
+                            Positioned strategically off Bengaluru’s IT growth corridor, Mythri Street offers instant access to Sarjapur, Whitefield, and Electronic City, standing out amidst other Flats For Sale In Sarjapur Road with its blend of elevation and connectivity.<br />Whether it’s the corporate hubs, elite schools, or fine-dining destinations - your world stays within reach.<br />Yet, when you return home, the city’s noise fades into quiet luxury.<br /><br /><strong>Seamless Connectivity:</strong><br />Outer Ring Road – 5 min | Wipro & RGA Tech Parks – 8 min | HSR & Bellandur – 10–15 min | Whitefield – 20 min</p>
                     </div>
 
                     {/* Image Popup Modal */}
@@ -470,11 +475,11 @@ export default function MicoristePage() {
                     </Modal>
                 </div>
             </section>
-            <section className="location" data-aos="fade-up"
+            <section className="location pt-0" data-aos="fade-up"
                 data-aos-delay="200"
                 style={{ backgroundColor: "#f7f2eb", padding: "80px 0", fontFamily: "'Source Sans 3', sans-serif", }}
             >
-                <div className="container-fluid">
+                <div className="container">
                     <div className="row">
                         <div className="col-12 text-center">
                             <iframe
@@ -493,7 +498,7 @@ export default function MicoristePage() {
                         <div className="col-md-3 d-flex align-items-center justify-content-center">
                             <h3 className="text-center mb-4"
                                 style={{
-                                    fontSize: "35px",
+                                    fontSize: "32px",
                                     color: "#585858",
                                     lineHeight: "1.8",
                                 }}>
@@ -506,7 +511,7 @@ export default function MicoristePage() {
                             <div
                                 className="row"
                                 style={{
-                                    fontSize: "19px",
+                                    fontSize: "16px",
                                     color: "#e3e3e3",
                                     lineHeight: "2",
                                     fontFamily: "'Playfair Display', serif",
@@ -515,22 +520,22 @@ export default function MicoristePage() {
                                 {/* === Column 1: TECH PARKS === */}
                                 <div className="col-md-4 col-sm-6 col-12 mb-4">
                                     <h5 style={{ color: "#c79a3a", fontWeight: "600" }}>TECH PARKS</h5>
-                                    <p className="mb-1">RMZ Infinity – <span style={{ float: "right" }}>19 Min</span></p>
-                                    <p className="mb-1">Beary’s Global Research (BCRT) <span style={{ float: "right" }}>23 Min</span></p>
+                                    <p className="mb-1">RMZ Infinity <span style={{ float: "right" }}>19 Min</span></p>
+                                    <p className="mb-1">Beary’s Global Research <span style={{ float: "right" }}>23 Min</span></p>
                                     <p className="mb-1">Bhoruka Technology Park <span style={{ float: "right" }}>25 Min</span></p>
                                     <p className="mb-1">Bagmane Tech Park <span style={{ float: "right" }}>26 Min</span></p>
                                     <p className="mb-1">Nalapad Brigade Centre <span style={{ float: "right" }}>26 Min</span></p>
                                     <p className="mb-1">Bagmane Business Park <span style={{ float: "right" }}>26 Min</span></p>
                                     <p className="mb-1">Manyata Tech Park <span style={{ float: "right" }}>28 Min</span></p>
                                     <p className="mb-1">HM Tech Park <span style={{ float: "right" }}>29 Min</span></p>
-                                    <p className="mb-1">Kalyani Magnum Tech Park <span style={{ float: "right" }}>30 Min</span></p>
-                                    <p className="mb-1">International Tech Park (ITPL) <span style={{ float: "right" }}>34 Min</span></p>
+                                    <p className="mb-1">K.M. Tech Park <span style={{ float: "right" }}>30 Min</span></p>
+                                    <p className="mb-1">International Tech Park<span style={{ float: "right" }}>34 Min</span></p>
                                 </div>
 
                                 {/* === Column 2: EDUCATIONAL === */}
                                 <div className="col-md-4 col-sm-6 col-12 mb-4">
                                     <h5 style={{ color: "#c79a3a", fontWeight: "600" }}>EDUCATIONAL</h5>
-                                    <p className="mb-1">Birla Open Mind Intl. School <span style={{ float: "right" }}>5 Min</span></p>
+                                    <p className="mb-1">Birla Open Mind School <span style={{ float: "right" }}>5 Min</span></p>
                                     <p className="mb-1">Narayana School <span style={{ float: "right" }}>5 Min</span></p>
                                     <p className="mb-1">New Indus Valley School <span style={{ float: "right" }}>6 Min</span></p>
                                     <p className="mb-1">Don Bosco College <span style={{ float: "right" }}>7 Min</span></p>
@@ -538,7 +543,7 @@ export default function MicoristePage() {
                                     <p className="mb-1">Garden City Universtreet <span style={{ float: "right" }}>8 Min</span></p>
                                     <p className="mb-1">Christ International School <span style={{ float: "right" }}>8 Min</span></p>
                                     <p className="mb-1">New Baldwin Intl. School <span style={{ float: "right" }}>15 Min</span></p>
-                                    <p className="mb-1">East Point Group of Institutions <span style={{ float: "right" }}>19 Min</span></p>
+                                    <p className="mb-1">E.P Group of Institutions <span style={{ float: "right" }}>19 Min</span></p>
                                     <p className="mb-1">National Public School <span style={{ float: "right" }}>20 Min</span></p>
                                 </div>
 
@@ -550,7 +555,7 @@ export default function MicoristePage() {
                                     <p className="mb-1">Miracle Hospital <span style={{ float: "right" }}>26 Min</span></p>
                                     <p className="mb-1">Aaxis Hospital <span style={{ float: "right" }}>26 Min</span></p>
                                     <p className="mb-1">Manipal Hospital <span style={{ float: "right" }}>29 Min</span></p>
-                                    <p className="mb-1">Sri Sathya Sai Super Hospital <span style={{ float: "right" }}>33 Min</span></p>
+                                    <p className="mb-1">Sathya Sai Super Hospital <span style={{ float: "right" }}>33 Min</span></p>
                                     <p className="mb-1">Vydehi Hospital <span style={{ float: "right" }}>34 Min</span></p>
                                     <p className="mb-1">Aster Whitefield Hospital <span style={{ float: "right" }}>34 Min</span></p>
                                     <p className="mb-1">Svastha Hospital <span style={{ float: "right" }}>34 Min</span></p>
@@ -575,7 +580,7 @@ export default function MicoristePage() {
                                     <p className="mb-1">KR Puram Metro Station <span style={{ float: "right" }}>15 Min</span></p>
                                     <p className="mb-1">KR Puram Railway Station <span style={{ float: "right" }}>15 Min</span></p>
                                     <p className="mb-1">Hoodi Metro Station <span style={{ float: "right" }}>25 Min</span></p>
-                                    <p className="mb-1">Satellite Town Ring Road (STRR) <span style={{ float: "right" }}>28 Min</span></p>
+                                    <p className="mb-1">Satellite Town Ring Road <span style={{ float: "right" }}>28 Min</span></p>
                                     <p className="mb-1">Kempegowda Int. Airport <span style={{ float: "right" }}>54 Min</span></p>
                                 </div>
                             </div>
@@ -586,7 +591,7 @@ export default function MicoristePage() {
             </section>
             <section data-aos="fade-up"
                 data-aos-delay="200" className="p-0">
-                <div className="container-fluid g-0">
+                <div className="container g-0">
                     <Image
                         src="/images/street/Swimming pool_street.webp"
                         alt="Tennis Player"

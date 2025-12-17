@@ -3,6 +3,17 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
+// 1. Swiper Imports
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
+// 2. Swiper CSS Imports (Crucial for arrows and dots to show)
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+// NOTE: These CSS files must be accessible. If they don't load, the navigation won't display.
+
+// Your project data
 const projects = [
     {
         title: "Mythri Street",
@@ -30,19 +41,39 @@ const projects = [
     }
 ];
 
-const ProjectsCarousel = () => {
+const ProjectsSwiper = () => {
     return (
         <section className="container py-5">
             <h2 className="text-center mb-4">Ongoing Projects</h2>
 
-            <div id="projectsCarousel" className="carousel slide" data-bs-ride="carousel">
-                <div className="carousel-inner">
+            {/* Swiper Container. Added relative positioning helper class if you need to custom style arrows */}
+            <div className="position-relative">
+                <Swiper
+                    // Configuration
+                    modules={[Autoplay, Pagination, Navigation]}
+                    slidesPerView={1}
+                    spaceBetween={0}
+                    loop={true}
+
+                    // Enable dots
+                    pagination={{ clickable: true }}
+
+                    // Enable arrows
+                    navigation={true}
+
+                    // Enable auto-slide
+                    autoplay={{
+                        delay: 4000,
+                        disableOnInteraction: false,
+                    }}
+
+                    // Add a custom class for CSS targeting
+                    className="projects-swiper-container"
+                >
+                    {/* Swiper Slides */}
                     {projects.map((project, index) => (
-                        <div
-                            key={index}
-                            className={`carousel-item ${index === 0 ? "active" : ""}`}
-                        >
-                            <Link href={project.link}>
+                        <SwiperSlide key={index}>
+                            <Link href={project.link} passHref>
                                 <div>
                                     {/* Desktop Image */}
                                     <div className="d-none d-md-block">
@@ -52,6 +83,7 @@ const ProjectsCarousel = () => {
                                             width={1400}
                                             height={700}
                                             className="d-block w-100"
+                                        // Optional: Add 'priority' if this is above the fold
                                         />
                                     </div>
 
@@ -67,33 +99,12 @@ const ProjectsCarousel = () => {
                                     </div>
                                 </div>
                             </Link>
-                        </div>
+                        </SwiperSlide>
                     ))}
-                </div>
-
-                {/* Controls */}
-                <button
-                    className="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#projectsCarousel"
-                    data-bs-slide="prev"
-                >
-                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Previous</span>
-                </button>
-
-                <button
-                    className="carousel-control-next"
-                    type="button"
-                    data-bs-target="#projectsCarousel"
-                    data-bs-slide="next"
-                >
-                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Next</span>
-                </button>
+                </Swiper>
             </div>
         </section>
     );
 };
 
-export default ProjectsCarousel;
+export default ProjectsSwiper;

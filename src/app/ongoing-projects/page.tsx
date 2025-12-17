@@ -14,7 +14,7 @@ const projects = [
         id: 1,
         name: "Mythri Street",
         slug: "mythri-street",
-        location: "Off Sarjapur Road, Near RGA tech park",
+        location: "Off Sarjapur Road, Near RGA Tech Park",
         description:
             "Mythri Street is a thoughtfully crafted residential landmark spread across 3 acres of prime land. With 80% open spaces, it blends urban sophistication with serene living, making it an ideal choice for anyone looking for an Apartment For Sale In Sarjapur Road.",
         image: "/images/street.webp",
@@ -32,7 +32,7 @@ const projects = [
         id: 2,
         name: "Mythri Sity",
         slug: "mythri-sity",
-        location: "Off Sarjapur Road, Near RGA tech park",
+        location: "Off Sarjapur Road, Near RGA Tech Park",
         description:
             "Mythri Sity is where thoughtful design meets timeless comfort. Spread across 5 acres, it brings together community living and large open spaces.",
         image: "/images/sity.webp",

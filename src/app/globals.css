@@ -14440,6 +14440,7 @@ p {
   background: none !important;
 }
 
+/*
 .swiper-button-next {
   margin-top: 0px;
   position: absolute;
@@ -14459,7 +14460,7 @@ p {
   transform: translateY(-50%);
   margin-top: 0px;
 }
-
+*/
 .bg-dark {
   background: #474747 !important;
 }
@@ -14563,16 +14564,14 @@ p {
   width: 100%;
 }
 
-/* Position the previous button outside the swiper */
+/* Position the previous button outside the swiper 
 .swiper-button-prev {
   position: absolute !important;
   top: 60% !important;
   left: -40px !important;
-  /* Moves it outside the left side */
   transform: translateY(-50%) !important;
   z-index: 10 !important;
   background-color: rgba(0, 0, 0, 1) !important;
-  /* Optional: Adds some visibility */
   padding: 10px !important;
   border-radius: 50% !important;
   width: 40px !important;
@@ -14581,16 +14580,14 @@ p {
   color: #fff !important;
 }
 
-/* Position the next button outside the swiper */
+/* Position the next button outside the swiper 
 .swiper-button-next {
   position: absolute !important;
   top: 60% !important;
   right: -40px !important;
-  /* Moves it outside the right side */
   transform: translateY(-50%) !important;
   z-index: 10 !important;
   background-color: rgba(0, 0, 0, 1) !important;
-  /* Optional: Adds some visibility */
   padding: 10px !important;
   border-radius: 50% !important;
   width: 40px !important;
@@ -14605,6 +14602,8 @@ p {
   font-size: 16px !important;
   color: #fff !important;
 }
+*/
+
 
 #why-us .why-us {
   width: 165px !important;
@@ -19830,7 +19829,7 @@ nav.navbar-expand-lg.navbar-dark.bg-dark.fixed-top.scrolled {
 
 .microsite-about {
   font-size: 24px !important;
-  font-weight: 200 !important;
+  font-weight: 400 !important;
   line-height: 1.8em !important;
   color: #585858 !important;
 }
@@ -19918,4 +19917,88 @@ nav.navbar-expand-lg.navbar-dark.bg-dark.fixed-top.scrolled {
   margin-right: 0.75rem;
   font-weight: 600;
   color: #dc3545;
+}
+
+.custom-nav-btn {
+  width: 55px;
+  height: 55px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-arrow {
+  font-size: 28px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.footer-section select option {
+  background-color: #000;
+  color: #fff;
+}
+
+.footer-section select option:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* In your global CSS file (e.g., globals.css) */
+
+/* ------------------------------------------- */
+/* SWIPER NAVIGATION (ARROWS) CUSTOM STYLING   */
+/* ------------------------------------------- */
+
+/* Target the Swiper arrow elements */
+.projects-swiper-container .swiper-button-next,
+.projects-swiper-container .swiper-button-prev {
+  /* 1. Visibility Fix: Make them a dark color and ensure they are on top */
+  color: #333333 !important;
+  z-index: 10;
+
+  /* 2. Style Replication (similar to custom-nav-btn) */
+  background-color: rgba(255, 255, 255, 0.85);
+  /* Semi-transparent white background */
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+  /* 3. Positioning Tweak (Optional: adjust placement if needed) */
+  /* Remove default margin to center the icon better */
+  margin-top: -22px;
+}
+
+/* Target the actual arrow icon inside the buttons */
+.projects-swiper-container .swiper-button-next::after,
+.projects-swiper-container .swiper-button-prev::after {
+  font-size: 18px !important;
+  /* Make the arrow icon size appropriate */
+  font-weight: bold;
+  /* Swiper uses the '::after' pseudoelement for the icons. */
+}
+
+/* Hover effect */
+.projects-swiper-container .swiper-button-next:hover,
+.projects-swiper-container .swiper-button-prev:hover {
+  background-color: #ffffff;
+  /* Solid white on hover */
+}
+
+/* ------------------------------------------- */
+/* SWIPER PAGINATION (DOTS) CUSTOM STYLING     */
+/* ------------------------------------------- */
+.projects-swiper-container .swiper-pagination-bullet {
+  background: #cccccc;
+  /* Light gray for inactive dots */
+  opacity: 1;
+}
+
+.projects-swiper-container .swiper-pagination-bullet-active {
+  background: #007aff;
+  /* Example color for active dot */
 }

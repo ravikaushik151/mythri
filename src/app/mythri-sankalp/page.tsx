@@ -76,9 +76,9 @@ export default function MicoristePage() {
 
                     {/* ===== Description ===== */}
                     <p
-                        className="mx-auto mt-3"
+                        className="mx-auto mt-5"
                         style={{
-                            maxWidth: "700px",
+                            maxWidth: "900px",
                             fontSize: "19px",
                             color: "#585858",
                             lineHeight: "1.8",
@@ -90,7 +90,7 @@ export default function MicoristePage() {
                     <p
                         className="mx-auto mt-3"
                         style={{
-                            maxWidth: "700px",
+                            maxWidth: "900px",
                             fontSize: "19px",
                             color: "#585858",
                             lineHeight: "1.8",
@@ -132,7 +132,7 @@ export default function MicoristePage() {
                         <Image
                             src="/images/sankalp/Sity_microsite.webp"
                             alt="Mythri Builders"
-                            width={900}
+                            width={1920}
                             height={600}
                             className="img-fluid rounded"
                             style={{
@@ -142,9 +142,9 @@ export default function MicoristePage() {
                         />
                     </div>
                     <p
-                        className="mx-auto mt-3"
+                        className="mx-auto mt-5"
                         style={{
-                            maxWidth: "700px",
+                            maxWidth: "900px",
                             fontSize: "19px",
                             color: "#585858",
                             lineHeight: "1.8",
@@ -167,7 +167,7 @@ export default function MicoristePage() {
                     padding: "80px 0",
                     fontFamily: "'Source Sans 3', sans-serif",
                 }}>
-                <div className="container-fluid g-0">
+                <div className="container g-0">
                     <Image
                         src="/images/sankalp/banner image.webp"
                         alt="Tennis Player"
@@ -179,7 +179,7 @@ export default function MicoristePage() {
             </section>
             <section data-aos="fade-up"
                 data-aos-delay="200" className="life-earth" style={{ backgroundColor: "#f7f2eb", padding: "80px 0", fontFamily: "'Source Sans 3', sans-serif", }}>
-                <div className="container-fluid">
+                <div className="container">
                     <h3 className="text-center mb-5"
                         style={{
                             fontSize: "35px",
@@ -195,7 +195,7 @@ export default function MicoristePage() {
                             <p
                                 className="mx-auto mt-3"
                                 style={{
-                                    maxWidth: "700px",
+                                    maxWidth: "900px",
                                     fontSize: "19px",
                                     color: "#585858",
                                     lineHeight: "1.8",
@@ -232,7 +232,7 @@ export default function MicoristePage() {
                         <div className="col-md-6 px-5">
                             <div
                                 style={{
-                                    maxWidth: "700px",
+
                                     fontSize: "19px",
                                     color: "#585858",
                                     lineHeight: "1.8",
@@ -272,7 +272,7 @@ export default function MicoristePage() {
                                 className="mx-auto mb-0"
                                 style={{
                                     marginTop: "70px",
-                                    maxWidth: "700px",
+                                    maxWidth: "900px",
                                     fontSize: "19px",
                                     color: "#585858",
                                     lineHeight: "1.8",
@@ -285,7 +285,7 @@ export default function MicoristePage() {
 
             <section data-aos="fade-up"
                 data-aos-delay="200" className="p-0">
-                <div className="container-fluid g-0">
+                <div className="container g-0">
                     <Image
                         src="/images/sankalp/interior_sank.webp"
                         alt="Tennis Player"
@@ -316,7 +316,7 @@ export default function MicoristePage() {
                         className="mx-auto"
                         style={{
                             marginTop: "0px",
-                            maxWidth: "700px",
+                            maxWidth: "900px",
                             fontSize: "19px",
                             color: "#585858",
                             lineHeight: "1.8",
@@ -396,7 +396,7 @@ export default function MicoristePage() {
                             className="mx-auto d-none"
                             style={{
                                 marginTop: "60px",
-                                maxWidth: "700px",
+
                                 fontSize: "19px",
                                 color: "#585858",
                                 lineHeight: "1.8",
@@ -420,11 +420,11 @@ export default function MicoristePage() {
                     </Modal>
                 </div>
             </section>
-            <section className="location" data-aos="fade-up"
+            <section className="location pt-0" data-aos="fade-up"
                 data-aos-delay="200"
                 style={{ backgroundColor: "#f7f2eb", padding: "80px 0", fontFamily: "'Source Sans 3', sans-serif", }}
             >
-                <div className="container-fluid">
+                <div className="container">
                     <div className="row">
                         <div className="col-12 text-center">
                             <iframe
@@ -444,7 +444,7 @@ export default function MicoristePage() {
                         <div className="col-md-3 d-flex align-items-center justify-content-center">
                             <h3 className="text-center mb-5"
                                 style={{
-                                    fontSize: "35px",
+                                    fontSize: "32px",
                                     color: "#585858",
                                     lineHeight: "1.8",
                                 }}>
@@ -453,11 +453,11 @@ export default function MicoristePage() {
                         </div>
 
                         {/* Right side location list */}
-                        <div className="col-md-9 px-4">
+                        <div className="col-md-9">
                             <div
                                 className="row"
                                 style={{
-                                    fontSize: "19px",
+                                    fontSize: "16px",
                                     color: "#e3e3e3",
                                     lineHeight: "2",
                                     fontFamily: "'Playfair Display', serif",
@@ -519,7 +519,7 @@ export default function MicoristePage() {
             </section>
             <section data-aos="fade-up"
                 data-aos-delay="200" className="p-0">
-                <div className="container-fluid g-0">
+                <div className="container g-0">
                     <Image
                         src="/images/sankalp/Swimming pool_sity_microsite copy.webp"
                         alt="Tennis Player"
@@ -550,7 +550,7 @@ export default function MicoristePage() {
                         className="mx-auto d-none"
                         style={{
                             marginTop: "0px",
-                            maxWidth: "700px",
+
                             fontSize: "19px",
                             color: "#585858",
                             lineHeight: "1.8",

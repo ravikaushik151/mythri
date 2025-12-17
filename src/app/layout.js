@@ -1,5 +1,6 @@
 // app/layout.js
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './globals.css';
 import 'swiper/swiper-bundle.css';
 import Script from "next/script";
@@ -52,7 +53,6 @@ export default function RootLayout({ children }) {
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
           })(window,document,'script','dataLayer','GTM-NGW9RJXH');`}
         </Script>
-
       </head>
       <body>
         {/* 🔥 Google Tag Manager (noscript) - required */}
