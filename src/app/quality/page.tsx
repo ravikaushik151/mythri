@@ -37,7 +37,7 @@ const QualityBlock = () => {
           <div className="col-lg-7 col-md-12 col-sm-12 col-12">
             {/* First Row */}
             <div className="row text-dark">
-              <div className="col-lg-6 col-6">
+              <div className="col-lg-6 col-12">
                 <div className="countpara">
                   <div className="counter">
                     <h2
@@ -52,7 +52,10 @@ const QualityBlock = () => {
                     <p className="count12">+</p>
                   </div>
                   <div className="count3">
-                    <p>COMPLETED</p>
+                    <p style={{
+                      fontSize: "15px",
+                      letterSpacing: "2px",
+                    }}>COMPLETED</p>
                     <p
                       style={{
                         fontSize: "15px",
@@ -67,7 +70,7 @@ const QualityBlock = () => {
                 </div>
               </div>
 
-              <div className="col-lg-6 col-6">
+              <div className="col-lg-6 col-12">
                 <div className="countpara">
                   <div className="counter">
                     <h2
@@ -82,7 +85,10 @@ const QualityBlock = () => {
                     <p className="count12">+</p>
                   </div>
                   <div className="count3">
-                    <p>UPCOMING</p>
+                    <p style={{
+                      fontSize: "15px",
+                      letterSpacing: "2px",
+                    }}>UPCOMING</p>
                     <p
                       style={{
                         fontSize: "15px",
@@ -104,7 +110,7 @@ const QualityBlock = () => {
 
             {/* Second Row */}
             <div className="row text-dark">
-              <div className="col-lg-6 col-6">
+              <div className="col-lg-6 col-12">
                 <div className="countpara">
                   <div className="counter">
                     <h2
@@ -119,7 +125,10 @@ const QualityBlock = () => {
                     <p className="count12"></p>
                   </div>
                   <div className="count3">
-                    <p>ONGOING </p>
+                    <p style={{
+                      fontSize: "15px",
+                      letterSpacing: "2px",
+                    }}>ONGOING </p>
                     <p
                       style={{
                         fontSize: "15px",
@@ -133,7 +142,7 @@ const QualityBlock = () => {
                 </div>
               </div>
 
-              <div className="col-lg-6 col-6">
+              <div className="col-lg-6 col-12">
                 <div className="countpara">
                   <div className="counter">
                     <h2
@@ -148,7 +157,10 @@ const QualityBlock = () => {
                     <p className="count12">+</p>
                   </div>
                   <div className="count3">
-                    <p>HAPPY </p>
+                    <p style={{
+                      fontSize: "15px",
+                      letterSpacing: "2px",
+                    }}>HAPPY </p>
                     <p
                       style={{
                         fontSize: "15px",

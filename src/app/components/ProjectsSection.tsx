@@ -49,27 +49,25 @@ const ProjectsSwiper = () => {
             {/* Swiper Container. Added relative positioning helper class if you need to custom style arrows */}
             <div className="position-relative">
                 <Swiper
-                    // Configuration
                     modules={[Autoplay, Pagination, Navigation]}
                     slidesPerView={1}
                     spaceBetween={0}
                     loop={true}
 
-                    // Enable dots
-                    pagination={{ clickable: true }}
+                    speed={1200}              // 🔥 Smooth transition speed (1.2 sec)
+                    effect="slide"            // default slide but smoother
 
-                    // Enable arrows
+                    pagination={{ clickable: true }}
                     navigation={true}
 
-                    // Enable auto-slide
                     autoplay={{
                         delay: 4000,
                         disableOnInteraction: false,
                     }}
 
-                    // Add a custom class for CSS targeting
                     className="projects-swiper-container"
                 >
+
                     {/* Swiper Slides */}
                     {projects.map((project, index) => (
                         <SwiperSlide key={index}>

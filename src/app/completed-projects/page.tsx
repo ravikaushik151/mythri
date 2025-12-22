@@ -237,36 +237,40 @@ export default function CompletedProjectShowcase() {
                                 </div>
 
                                 <div className="text-end mt-4">
-                                    {/* ✅ Only show Enquire for non-sold projects (Signature) */}
-                                    {!project.isSold ? (
-                                        <Button
-                                            className={styles.enquireBtn}
-                                            onClick={() => handleShow(project)}
-                                        >
-                                            Enquire
-                                        </Button>
-                                    ) : (
-                                        <span className={styles.soldText}>
+                                    {!project.isSold && (
+                                        <>
+                                            {/* Enquire Button */}
+                                            <Button
+                                                className={styles.enquireBtn}
+                                                onClick={() => handleShow(project)}
+                                            >
+                                                Enquire
+                                            </Button>
 
-                                        </span>
+                                            {/* Call Now Button */}
+                                            <Button
+                                                className={styles.callBtn}
+                                                onClick={handleCallNow}
+                                            >
+                                                Call Now
+                                            </Button>
+
+                                            {/* Whatsapp Button */}
+                                            <Button
+                                                className={styles.whatsappBtn}
+                                                onClick={handleWhatsapp}
+                                            >
+                                                Whatsapp
+                                            </Button>
+                                        </>
                                     )}
 
-                                    {/* Call Now Button */}
-                                    <Button
-                                        className={styles.callBtn}
-                                        onClick={handleCallNow}
-                                    >
-                                        Call Now
-                                    </Button>
-
-                                    {/* Whatsapp Button */}
-                                    <Button
-                                        className={styles.whatsappBtn}
-                                        onClick={handleWhatsapp}
-                                    >
-                                        Whatsapp
-                                    </Button>
+                                    {/* Optional Sold Text */}
+                                    {project.isSold && (
+                                        <span className={styles.soldText}>Sold Out</span>
+                                    )}
                                 </div>
+
                             </Col>
                         ))}
                     </Row>

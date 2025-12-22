@@ -26,7 +26,12 @@ export default function MicoristePage() {
         <>
             {/* ===== Banner Section ===== */}
             <section className="p-0">
-                <Carousel fade interval={3000}>
+                <Carousel
+                    fade
+                    interval={null}     // ❌ auto slide off
+                    indicators={false}  // ❌ dots hide
+                    controls={false}    // ❌ arrows hide
+                >
                     {/* === Slide 1 === */}
                     <Carousel.Item>
                         <picture>

@@ -26,8 +26,12 @@ export default function MicoristePage() {
         <>
             {/* ===== Banner Section ===== */}
             <section className="p-0">
-                <Carousel fade interval={3000}>
-                    {/* === Slide 1 === */}
+                <Carousel
+                    fade
+                    interval={null}     // ❌ auto slide off
+                    indicators={false}  // ❌ dots hide
+                    controls={false}    // ❌ arrows hide
+                >
                     <Carousel.Item>
                         <picture>
                             {/* Mobile Image */}
@@ -35,21 +39,18 @@ export default function MicoristePage() {
                                 media="(max-width: 767px)"
                                 srcSet="/images/sankalp/mobile banner_sankalp.webp"
                             />
+
                             {/* Desktop Image */}
                             <img
                                 className="d-block w-100"
                                 src="/images/sankalp/Website banner copy.webp"
-                                alt="First slide"
+                                alt="Sankalp Project Banner"
                                 style={{ height: "80vh", objectFit: "cover" }}
                             />
                         </picture>
-
-                        <Carousel.Caption className="d-none">
-                            <h3>Welcome to Our Project</h3>
-                            <p>Discover luxury living like never before.</p>
-                        </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
+
             </section>
 
 

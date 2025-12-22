@@ -6,8 +6,6 @@ import "aos/dist/aos.css";
 import { Carousel, Container, Row, Col, Form, Button, Modal } from "react-bootstrap";
 import Image from "next/image";
 import ScheduleVisitForm from "../components/ScheduleVisitForm";
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 
 
 export default function MicoristePage() {
@@ -29,7 +27,12 @@ export default function MicoristePage() {
         <>
             {/* ===== Banner Section ===== */}
             <section className="p-0">
-                <Carousel fade interval={3000}>
+                <Carousel
+                    fade
+                    interval={null}     // ❌ auto slide off
+                    indicators={false}  // ❌ dots hide
+                    controls={false}    // ❌ arrows hide
+                >
                     {/* === Slide 1 === */}
                     <Carousel.Item>
                         <picture>

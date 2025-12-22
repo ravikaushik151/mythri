@@ -14,6 +14,9 @@ export default function Navbar() {
 
   const pathname = usePathname();
 
+  const isHome = pathname === "/";
+
+
   // ❗ Auto-close menu on route change
   useEffect(() => {
     setIsOpen(false);
@@ -66,7 +69,13 @@ export default function Navbar() {
         </div>
       </nav>
 
-      <nav className={`main-navbar navbar navbar-expand-lg fixed ${isSticky ? "sticky" : ""}`} >
+      <nav
+        className={`main-navbar navbar navbar-expand-lg fixed
+          ${isSticky ? "sticky" : ""}
+          ${isHome ? "home-navbar" : "inner-navbar"}
+        `}
+      >
+
         <div className="navbar-wrapper">
           <div className="logo-box">
             <Link href="/">

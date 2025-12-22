@@ -10,32 +10,32 @@ const coreValues = [
   {
     title: "Transparency",
     text: "Every promise made is a promise kept.",
-    img: "/images/Sutainablity.png",
+    img: "/images/Transaprency.png",
   },
   {
     title: "Punctuality",
     text: "We deliver on time, every time.",
-    img: "/images/Innovation_2.png",
+    img: "/images/Punctuality.png",
   },
   {
     title: "Trust",
     text: "The foundation on which every Mythri relationship is built.",
-    img: "/images/Intergrity.png",
+    img: "/images/Trust.png",
   },
   {
     title: "Focus",
     text: "One project, one vision - executed with precision.",
-    img: "/images/Quality.png",
+    img: "/images/Focus.png",
   },
   {
     title: "Integrity",
     text: "Ethics in every action, honesty in every deal.",
-    img: "/images/Quality.png",
+    img: "/images/Integrity.png",
   },
   {
     title: "Excellence",
     text: "Quality that endures, design that inspires.",
-    img: "/images/Quality.png",
+    img: "/images/Excellence.png",
   },
 ];
 

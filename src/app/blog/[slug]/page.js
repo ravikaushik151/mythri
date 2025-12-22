@@ -3,6 +3,7 @@ import Link from "next/link";
 import Script from "next/script";
 import { notFound } from "next/navigation";
 import { posts } from "../../data/posts";
+import FAQAccordion from "../../components/FAQAccordion";
 
 const BASE_URL = "https://mythribuilders.com";
 const BASE_IMAGE_URL = "https://mythribuilders.com/blog-dashboard/public/";
@@ -128,6 +129,11 @@ export default async function BlogPost({ params }) {
                             __html: post.content || "<p>No content available.</p>",
                         }}
                     />
+
+                    {/* ✅ FAQ ACCORDION */}
+                    {post.faqs && post.faqs.length > 0 && (
+                        <FAQAccordion faqs={post.faqs} />
+                    )}
                 </div>
             </section>
         </>

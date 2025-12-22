@@ -85,7 +85,7 @@ export default function Blog() {
     } else {
         content = paginatedPosts.map((post) => (
             <div className="col-md-4 py-3" key={post.slug}>
-                <div className="services-item shine-animate-item bg-white shadow-sm py-3 px-3 theme-bg-dark">
+                <div className="services-item shine-animate-item shadow-sm py-3 px-3 theme-bg-dark">
                     <div className="services-thumb">
                         <Link href={`/blog/${post.slug}`}>
                             <Image
@@ -99,8 +99,8 @@ export default function Blog() {
                         </Link>
                     </div>
                     <div className="services-content blogs">
-                        <h6 className="title my-3 text-center fw-bold">
-                            <Link className='text-dark fw-bold text-decoration-none theme-color-light fs-4' href={`/blog/${post.slug}`}>
+                        <h6 className="title my-3 text-center fw-bold text-white">
+                            <Link className='text-white fw-bold text-decoration-none theme-color-light fs-4' href={`/blog/${post.slug}`}>
                                 {post.title}
                             </Link>
                         </h6>

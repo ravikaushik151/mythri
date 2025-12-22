@@ -356,10 +356,30 @@
   filter: none;
 }
 
-.menu-toggle {
+
+/* Home page navbar → logo normal */
+.home-navbar .navbar-wrapper .logo-box .white-png {
+  filter: none;
+}
+
+/* Inner pages navbar → white logo */
+.inner-navbar .navbar-wrapper .logo-box .white-png {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7479%) hue-rotate(70deg) brightness(99%) contrast(107%);
+}
+
+.home-navbar .menu-toggle {
   cursor: pointer;
   font-size: 28px;
   color: black;
+  /* default */
+  z-index: 1001;
+}
+
+
+.inner-navbar .menu-toggle {
+  cursor: pointer;
+  font-size: 28px;
+  color: white;
   /* default */
   z-index: 1001;
 }

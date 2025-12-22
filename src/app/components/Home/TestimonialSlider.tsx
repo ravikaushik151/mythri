@@ -40,7 +40,7 @@ const TestimonialSlider = () => {
             >
                 {testimonials.map((item, index) => (
                     <SwiperSlide key={index}>
-                        <div className="info-box p-4 bg-white theme-bg-dark shadow-sm h-100 rounded d-flex flex-column justify-content-between">
+                        <div className="info-box p-4 theme-bg-dark shadow-sm h-100 rounded d-flex flex-column justify-content-between">
                             <p className="theme-color-light mb-3 text-justify">{item.text}</p>
                             <h6 className="text-center fw-bold text-white mt-auto">
                                 – {item.name}

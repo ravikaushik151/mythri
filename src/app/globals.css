@@ -14666,6 +14666,15 @@ p {
     left: -30px !important;
   }
 
+
+  .projects-swiper-container .swiper-button-next {
+    right: 0px !important;
+  }
+
+  .projects-swiper-container .swiper-button-prev {
+    left: 0px !important;
+  }
+
   .masterpiece {
     height: 80vh;
     object-fit: cover;
@@ -15157,7 +15166,7 @@ h2 {
   border-radius: 20px;
   text-align: left;
   transition: 0.3s;
-  min-height: 300px;
+  min-height: 370px;
   display: flex;
   align-items: center;
 }
@@ -15659,7 +15668,8 @@ footer button:hover {
   width: 75px;
 }
 
-.white-png {
+/* Inner pages navbar → white logo */
+.inner-navbar .navbar-wrapper .logo-box .white-png {
   filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7479%) hue-rotate(70deg) brightness(99%) contrast(107%);
 }
 
@@ -19141,7 +19151,7 @@ footer textarea::placeholder {
 }
 
 .swiper-backface-hidden {
-  padding: 10px !important;
+  /* padding: 10px !important;*/
 }
 
 .amenity-text {
@@ -19183,7 +19193,7 @@ footer textarea::placeholder {
   width: 50%;
   /* adjust as needed */
   height: auto;
-  filter: invert(1) brightness(2);
+  /*filter: invert(1) brightness(2);*/
   /* make colored icons appear white */
   display: block;
 }
@@ -19277,7 +19287,7 @@ footer textarea::placeholder {
 /* ====== Mobile Responsive ====== */
 @media (max-width: 768px) {
   .footer-section {
-    min-height: 1200px;
+    min-height: 1320px;
     /* Reduce height on mobile */
     padding: 30px 15px;
   }
@@ -20001,4 +20011,29 @@ nav.navbar-expand-lg.navbar-dark.bg-dark.fixed-top.scrolled {
 .projects-swiper-container .swiper-pagination-bullet-active {
   background: #007aff;
   /* Example color for active dot */
+}
+
+.collapse:not(.show) {
+  display: block;
+}
+
+.projects-swiper-container {
+  width: 100%;
+}
+
+.projects-swiper-container .swiper-slide {
+  overflow: hidden;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+/* Smooth animation feel */
+.swiper-wrapper {
+  transition-timing-function: ease-in-out !important;
+}
+
+.theme-bg-dark {
+  background-color: var(--secondary-color) !important;
 }

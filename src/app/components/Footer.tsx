@@ -53,7 +53,7 @@ export default function Footer() {
       {/* Title Section */}
       <div className="text-center position-relative bg-white pt-md-5">
         <h2
-          className="kalyani-title"
+          className="kalyani-title my-3"
           style={{
             backgroundImage: "url('/images/Footer.webp')",
           }}

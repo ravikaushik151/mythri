@@ -160,11 +160,13 @@ export default function ProjectShowcase() {
                                         }
                                         onMouseLeave={() => setHoveredProject(null)}
                                     >
-                                        <img
-                                            src={project.image}
-                                            alt={project.name}
-                                            className="img-fluid w-100"
-                                        />
+                                        <Link href={`/${project.slug}`} >
+                                            <img
+                                                src={project.image}
+                                                alt={project.name}
+                                                className="img-fluid w-100"
+                                            />
+                                        </Link>
 
                                         <div className={styles.overlayCard}>
 

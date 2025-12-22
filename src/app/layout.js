@@ -1,9 +1,8 @@
 // app/layout.js
-
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './globals.css';
 import 'swiper/swiper-bundle.css';
 import Script from "next/script";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import ClientWrapper from './components/ClientWrapper';
 import Header from './components/Header';
 import Footer from './components/Footer';
