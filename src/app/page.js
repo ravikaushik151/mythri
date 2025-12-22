@@ -131,9 +131,9 @@ export default function Home() {
             <div className="container">
               <div className="row">
                 <div className="col-md-5 offset-md-7 py-lg-5">
-                  <h2 className="mb-0 theme-color-dark">
+                  <h1 className="mb-0 theme-color-dark">
                     The Art of Living, Perfected Through Architecture.
-                  </h2>
+                  </h1>
 
                   <p className="mt-4 theme-color-dark text-justify">
                     At Mythri Builders, every home begins with a clear vision —
