@@ -80,7 +80,7 @@ const ProjectsSwiper = () => {
                                             alt={project.title}
                                             width={1400}
                                             height={700}
-                                            className="d-block w-100"
+                                            className="d-block w-100 img-fluid"
                                         // Optional: Add 'priority' if this is above the fold
                                         />
                                     </div>
