@@ -632,7 +632,7 @@ export default function MicoristePage() {
                         <div className="accordion-item mb-3">
                             <h2 className="accordion-header mb-0" id="faq1-heading">
                                 <button
-                                    className="accordion-button"
+                                    className="accordion-button fs-6 fw-bold"
                                     type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#faq1"
@@ -657,7 +657,7 @@ export default function MicoristePage() {
                         <div className="accordion-item mb-3">
                             <h2 className="accordion-header mb-0" id="faq2-heading">
                                 <button
-                                    className="accordion-button collapsed"
+                                    className="accordion-button fs-6 fw-bold collapsed"
                                     type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#faq2"
@@ -681,7 +681,7 @@ export default function MicoristePage() {
                         <div className="accordion-item mb-3">
                             <h2 className="accordion-header mb-0" id="faq3-heading">
                                 <button
-                                    className="accordion-button collapsed"
+                                    className="accordion-button fs-6 fw-bold collapsed"
                                     type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#faq3"
@@ -705,7 +705,7 @@ export default function MicoristePage() {
                         <div className="accordion-item mb-3">
                             <h2 className="accordion-header mb-0" id="faq4-heading">
                                 <button
-                                    className="accordion-button collapsed"
+                                    className="accordion-button fs-6 fw-bold collapsed"
                                     type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#faq4"
@@ -729,7 +729,7 @@ export default function MicoristePage() {
                         <div className="accordion-item mb-3">
                             <h2 className="accordion-header mb-0" id="faq5-heading">
                                 <button
-                                    className="accordion-button collapsed"
+                                    className="accordion-button fs-6 fw-bold collapsed"
                                     type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#faq5"

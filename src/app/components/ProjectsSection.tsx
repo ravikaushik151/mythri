@@ -17,7 +17,7 @@ import 'swiper/css/navigation';
 const projects = [
     {
         title: "Mythri Street",
-        imageDesktop: "/images/M street Desktop.webp",
+        imageDesktop: "/images/mythri-street.jpeg",
         imageMobile: "/images/m street mobile.webp",
         link: "/mythri-street",
     },

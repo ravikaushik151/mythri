@@ -96,32 +96,32 @@ export default async function BlogPost({ params }) {
                 <div className='row'>
                     <div className='col-md-12'>
                         <div className="image-container">
-                            <Image src="/images/blog-page-header.webp" height={2880} width={1920} className='img-fluid masterpiece ' alt="masterpiece" style={{ objectPosition: '15% 100%' }} />
-                            <div className="overlay2 ">
+                            <Image src={postImageUrl} height={2880} width={1920} className='img-fluid masterpiece ' alt="masterpiece" style={{ objectPosition: '15% 100%' }} />
+                            {/* <div className="overlay2 ">
                                 <div className="text-white d-block">
                                     <span className="text-center d-block fs-1 mb-3 text-uppercase"> Blog</span>
                                     <p className="text-center d-block fs-6 ">
                                         <Link className="text-white text-decoration-none" href="https://mythribuilders.com/"> Home</Link> / Blog
                                     </p>
                                 </div>
-                            </div>
+                            </div>  */}
                         </div>
                     </div>
                 </div>
             </div>
 
             {/* ---------------- CONTENT ---------------- */}
-            <section className="section-padding blog-details">
+            <section className="section-padding blog-details pt-5">
                 <div className="container">
-                    <Image
+                    {/* <Image
                         src={postImageUrl}
                         alt={post.alt}
                         width={1296}
                         height={745}
                         className="w-100 img-fluid"
-                    />
+                    /> */}
 
-                    <h1 className="fs-2 fw-bold my-4">{post.title}</h1>
+                    <h1 className="fs-1 fw-bold ">{post.title}</h1>
 
                     <article
                         className="blog-content"

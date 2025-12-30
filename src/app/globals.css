@@ -14873,7 +14873,9 @@ p {
 
 .text-justify {
   text-align: justify !important;
+ 
 }
+
 
 .img {
   object-fit: cover !important;
@@ -14974,6 +14976,11 @@ input[type="file"]:focus-visible {
 }
 
 @media screen and (max-width: 767px) {
+  .text-justify { 
+    hyphens: none;
+    word-spacing: -0.05em;
+    text-justify: distribute;
+  }
   .hide-mobile-landscape {
     display: none !important;
   }

@@ -18,7 +18,7 @@ export default function FAQAccordion({ faqs }) {
                         {/* HEADER */}
                         <h3 className="accordion-header" id={`heading-${index}`}>
                             <button
-                                className={`accordion-button ${index !== 0 ? "collapsed" : ""}`}
+                                className={`accordion-button fs-5 ${index !== 0 ? "collapsed" : ""}`}
                                 type="button"
                                 data-bs-toggle="collapse"
                                 data-bs-target={`#collapse-${index}`}
