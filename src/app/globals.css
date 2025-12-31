@@ -20044,3 +20044,61 @@ nav.navbar-expand-lg.navbar-dark.bg-dark.fixed-top.scrolled {
 .theme-bg-dark {
   background-color: var(--secondary-color) !important;
 }
+/* Container to center the button at the bottom */
+.scroll-down-container {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+}
+
+/* The Mouse Shape */
+.mouse {
+  width: 26px;
+  height: 42px;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+}
+
+/* The Animated Wheel (Dot) */
+.wheel {
+  width: 4px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 2px;
+  animation: scroll-anim 1.6s infinite;
+}
+
+/* Animation Logic */
+@keyframes scroll-anim {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Optional: Ensure the link doesn't change color on hover */
+.scroll-down-container {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.scroll-down-container:hover .mouse {
+  border-color: #ccc; /* Subtle feedback on hover */
+}

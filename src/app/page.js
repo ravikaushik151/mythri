@@ -122,12 +122,20 @@ export default function Home() {
 
             {/* Overlay (optional) */}
             <div className="position-absolute top-0 start-0 w-100 h-100" />
+
+            {/* ---------- SCROLL DOWN BUTTON ---------- */}
+            <a href="#about" className="scroll-down-container" aria-label="Scroll to About Section">
+              <div className="mouse">
+                <div className="wheel"></div>
+              </div>
+            </a>
+
           </div>
         </div>
 
         {/* ================= MAIN CONTENT ================= */}
         <div id="scroll-more">
-          <section className="section-remove px-md-5 theme-bg-light homehome">
+          <section className="section-remove px-md-5 theme-bg-light homehome" id="about">
             <div className="container">
               <div className="row">
                 <div className="col-md-5 offset-md-7 py-lg-5">

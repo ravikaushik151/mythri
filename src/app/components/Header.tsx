@@ -97,7 +97,8 @@ export default function Navbar() {
           >
             {isOpen ? <FaTimes className="menu-icon" /> : <FaBars className="menu-icon" />}
           </div>
-          <div className={`nav-overlay collapse navbar-collapse ${isOpen ? "open" : ""}`} id="navbarSupportedContent">
+          {/* <div className={`nav-overlay collapse navbar-collapse ${isOpen ? "open" : ""}`} id="navbarSupportedContent"> */}
+          <div className={`nav-overlay navbar-collapse ${isOpen ? "open" : "d-none d-lg-flex"}`} id="navbarSupportedContent">
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0 overlay-menu">
               <li className="nav-item"><Link href="/">HOME</Link></li>
               <li className="nav-item"><Link href="/about">ABOUT US</Link></li>
