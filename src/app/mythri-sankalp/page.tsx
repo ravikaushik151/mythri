@@ -6,6 +6,9 @@ import "aos/dist/aos.css";
 import { Carousel, Container, Row, Col, Form, Button, Modal } from "react-bootstrap";
 import Image from "next/image";
 import ScheduleVisitForm from "../components/ScheduleVisitForm";
+import Specifications from "../components/Microsite/Specifications";
+import { mythriSankalpSpecs } from "../data/mythriSankalp";
+import Walkthrough from "../components/Microsite/Walkthrough";
 
 export default function MicoristePage() {
     const [show, setShow] = useState(false);
@@ -25,12 +28,12 @@ export default function MicoristePage() {
     return (
         <>
             {/* ===== Banner Section ===== */}
-            <section className="p-0">
+            <section className="p-0 position-relative">
                 <Carousel
                     fade
-                    interval={null}     // ❌ auto slide off
-                    indicators={false}  // ❌ dots hide
-                    controls={false}    // ❌ arrows hide
+                    interval={null}
+                    indicators={false}
+                    controls={false}
                 >
                     <Carousel.Item>
                         <picture>
@@ -51,7 +54,12 @@ export default function MicoristePage() {
                     </Carousel.Item>
                 </Carousel>
 
+                {/* ✅ RERA Number Overlay */}
+                <div className="rera-badge">
+                    <strong>RERA No:</strong> PRM/KA/RERA/1251/446/PR/07042S/OO7653
+                </div>
             </section>
+
 
 
             {/* ===== Schedule Visit Section ===== */}
@@ -109,21 +117,39 @@ export default function MicoristePage() {
                             color: "#4b3a2a",
                         }}
                     >
-                        <Col md={3} sm={6} xs={12} className="mb-3">
+                        <Col md={4} sm={6} xs={12} className="mb-3">
                             <h3 className="mb-md-0 mb-4 microsite-about">
                                 2 & 3 BHK <br /> Premium Homes
                             </h3>
                         </Col>
 
-                        <Col md={3} sm={6} xs={12} className="mb-3 border-start border-end">
+                        <Col md={4} sm={6} xs={12} className="mb-3 border-start border-end">
                             <h3 className="mb-md-0 mb-4 microsite-about">
                                 KR Puram <br /> Bengaluru
                             </h3>
                         </Col>
 
-                        <Col md={3} sm={6} xs={12} className="mb-3">
+                        <Col md={4} sm={6} xs={12} className="mb-3">
                             <h3 className="mb-0 microsite-about">
                                 35 Lifestyle <br /> Amenities
+                            </h3>
+                        </Col>
+
+                        <Col md={4} sm={6} xs={12} className="mb-3 border-end">
+                            <h3 className="mb-0 microsite-about">
+                                1.08 Acres <br /> Project Land Area
+                            </h3>
+                        </Col>
+
+                        <Col md={4} sm={6} xs={12} className="mb-3 border-start border-end">
+                            <h3 className="mb-0 microsite-about">
+                                101 <br /> Premium Apartments
+                            </h3>
+                        </Col>
+
+                        <Col md={4} sm={6} xs={12} className="mb-3">
+                            <h3 className="mb-0 microsite-about">
+                                100% <br /> Vaastu Compliant
                             </h3>
                         </Col>
                     </Row>
@@ -210,10 +236,10 @@ export default function MicoristePage() {
                         </div>
                         <div className="col-md-6 text-center p-0">
                             <Image
-                                src="/images/sankalp/Amenities.webp"
-                                alt="Tennis Player"
+                                src="/images/sankalp/Amenities2.webp"
+                                alt="Child on swing"
                                 width={600}
-                                height={400}
+                                height={600}
                                 className="img-fluid w-100"
                             />
                         </div>
@@ -226,11 +252,11 @@ export default function MicoristePage() {
                                 src="/images/sankalp/Amenities2.webp"
                                 alt="Child on swing"
                                 width={600}
-                                height={400}
+                                height={600}
                                 className="img-fluid w-100"
                             />
                         </div>
-                        <div className="col-md-6 px-5">
+                        <div className="col-md-6 px-3">
                             <div
                                 style={{
 
@@ -239,11 +265,11 @@ export default function MicoristePage() {
                                     lineHeight: "1.8",
                                 }}
                             >
-                                <div className="row align-items-center mb-5">
+                                <div className="row mb-5">
 
                                     <div className="col-md-6 col-6 px-md-5">
                                         <ul className="list-unstyled">
-                                            <li>Clubhouse</li>
+                                            <li>Club House</li>
                                             <li>Swimming Pool</li>
                                             <li>Kids Pool</li>
                                             <li>Open Amphitheatre</li>
@@ -251,23 +277,41 @@ export default function MicoristePage() {
                                             <li>Multipurpose Play Turf</li>
                                             <li>Cricket Pitch</li>
                                             <li>Indoor Games</li>
+                                            <li>Yoga Creche</li>
+                                            <li>Board Games</li>
+                                            <li>Visitors Lounge</li>
+                                            <li>Multipurpose Sitting Area</li>
+                                            <li>Food Court</li>
+                                            <li>Deck with Pergola</li>
+                                            <li>Floating Deck</li>
                                         </ul>
                                     </div>
-                                    <div className="col-md-6 col-6 px-md-5">
+
+                                    <div className="col-md-6 col-6 px-md-3">
                                         <ul className="list-unstyled">
                                             <li>Kids Play Area</li>
-                                            <li>Walking Jogging Track</li>
+                                            <li>Walking & Jogging Track</li>
                                             <li>Elder Sitting Zone</li>
                                             <li>Adventure Wall</li>
                                             <li>Fragrance Garden</li>
                                             <li>Bonfire Court</li>
                                             <li>Outdoor Workstation</li>
+                                            <li>Outdoor Reading Area</li>
                                             <li>Barbeque Zone</li>
+                                            <li>Butterfly Garden</li>
+                                            <li>Avenue Planting</li>
+                                            <li>Raised Planter</li>
+                                            <li>Low Level Planter</li>
+                                            <li>Planting Bed</li>
+                                            <li>Street Furniture</li>
                                         </ul>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div className="row">
                         <div className="col-md-12">
                             <p
                                 className="mx-auto mb-0"
@@ -421,6 +465,35 @@ export default function MicoristePage() {
                     </Modal>
                 </div>
             </section>
+
+            <Walkthrough
+                title="Project Walkthrough"
+                thumbnail="/images/youtube.webp"
+                youtubeId="4YS_-psSQyg"
+            />
+            <section className="specifications">
+                <div className="container">
+                    {/* Heading */}
+                    <div className="row">
+                        <div className="col-12">
+                            <h3
+                                className="text-center mb-5"
+                                style={{
+                                    fontSize: "35px",
+                                    color: "#585858",
+                                    lineHeight: "1.8",
+                                }}
+                            >
+                                Specifications
+                            </h3>
+                        </div>
+                    </div>
+
+                    {/* Specifications Cards */}
+                    <Specifications data={mythriSankalpSpecs} />
+                </div>
+            </section>
+
             <section className="location pt-0" data-aos="fade-up"
                 data-aos-delay="200"
                 style={{ backgroundColor: "#f7f2eb", padding: "80px 0", fontFamily: "'Source Sans 3', sans-serif", }}

@@ -6,6 +6,9 @@ import "aos/dist/aos.css";
 import { Carousel, Container, Row, Col, Form, Button, Modal } from "react-bootstrap";
 import Image from "next/image";
 import ScheduleVisitForm from "../components/ScheduleVisitForm";
+import Walkthrough from "../components/Microsite/Walkthrough";
+import Specifications from "../components/Microsite/Specifications";
+import { mythriSikharamSpecs } from "../data/mythriSikharam";
 
 export default function MicoristePage() {
     const [show, setShow] = useState(false);
@@ -25,7 +28,7 @@ export default function MicoristePage() {
     return (
         <>
             {/* ===== Banner Section ===== */}
-            <section className="p-0">
+            <section className="p-0 position-relative">
                 <Carousel
                     fade
                     interval={null}     // ❌ auto slide off
@@ -55,6 +58,10 @@ export default function MicoristePage() {
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
+                {/* ✅ RERA Number Overlay */}
+                <div className="rera-badge">
+                    <strong>RERA No:</strong> PRM/KA/RERA/1251/446/PR/300525/007802
+                </div>
             </section>
 
 
@@ -135,23 +142,43 @@ export default function MicoristePage() {
                             color: "#4b3a2a",
                         }}
                     >
-                        <Col md={3} sm={6} xs={12} className="mb-3">
+
+                        <Col md={4} sm={6} xs={12} className="mb-3">
                             <h3 className="mb-md-0 mb-4 microsite-about">
-                                5 Acres <br /> 423 Apartments
+                                2, 3 & 4 BHK <br /> Premium Homes
                             </h3>
                         </Col>
 
-                        <Col md={3} sm={6} xs={12} className="mb-3 border-start border-end">
+                        <Col md={4} sm={6} xs={12} className="mb-3 border-start border-end">
                             <h3 className="mb-md-0 mb-4 microsite-about">
-                                B + G + 18 Floors <br /> 75% Open Space
+                                Off Sarjapur Road <br /> Bengaluru
                             </h3>
                         </Col>
 
-                        <Col md={3} sm={6} xs={12} className="mb-3">
+                        <Col md={4} sm={6} xs={12} className="mb-3">
                             <h3 className="mb-0 microsite-about">
-                                2, 3 & 4 BHK <br /> 50+ World-class Amenities
+                                50+ Lifestyle <br /> Amenities
                             </h3>
                         </Col>
+                        <Col md={4} sm={6} xs={12} className="mb-3 border-end">
+                            <h3 className="mb-0 microsite-about">
+                                5 Acres <br /> Project Land Area
+                            </h3>
+                        </Col>
+
+                        <Col md={4} sm={6} xs={12} className="mb-3 border-start border-end">
+                            <h3 className="mb-0 microsite-about">
+                                423 <br /> Apartments
+                            </h3>
+                        </Col>
+
+                        <Col md={4} sm={6} xs={12} className="mb-3">
+                            <h3 className="mb-0 microsite-about">
+                                75% <br /> Open Space
+                            </h3>
+                        </Col>
+
+
                     </Row>
 
                     {/* ===== Image ===== */}
@@ -451,6 +478,33 @@ export default function MicoristePage() {
                             />
                         </Modal.Body>
                     </Modal>
+                </div>
+            </section>
+            <Walkthrough
+                title="Project Walkthrough"
+                thumbnail="/images/youtube.webp"
+                youtubeId="HHHPiHl32Q8"
+            />
+            <section className="specifications">
+                <div className="container">
+                    {/* Heading */}
+                    <div className="row">
+                        <div className="col-12">
+                            <h3
+                                className="text-center mb-5"
+                                style={{
+                                    fontSize: "35px",
+                                    color: "#585858",
+                                    lineHeight: "1.8",
+                                }}
+                            >
+                                Specifications
+                            </h3>
+                        </div>
+                    </div>
+
+                    {/* Specifications Cards */}
+                    <Specifications data={mythriSikharamSpecs} />
                 </div>
             </section>
             <section className="location pt-0" data-aos="fade-up"
