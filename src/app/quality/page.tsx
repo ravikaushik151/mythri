@@ -23,7 +23,7 @@ const QualityBlock = () => {
             >
               Designed for Today. Built for Tomorrow.
             </p>
-            <p style={{ lineHeight: "1.5" }}>Discover our ongoing, completed, and upcoming projects across Bengaluru&rsquo;s most promising neighbourhoods. <br />Each project reflects thoughtful planning, responsible design, and <br />the reliability that defines Mythri Builders Bangalore.
+            <p style={{ lineHeight: "1.5" }}>Discover our ongoing, completed, and upcoming projects across Bengaluru&rsquo;s most promising <br />neighbourhoods. Each project reflects thoughtful planning, responsible design, and <br />the reliability that defines Mythri Builders Bangalore.
             </p>
           </div>
         </div>

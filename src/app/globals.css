@@ -14873,7 +14873,8 @@ p {
 
 .text-justify {
   text-align: justify !important;
-
+  text-justify: inter-character;
+  hyphens: auto;
 }
 
 

@@ -104,7 +104,7 @@ export default function Home() {
                   poster="/images/Mythri-Logo-Mobile-Poster.webp"
                 >
                   <source
-                    src="/images/Mythri Logo_Cideo.mp4"
+                    src="/images/Mythri Logo-Mobile Version.mp4"
                     type="video/mp4"
                   />
                 </video>

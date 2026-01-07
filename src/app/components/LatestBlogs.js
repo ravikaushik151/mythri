@@ -54,7 +54,7 @@ export default function LatestBlogs() {
                                     {post.title}
                                 </h4>
                             </Link>
-                            <p className="theme-color-dark">{post.excerpt}</p>
+                            <p className="theme-color-dark text-justify">{post.excerpt}</p>
                         </div>
                     </div>
                 ))}

@@ -42,7 +42,7 @@ export default function TeamSection() {
                                     <p className="text-uppercase text-muted small letter-spacing">
                                         {member.role}
                                     </p>
-                                    <p className="mt-3">{member.description}</p>
+                                    <p className="mt-3 text-justify">{member.description}</p>
                                 </Card.Body>
                             </Card>
                         </Col>

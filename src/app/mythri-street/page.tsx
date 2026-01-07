@@ -42,12 +42,12 @@ export default function MicoristePage() {
                             {/* Mobile Image */}
                             <source
                                 media="(max-width: 767px)"
-                                srcSet="/images/street/Mob_ban_street.webp"
+                                srcSet="/images/street/Mobile_banner_Street.webp"
                             />
                             {/* Desktop Image */}
                             <img
                                 className="d-block w-100"
-                                src="/images/street/Website banner.webp"
+                                src="/images/street/Desktop_banner_Street.webp"
                                 alt="First slide"
                                 style={{ height: "80vh", objectFit: "cover" }}
                             />
@@ -505,8 +505,8 @@ export default function MicoristePage() {
             </section>
             <Walkthrough
                 title="Project Walkthrough"
-                thumbnail="/images/youtube.webp"
-                youtubeId="HHHPiHl32Q8"
+                thumbnail="/images/street-youtube.webp"
+                youtubeId="SxAOeNIFxSk"
             />
             <section className="specifications">
                 <div className="container">

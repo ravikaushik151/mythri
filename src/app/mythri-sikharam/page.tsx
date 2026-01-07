@@ -462,8 +462,8 @@ export default function MicoristePage() {
 
             <Walkthrough
                 title="Project Walkthrough"
-                thumbnail="/images/youtube.webp"
-                youtubeId="HHHPiHl32Q8"
+                thumbnail="/images/sikharam-youtube.webp"
+                youtubeId="YeIsDzqscR8"
             />
             <section className="specifications">
                 <div className="container">

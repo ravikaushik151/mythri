@@ -104,7 +104,7 @@ export default function Blog() {
                                 {post.title}
                             </Link>
                         </h6>
-                        <p className='mb-0 theme-color-light'>{post.excerpt}</p>
+                        <p className='mb-0 theme-color-light text-justify'>{post.excerpt}</p>
                         <div className="text-center py-3 my-3 small">
                             <Link href={`/blog/${post.slug}`} className="btn theme-bg-light">Read More</Link>
                         </div>
