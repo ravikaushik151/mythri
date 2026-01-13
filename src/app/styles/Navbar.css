@@ -144,7 +144,12 @@
 
 
 .overlay-menu li {
-  margin: 25px 0;
+  margin: 12px 0;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #fff !important;
 }
 
 .overlay-menu li a {

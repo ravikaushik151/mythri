@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+/* Hide RERA badge when menu is open */
+.hide-rera {
+  display: none !important;
+}
+
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -14261,15 +14266,15 @@ p {
   width: 100% !important;
 }
 
-.navbar .nav-item .nav-link {
+/*.navbar .nav-item .nav-link {
   color: #fff !important;
-  /*padding: 10px 25px !important;*/
+  padding: 10px 25px !important;
   font-display: swap;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.41;
   letter-spacing: 3%;
-}
+}*/
 
 
 #carouselExampleDark {
@@ -14638,7 +14643,7 @@ p {
     margin-top: 30px !important;
   }
 
-  .navbar .nav-item .nav-link {
+  /*.navbar .nav-item .nav-link {
     color: #fff !important;
     padding: 10px !important;
     font-family: "Poppins";
@@ -14647,7 +14652,7 @@ p {
     font-size: 18px;
     line-height: 1.41;
     letter-spacing: 3%;
-  }
+  }*/
 
   .text-black {
     color: #000 !important;
@@ -20047,13 +20052,18 @@ nav.navbar-expand-lg.navbar-dark.bg-dark.fixed-top.scrolled {
   background-color: var(--secondary-color) !important;
 }
 
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: relative !important;
+  }
+}
+
 /* Container to center the button at the bottom */
 .scroll-down-container {
   position: absolute;
   bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 10;
   display: flex;
   justify-content: center;
 }
@@ -20062,7 +20072,7 @@ nav.navbar-expand-lg.navbar-dark.bg-dark.fixed-top.scrolled {
 .mouse {
   width: 26px;
   height: 42px;
-  border: 2px solid #fff;
+  border: 2px solid #626262;
   border-radius: 20px;
   display: flex;
   justify-content: center;
@@ -20073,7 +20083,7 @@ nav.navbar-expand-lg.navbar-dark.bg-dark.fixed-top.scrolled {
 .wheel {
   width: 4px;
   height: 8px;
-  background-color: #fff;
+  background-color: #626262;
   border-radius: 2px;
   animation: scroll-anim 1.6s infinite;
 }

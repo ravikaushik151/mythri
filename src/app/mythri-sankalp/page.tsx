@@ -9,8 +9,10 @@ import ScheduleVisitForm from "../components/ScheduleVisitForm";
 import Specifications from "../components/Microsite/Specifications";
 import { mythriSankalpSpecs } from "../data/mythriSankalp";
 import Walkthrough from "../components/Microsite/Walkthrough";
+import { useMenu } from "../context/MenuContext";
 
 export default function MicoristePage() {
+    const { menuOpen } = useMenu();
     const [show, setShow] = useState(false);
     const [popupImage, setPopupImage] = useState("");
 
@@ -55,7 +57,7 @@ export default function MicoristePage() {
                 </Carousel>
 
                 {/* ✅ RERA Number Overlay */}
-                <div className="rera-badge">
+                <div className={`rera-badge ${menuOpen ? "hide-rera" : ""}`}>
                     <strong>RERA No:</strong> PRM/KA/RERA/1251/446/PR/07042S/OO7653
                 </div>
             </section>

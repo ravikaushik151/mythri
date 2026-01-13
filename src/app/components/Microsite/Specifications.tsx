@@ -7,7 +7,7 @@ export default function Specifications({ data }) {
     const [hovered, setHovered] = useState(null);
 
     return (
-        <div className="d-none d-md-block">
+        <div className="">
             <div className="row g-4">
                 {data.map((item, index) => (
                     <div key={index} className="col-12 col-md-6 col-lg-4">

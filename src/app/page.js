@@ -10,8 +10,11 @@ import CoreValuesSlider from "./components/CoreValuesSlider";
 import ProjectsSection from "./components/ProjectsSection";
 import QualityBlock from "./quality/page";
 
+import { useMenu } from "./context/MenuContext";
+
 export default function Home() {
   const [shouldLoadVideo, setShouldLoadVideo] = useState(false);
+  const { menuOpen } = useMenu();
 
   useEffect(() => {
     // ----------------- LENIS SMOOTH SCROLL -----------------
@@ -124,7 +127,11 @@ export default function Home() {
             <div className="position-absolute top-0 start-0 w-100 h-100" />
 
             {/* ---------- SCROLL DOWN BUTTON ---------- */}
-            <a href="#about" className="scroll-down-container" aria-label="Scroll to About Section">
+            <a
+              href="#about"
+              className={`scroll-down-container ${menuOpen ? "invisible" : ""}`}
+              aria-label="Scroll to About Section"
+            >
               <div className="mouse">
                 <div className="wheel"></div>
               </div>
@@ -144,15 +151,9 @@ export default function Home() {
                   </h1>
 
                   <p className="mt-4 theme-color-dark text-justify">
-                    At Mythri Builders, every home begins with a clear vision —
-                    to create spaces where design meets purpose and trust meets
-                    craftsmanship. Since 2019, Mythri Builders Bangalore has
-                    been shaping the city’s skyline with affordable luxury,
-                    sustainable design, and architectural precision.
+                    At Mythri Builders, every home begins with a clear vision to create spaces where design meets purpose and trust meets craftsmanship. Since 2019, Mythri Builders Bangalore has been shaping the city’s skyline with affordable luxury, sustainable design, and architectural precision.
                     <br /><br />
-                    With 800+ apartments delivered across 10+ acres, we are
-                    recognised among the Top Builders in Bangalore for
-                    transparency, punctuality, and a people-first approach.
+                    With 1000+ apartments delivered across 10+ acres, we are recognised among the Top Builders in Bangalore for transparency, punctuality, and a people-first approach.
                   </p>
 
                   <div className="text-center">

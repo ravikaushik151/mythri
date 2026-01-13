@@ -8,9 +8,11 @@ import Image from "next/image";
 import ScheduleVisitForm from "../components/ScheduleVisitForm";
 import Walkthrough from "../components/Microsite/Walkthrough";
 import Specifications from "../components/Microsite/Specifications";
-import { mythriSikharamSpecs } from "../data/mythriSikharam";
+import { mythriSitySpecs } from "../data/mythriSity";
+import { useMenu } from "../context/MenuContext";
 
 export default function MicoristePage() {
+    const { menuOpen } = useMenu();
     const [show, setShow] = useState(false);
     const [popupImage, setPopupImage] = useState("");
 
@@ -59,7 +61,7 @@ export default function MicoristePage() {
                     </Carousel.Item>
                 </Carousel>
                 {/* ✅ RERA Number Overlay */}
-                <div className="rera-badge">
+                <div className={`rera-badge ${menuOpen ? "hide-rera" : ""}`}>
                     <strong>RERA No:</strong> PRM/KA/RERA/1251/446/PR/300525/007802
                 </div>
             </section>
@@ -504,7 +506,7 @@ export default function MicoristePage() {
                     </div>
 
                     {/* Specifications Cards */}
-                    <Specifications data={mythriSikharamSpecs} />
+                    <Specifications data={mythriSitySpecs} />
                 </div>
             </section>
             <section className="location pt-0" data-aos="fade-up"

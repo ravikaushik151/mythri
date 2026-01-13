@@ -6,11 +6,13 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { usePathname } from "next/navigation";
 import "../styles/Navbar.css";
 
+import { useMenu } from "../context/MenuContext";
+
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+  const { menuOpen, setMenuOpen } = useMenu();
   const [isSticky, setIsSticky] = useState(false);
 
-  const toggleMenu = () => setIsOpen(!isOpen);
+  const toggleMenu = () => setMenuOpen(!menuOpen);
 
   const pathname = usePathname();
 
@@ -19,7 +21,7 @@ export default function Navbar() {
 
   // ❗ Auto-close menu on route change
   useEffect(() => {
-    setIsOpen(false);
+    setMenuOpen(false);
   }, [pathname]);
 
   useEffect(() => {
@@ -51,13 +53,13 @@ export default function Navbar() {
             className="menu-toggle"
             onClick={toggleMenu}
             aria-label="Toggle navigation menu"
-            aria-expanded={isOpen}
+            aria-expanded={menuOpen}
           >
-            {isOpen ? <FaTimes className="menu-icon" /> : <FaBars className="menu-icon" />}
+            {menuOpen ? <FaTimes className="menu-icon" /> : <FaBars className="menu-icon" />}
           </div>
         </div>
 
-        <div className={`nav-overlay ${isOpen ? "open" : ""}`}>
+        <div className={`nav-overlay ${menuOpen ? "open" : ""}`}>
           <ul className="overlay-menu">
             <li><Link href="/">HOME</Link></li>
             <li><Link href="/about">ABOUT US</Link></li>
@@ -93,12 +95,12 @@ export default function Navbar() {
             className="menu-toggle"
             onClick={toggleMenu}
             aria-label="Toggle navigation menu"
-            aria-expanded={isOpen}
+            aria-expanded={menuOpen}
           >
-            {isOpen ? <FaTimes className="menu-icon" /> : <FaBars className="menu-icon" />}
+            {menuOpen ? <FaTimes className="menu-icon" /> : <FaBars className="menu-icon" />}
           </div>
           {/* <div className={`nav-overlay collapse navbar-collapse ${isOpen ? "open" : ""}`} id="navbarSupportedContent"> */}
-          <div className={`nav-overlay navbar-collapse ${isOpen ? "open" : "d-none d-lg-flex"}`} id="navbarSupportedContent">
+          <div className={`nav-overlay navbar-collapse ${menuOpen ? "open" : "d-none d-lg-flex"}`} id="navbarSupportedContent">
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0 overlay-menu">
               <li className="nav-item"><Link href="/">HOME</Link></li>
               <li className="nav-item"><Link href="/about">ABOUT US</Link></li>
