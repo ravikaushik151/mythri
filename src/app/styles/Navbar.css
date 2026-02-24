@@ -1,0 +1,348 @@
+.main-navbar {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  /* Logo left, hamburger right */
+  align-items: center;
+  padding: 0px 50px;
+  position: relative;
+  width: 100%;
+}
+
+.main-navbar.sticky .navbar-wrapper {
+  background-color: rgba(0, 0, 0, 0.80);
+}
+
+/* Default logo style */
+.logo-box img {
+  width: 120px;
+  height: auto;
+  transition: all 0.4s ease;
+  /* Smooth transition */
+}
+
+/* When navbar becomes sticky */
+.main-navbar.sticky .navbar-wrapper .logo-box img {
+  width: 75px;
+}
+
+
+/* Hamburger */
+.menu-toggle {
+  cursor: pointer;
+  font-size: 28px;
+  color: white;
+  z-index: 1001;
+}
+
+/* Overlay Menu */
+.nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+  z-index: 999;
+}
+
+.nav-overlay.open {
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  /* changed from center to avoid clipping */
+  padding-top: 0px;
+  /* Push content down */
+  align-items: center;
+  overflow-y: auto;
+  /* Allow scrolling */
+}
+
+.overlay-menu {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  /*margin-top: 120px;*/
+}
+
+@media (min-width: 992px) {
+
+  .main-navbar.sticky .nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 0%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.4s ease;
+    z-index: 999;
+    overflow: inherit;
+  }
+
+  .main-navbar.sticky {
+    background: transparent;
+    top: 30px;
+  }
+
+  .main-navbar.sticky .overlay-menu {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+  }
+
+  .main-navbar.sticky .overlay-menu li a {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: color 0.3s;
+    background: none !important;
+  }
+
+  .dropdown-item:hover,
+  .nav-link:focus {
+    background: none !important;
+  }
+
+  .main-navbar.sticky .overlay-menu li {
+    margin: 15px 15px;
+  }
+
+  .main-navbar.sticky .overlay-menu li a:hover {
+    color: gold;
+  }
+
+
+  .main-navbar.sticky .menu-toggle {
+    display: none;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: column;
+  }
+
+  .main-navbar.sticky.navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+  }
+}
+
+
+.overlay-menu li {
+  margin: 12px 0;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #fff !important;
+}
+
+.overlay-menu li a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: color 0.3s;
+}
+
+.overlay-menu li a:hover {
+  color: gold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .logo-box img {
+    width: 70px;
+  }
+
+  .overlay-menu li a {
+    font-size: 20px;
+    display: block;
+    /* Ensure full width click area */
+  }
+
+  .navbar-wrapper {
+    padding: 5px 20px !important;
+  }
+
+  .main-navbar.sticky {
+    background: transparent;
+    top: -8px;
+  }
+
+  /* Fix Mobile Dropdown Design */
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-nav .dropdown-menu {
+    position: static !important;
+    float: none;
+    background: transparent !important;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+    width: 100% !important;
+
+    /* Animation setup */
+    display: block !important;
+    /* Needed for height animation */
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 !important;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    transform: none !important;
+    /* Fix overlap issue */
+  }
+
+  .navbar-nav .dropdown-menu.show {
+    max-height: 500px;
+    /* Allows smooth expansion */
+    opacity: 1;
+    visibility: visible;
+    margin: 10px 0 0 0 !important;
+    padding: 5px 0;
+  }
+
+  .navbar-nav .dropdown-menu li {
+    margin: 5px 0;
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+
+  .navbar-nav .dropdown-menu li a {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8) !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: transparent !important;
+    transition: color 0.3s;
+  }
+
+  .navbar-nav .dropdown-menu li a:hover,
+  .navbar-nav .dropdown-menu li a:focus {
+    color: gold !important;
+    background: transparent !important;
+  }
+}
+
+
+/* Navbar Submenu Hover for Desktop */
+/* Navbar Submenu Hover for Desktop */
+@media (min-width: 992px) {
+  .nav-item.dropdown {
+    position: relative;
+    display: block;
+    /* Use inline-flex for proper alignment */
+    align-items: center;
+    height: 100%;
+  }
+
+  .navbar-nav .dropdown-menu {
+    display: block;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease-in-out;
+    margin-top: 0 !important;
+    /* Remove extra margin */
+    top: 100%;
+    left: 0;
+    border-radius: 0;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.95);
+    /* Ensure background is solid dark */
+    min-width: 200px;
+    /* Ensure decent width */
+  }
+
+  /* Ensure the hover area extends to the gap */
+  .navbar-nav .dropdown-menu::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    /* Match gap */
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: transparent;
+  }
+
+  .nav-item.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  /* Ensure the main link is always visible and on top */
+  .nav-item.dropdown .nav-link {
+    position: relative;
+    z-index: 1050;
+    color: white !important;
+    font-size: 24px;
+    /* Match other links */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-flex;
+    /* Changed from flex to inline-flex to flow naturally */
+    align-items: center;
+    height: 100%;
+    padding: 0 !important;
+    /* Critical fix for alignment */
+    margin: 0;
+    /* Ensure no extra margin from bootstrap */
+  }
+
+  .nav-item.dropdown:hover .nav-link {
+    color: gold !important;
+  }
+
+  /* Slide down animation for siblings */
+  #navbarSupportedContent.open .nav-item.slide-down {
+    position: relative;
+    top: 0;
+    transition: top 0.3s ease-in-out;
+  }
+
+  #navbarSupportedContent.open .nav-item.dropdown:hover~.nav-item.slide-down {
+    top: 109px;
+  }
+}

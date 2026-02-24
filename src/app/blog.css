@@ -1,0 +1,42 @@
+.blog-section {
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+  background-size: 100% 75%;
+  background-position: center 80%;
+  background-repeat: no-repeat;
+
+}
+
+.blog-main-page {
+  position: relative;
+  z-index: 1;
+}
+
+.services-item {
+  min-height: 630px;
+}
+
+.home-highlights_text {
+  text-align: left;
+}
+
+.services-content.blogs p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+@media only screen and (max-width:768px) {
+  .blog-main-page {
+    background-size: 60% !important
+  }
+
+  .blog-main-page::before {
+    background-size: 60% !important
+  }
+
+}

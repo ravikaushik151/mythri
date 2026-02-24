@@ -1,0 +1,37 @@
+.carrer {
+  position: relative;
+  z-index: 1;
+}
+
+/*
+.carrer {
+  position: relative;
+  background: url('/images/Flower_Brown.png') right 50% / 100% 80% no-repeat;
+  overflow: hidden;
+  background-size: 15% 30%;
+  background-position: right 106%;  
+}
+
+.carrer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('/images/Flower_Brown.png') right 50% / 100% 80% no-repeat;
+  transform: scale(-1, -1);
+  pointer-events: none;
+  z-index: 0;
+  background-size: 20% 45%;
+  background-position: inherit;
+}
+*/
+
+@media only screen and (max-width:768px) {
+  .carrer {
+    background-size: 60% !important
+  }
+
+  .carrer::before {
+    background-size: 60% !important
+  }
+
+}

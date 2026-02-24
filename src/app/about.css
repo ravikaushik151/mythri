@@ -1,0 +1,19 @@
+.aboutabout {
+
+  background-image: url('/images/about page_mythri.webp') !important;
+  background-size: 102% 99% !important;
+  background-position: left bottom !important;
+
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width:768px) {
+  .aboutabout {
+
+    background-image: none !important;
+    background-size: 100% 100% !important;
+    background-position: center !important;
+
+    background-repeat: no-repeat;
+  }
+}

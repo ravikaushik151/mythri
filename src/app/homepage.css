@@ -1,0 +1,394 @@
+.lifestyle-section {
+  position: relative;
+  background: url('/images/Flowe_3_Brown.png') right 50% / 100% 80% no-repeat;
+  color: #fff;
+  overflow: hidden;
+  background-size: 10% 30%;
+  background-position: right 103%;
+  /* pseudo-element bahar na nikle */
+}
+
+.lifestyle-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* top, right, bottom, left = 0 */
+  background: url('/images/Flowe_3_Brown.png') right 50% / 100% 80% no-repeat;
+  transform: scaleX(-1);
+  /* ✅ sirf image invert hogi */
+  /* optional transparency */
+  pointer-events: none;
+  /* overlay click block na kare */
+  z-index: 0;
+  background-size: 10% 30%;
+  background-position: inherit;
+}
+
+.lifestyle-section>* {
+  position: relative;
+  z-index: 1;
+  /* content image ke upar rahe */
+}
+
+.page-about-mv {
+  position: relative;
+  z-index: 1;
+}
+
+.page-about-mv {
+  position: relative;
+  background: url('/images/Flower_Cream.png') right 50% / 100% 80% no-repeat;
+  color: #fff;
+  overflow: hidden;
+
+  background-size: 15% 30%;
+  background-position: right 106%;
+  /* pseudo-element bahar na nikle */
+}
+
+.page-about-mv::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* top, right, bottom, left = 0 */
+  background: url('/images/Flower_Cream.png') right 50% / 100% 80% no-repeat;
+  transform: scale(-1, -1);
+  /* ✅ sirf image invert hogi */
+  /* optional transparency */
+  pointer-events: none;
+  /* overlay click block na kare */
+  z-index: 0;
+  background-size: 18% 35%;
+  background-position: inherit;
+}
+
+
+.page-about {
+  position: relative;
+  z-index: 1;
+}
+
+.page-about {
+  background-image: url("/images/Line-8Brown.png");
+  background-size: 100% 80%;
+  background-position: 100% 200%;
+  color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+
+}
+
+.section-line {
+  background-image: url("/images/Line_2-8 Brown.png");
+  background-size: 100% 80%;
+  background-position: 100% 200%;
+  color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+
+}
+
+.section-small {
+  position: relative;
+  z-index: 1;
+}
+
+.section-small {
+  background-image: url("/images/Big-8.png");
+  background-size: 6%;
+  background-position: 0% 100%;
+  color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+
+}
+
+.section-small::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: url('/images/Big-8.png') right 50% / 100% 80% no-repeat;
+  transform: scaleX(-1);
+
+  pointer-events: none;
+
+  z-index: 0;
+  background-size: 6%;
+  background-position: inherit;
+}
+
+.testimonials {
+  position: relative;
+  /* background: url('/images/Line-8Brown.png'); */
+  color: #fff;
+  overflow: hidden;
+  background-size: 103% 100%;
+  background-position: center 100%;
+  background-repeat: no-repeat;
+
+}
+
+.blog-section {
+  position: relative;
+  background: url('/images/Line_2-8.png');
+  color: #fff;
+  overflow: hidden;
+  background-size: 100% 75%;
+  background-position: center 80%;
+  background-repeat: no-repeat;
+
+}
+
+
+.blog-main-page {
+  position: relative;
+  z-index: 1;
+}
+
+.page-project {
+  background-image: url("/images/Flower_Wara.png");
+  background-size: 25%;
+  background-position: 100% 100%;
+  color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+
+}
+
+
+
+.page-project-amidst {
+  position: relative;
+  z-index: 1;
+  background-color: var(--theme-bg-light);
+}
+
+.page-project-amidst {
+  background-image: url("/images/Flower_Wara.png");
+  background-size: 12.5%;
+  background-position: 100% 75%;
+  color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+
+}
+
+.page-project-amidst::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('/images/Flower_Wara.png') right 100% / 100% 80% no-repeat;
+  transform: scaleY(-1);
+  pointer-events: none;
+  z-index: 0;
+  background-size: 12.5%;
+  background-position: 0% 100%;
+}
+
+.blog-main-page {
+  position: relative;
+  background: url('/images/Flower_Wara.png') right 50% / 100% 80% no-repeat;
+  overflow: hidden;
+  background-size: 15% 30%;
+  background-position: right 106%;
+  /* pseudo-element bahar na nikle */
+}
+
+.blog-main-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* top, right, bottom, left = 0 */
+  background: url('/images/Flower_Wara.png') right 50% / 100% 80% no-repeat;
+  transform: scale(-1, -1);
+  /* ✅ sirf image invert hogi */
+  /* optional transparency */
+  pointer-events: none;
+  /* overlay click block na kare */
+  z-index: 0;
+  background-size: 20% 45%;
+  background-position: inherit;
+}
+
+.carrer {
+  position: relative;
+  z-index: 1;
+}
+
+.carrer {
+  position: relative;
+  background: url('/images/Flower_Wara.png') right 50% / 100% 80% no-repeat;
+  overflow: hidden;
+  background-size: 15% 30%;
+  background-position: right 106%;
+  /* pseudo-element bahar na nikle */
+}
+
+.carrer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* top, right, bottom, left = 0 */
+  background: url('/images/Flower_Wara.png') right 50% / 100% 80% no-repeat;
+  transform: scale(-1, -1);
+  /* ✅ sirf image invert hogi */
+  /* optional transparency */
+  pointer-events: none;
+  /* overlay click block na kare */
+  z-index: 0;
+  background-size: 20% 45%;
+  background-position: inherit;
+}
+
+.contact {
+  position: relative;
+  z-index: 1;
+}
+
+.contact {
+  position: relative;
+  background: url('/images/Flower_Wara.png') right 50% / 100% 80% no-repeat;
+  overflow: hidden;
+  background-size: 15% 30%;
+  background-position: right 106%;
+  /* pseudo-element bahar na nikle */
+}
+
+.contact::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* top, right, bottom, left = 0 */
+  background: url('/images/Flower_Wara.png') right 50% / 100% 80% no-repeat;
+  transform: scale(-1, -1);
+  /* ✅ sirf image invert hogi */
+  /* optional transparency */
+  pointer-events: none;
+  /* overlay click block na kare */
+  z-index: 0;
+  background-size: 20% 45%;
+  background-position: inherit;
+}
+
+.home-about {
+  background: url('/images/Line_2-8 Brown.png');
+  background-size: 75% 82%;
+  background-position: 183% 300%;
+  color: "#fff";
+  background-repeat: no-repeat;
+}
+
+.up-coming {
+  background: url('/images/Flower_Wara.png');
+  background-size: "25% 50%";
+  background-position: "right 99%";
+  color: "#fff";
+  background-repeat: no-repeat;
+}
+
+.home-highlights_text {
+  text-align: left;
+}
+
+.homehome {
+
+  background-image: url('/images/street img.webp') !important;
+  background-size: 100% 100% !important;
+  background-position: center !important;
+
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width:768px) {
+  .homehome {
+
+    background-image: none !important;
+    background-size: 50% 100% !important;
+    background-position: center !important;
+
+    background-repeat: no-repeat;
+  }
+
+  .mobileoverview {
+    margin-top: -30px !important;
+  }
+
+  .section-small {
+    background-size: 20% !important
+  }
+
+  .up-coming {
+    background-size: 35% !important
+  }
+
+  .section-small::before {
+    background-size: 20% !important
+  }
+
+  .lifestyle-section {
+    background-size: 28% 8% !important
+  }
+
+  .lifestyle-section::before {
+    background-size: 28% 8% !important
+  }
+
+  .page-about-mv {
+    background-size: 50% 35% !important
+  }
+
+  .page-about-mv::before {
+    background-size: 50% 35% !important
+  }
+
+  .page-project-amidst {
+    background-size: 20% 15% !important;
+    background-position: 100% 100%
+  }
+
+  .page-project-amidst::before {
+    background-size: 25% 15% !important;
+    background-position: 0% 100%
+  }
+}
+
+.main-navbar.sticky .navbar-wrapper .logo-box .white-png {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7479%) hue-rotate(70deg) brightness(99%) contrast(107%);
+}
+
+.main-navbar .navbar-wrapper .logo-box .white-png {
+  filter: none;
+}
+
+
+/* Home page navbar → logo normal */
+.home-navbar .navbar-wrapper .logo-box .white-png {
+  filter: none;
+}
+
+/* Inner pages navbar → white logo */
+.inner-navbar .navbar-wrapper .logo-box .white-png {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7479%) hue-rotate(70deg) brightness(99%) contrast(107%);
+}
+
+.home-navbar .menu-toggle {
+  cursor: pointer;
+  font-size: 28px;
+  color: black;
+  /* default */
+  z-index: 1001;
+}
+
+
+.inner-navbar .menu-toggle {
+  cursor: pointer;
+  font-size: 28px;
+  color: white;
+  /* default */
+  z-index: 1001;
+}
+
+/* When aria-expanded = false → make it white */
+.menu-toggle[aria-expanded="true"] {
+  color: white;
+}
+
+.main-navbar.sticky .menu-toggle {
+  color: white;
+}

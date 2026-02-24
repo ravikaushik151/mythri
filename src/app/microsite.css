@@ -1,0 +1,313 @@
+.lifestyle-section {
+  position: relative;
+  background: none;
+  color: #fff;
+  overflow: hidden;
+  background-size: 10% 30%;
+  background-position: right 103%;
+  /* pseudo-element bahar na nikle */
+}
+
+.lifestyle-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* top, right, bottom, left = 0 */
+  background: url('/images/Flowe_3_Brown.png') right 50% / 100% 80% no-repeat;
+  transform: scaleX(-1);
+  /* ✅ sirf image invert hogi */
+  /* optional transparency */
+  pointer-events: none;
+  /* overlay click block na kare */
+  z-index: 0;
+  background-size: 10% 30%;
+  background-position: inherit;
+}
+
+.lifestyle-section>* {
+  position: relative;
+  z-index: 1;
+  /* content image ke upar rahe */
+}
+
+.page-about-mv {
+  position: relative;
+  z-index: 1;
+}
+
+.page-about-mv {
+  position: relative;
+  background: url('/images/Flower_Cream.png') right 50% / 100% 80% no-repeat;
+  color: #fff;
+  overflow: hidden;
+
+  background-size: 15% 30%;
+  background-position: right 106%;
+  /* pseudo-element bahar na nikle */
+}
+
+.page-about-mv::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* top, right, bottom, left = 0 */
+  background: url('/images/Flower_Cream.png') right 50% / 100% 80% no-repeat;
+  transform: scale(-1, -1);
+  /* ✅ sirf image invert hogi */
+  /* optional transparency */
+  pointer-events: none;
+  /* overlay click block na kare */
+  z-index: 0;
+  background-size: 18% 35%;
+  background-position: inherit;
+}
+
+
+.page-about {
+  position: relative;
+  z-index: 1;
+}
+
+.page-about {
+  background-image: url("/images/Line-8.png");
+  background-size: 100% 80%;
+  background-position: 100% 200%;
+  color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+
+}
+
+.section-line {
+  background-image: url("/images/Line_2-8.png");
+  background-size: 100% 80%;
+  background-position: 100% 200%;
+  color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+
+}
+
+.section-small {
+  position: relative;
+  z-index: 1;
+}
+
+.section-small {
+  background-image: url("/images/Flower_4_Cream.png");
+  background-size: 6%;
+  background-position: 0% 100%;
+  color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+
+}
+
+.section-small::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: url('/images/Flower_4_Cream.png') right 50% / 100% 80% no-repeat;
+  transform: scaleX(-1);
+
+  pointer-events: none;
+
+  z-index: 0;
+  background-size: 6%;
+  background-position: inherit;
+}
+
+.testimonials {
+  position: relative;
+  background: url('/images/Line-8.png');
+  color: #fff;
+  overflow: hidden;
+  background-size: 100% 100%;
+  background-position: center 100%;
+  background-repeat: no-repeat;
+  padding: 130px;
+}
+
+.blog-section {
+  position: relative;
+  background: url('/images/Line_2-8.png');
+  color: #fff;
+  overflow: hidden;
+  background-size: 100% 75%;
+  background-position: center 80%;
+  background-repeat: no-repeat;
+
+}
+
+
+.blog-main-page {
+  position: relative;
+  z-index: 1;
+}
+
+.page-project {
+  background-image: url("/images/Flower_Wara.png");
+  background-size: 25%;
+  background-position: 100% 100%;
+  color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+
+}
+
+
+
+.page-project-amidst {
+  position: relative;
+  z-index: 1;
+  background-color: var(--theme-bg-light);
+}
+
+.page-project-amidst {
+  background-image: url("/images/Flower_Brown.png");
+  background-size: 12.5%;
+  background-position: 100% 75%;
+  color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+
+}
+
+.page-project-amidst::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('/images/Flower_Brown.png') right 100% / 100% 80% no-repeat;
+  transform: scaleY(-1);
+  pointer-events: none;
+  z-index: 0;
+  background-size: 12.5%;
+  background-position: 0% 100%;
+}
+
+.blog-main-page {
+  position: relative;
+  background: url('/images/Flower_Wara.png') right 50% / 100% 80% no-repeat;
+  overflow: hidden;
+  background-size: 15% 30%;
+  background-position: right 106%;
+  /* pseudo-element bahar na nikle */
+}
+
+.blog-main-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* top, right, bottom, left = 0 */
+  background: url('/images/Flower_Wara.png') right 50% / 100% 80% no-repeat;
+  transform: scale(-1, -1);
+  /* ✅ sirf image invert hogi */
+  /* optional transparency */
+  pointer-events: none;
+  /* overlay click block na kare */
+  z-index: 0;
+  background-size: 20% 45%;
+  background-position: inherit;
+}
+
+.carrer {
+  position: relative;
+  z-index: 1;
+}
+
+.carrer {
+  position: relative;
+  background: url('/images/Flower_Wara.png') right 50% / 100% 80% no-repeat;
+  overflow: hidden;
+  background-size: 15% 30%;
+  background-position: right 106%;
+  /* pseudo-element bahar na nikle */
+}
+
+.carrer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* top, right, bottom, left = 0 */
+  background: url('/images/Flower_Wara.png') right 50% / 100% 80% no-repeat;
+  transform: scale(-1, -1);
+  /* ✅ sirf image invert hogi */
+  /* optional transparency */
+  pointer-events: none;
+  /* overlay click block na kare */
+  z-index: 0;
+  background-size: 20% 45%;
+  background-position: inherit;
+}
+
+.contact {
+  position: relative;
+  z-index: 1;
+}
+
+.contact {
+  position: relative;
+  background: url('/images/Flower_Wara.png') right 50% / 100% 80% no-repeat;
+  overflow: hidden;
+  background-size: 15% 30%;
+  background-position: right 106%;
+  /* pseudo-element bahar na nikle */
+}
+
+.contact::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* top, right, bottom, left = 0 */
+  background: url('/images/Flower_Wara.png') right 50% / 100% 80% no-repeat;
+  transform: scale(-1, -1);
+  /* ✅ sirf image invert hogi */
+  /* optional transparency */
+  pointer-events: none;
+  /* overlay click block na kare */
+  z-index: 0;
+  background-size: 20% 45%;
+  background-position: inherit;
+}
+
+.home-highlights_text {
+  text-align: left;
+  position: relative;
+  top: -10px;
+}
+
+@media only screen and (max-width:768px) {
+  .mobileoverview {
+    margin-top: -30px !important;
+  }
+
+  .section-small {
+    background-size: 20% !important
+  }
+
+  .section-small::before {
+    background-size: 20% !important
+  }
+
+  .lifestyle-section {
+    background-size: 30% 35% !important
+  }
+
+  .lifestyle-section::before {
+    background-size: 30% 35% !important
+  }
+
+  .page-about-mv {
+    background-size: 50% 35% !important
+  }
+
+  .page-about-mv::before {
+    background-size: 50% 35% !important
+  }
+
+  .page-project-amidst {
+    background-size: 20% 15% !important;
+    background-position: 100% 100%
+  }
+
+  .page-project-amidst::before {
+    background-size: 25% 15% !important;
+    background-position: 0% 100%
+  }
+}
