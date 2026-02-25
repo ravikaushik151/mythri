@@ -19,7 +19,7 @@ const projects = [
         title: "Mythri Street",
         imageDesktop: "/images/mythri-street.jpeg",
         imageMobile: "/images/m street mobile.webp",
-        link: "/mythri-street",
+        link: "/street-sarjapur-road-2-3-bhk",
     },
     {
         title: "Mythri Sity",
@@ -93,7 +93,7 @@ const ProjectsSwiper = () => {
                                             width={600}
                                             height={500}
                                             className="d-block w-100 img-fluid"
-                                            style={{objectFit:"cover",objectPosition:"center"}}
+                                            style={{ objectFit: "cover", objectPosition: "center" }}
                                         />
                                     </div>
                                 </div>

@@ -111,7 +111,7 @@ export default async function BlogPost({ params }) {
             )}
 
             {/* ---------------- HEADER ---------------- */}
-            <div id="carouselExampleDark" className="header-section">
+            <div id="carouselExampleDark" className="header-section blog-inner">
                 <div className='row'>
                     <div className='col-md-12'>
                         <div className="image-container">

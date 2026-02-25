@@ -14288,6 +14288,12 @@ p {
   height: 100vh;
 }
 
+#carouselExampleDark.blog-inner img {
+  object-fit: cover;
+  object-position: center;
+  height: 38vh;
+}
+
 #carouselExampleDark .carousel-caption {
   width: 33%;
   top: 18% !important;
@@ -14534,7 +14540,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 .overlay2 .text {

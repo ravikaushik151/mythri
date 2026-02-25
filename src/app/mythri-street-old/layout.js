@@ -10,7 +10,7 @@ export const metadata = {
 
     // Canonical URL (IMPORTANT: Update your actual domain)
     alternates: {
-        canonical: 'https://mythribuilders.com/mythri-street/', // **UPDATE THIS DOMAIN**
+        canonical: 'https://mythribuilders.com/mythri-street-new/', // **UPDATE THIS DOMAIN**
     },
 };
 

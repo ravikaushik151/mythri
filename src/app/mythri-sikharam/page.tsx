@@ -324,10 +324,7 @@ export default function MicoristePage() {
                     </p>
                 </Container>
 
-                {/* ===== Google Font ===== */}
-                <style jsx global>{`
-                    @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
-                `}</style>
+
             </section>
 
             <section data-aos="fade-up"
